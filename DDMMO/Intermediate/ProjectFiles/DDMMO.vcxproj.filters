@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\DDMMO.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{AD4C7847-C420-4375-A97F-8E15B02CE20D}</UniqueIdentifier>
+			<UniqueIdentifier>{DD41CD1D-C1FD-47CE-98CA-6F23881A757C}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\DDMMO.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{E84B2B59-E004-4309-A486-E21E3BC357C6}</UniqueIdentifier>
+			<UniqueIdentifier>{C7AE12FB-373F-487C-AA1D-8EBF82525B51}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\DDMMO">
-			<UniqueIdentifier>{DA353C5F-6B40-4EB9-B22E-483914E4D800}</UniqueIdentifier>
+			<UniqueIdentifier>{A270F290-1BAF-497D-BF40-936B8E1E9F8A}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\DDMMO\DDMMO.Build.cs">
 			<Filter>Source\DDMMO</Filter>
