@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\DDMMO.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{AD4C7847-C420-4375-A97F-8E15B02CE20D}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\DDMMO.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\DDMMOEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{E84B2B59-E004-4309-A486-E21E3BC357C6}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\DDMMO">
+			<UniqueIdentifier>{DA353C5F-6B40-4EB9-B22E-483914E4D800}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\DDMMO\DDMMO.Build.cs">
+			<Filter>Source\DDMMO</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\DDMMO\DDMMO.cpp">
+			<Filter>Source\DDMMO</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DDMMO\DDMMO.h">
+			<Filter>Source\DDMMO</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\DDMMO\DDMMOCharacter.cpp">
+			<Filter>Source\DDMMO</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DDMMO\DDMMOCharacter.h">
+			<Filter>Source\DDMMO</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\DDMMO\DDMMOGameMode.cpp">
+			<Filter>Source\DDMMO</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DDMMO\DDMMOGameMode.h">
+			<Filter>Source\DDMMO</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>
