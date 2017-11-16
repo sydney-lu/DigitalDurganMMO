@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\DDMMO.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{90B05470-73EA-45BF-A813-A4D7E299B9FF}</UniqueIdentifier>
+			<UniqueIdentifier>{4E973EC6-F3AC-4A4B-A3D1-F63EA913355D}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\DDMMO.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{9806FD89-B06E-419E-ACAF-0E54E2DF6090}</UniqueIdentifier>
+			<UniqueIdentifier>{7D5ED4ED-2CBD-44F1-AD35-F1BC902D8129}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,8 +31,20 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\DDMMO">
-			<UniqueIdentifier>{0DD90FD5-CB34-470F-A6B6-6D9911E24696}</UniqueIdentifier>
+			<UniqueIdentifier>{F3995F05-ECA1-4198-B62B-0E42283421C1}</UniqueIdentifier>
 		</Filter>
+		<ClCompile Include="..\..\Source\DDMMO\CharacterClass.cpp">
+			<Filter>Source\DDMMO</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DDMMO\CharacterClass.h">
+			<Filter>Source\DDMMO</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\DDMMO\CharacterSkill.cpp">
+			<Filter>Source\DDMMO</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DDMMO\CharacterSkill.h">
+			<Filter>Source\DDMMO</Filter>
+		</ClInclude >
 		<None Include="..\..\Source\DDMMO\DDMMO.Build.cs">
 			<Filter>Source\DDMMO</Filter>
 		</None >
