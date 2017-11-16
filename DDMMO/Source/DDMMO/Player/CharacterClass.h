@@ -6,9 +6,6 @@
 #include "Engine/DataAsset.h"
 #include "CharacterClass.generated.h"
 
-/**
- * 
- */
 UCLASS()
 class DDMMO_API UCharacterClass : public UDataAsset
 {

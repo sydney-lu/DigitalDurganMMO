@@ -25,15 +25,30 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
+	
+	UPROPERTY(EditAnywhere)
+	float Zoom_Power;
+	
+	UPROPERTY(EditAnywhere)
+	float ZoomIn_Max;
+
+	UPROPERTY(EditAnywhere)
+	float ZoomOut_Max;
+
+	float CameraZoom_v;
 
 protected:	// Traversal functions
 	void MoveForward(float Value);
 	void MoveRight(float Value);
+
+protected:	// Camera Functions
 	void TurnAtRate(float Rate);
 	void LookUpAtRate(float Rate);
-
-	void LMB();
+	void ZoomIn();
+	void ZoomOut();
 	void RMB();
+	void LMBPressed();
+	void LMBReleased();
 
 protected:	// Action Functions
 	void OpenBag();
@@ -54,7 +69,6 @@ protected:	// Skill Functions
 	void SkillNine();
 	void SkillOemminus();
 	void SkillOemplus();
-
 
 protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;

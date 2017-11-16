@@ -16,6 +16,9 @@ ADDMMOCharacter::ADDMMOCharacter()
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 	BaseTurnRate = 45.f;
 	BaseLookUpRate = 45.f;
+	Zoom_Power = 55.0f;
+	ZoomIn_Max = 75.0f;
+	ZoomOut_Max = 1000.0f;
 
 	// Don't rotate when the controller rotates. Let that just affect the camera.
 	bUseControllerRotationPitch = false;
@@ -31,8 +34,9 @@ ADDMMOCharacter::ADDMMOCharacter()
 	// Create a camera boom (pulls in towards the player if there is a collision)
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
-	CameraBoom->TargetArmLength = 300.0f; // The camera follows at this distance behind the character	
+	CameraBoom->TargetArmLength = ZoomOut_Max; // The camera follows at this distance behind the character	
 	CameraBoom->bUsePawnControlRotation = true; // Rotate the arm based on the controller
+	CameraZoom_v = ZoomOut_Max;
 
 	// Create a follow camera
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
@@ -46,8 +50,11 @@ void ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	check(PlayerInputComponent);
 
 	//	W.I.P camera controls for MMORPG
-	PlayerInputComponent->BindAction("LMB", IE_Pressed, this, &ADDMMOCharacter::LMB);
 	PlayerInputComponent->BindAction("RMB", IE_Pressed, this, &ADDMMOCharacter::RMB);
+	PlayerInputComponent->BindAction("LMB", IE_Pressed, this, &ADDMMOCharacter::LMBPressed);
+	PlayerInputComponent->BindAction("LMB", IE_Released, this, &ADDMMOCharacter::LMBReleased);
+	PlayerInputComponent->BindAction("ZoomIn", IE_Pressed, this, &ADDMMOCharacter::ZoomIn);
+	PlayerInputComponent->BindAction("ZoomOut", IE_Pressed, this, &ADDMMOCharacter::ZoomOut);
 
 	//	Traversal for character
 	PlayerInputComponent->BindAxis("MoveForward", this, &ADDMMOCharacter::MoveForward);
@@ -56,7 +63,6 @@ void ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAxis("TurnRate", this, &ADDMMOCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &ADDMMOCharacter::LookUpAtRate);
-
 
 	PlayerInputComponent->BindAction("OpenBag", IE_Pressed, this, &ADDMMOCharacter::OpenBag);
 	PlayerInputComponent->BindAction("CharacterInfo", IE_Pressed, this, &ADDMMOCharacter::CharacterInfo);
@@ -82,7 +88,6 @@ void ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAction("Skill9", IE_Pressed, this, &ADDMMOCharacter::SkillNine);
 	PlayerInputComponent->BindAction("Skill-", IE_Pressed, this, &ADDMMOCharacter::SkillOemminus);
 	PlayerInputComponent->BindAction("Skill=", IE_Pressed, this, &ADDMMOCharacter::SkillOemplus);
-	
 }
 
 void ADDMMOCharacter::TurnAtRate(float Rate)
@@ -95,19 +100,57 @@ void ADDMMOCharacter::LookUpAtRate(float Rate)
 	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
 
+void ADDMMOCharacter::ZoomIn()
+{
+	if (Controller != NULL)
+	{
+		//UE_LOG(LogTemp, Warning, TEXT("Camera Zoom = %f - %f"), CameraZoom_v, Zoom_Power);
+		CameraZoom_v = CameraZoom_v - Zoom_Power;
+
+		if (CameraZoom_v <= ZoomIn_Max)
+		{
+			//UE_LOG(LogTemp, Warning, TEXT("Zoom In Max"));
+			CameraBoom->TargetArmLength = ZoomIn_Max;
+			CameraZoom_v = ZoomIn_Max;
+		}
+
+		else
+		{
+			//UE_LOG(LogTemp, Display, TEXT("CameraBoom Arm Length: %f"), CameraBoom->TargetArmLength);
+			//UE_LOG(LogTemp, Warning, TEXT("Zooming In"));
+			CameraBoom->TargetArmLength = CameraZoom_v;
+		}
+	}
+}
+
+void ADDMMOCharacter::ZoomOut()
+{
+	if (Controller != NULL)
+	{
+		//UE_LOG(LogTemp, Warning, TEXT("Camera Zoom = %f - %f"), CameraZoom_v, Zoom_Power);
+		CameraZoom_v = CameraZoom_v + Zoom_Power;
+
+		if (CameraZoom_v >= ZoomOut_Max)
+		{
+			//UE_LOG(LogTemp, Warning, TEXT("Zoom Out Max"));
+			CameraBoom->TargetArmLength = ZoomOut_Max;
+			CameraZoom_v = ZoomOut_Max;
+		}
+
+		else
+		{
+			//UE_LOG(LogTemp, Display, TEXT("CameraBoom Arm Length: %f"), CameraBoom->TargetArmLength);
+			//UE_LOG(LogTemp, Warning, TEXT("Zooming Out"));
+			CameraBoom->TargetArmLength = CameraZoom_v;
+		}
+	}
+}
+
 void ADDMMOCharacter::OpenBag()
 {
 	if (Controller != NULL)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the BAG UI is in progress."));
-	}
-}
-
-void ADDMMOCharacter::LMB()
-{
-	if (Controller != NULL)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("LMB"));
 	}
 }
 
@@ -119,6 +162,26 @@ void ADDMMOCharacter::RMB()
 	}
 }
 
+void ADDMMOCharacter::LMBPressed()
+{
+	if (Controller != NULL)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("LMB Pressed"));
+		//APlayerController* MyController = GetWorld()->GetFirstPlayerController();
+		//MyController->bShowMouseCursor = false;
+	}
+}
+
+void ADDMMOCharacter::LMBReleased()
+{
+	if (Controller != NULL)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("LMB Released"));
+		//APlayerController* MyController = GetWorld()->GetFirstPlayerController();
+		//MyController->bShowMouseCursor = true;
+	}
+}
+
 void ADDMMOCharacter::CharacterInfo()
 {
 	if (Controller != NULL)
@@ -126,6 +189,7 @@ void ADDMMOCharacter::CharacterInfo()
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the Character info is in progress."));
 	}
 }
+
 void ADDMMOCharacter::SkillInfo()
 {
 	if (Controller != NULL)

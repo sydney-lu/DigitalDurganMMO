@@ -6,10 +6,6 @@
 #include "Engine/DataAsset.h"
 #include "CharacterSkill.generated.h"
 
-/**
- * 
- */
-
 UENUM(BlueprintType)
 enum class CastLocation : uint8
 {
@@ -115,13 +111,12 @@ public:
 	FString Name();
 	SkillTag Tag();
 
-	FVector4 CastInfo();				// (Cost,CastTime,Cooldown,Charges)
-	FVector4 SkillStats();				// (CastRange,AbilityRange,TriggerTimer,Duration)
-	FVector SkillStrength();			// (Damage,BuffStrength,DebuffStrength)
+	FVector4 CastInfo();		// (Cost, CastTime, Cool down, Charges)
+	FVector4 SkillStats();		// (CastRange, AbilityRange, TriggerTimer, Duration)
+	FVector SkillStrength();	// (Damage, BuffStrength, DebuffStrength)
 
 	CastLocation CastableLocations();
 	CastType Type();
 	BuffType Buff();
 	DebuffType Debuff();
 };
-
