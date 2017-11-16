@@ -1,7 +1,7 @@
 // Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
 
 #include "DDMMOGameMode.h"
-#include "DDMMOCharacter.h"
+#include "Player/DDMMOCharacter.h"
 #include "UObject/ConstructorHelpers.h"
 
 ADDMMOGameMode::ADDMMOGameMode()

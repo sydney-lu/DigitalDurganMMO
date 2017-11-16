@@ -8,8 +8,12 @@
 /NODEFAULTLIB
 "C:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.obj"
 "C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\DDMMO\DDMMO.cpp.obj"
-"C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\DDMMO\DDMMOCharacter.cpp.obj"
 "C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\DDMMO\DDMMOGameMode.cpp.obj"
+"C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\DDMMO\CharacterClass.cpp.obj"
+"C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\DDMMO\CharacterSkill.cpp.obj"
+"C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\DDMMO\DDMMOCharacter.cpp.obj"
+"C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\DDMMO\CharacterClass.gen.cpp.obj"
+"C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\DDMMO\CharacterSkill.gen.cpp.obj"
 "C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\DDMMO\DDMMO.init.gen.cpp.obj"
 "C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\DDMMO\DDMMOCharacter.gen.cpp.obj"
 "C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\DDMMO\DDMMOGameMode.gen.cpp.obj"
