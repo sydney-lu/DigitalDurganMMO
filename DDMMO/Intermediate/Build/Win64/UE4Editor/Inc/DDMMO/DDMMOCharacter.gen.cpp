@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "GeneratedCppIncludes.h"
-#include "DDMMOCharacter.h"
+#include "Player/DDMMOCharacter.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -39,21 +39,21 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 				{ "HideCategories", "Navigation" },
-				{ "IncludePath", "DDMMOCharacter.h" },
-				{ "ModuleRelativePath", "DDMMOCharacter.h" },
+				{ "IncludePath", "Player/DDMMOCharacter.h" },
+				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
 			};
 #endif
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseLookUpRate_MetaData[] = {
 				{ "Category", "Camera" },
-				{ "ModuleRelativePath", "DDMMOCharacter.h" },
+				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
 			};
 #endif
 			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseLookUpRate = { UE4CodeGen_Private::EPropertyClass::Float, "BaseLookUpRate", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000020015, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, BaseLookUpRate), METADATA_PARAMS(NewProp_BaseLookUpRate_MetaData, ARRAY_COUNT(NewProp_BaseLookUpRate_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseTurnRate_MetaData[] = {
 				{ "Category", "Camera" },
-				{ "ModuleRelativePath", "DDMMOCharacter.h" },
+				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
 			};
 #endif
 			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseTurnRate = { UE4CodeGen_Private::EPropertyClass::Float, "BaseTurnRate", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000020015, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, BaseTurnRate), METADATA_PARAMS(NewProp_BaseTurnRate_MetaData, ARRAY_COUNT(NewProp_BaseTurnRate_MetaData)) };
@@ -62,7 +62,7 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 				{ "AllowPrivateAccess", "true" },
 				{ "Category", "Camera" },
 				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "DDMMOCharacter.h" },
+				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
 			};
 #endif
 			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FollowCamera = { UE4CodeGen_Private::EPropertyClass::Object, "FollowCamera", RF_Public|RF_Transient|RF_MarkAsNative, 0x00400000000a001d, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, FollowCamera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(NewProp_FollowCamera_MetaData, ARRAY_COUNT(NewProp_FollowCamera_MetaData)) };
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 				{ "AllowPrivateAccess", "true" },
 				{ "Category", "Camera" },
 				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "DDMMOCharacter.h" },
+				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
 			};
 #endif
 			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CameraBoom = { UE4CodeGen_Private::EPropertyClass::Object, "CameraBoom", RF_Public|RF_Transient|RF_MarkAsNative, 0x00400000000a001d, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, CameraBoom), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(NewProp_CameraBoom_MetaData, ARRAY_COUNT(NewProp_CameraBoom_MetaData)) };
@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADDMMOCharacter, 3727776837);
+	IMPLEMENT_CLASS(ADDMMOCharacter, 3570375724);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ADDMMOCharacter(Z_Construct_UClass_ADDMMOCharacter, &ADDMMOCharacter::StaticClass, TEXT("/Script/DDMMO"), TEXT("ADDMMOCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ADDMMOCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
