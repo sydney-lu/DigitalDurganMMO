@@ -37,6 +37,44 @@ public:
 
 	float CameraZoom_v;
 
+	//// The class that will be used for the Items Nameplate
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = UI)
+	//	TSubclassOf<class UUserWidget> NameplateUIClass;
+
+	//// The instance of the players Inventory UI Widget
+	//UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = UI)
+	//	class UUserWidget* NameplateWidget;
+
+	virtual void BeginPlay() override;
+
+	// Networking
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const;		//	What do we want to replicate in terms of networking, and what we don't want.
+
+	// Chat System
+	class UTextRenderComponent* ChatText;
+
+	UFUNCTION(BlueprintCallable, Category = "Chat/Messaging")
+	void AttemptToSendChatMessage(const FString& Message); //	Const references for networking
+
+private:  // Chat System 
+	void SendChatMessage(const FString& Message); // Sends a message, only call this function if we are the server, otherwise use ServerChatMessage.
+	void ClearChatMessage(); //	Clears the current message, called automatically after 5 seconds after sending the message.
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void ServerSendChatMessage(const FString& Message);
+	void ServerSendChatMessage_Implementation(const FString& Message);
+	bool ServerSendChatMessage_Validate(const FString& Message);
+
+	UFUNCTION()
+	void OnRep_CurrentMessage();
+	void UpdateChatText();
+
+protected:  // Chat System
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Transient, ReplicatedUsing = OnRep_CurrentMessage, Category = "Chat/Messaging")
+	FString CurrentMessage;	//	Whenever this variable changes, we automatically call 'OnRep_CurrentMessage' 
+
+	//void OpenChatWidget();
+
 protected:	// Traversal functions
 	void MoveForward(float Value);
 	void MoveRight(float Value);
@@ -70,6 +108,8 @@ protected:	// Skill Functions
 	void SkillNine();
 	void SkillOemminus();
 	void SkillOemplus();
+
+
 
 protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;

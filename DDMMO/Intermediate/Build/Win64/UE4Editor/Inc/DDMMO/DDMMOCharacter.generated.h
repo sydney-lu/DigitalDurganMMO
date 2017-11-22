@@ -13,8 +13,84 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define DDMMO_DDMMOCharacter_generated_h
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_RPC_WRAPPERS
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_RPC_WRAPPERS \
+	virtual bool ServerSendChatMessage_Validate(const FString& ); \
+	virtual void ServerSendChatMessage_Implementation(const FString& Message); \
+ \
+	DECLARE_FUNCTION(execOnRep_CurrentMessage) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->OnRep_CurrentMessage(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServerSendChatMessage) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_Message); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!this->ServerSendChatMessage_Validate(Z_Param_Message)) \
+		{ \
+			RPC_ValidateFailed(TEXT("ServerSendChatMessage_Validate")); \
+			return; \
+		} \
+		this->ServerSendChatMessage_Implementation(Z_Param_Message); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAttemptToSendChatMessage) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_Message); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->AttemptToSendChatMessage(Z_Param_Message); \
+		P_NATIVE_END; \
+	}
+
+
+#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnRep_CurrentMessage) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->OnRep_CurrentMessage(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execServerSendChatMessage) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_Message); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		if (!this->ServerSendChatMessage_Validate(Z_Param_Message)) \
+		{ \
+			RPC_ValidateFailed(TEXT("ServerSendChatMessage_Validate")); \
+			return; \
+		} \
+		this->ServerSendChatMessage_Implementation(Z_Param_Message); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execAttemptToSendChatMessage) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_Message); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->AttemptToSendChatMessage(Z_Param_Message); \
+		P_NATIVE_END; \
+	}
+
+
+#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_EVENT_PARMS \
+	struct DDMMOCharacter_eventServerSendChatMessage_Parms \
+	{ \
+		FString Message; \
+	};
+
+
+#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_CALLBACK_WRAPPERS
 #define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesADDMMOCharacter(); \
@@ -61,15 +137,20 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADDMMOCharacter); \
 
 #define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(ADDMMOCharacter, CameraBoom); } \
-	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(ADDMMOCharacter, FollowCamera); }
+	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(ADDMMOCharacter, FollowCamera); } \
+	FORCEINLINE static uint32 __PPO__CurrentMessage() { return STRUCT_OFFSET(ADDMMOCharacter, CurrentMessage); }
 
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_9_PROLOG
+#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_9_PROLOG \
+	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_EVENT_PARMS
+
+
 #define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
 	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_RPC_WRAPPERS \
+	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_CALLBACK_WRAPPERS \
 	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_INCLASS \
 	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_STANDARD_CONSTRUCTORS \
 public: \
@@ -81,6 +162,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
 	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_CALLBACK_WRAPPERS \
 	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_INCLASS_NO_PURE_DECLS \
 	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_12_ENHANCED_CONSTRUCTORS \
 private: \

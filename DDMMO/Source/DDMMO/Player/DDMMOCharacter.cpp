@@ -11,6 +11,13 @@
 #include "GameFramework/SpringArmComponent.h"
 #include <EngineGlobals.h>
 #include <Runtime/Engine/Classes/Engine/Engine.h>
+#include "CharacterClass.h"
+#include "CharacterSkill.h"
+#include "Components/TextRenderComponent.h"
+#include "Engine.h"
+#include "Net/UnrealNetwork.h"
+//#include "Blueprint/UserWidget.h"
+//#include "Components/WidgetComponent.h"
 
 ADDMMOCharacter::ADDMMOCharacter()
 {
@@ -44,6 +51,13 @@ ADDMMOCharacter::ADDMMOCharacter()
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
+	// Chat System
+	ChatText = CreateDefaultSubobject<UTextRenderComponent>("ChatText");
+	ChatText->SetRelativeLocation(FVector(0, 0, 100));
+	ChatText->SetHorizontalAlignment(EHTA_Center);
+	ChatText->SetupAttachment(RootComponent);
+
+	CurrentMessage = "";
 }
 
 
@@ -319,6 +333,87 @@ void ADDMMOCharacter::SkillOemplus()
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill binded to '='."));
 	}
 }
+
+void ADDMMOCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+}
+
+void ADDMMOCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(ADDMMOCharacter, CurrentMessage);
+
+}
+
+void ADDMMOCharacter::AttemptToSendChatMessage(const FString & Message)
+{
+	if (Role < ROLE_Authority) // Check to see if we are the server, call ServerSendChatMessage if we are, otherwise call SendChatMessage.
+	{
+		ServerSendChatMessage(Message);
+	}
+	else SendChatMessage(Message);
+}
+
+void ADDMMOCharacter::SendChatMessage(const FString& Message)
+{
+	CurrentMessage = Message;
+	UpdateChatText();
+
+	FTimerHandle TestHandle;
+	GetWorldTimerManager().SetTimer(TestHandle, this, &ADDMMOCharacter::ClearChatMessage, 5.f);
+}
+
+void ADDMMOCharacter::ClearChatMessage()
+{
+	CurrentMessage = "";
+	UpdateChatText();
+}
+
+void ADDMMOCharacter::ServerSendChatMessage_Implementation(const FString & Message)
+{
+	SendChatMessage(Message);
+}
+
+bool ADDMMOCharacter::ServerSendChatMessage_Validate(const FString& Message)
+{
+	if (Message.Len() < 255)
+	{
+		return true;
+	}
+	else
+		return false; // will boot player out of the game.
+}
+
+void ADDMMOCharacter::OnRep_CurrentMessage()
+{
+	UpdateChatText();
+}
+
+void ADDMMOCharacter::UpdateChatText()
+{
+	ChatText->SetText(FText::FromString(CurrentMessage));
+
+}
+
+//void ADDMMOCharacter::OpenChatWidget()
+//{
+//	if (NameplateUIClass)
+//	{
+//		if (!NameplateWidget)
+//		{
+//			NameplateWidget = CreateWidget<UUserWidget>(GetWorld()->GetGameInstance(), NameplateUIClass);
+//			if (!NameplateWidget)
+//			{
+//				return;
+//			}
+//
+//			NameplateWidget->AddToViewport();
+//			NameplateWidget->SetVisibility(ESlateVisibility::Hidden);
+//		}
+//	}
+//}
 
 void ADDMMOCharacter::MoveForward(float Value)
 {
