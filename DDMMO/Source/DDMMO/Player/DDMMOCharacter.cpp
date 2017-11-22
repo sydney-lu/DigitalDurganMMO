@@ -7,6 +7,7 @@
 #include "Components/InputComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
+#include "GameFramework/PlayerController.h"
 #include "GameFramework/SpringArmComponent.h"
 #include <EngineGlobals.h>
 #include <Runtime/Engine/Classes/Engine/Engine.h>
@@ -42,6 +43,7 @@ ADDMMOCharacter::ADDMMOCharacter()
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
+
 }
 
 
@@ -126,21 +128,17 @@ void ADDMMOCharacter::ZoomIn()
 void ADDMMOCharacter::ZoomOut()
 {
 	if (Controller != NULL)
-	{
-		//UE_LOG(LogTemp, Warning, TEXT("Camera Zoom = %f - %f"), CameraZoom_v, Zoom_Power);
+	{	//UE_LOG(LogTemp, Warning, TEXT("Camera Zoom = %f - %f"), CameraZoom_v, Zoom_Power);
 		CameraZoom_v = CameraZoom_v + Zoom_Power;
-
+	
 		if (CameraZoom_v >= ZoomOut_Max)
 		{
-			//UE_LOG(LogTemp, Warning, TEXT("Zoom Out Max"));
 			CameraBoom->TargetArmLength = ZoomOut_Max;
 			CameraZoom_v = ZoomOut_Max;
 		}
 
 		else
-		{
-			//UE_LOG(LogTemp, Display, TEXT("CameraBoom Arm Length: %f"), CameraBoom->TargetArmLength);
-			//UE_LOG(LogTemp, Warning, TEXT("Zooming Out"));
+		{	//UE_LOG(LogTemp, Display, TEXT("CameraBoom Arm Length: %f"), CameraBoom->TargetArmLength);
 			CameraBoom->TargetArmLength = CameraZoom_v;
 		}
 	}
@@ -158,7 +156,9 @@ void ADDMMOCharacter::RMB()
 {
 	if (Controller != NULL)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("RMB"));
+		APlayerController* MyController = GetWorld()->GetFirstPlayerController();
+		CenterViewportCursor(MyController);
+		MyController->bShowMouseCursor = true;
 	}
 }
 
@@ -166,9 +166,8 @@ void ADDMMOCharacter::LMBPressed()
 {
 	if (Controller != NULL)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("LMB Pressed"));
-		//APlayerController* MyController = GetWorld()->GetFirstPlayerController();
-		//MyController->bShowMouseCursor = false;
+		APlayerController* MyController = GetWorld()->GetFirstPlayerController();
+		MyController->bShowMouseCursor = false;
 	}
 }
 
@@ -176,9 +175,28 @@ void ADDMMOCharacter::LMBReleased()
 {
 	if (Controller != NULL)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("LMB Released"));
-		//APlayerController* MyController = GetWorld()->GetFirstPlayerController();
-		//MyController->bShowMouseCursor = true;
+
+	}
+}
+
+void ADDMMOCharacter::CenterViewportCursor(const APlayerController* PlayerController)
+{
+	if (PlayerController)
+	{
+		const ULocalPlayer* LocalPlayer = PlayerController->GetLocalPlayer();
+		if (LocalPlayer && LocalPlayer->ViewportClient)
+		{
+			FViewport* Viewport = LocalPlayer->ViewportClient->Viewport;
+			if (Viewport)
+			{
+				FVector2D ViewportSize;
+				LocalPlayer->ViewportClient->GetViewportSize(ViewportSize);
+				const int32 X = static_cast<int32>(ViewportSize.X * 0.5f);
+				const int32 Y = static_cast<int32>(ViewportSize.Y * 0.5f);
+
+				Viewport->SetMouse(X, Y);
+			}
+		}
 	}
 }
 

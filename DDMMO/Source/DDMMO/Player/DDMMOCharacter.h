@@ -49,6 +49,7 @@ protected:	// Camera Functions
 	void RMB();
 	void LMBPressed();
 	void LMBReleased();
+	void CenterViewportCursor(const APlayerController* PlayerController);
 
 protected:	// Action Functions
 	void OpenBag();
