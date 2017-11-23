@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\DDMMO.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{8696D957-7B6C-43A8-A5D8-4954425BDF42}</UniqueIdentifier>
+			<UniqueIdentifier>{BEA74D25-30A2-4C56-8739-F7EDF0CE44C6}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\DDMMO.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{1C5D2459-13BF-4100-A3E4-3646E63C5813}</UniqueIdentifier>
+			<UniqueIdentifier>{F5350FD6-6DEB-4E97-A1C8-50F9DBFF6513}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\DDMMO">
-			<UniqueIdentifier>{1A80E7C8-4D79-47DE-AAC4-E7F1B8DD863E}</UniqueIdentifier>
+			<UniqueIdentifier>{4DDFF3F6-F490-4181-8AC9-3BDB0300B784}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\DDMMO\DDMMO.Build.cs">
 			<Filter>Source\DDMMO</Filter>
@@ -48,8 +48,26 @@
 		<ClInclude Include="..\..\Source\DDMMO\DDMMOGameMode.h">
 			<Filter>Source\DDMMO</Filter>
 		</ClInclude >
+		<Filter Include="Source\DDMMO\AI">
+			<UniqueIdentifier>{E5E7DE03-483F-4503-A8D5-0EECB5FBE824}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="Source\DDMMO\AI\Prototype">
+			<UniqueIdentifier>{CAFF7EC7-C5CF-4839-A2B0-1BBBCAE399E7}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\DDMMO\AI\Prototype\PrototypeAI.cpp">
+			<Filter>Source\DDMMO\AI\Prototype</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DDMMO\AI\Prototype\PrototypeAI.h">
+			<Filter>Source\DDMMO\AI\Prototype</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\DDMMO\AI\Prototype\PrototypeCharacter.cpp">
+			<Filter>Source\DDMMO\AI\Prototype</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DDMMO\AI\Prototype\PrototypeCharacter.h">
+			<Filter>Source\DDMMO\AI\Prototype</Filter>
+		</ClInclude >
 		<Filter Include="Source\DDMMO\Player">
-			<UniqueIdentifier>{374A9CB2-7E1C-41C0-8B2A-D36E45E4BBE5}</UniqueIdentifier>
+			<UniqueIdentifier>{493FCDFF-44F6-4266-BEC1-CC6E800B0F76}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\DDMMO\Player\CharacterClass.cpp">
 			<Filter>Source\DDMMO\Player</Filter>

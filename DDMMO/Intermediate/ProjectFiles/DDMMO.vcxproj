@@ -420,6 +420,10 @@
 		<ClInclude Include="..\..\Source\DDMMO\DDMMO.h" />
 		<ClCompile Include="..\..\Source\DDMMO\DDMMOGameMode.cpp" />
 		<ClInclude Include="..\..\Source\DDMMO\DDMMOGameMode.h" />
+		<ClCompile Include="..\..\Source\DDMMO\AI\Prototype\PrototypeAI.cpp" />
+		<ClInclude Include="..\..\Source\DDMMO\AI\Prototype\PrototypeAI.h" />
+		<ClCompile Include="..\..\Source\DDMMO\AI\Prototype\PrototypeCharacter.cpp" />
+		<ClInclude Include="..\..\Source\DDMMO\AI\Prototype\PrototypeCharacter.h" />
 		<ClCompile Include="..\..\Source\DDMMO\Player\CharacterClass.cpp" />
 		<ClInclude Include="..\..\Source\DDMMO\Player\CharacterClass.h" />
 		<ClCompile Include="..\..\Source\DDMMO\Player\CharacterSkill.cpp" />
