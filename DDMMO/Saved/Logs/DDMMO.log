@@ -1,4 +1,4 @@
-﻿Log file open, 12/07/17 14:46:11
+﻿Log file open, 12/08/17 16:02:16
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VSPerf140.dll' (GetLastError=126)
@@ -9,12 +9,12 @@ LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
 LogWindows: File 'VtuneApi32e.dll' does not exist
 LogInit: Display: Running engine for game: DDMMO
 LogPlatformFile: Not using cached read wrapper
-LogInit: Display: RandInit(-441139795) SRandInit(-441139795).
+LogInit: Display: RandInit(1813988434) SRandInit(1813988434).
 LogInit: Read version file with build ID '3709383'
 LogInit: Overriding engine version to CL 3754814, compatible CL 3709383
 LogInit: Registered custom module enumerator with build ID '3709383'
 LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 2.614184
+LogStats: Stats thread started at 3.632762
 LogD3D11RHI: Aftermath initialized
 LogPluginManager: Mounting plugin Paper2D
 LogPluginManager: Mounting plugin LightPropagationVolume
@@ -197,1013 +197,530 @@ LogInit: Base directory: D:/UE_4.18/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.12.07-19.46.16:267][  0]LogInit: Selected Device Profile: [Windows]
-[2017.12.07-19.46.16:267][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.12.07-19.46.16:359][  0]LogInit: Computer: DESKTOP-PSLV36B
-[2017.12.07-19.46.16:359][  0]LogInit: User: twluc
-[2017.12.07-19.46.16:359][  0]LogInit: CPU Page size=4096, Cores=4
-[2017.12.07-19.46.16:359][  0]LogInit: High frequency timer resolution =3.613281 MHz
-[2017.12.07-19.46.16:367][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
-[2017.12.07-19.46.16:368][  0]LogMemory: Platform Memory Stats for Windows
-[2017.12.07-19.46.16:368][  0]LogMemory: Process Physical Memory: 272.03 MB used, 272.03 MB peak
-[2017.12.07-19.46.16:368][  0]LogMemory: Process Virtual Memory: 269.95 MB used, 269.95 MB peak
-[2017.12.07-19.46.16:368][  0]LogMemory: Physical Memory: 5242.60 MB used,  2867.57 MB free, 8110.16 MB total
-[2017.12.07-19.46.16:368][  0]LogMemory: Virtual Memory: 629.98 MB used,  2867.57 MB free, 134217728.00 MB total
-[2017.12.07-19.46.17:084][  0]LogInit: Using OS detected language (en-US).
-[2017.12.07-19.46.17:084][  0]LogInit: Using OS detected locale (en-US).
-[2017.12.07-19.46.17:287][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2017.12.07-19.46.17:970][  0]LogInit: Setting process to per monitor DPI aware
-[2017.12.07-19.46.19:977][  0]LogD3D11RHI: D3D11 adapters:
-[2017.12.07-19.46.20:028][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
-[2017.12.07-19.46.20:028][  0]LogD3D11RHI:       4058/0/4055 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x10de
-[2017.12.07-19.46.20:030][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2017.12.07-19.46.20:030][  0]LogD3D11RHI:       0/0/4055 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2017.12.07-19.46.20:030][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.12.07-19.46.20:035][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.12.07-19.46.20:035][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
-[2017.12.07-19.46.20:035][  0]LogWindows: EnumDisplayDevices:
-[2017.12.07-19.46.20:036][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
-[2017.12.07-19.46.20:044][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:1)
-[2017.12.07-19.46.20:044][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:1)
-[2017.12.07-19.46.20:044][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2017.12.07-19.46.20:045][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2017.12.07-19.46.20:045][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
-[2017.12.07-19.46.20:045][  0]LogD3D11RHI:   Driver Version: 388.31 (internal:23.21.13.8831, unified:388.31)
-[2017.12.07-19.46.20:045][  0]LogD3D11RHI:      Driver Date: 11-14-2017
-[2017.12.07-19.46.20:045][  0]LogRHI: Texture pool is 2840 MB (70% of 4058 MB)
-[2017.12.07-19.46.20:084][  0]LogD3D11RHI: Async texture creation enabled
-[2017.12.07-19.46.20:357][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2017.12.07-19.46.20:456][  0]LogShaderCompilers: Guid format shader working directory is -9 characters bigger than the processId version (C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Intermediate/Shaders/WorkingDirectory/17452/).
-[2017.12.07-19.46.20:456][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/twluc/AppData/Local/Temp/UnrealShaderWorkingDir/ADAA98F04A8B3076C724C197AF8261F6/'.
-[2017.12.07-19.46.20:457][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2017.12.07-19.46.23:391][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2017.12.07-19.46.23:443][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2017.12.07-19.46.23:494][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2017.12.07-19.46.23:543][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2017.12.07-19.46.23:633][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2017.12.07-19.46.23:683][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2017.12.07-19.46.23:743][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.12.07-19.46.23:793][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2017.12.07-19.46.23:835][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2017.12.07-19.46.23:883][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
-[2017.12.07-19.46.23:932][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
-[2017.12.07-19.46.23:981][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
-[2017.12.07-19.46.24:031][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
-[2017.12.07-19.46.24:082][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
-[2017.12.07-19.46.24:186][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
-[2017.12.07-19.46.24:186][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
-[2017.12.07-19.46.24:249][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2017.12.07-19.46.24:289][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2017.12.07-19.46.24:456][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2017.12.07-19.46.24:493][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2017.12.07-19.46.24:554][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2017.12.07-19.46.24:620][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2017.12.07-19.46.24:684][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2017.12.07-19.46.24:784][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2017.12.07-19.46.24:784][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2017.12.07-19.46.25:932][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2017.12.07-19.46.26:225][  0]LogDerivedDataCache: Loaded boot cache 0.29s 79MB C:/Users/twluc/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
-[2017.12.07-19.46.26:225][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/twluc/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc
-[2017.12.07-19.46.26:225][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.12.07-19.46.26:225][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.12.07-19.46.26:225][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.12.07-19.46.26:225][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.12.07-19.46.26:297][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.12.07-19.46.26:311][  0]LogDerivedDataCache: Using Local data cache path C:/Users/twluc/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.12.07-19.46.26:408][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2017.12.07-19.46.26:460][  0]LogSlate: Using Freetype 2.6.0
-[2017.12.07-19.46.26:539][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.12.07-19.46.26:551][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.12.07-19.46.32:183][  0]LogInit: Selected Device Profile: [Windows]
-[2017.12.07-19.46.33:601][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2017.12.07-19.46.33:672][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2017.12.07-19.46.33:680][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2017.12.07-19.46.33:680][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2017.12.07-19.46.33:680][  0]LogMeshReduction: No automatic mesh merging module available
-[2017.12.07-19.46.33:680][  0]LogMeshMerging: No automatic mesh merging module available
-[2017.12.07-19.46.34:392][  0]LogNetVersion: DDMMO , NetCL: 3709383, EngineNetVer: 2, GameNetVer: 0 (Checksum: 699005191)
-[2017.12.07-19.46.36:128][  0]LogAssetRegistry: FAssetRegistry took 0.0474 seconds to start up
-[2017.12.07-19.46.40:885][  0]LogPackageLocalizationCache: Processed 7 localized package path(s) for 2 prioritized culture(s) in 0.122522 seconds
-[2017.12.07-19.46.40:906][  0]LogUObjectArray: 35900 objects as part of root set at end of initial load.
-[2017.12.07-19.46.40:906][  0]LogUObjectAllocator: 7372024 out of 0 bytes used by permanent object pool.
-[2017.12.07-19.46.40:906][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.12.07-19.46.40:971][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2017.12.07-19.47.09:314][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2017.12.07-19.47.09:393][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.12.07-19.47.12:546][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2017.12.07-19.47.13:635][  0]SourceControl: Source control is disabled
-[2017.12.07-19.47.13:635][  0]SourceControl: Source control is disabled
-[2017.12.07-19.47.13:767][  0]SourceControl: Source control is disabled
-[2017.12.07-19.47.13:847][  0]SourceControl: Source control is disabled
-[2017.12.07-19.47.15:484][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2017.12.07-19.47.15:825][  0]LogOcInput: OculusInput pre-init called
-[2017.12.07-19.47.16:956][  0]LogEngine: Initializing Engine...
-[2017.12.07-19.47.17:020][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2017.12.07-19.47.17:974][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2017.12.07-19.47.17:974][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2017.12.07-19.47.18:425][  0]LogAIModule: Creating AISystem for world Untitled
-[2017.12.07-19.47.18:653][  0]LogInit: XAudio2 using 'TOSHIBA-TV-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.12.07-19.47.18:668][  0]LogInit: FAudioDevice initialized.
-[2017.12.07-19.47.18:744][  0]LogDerivedDataCache: Saved boot cache 0.08s 79MB C:/Users/twluc/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
-[2017.12.07-19.47.18:759][  0]LogInit: Texture streaming: Enabled
-[2017.12.07-19.47.18:943][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2017.12.07-19.47.19:630][  0]LogInit: Transaction tracking system initialized
-[2017.12.07-19.47.22:580][  0]BlueprintLog: New page: Editor Load
-[2017.12.07-19.47.26:097][  0]LocalizationService: Localization service is disabled
-[2017.12.07-19.47.29:341][  0]LogConsoleResponse: Display: 
-[2017.12.07-19.47.34:442][  0]LogFileCache: Scanning file cache for directory 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/' took 0.01s
-[2017.12.07-19.47.34:442][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2017.12.07-19.47.34:443][  0]LogCook: Display: Mobile HDR setting 1
-[2017.12.07-19.47.34:456][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2017.12.07-19.47.38:771][  0]SourceControl: Source control is disabled
-[2017.12.07-19.47.38:799][  0]Cmd: MAP LOAD FILE="C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/WhiteBoxMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.12.07-19.47.38:810][  0]LightingResults: New page: Lighting Build
-[2017.12.07-19.47.39:130][  0]MapCheck: New page: Map Check
-[2017.12.07-19.47.39:130][  0]LightingResults: New page: Lighting Build
-[2017.12.07-19.47.40:728][  0]LogAIModule: Creating AISystem for world WhiteBoxMap
-[2017.12.07-19.47.41:278][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.12.07-19.47.41:380][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.12.07-19.47.41:471][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 88.453ms to complete.
-[2017.12.07-19.47.41:471][  0]LogFileHelpers: Loading map 'WhiteBoxMap' took 2.680
-[2017.12.07-19.47.44:013][  0]LogCollectionManager: Loaded 0 collections in 0.002818 seconds
-[2017.12.07-19.47.44:387][  0]LogFileCache: Scanning file cache for directory 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Collections/' took 0.01s
-[2017.12.07-19.47.44:387][  0]LogFileCache: Scanning file cache for directory 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Developers/twluc/Collections/' took 0.01s
-[2017.12.07-19.47.44:387][  0]LogFileCache: Scanning file cache for directory 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Collections/' took 0.01s
-[2017.12.07-19.47.44:387][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
-[2017.12.07-19.47.44:422][  0]LogContentBrowser: Native class hierarchy populated in 0.0333 seconds. Added 2367 classes and 522 folders.
-[2017.12.07-19.47.44:858][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0011 seconds. Added 0 classes and 0 folders.
-[2017.12.07-19.47.48:212][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0029 seconds. Added 0 classes and 0 folders.
-[2017.12.07-19.47.48:511][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0012 seconds. Added 1 classes and 2 folders.
-[2017.12.07-19.47.50:056][  0]LogSlate: Took 0.013041 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2017.12.07-19.47.50:061][  0]LogSlate: Took 0.002264 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2017.12.07-19.47.50:301][  0]LogSlate: Took 0.008841 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2017.12.07-19.47.51:942][  0]LogRenderer: Reallocating scene render targets to support 1272x692 Format 10 NumSamples 1 (Frame:1).
-[2017.12.07-19.47.54:421][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0012 seconds. Added 1 classes and 2 folders.
-[2017.12.07-19.47.54:421][  0]LogLoad: (Engine Initialization) Total time: 113.20 seconds
-[2017.12.07-19.47.54:421][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2017.12.07-19.47.54:434][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
-[2017.12.07-19.47.55:602][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2017.12.07-19.47.56:905][  1]LogSlate: Took 0.012783 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.12.07-19.47.57:538][  4]LogAssetRegistry: Asset discovery search completed in 81.4319 seconds
-[2017.12.07-19.47.57:628][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2017.12.07-19.47.57:628][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000436 seconds (updated 0 objects)
-[2017.12.07-19.49.15:378][481]LogSlate: Took 0.000252 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.12.07-19.49.15:437][481]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 J:\!!!projects\thomas adventure game\gray box enviroment\graybox 2\boss room.FBX)
-[2017.12.07-19.49.15:564][481]LogFbx: ItemName: GlobalSettings, ItemCount : 1
-[2017.12.07-19.49.15:564][481]LogFbx: ItemName: AnimationStack, ItemCount : 1
-[2017.12.07-19.49.15:564][481]LogFbx: ItemName: AnimationLayer, ItemCount : 1
-[2017.12.07-19.49.15:564][481]LogFbx: ItemName: Model, ItemCount : 2
-[2017.12.07-19.49.15:564][481]LogFbx: ItemName: Geometry, ItemCount : 2
-[2017.12.07-19.49.15:575][481]LogFbx: Loading FBX Scene from J:\!!!projects\thomas adventure game\gray box enviroment\graybox 2\boss room.FBX
-[2017.12.07-19.49.15:607][481]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.07-19.49.22:315][481]LogFbx: Loading FBX Scene from J:\!!!projects\thomas adventure game\gray box enviroment\graybox 2\boss room.FBX
-[2017.12.07-19.49.22:324][481]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.07-19.49.22:396][481]LogStaticMesh: Building static mesh boss_room_Cylinder001...
-[2017.12.07-19.49.22:447][481]LogStaticMesh: Built static mesh [0.05s] /Game/Maps/boss_room_Cylinder001.boss_room_Cylinder001
-[2017.12.07-19.49.22:563][481]LogFbx: Warning: Triangulating static mesh Object001
-[2017.12.07-19.49.22:580][481]LogStaticMesh: Building static mesh boss_room_Object001...
-[2017.12.07-19.49.22:582][481]LogStaticMesh: Built static mesh [0.00s] /Game/Maps/boss_room_Object001.boss_room_Object001
-[2017.12.07-19.49.22:614][481]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2017.12.07-19.49.26:738][904]LogActorFactory: Actor Factory created boss_room_Cylinder001
-[2017.12.07-19.49.32:160][464]LogActorFactory: Actor Factory created boss_room_Cylinder001
-[2017.12.07-19.50.03:527][371]LogTemp: Repeating last play command: Selected Viewport
-[2017.12.07-19.50.03:598][371]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-19.50.03:617][371]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.12.07-19.50.03:653][371]PIE: New page: PIE session: WhiteBoxMap (Dec 7, 2017, 9:50:03 AM)
-[2017.12.07-19.50.03:670][371]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_WhiteBoxMap
-[2017.12.07-19.50.03:735][371]LogPlayLevel: PIE: StaticDuplicateObject took: (0.064864s)
-[2017.12.07-19.50.03:736][371]LogAIModule: Creating AISystem for world WhiteBoxMap
-[2017.12.07-19.50.03:736][371]LogPlayLevel: PIE: World Init took: (0.001361s)
-[2017.12.07-19.50.03:736][371]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/WhiteBoxMap.WhiteBoxMap to /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap (0.066714s)
-[2017.12.07-19.50.03:815][371]LogInit: XAudio2 using 'TOSHIBA-TV-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.12.07-19.50.03:824][371]LogInit: FAudioDevice initialized.
-[2017.12.07-19.50.03:872][371]LogLoad: Game class is 'DDMMOGameMode'
-[2017.12.07-19.50.03:928][371]LogWorld: Bringing World /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap up for play (max tick rate 0) at 2017.12.07-14.50.03
-[2017.12.07-19.50.03:949][371]LogWorld: Bringing up level for play took: 0.022091
-[2017.12.07-19.50.04:116][371]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0099 seconds. Added 11 classes and 0 folders.
-[2017.12.07-19.50.04:294][371]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_WhiteBoxMap 1.181
-[2017.12.07-19.50.04:294][371]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-19.50.06:447][606]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-19.50.06:575][606]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-19.50.07:140][660]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (boss_room_Cylinder001)
-[2017.12.07-19.50.10:126][863]LogSlate: Took 0.000361 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2017.12.07-19.50.10:898][863]LogRenderer: Reallocating scene render targets to support 1432x924 Format 10 NumSamples 1 (Frame:1).
-[2017.12.07-19.50.18:340][314]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/boss_room_Cylinder001" FILE="C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/boss_room_Cylinder001.uasset" SILENT=true
-[2017.12.07-19.50.18:450][314]LogSavePackage: Save=72.95ms
-[2017.12.07-19.50.18:450][314]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/boss_room_Cylinder001FB2D7AAD44EBB34043BF78B7B873B27F.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/boss_room_Cylinder001.uasset'
-[2017.12.07-19.50.18:491][314]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/boss_room_Cylinder001.uasset
-[2017.12.07-19.50.20:426][451]LogTemp: Repeating last play command: Selected Viewport
-[2017.12.07-19.50.20:442][451]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-19.50.20:442][451]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.12.07-19.50.20:442][451]PIE: New page: PIE session: WhiteBoxMap (Dec 7, 2017, 9:50:20 AM)
-[2017.12.07-19.50.20:442][451]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_WhiteBoxMap
-[2017.12.07-19.50.20:460][451]LogPlayLevel: PIE: StaticDuplicateObject took: (0.018382s)
-[2017.12.07-19.50.20:461][451]LogAIModule: Creating AISystem for world WhiteBoxMap
-[2017.12.07-19.50.20:461][451]LogPlayLevel: PIE: World Init took: (0.000985s)
-[2017.12.07-19.50.20:462][451]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/WhiteBoxMap.WhiteBoxMap to /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap (0.019690s)
-[2017.12.07-19.50.20:498][451]LogInit: XAudio2 using 'TOSHIBA-TV-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.12.07-19.50.20:507][451]LogInit: FAudioDevice initialized.
-[2017.12.07-19.50.20:538][451]LogLoad: Game class is 'DDMMOGameMode'
-[2017.12.07-19.50.20:539][451]LogWorld: Bringing World /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap up for play (max tick rate 0) at 2017.12.07-14.50.20
-[2017.12.07-19.50.20:540][451]LogWorld: Bringing up level for play took: 0.001238
-[2017.12.07-19.50.20:542][451]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_WhiteBoxMap -0.57
-[2017.12.07-19.50.20:542][451]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-19.50.51:572][151]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-19.50.51:606][151]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-19.50.53:540][362]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (floor_2)
-[2017.12.07-19.50.54:760][462]Cmd: DELETE
-[2017.12.07-19.50.54:760][462]Cmd: ACTOR DELETE
-[2017.12.07-19.50.55:078][462]LogEditorActor: Deleted Actor: StaticMeshActor
-[2017.12.07-19.50.55:090][462]LogEditorActor: Deleted 1 Actors (0.113 secs)
-[2017.12.07-19.50.55:855][552]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (outer_shell)
-[2017.12.07-19.50.56:626][629]Cmd: DELETE
-[2017.12.07-19.50.56:626][629]Cmd: ACTOR DELETE
-[2017.12.07-19.50.56:628][629]LogEditorActor: Deleted Actor: StaticMeshActor
-[2017.12.07-19.50.56:637][629]LogEditorActor: Deleted 1 Actors (0.010 secs)
-[2017.12.07-19.50.59:575][937]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (platform_3)
-[2017.12.07-19.51.00:684][ 11]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (s_path)
-[2017.12.07-19.51.01:475][ 81]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (tree)
-[2017.12.07-19.51.02:023][132]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (platform_1)
-[2017.12.07-19.51.04:645][366]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (platform)
-[2017.12.07-19.51.05:454][443]Cmd: DELETE
-[2017.12.07-19.51.05:454][443]Cmd: ACTOR DELETE
-[2017.12.07-19.51.05:456][443]LogEditorActor: Deleted Actor: StaticMeshActor
-[2017.12.07-19.51.05:457][443]LogEditorActor: Deleted Actor: StaticMeshActor
-[2017.12.07-19.51.05:457][443]LogEditorActor: Deleted Actor: StaticMeshActor
-[2017.12.07-19.51.05:457][443]LogEditorActor: Deleted Actor: StaticMeshActor
-[2017.12.07-19.51.05:457][443]LogEditorActor: Deleted Actor: StaticMeshActor
-[2017.12.07-19.51.05:466][443]LogEditorActor: Deleted 5 Actors (0.012 secs)
-[2017.12.07-19.51.08:309][749]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (platform_2)
-[2017.12.07-19.51.09:618][865]Cmd: DELETE
-[2017.12.07-19.51.09:618][865]Cmd: ACTOR DELETE
-[2017.12.07-19.51.09:620][865]LogEditorActor: Deleted Actor: StaticMeshActor
-[2017.12.07-19.51.09:629][865]LogEditorActor: Deleted 1 Actors (0.010 secs)
-[2017.12.07-19.51.10:932][ 17]LogTemp: Repeating last play command: Selected Viewport
-[2017.12.07-19.51.10:947][ 17]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-19.51.10:947][ 17]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.12.07-19.51.10:947][ 17]PIE: New page: PIE session: WhiteBoxMap (Dec 7, 2017, 9:51:10 AM)
-[2017.12.07-19.51.10:947][ 17]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_WhiteBoxMap
-[2017.12.07-19.51.10:967][ 17]LogPlayLevel: PIE: StaticDuplicateObject took: (0.019598s)
-[2017.12.07-19.51.10:968][ 17]LogAIModule: Creating AISystem for world WhiteBoxMap
-[2017.12.07-19.51.10:968][ 17]LogPlayLevel: PIE: World Init took: (0.001082s)
-[2017.12.07-19.51.10:968][ 17]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/WhiteBoxMap.WhiteBoxMap to /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap (0.021068s)
-[2017.12.07-19.51.10:992][ 17]LogInit: XAudio2 using 'TOSHIBA-TV-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.12.07-19.51.11:000][ 17]LogInit: FAudioDevice initialized.
-[2017.12.07-19.51.11:033][ 17]LogLoad: Game class is 'DDMMOGameMode'
-[2017.12.07-19.51.11:034][ 17]LogWorld: Bringing World /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap up for play (max tick rate 0) at 2017.12.07-14.51.11
-[2017.12.07-19.51.11:034][ 17]LogWorld: Bringing up level for play took: 0.001001
-[2017.12.07-19.51.11:036][ 17]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_WhiteBoxMap -0.076
-[2017.12.07-19.51.11:037][ 17]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-19.51.16:320][644]LogTemp: Warning: RMB
-[2017.12.07-19.52.03:546][788]LogTemp: Warning: LMB Pressed
-[2017.12.07-19.52.03:546][788]LogTemp: Warning: LMB Released
-[2017.12.07-19.52.13:690][999]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-19.52.13:728][999]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-19.52.16:629][330]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (boss_room_Cylinder001)
-[2017.12.07-19.59.23:382][845]LogSlate: Took 0.000284 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.12.07-19.59.32:867][872]LogSavePackage: Save=477.69ms
-[2017.12.07-19.59.32:867][872]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/WhiteBoxMap_Auto1E7340BE6460EF608633C50AD7594363C.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Autosaves/Game/Maps/WhiteBoxMap_Auto1.umap'
-[2017.12.07-19.59.32:872][872]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Autosaves/Game/Maps/WhiteBoxMap_Auto1.umap
-[2017.12.07-19.59.32:888][872]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/WhiteBoxMap' took 0.573
-[2017.12.07-19.59.32:888][872]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.573
-[2017.12.07-19.59.32:897][872]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Maps/boss_room_Object001] ([1] browsable assets)...
-[2017.12.07-19.59.32:912][872]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Maps/boss_room_Object001.boss_room_Object001]
-[2017.12.07-19.59.32:913][872]OBJ SavePackage: Finished generating thumbnails for package [/Game/Maps/boss_room_Object001]
-[2017.12.07-19.59.32:929][872]LogSavePackage: Save=14.34ms
-[2017.12.07-19.59.32:929][872]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/boss_room_Object001_Auto1D8D8DCC04665F98F18C68F9DCBBF5B27.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Autosaves/Game/Maps/boss_room_Object001_Auto1.uasset'
-[2017.12.07-19.59.32:934][872]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Autosaves/Game/Maps/boss_room_Object001_Auto1.uasset
-[2017.12.07-19.59.32:934][872]LogFileHelpers: Auto-saving content packages took 0.044
-[2017.12.07-20.50.30:562][696]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 J:\!!!projects\thomas adventure game\gray box enviroment\graybox 2\boss room.FBX)
-[2017.12.07-20.50.30:568][696]LogFbx: ItemName: GlobalSettings, ItemCount : 1
-[2017.12.07-20.50.30:568][696]LogFbx: ItemName: AnimationStack, ItemCount : 1
-[2017.12.07-20.50.30:568][696]LogFbx: ItemName: AnimationLayer, ItemCount : 1
-[2017.12.07-20.50.30:568][696]LogFbx: ItemName: Model, ItemCount : 4
-[2017.12.07-20.50.30:568][696]LogFbx: ItemName: Geometry, ItemCount : 4
-[2017.12.07-20.50.30:574][696]LogFbx: Loading FBX Scene from J:\!!!projects\thomas adventure game\gray box enviroment\graybox 2\boss room.FBX
-[2017.12.07-20.50.30:582][696]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.07-20.50.32:592][696]LogFbx: Loading FBX Scene from J:\!!!projects\thomas adventure game\gray box enviroment\graybox 2\boss room.FBX
-[2017.12.07-20.50.32:600][696]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.07-20.50.32:603][696]LogStaticMesh: Building static mesh boss_room_boss_room...
-[2017.12.07-20.50.32:609][696]LogStaticMesh: Built static mesh [0.01s] /Game/Maps/boss_room_boss_room.boss_room_boss_room
-[2017.12.07-20.50.32:611][696]LogStaticMesh: Warning: boss_room_boss_room has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
-[2017.12.07-20.50.32:611][696]LogStaticMesh: Warning: boss_room_boss_room has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
-[2017.12.07-20.50.32:619][696]LogFbx: Warning: Triangulating static mesh roof
-[2017.12.07-20.50.32:622][696]LogStaticMesh: Building static mesh boss_room_roof...
-[2017.12.07-20.50.32:626][696]LogStaticMesh: Built static mesh [0.00s] /Game/Maps/boss_room_roof.boss_room_roof
-[2017.12.07-20.50.32:634][696]LogFbx: Warning: Triangulating static mesh Object003
-[2017.12.07-20.50.32:636][696]LogStaticMesh: Building static mesh boss_room_Object003...
-[2017.12.07-20.50.32:641][696]LogStaticMesh: Built static mesh [0.01s] /Game/Maps/boss_room_Object003.boss_room_Object003
-[2017.12.07-20.50.32:649][696]LogFbx: Warning: Triangulating static mesh Object004
-[2017.12.07-20.50.32:650][696]LogStaticMesh: Building static mesh boss_room_Object004...
-[2017.12.07-20.50.32:653][696]LogStaticMesh: Built static mesh [0.00s] /Game/Maps/boss_room_Object004.boss_room_Object004
-[2017.12.07-20.50.32:664][696]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2017.12.07-20.50.32:664][696]FBXImport: Warning: boss_room_boss_room has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
-[2017.12.07-20.50.32:664][696]FBXImport: Warning: boss_room_boss_room has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
-[2017.12.07-20.50.40:114][348]LogActorFactory: Actor Factory created boss_room_boss_room
-[2017.12.07-20.50.40:994][421]LogActorFactory: Actor Factory created boss_room_boss_room
-[2017.12.07-20.50.42:870][603]Cmd: TRANSACTION UNDO
-[2017.12.07-20.50.42:870][603]LogEditorTransaction: Undo Create Actors
-[2017.12.07-20.50.46:497][855]LogActorFactory: Actor Factory created boss_room_boss_room
-[2017.12.07-20.50.46:498][855]LogActorFactory: Actor Factory created boss_room_Object004
-[2017.12.07-20.50.46:498][855]LogActorFactory: Actor Factory created boss_room_roof
-[2017.12.07-20.50.46:499][855]LogActorFactory: Actor Factory created boss_room_Object003
-[2017.12.07-20.50.47:210][901]LogActorFactory: Actor Factory created boss_room_boss_room
-[2017.12.07-20.50.47:233][901]LogActorFactory: Actor Factory created boss_room_Object004
-[2017.12.07-20.50.47:258][901]LogActorFactory: Actor Factory created boss_room_roof
-[2017.12.07-20.50.47:284][901]LogActorFactory: Actor Factory created boss_room_Object003
-[2017.12.07-20.51.14:753][477]LogTemp: Repeating last play command: Selected Viewport
-[2017.12.07-20.51.14:774][477]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-20.51.14:774][477]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.12.07-20.51.14:774][477]PIE: New page: PIE session: WhiteBoxMap (Dec 7, 2017, 10:51:14 AM)
-[2017.12.07-20.51.14:774][477]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_WhiteBoxMap
-[2017.12.07-20.51.14:802][477]LogPlayLevel: PIE: StaticDuplicateObject took: (0.028038s)
-[2017.12.07-20.51.14:804][477]LogAIModule: Creating AISystem for world WhiteBoxMap
-[2017.12.07-20.51.14:804][477]LogPlayLevel: PIE: World Init took: (0.001807s)
-[2017.12.07-20.51.14:804][477]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/WhiteBoxMap.WhiteBoxMap to /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap (0.030271s)
-[2017.12.07-20.51.14:835][477]LogInit: XAudio2 using 'TOSHIBA-TV-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.12.07-20.51.14:846][477]LogInit: FAudioDevice initialized.
-[2017.12.07-20.51.14:882][477]LogLoad: Game class is 'DDMMOGameMode'
-[2017.12.07-20.51.14:884][477]LogWorld: Bringing World /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap up for play (max tick rate 0) at 2017.12.07-15.51.14
-[2017.12.07-20.51.14:885][477]LogWorld: Bringing up level for play took: 0.001793
-[2017.12.07-20.51.14:888][477]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_WhiteBoxMap -0.224
-[2017.12.07-20.51.14:889][477]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-20.51.18:413][886]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-20.51.18:449][886]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-20.51.18:983][944]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (boss_room_Object003)
-[2017.12.07-20.51.19:075][945]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
-[2017.12.07-20.51.21:424][167]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (boss_room_Object004)
-[2017.12.07-20.51.21:812][198]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (boss_room_boss_room)
-[2017.12.07-20.51.22:380][248]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (boss_room_Object003)
-[2017.12.07-20.51.25:412][526]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (boss_room_roof)
-[2017.12.07-20.51.37:704][357]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/boss_room_boss_room" FILE="C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/boss_room_boss_room.uasset" SILENT=true
-[2017.12.07-20.51.37:718][357]LogSavePackage: Save=11.73ms
-[2017.12.07-20.51.37:718][357]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/boss_room_boss_room25D99BB04AEDB95C1ACB8A99FB59CC4B.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/boss_room_boss_room.uasset'
-[2017.12.07-20.51.37:724][357]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/boss_room_boss_room.uasset
-[2017.12.07-20.51.45:956][853]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/boss_room_roof" FILE="C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/boss_room_roof.uasset" SILENT=true
-[2017.12.07-20.51.45:970][853]LogSavePackage: Save=11.65ms
-[2017.12.07-20.51.45:970][853]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/boss_room_roof969B88064FFC902E266DEE8B7E75E8ED.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/boss_room_roof.uasset'
-[2017.12.07-20.51.45:975][853]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/boss_room_roof.uasset
-[2017.12.07-20.51.49:155][ 72]LogTemp: Repeating last play command: Selected Viewport
-[2017.12.07-20.51.49:173][ 72]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-20.51.49:173][ 72]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.12.07-20.51.49:173][ 72]PIE: New page: PIE session: WhiteBoxMap (Dec 7, 2017, 10:51:49 AM)
-[2017.12.07-20.51.49:173][ 72]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_WhiteBoxMap
-[2017.12.07-20.51.49:191][ 72]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017651s)
-[2017.12.07-20.51.49:192][ 72]LogAIModule: Creating AISystem for world WhiteBoxMap
-[2017.12.07-20.51.49:192][ 72]LogPlayLevel: PIE: World Init took: (0.001043s)
-[2017.12.07-20.51.49:192][ 72]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/WhiteBoxMap.WhiteBoxMap to /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap (0.019062s)
-[2017.12.07-20.51.49:228][ 72]LogInit: XAudio2 using 'TOSHIBA-TV-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.12.07-20.51.49:237][ 72]LogInit: FAudioDevice initialized.
-[2017.12.07-20.51.49:274][ 72]LogLoad: Game class is 'DDMMOGameMode'
-[2017.12.07-20.51.49:276][ 72]LogWorld: Bringing World /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap up for play (max tick rate 0) at 2017.12.07-15.51.49
-[2017.12.07-20.51.49:276][ 72]LogWorld: Bringing up level for play took: 0.001473
-[2017.12.07-20.51.49:278][ 72]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_WhiteBoxMap 0.166
-[2017.12.07-20.51.49:278][ 72]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-20.55.40:862][397]LogTemp: Warning: LMB Pressed
-[2017.12.07-20.55.40:862][397]LogTemp: Warning: LMB Released
-[2017.12.07-20.55.41:046][415]LogTemp: Warning: RMB
-[2017.12.07-20.55.46:938][107]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-20.55.46:976][107]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-20.56.25:130][583]LogSavePackage: Save=148.12ms
-[2017.12.07-20.56.25:130][583]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/WhiteBoxMap_Auto2AE7181C74E0DBA1B48B690B442C987ED.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Autosaves/Game/Maps/WhiteBoxMap_Auto2.umap'
-[2017.12.07-20.56.25:133][583]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Autosaves/Game/Maps/WhiteBoxMap_Auto2.umap
-[2017.12.07-20.56.25:136][583]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/WhiteBoxMap' took 0.186
-[2017.12.07-20.56.25:136][583]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.186
-[2017.12.07-20.56.25:139][583]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Maps/boss_room_Object003] ([1] browsable assets)...
-[2017.12.07-20.56.25:157][583]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Maps/boss_room_Object003.boss_room_Object003]
-[2017.12.07-20.56.25:157][583]OBJ SavePackage: Finished generating thumbnails for package [/Game/Maps/boss_room_Object003]
-[2017.12.07-20.56.25:171][583]LogSavePackage: Save=12.02ms
-[2017.12.07-20.56.25:171][583]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/boss_room_Object003_Auto270F0AE584C668B669E3E33AD313B8500.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Autosaves/Game/Maps/boss_room_Object003_Auto2.uasset'
-[2017.12.07-20.56.25:174][583]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Autosaves/Game/Maps/boss_room_Object003_Auto2.uasset
-[2017.12.07-20.56.25:175][583]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Maps/boss_room_Object004] ([1] browsable assets)...
-[2017.12.07-20.56.25:190][583]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Maps/boss_room_Object004.boss_room_Object004]
-[2017.12.07-20.56.25:190][583]OBJ SavePackage: Finished generating thumbnails for package [/Game/Maps/boss_room_Object004]
-[2017.12.07-20.56.25:203][583]LogSavePackage: Save=11.57ms
-[2017.12.07-20.56.25:203][583]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/boss_room_Object004_Auto2B574D7C54F243C125DF9DC8D6B1E5B18.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Autosaves/Game/Maps/boss_room_Object004_Auto2.uasset'
-[2017.12.07-20.56.25:206][583]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Autosaves/Game/Maps/boss_room_Object004_Auto2.uasset
-[2017.12.07-20.56.25:206][583]LogFileHelpers: Auto-saving content packages took 0.068
-[2017.12.07-20.58.19:571][153]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (boss_room_Object003)
-[2017.12.07-20.58.26:658][809]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (boss_room_boss_room)
-[2017.12.07-20.58.27:237][849]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (boss_room_Object004)
-[2017.12.07-20.58.29:467][ 43]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (boss_room_Object003)
-[2017.12.07-20.58.30:182][ 98]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (boss_room_Object004)
-[2017.12.07-20.58.30:698][143]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (boss_room_Object003)
-[2017.12.07-20.58.31:665][236]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (boss_room_boss_room)
-[2017.12.07-21.06.25:853][359]LogSavePackage: Save=146.25ms
-[2017.12.07-21.06.25:853][359]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/WhiteBoxMap_Auto38775ED82425AB2F462B700AD3B7ABF60.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Autosaves/Game/Maps/WhiteBoxMap_Auto3.umap'
-[2017.12.07-21.06.25:856][359]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Autosaves/Game/Maps/WhiteBoxMap_Auto3.umap
-[2017.12.07-21.06.25:858][359]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/WhiteBoxMap' took 0.183
-[2017.12.07-21.06.25:858][359]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.183
-[2017.12.07-21.54.52:377][900]LogActorFactory: Actor Factory created floor_2
-[2017.12.07-21.54.52:379][900]LogActorFactory: Actor Factory created outer_shell
-[2017.12.07-21.54.52:857][934]LogActorFactory: Actor Factory created floor_2
-[2017.12.07-21.54.52:896][934]LogActorFactory: Actor Factory created outer_shell
-[2017.12.07-21.55.12:034][863]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (outer_shell)
-[2017.12.07-21.55.18:662][274]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
-[2017.12.07-21.55.19:263][316]LogTemp: Repeating last play command: Selected Viewport
-[2017.12.07-21.55.19:278][316]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-21.55.19:279][316]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.12.07-21.55.19:279][316]PIE: New page: PIE session: WhiteBoxMap (Dec 7, 2017, 11:55:19 AM)
-[2017.12.07-21.55.19:279][316]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_WhiteBoxMap
-[2017.12.07-21.55.19:311][316]LogPlayLevel: PIE: StaticDuplicateObject took: (0.031617s)
-[2017.12.07-21.55.19:312][316]LogAIModule: Creating AISystem for world WhiteBoxMap
-[2017.12.07-21.55.19:313][316]LogPlayLevel: PIE: World Init took: (0.002100s)
-[2017.12.07-21.55.19:313][316]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/WhiteBoxMap.WhiteBoxMap to /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap (0.034172s)
-[2017.12.07-21.55.19:341][316]LogInit: XAudio2 using 'TOSHIBA-TV-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.12.07-21.55.19:350][316]LogInit: FAudioDevice initialized.
-[2017.12.07-21.55.19:382][316]LogLoad: Game class is 'DDMMOGameMode'
-[2017.12.07-21.55.19:384][316]LogWorld: Bringing World /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap up for play (max tick rate 0) at 2017.12.07-16.55.19
-[2017.12.07-21.55.19:384][316]LogWorld: Bringing up level for play took: 0.001230
-[2017.12.07-21.55.19:387][316]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_WhiteBoxMap 0.275
-[2017.12.07-21.55.19:388][316]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-21.55.22:135][638]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-21.55.22:170][638]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-21.55.38:222][265]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 J:\!!!projects\thomas adventure game\gray box enviroment\graybox 2\door.FBX)
-[2017.12.07-21.55.38:231][265]LogFbx: ItemName: GlobalSettings, ItemCount : 1
-[2017.12.07-21.55.38:231][265]LogFbx: ItemName: AnimationStack, ItemCount : 1
-[2017.12.07-21.55.38:231][265]LogFbx: ItemName: AnimationLayer, ItemCount : 1
-[2017.12.07-21.55.38:231][265]LogFbx: ItemName: Model, ItemCount : 1
-[2017.12.07-21.55.38:231][265]LogFbx: ItemName: Geometry, ItemCount : 1
-[2017.12.07-21.55.38:237][265]LogFbx: Loading FBX Scene from J:\!!!projects\thomas adventure game\gray box enviroment\graybox 2\door.FBX
-[2017.12.07-21.55.38:243][265]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.07-21.55.40:401][265]LogFbx: Loading FBX Scene from J:\!!!projects\thomas adventure game\gray box enviroment\graybox 2\door.FBX
-[2017.12.07-21.55.40:407][265]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.07-21.55.40:408][265]LogFbx: Warning: Triangulating static mesh door
-[2017.12.07-21.55.40:410][265]LogStaticMesh: Building static mesh door...
-[2017.12.07-21.55.40:415][265]LogStaticMesh: Built static mesh [0.01s] /Game/Maps/door.door
-[2017.12.07-21.55.40:426][265]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2017.12.07-21.55.40:463][265]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 J:\!!!projects\thomas adventure game\gray box enviroment\graybox 2\pillers.FBX)
-[2017.12.07-21.55.40:479][265]LogFbx: Loading FBX Scene from J:\!!!projects\thomas adventure game\gray box enviroment\graybox 2\pillers.FBX
-[2017.12.07-21.55.40:485][265]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.07-21.55.40:485][265]LogFbx: Warning: Triangulating static mesh pillers
-[2017.12.07-21.55.40:487][265]LogStaticMesh: Building static mesh pillers...
-[2017.12.07-21.55.40:496][265]LogStaticMesh: Built static mesh [0.01s] /Game/Maps/pillers.pillers
-[2017.12.07-21.55.40:514][265]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2017.12.07-21.55.40:517][265]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 J:\!!!projects\thomas adventure game\gray box enviroment\graybox 2\roof.FBX)
-[2017.12.07-21.55.40:527][265]LogFbx: Loading FBX Scene from J:\!!!projects\thomas adventure game\gray box enviroment\graybox 2\roof.FBX
-[2017.12.07-21.55.40:533][265]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.07-21.55.40:534][265]LogStaticMesh: Building static mesh roof...
-[2017.12.07-21.55.40:539][265]LogStaticMesh: Built static mesh [0.00s] /Game/Maps/roof.roof
-[2017.12.07-21.55.40:551][265]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2017.12.07-21.55.40:555][265]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 J:\!!!projects\thomas adventure game\gray box enviroment\graybox 2\boss room.FBX)
-[2017.12.07-21.55.40:566][265]LogFbx: Loading FBX Scene from J:\!!!projects\thomas adventure game\gray box enviroment\graybox 2\boss room.FBX
-[2017.12.07-21.55.40:572][265]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.07-21.55.40:574][265]LogStaticMesh: Building static mesh boss_room...
-[2017.12.07-21.55.40:590][265]LogStaticMesh: Built static mesh [0.02s] /Game/Maps/boss_room.boss_room
-[2017.12.07-21.55.40:592][265]LogStaticMesh: Warning: boss_room has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
-[2017.12.07-21.55.40:592][265]LogStaticMesh: Warning: boss_room has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
-[2017.12.07-21.55.40:604][265]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2017.12.07-21.55.40:604][265]FBXImport: Warning: boss_room has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
-[2017.12.07-21.55.40:604][265]FBXImport: Warning: boss_room has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
-[2017.12.07-21.55.44:818][687]LogActorFactory: Actor Factory created boss_room
-[2017.12.07-21.55.44:819][687]LogActorFactory: Actor Factory created door
-[2017.12.07-21.55.44:820][687]LogActorFactory: Actor Factory created pillers
-[2017.12.07-21.55.44:821][687]LogActorFactory: Actor Factory created roof
-[2017.12.07-21.55.45:455][738]LogActorFactory: Actor Factory created boss_room
-[2017.12.07-21.55.45:456][738]LogActorFactory: Actor Factory created door
-[2017.12.07-21.55.45:456][738]LogActorFactory: Actor Factory created pillers
-[2017.12.07-21.55.45:457][738]LogActorFactory: Actor Factory created roof
-[2017.12.07-21.55.47:234][870]LogActorFactory: Actor Factory created boss_room
-[2017.12.07-21.55.47:261][870]LogActorFactory: Actor Factory created door
-[2017.12.07-21.55.47:283][870]LogActorFactory: Actor Factory created pillers
-[2017.12.07-21.55.47:307][870]LogActorFactory: Actor Factory created roof
-[2017.12.07-21.56.24:768][304]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (outer_shell)
-[2017.12.07-21.56.25:908][414]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (floor_2)
-[2017.12.07-21.56.26:743][496]Cmd: DELETE
-[2017.12.07-21.56.26:743][496]Cmd: ACTOR DELETE
-[2017.12.07-21.56.26:746][496]LogEditorActor: Deleted Actor: StaticMeshActor
-[2017.12.07-21.56.26:746][496]LogEditorActor: Deleted Actor: StaticMeshActor
-[2017.12.07-21.56.26:755][496]LogEditorActor: Deleted 2 Actors (0.011 secs)
-[2017.12.07-21.56.27:819][622]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (roof)
-[2017.12.07-21.56.30:934][905]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (boss_room)
-[2017.12.07-21.56.35:828][361]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (pillers)
-[2017.12.07-21.56.37:923][542]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (door)
-[2017.12.07-21.56.40:368][753]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (boss_room)
-[2017.12.07-21.57.27:809][720]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/boss_room" FILE="C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/boss_room.uasset" SILENT=true
-[2017.12.07-21.57.27:825][720]LogSavePackage: Save=14.55ms
-[2017.12.07-21.57.27:825][720]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/boss_roomED47184343E2592CC5A0238C23A69E7F.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/boss_room.uasset'
-[2017.12.07-21.57.27:830][720]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/boss_room.uasset
-[2017.12.07-21.57.38:600][373]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/roof" FILE="C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/roof.uasset" SILENT=true
-[2017.12.07-21.57.38:614][373]LogSavePackage: Save=12.26ms
-[2017.12.07-21.57.38:614][373]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/roofC4C4467E4C4C2164853B21814E30B942.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/roof.uasset'
-[2017.12.07-21.57.38:619][373]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/roof.uasset
-[2017.12.07-21.57.40:104][473]LogTemp: Repeating last play command: Selected Viewport
-[2017.12.07-21.57.40:119][473]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-21.57.40:119][473]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.12.07-21.57.40:119][473]PIE: New page: PIE session: WhiteBoxMap (Dec 7, 2017, 11:57:40 AM)
-[2017.12.07-21.57.40:120][473]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_WhiteBoxMap
-[2017.12.07-21.57.40:140][473]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020529s)
-[2017.12.07-21.57.40:141][473]LogAIModule: Creating AISystem for world WhiteBoxMap
-[2017.12.07-21.57.40:142][473]LogPlayLevel: PIE: World Init took: (0.001626s)
-[2017.12.07-21.57.40:142][473]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/WhiteBoxMap.WhiteBoxMap to /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap (0.022455s)
-[2017.12.07-21.57.40:170][473]LogInit: XAudio2 using 'TOSHIBA-TV-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.12.07-21.57.40:178][473]LogInit: FAudioDevice initialized.
-[2017.12.07-21.57.40:213][473]LogLoad: Game class is 'DDMMOGameMode'
-[2017.12.07-21.57.40:214][473]LogWorld: Bringing World /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap up for play (max tick rate 0) at 2017.12.07-16.57.40
-[2017.12.07-21.57.40:215][473]LogWorld: Bringing up level for play took: 0.001111
-[2017.12.07-21.57.40:217][473]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_WhiteBoxMap -0.895
-[2017.12.07-21.57.40:217][473]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-21.57.51:707][838]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-21.57.51:743][838]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-21.57.58:028][290]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/door" FILE="C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/door.uasset" SILENT=true
-[2017.12.07-21.57.58:042][290]LogSavePackage: Save=11.99ms
-[2017.12.07-21.57.58:042][290]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/doorDB674A5B4239177769804A9917FB4313.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/door.uasset'
-[2017.12.07-21.57.58:046][290]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/door.uasset
-[2017.12.07-21.58.01:311][546]LogTemp: Repeating last play command: Selected Viewport
-[2017.12.07-21.58.01:325][546]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-21.58.01:325][546]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.12.07-21.58.01:325][546]PIE: New page: PIE session: WhiteBoxMap (Dec 7, 2017, 11:58:01 AM)
-[2017.12.07-21.58.01:325][546]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_WhiteBoxMap
-[2017.12.07-21.58.01:343][546]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017964s)
-[2017.12.07-21.58.01:344][546]LogAIModule: Creating AISystem for world WhiteBoxMap
-[2017.12.07-21.58.01:345][546]LogPlayLevel: PIE: World Init took: (0.001065s)
-[2017.12.07-21.58.01:345][546]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/WhiteBoxMap.WhiteBoxMap to /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap (0.019367s)
-[2017.12.07-21.58.01:373][546]LogInit: XAudio2 using 'TOSHIBA-TV-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.12.07-21.58.01:381][546]LogInit: FAudioDevice initialized.
-[2017.12.07-21.58.01:415][546]LogLoad: Game class is 'DDMMOGameMode'
-[2017.12.07-21.58.01:416][546]LogWorld: Bringing World /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap up for play (max tick rate 0) at 2017.12.07-16.58.01
-[2017.12.07-21.58.01:416][546]LogWorld: Bringing up level for play took: 0.001119
-[2017.12.07-21.58.01:419][546]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_WhiteBoxMap 0.307
-[2017.12.07-21.58.01:419][546]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-21.58.23:255][141]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-21.58.23:292][141]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-21.58.29:828][592]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/pillers" FILE="C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/pillers.uasset" SILENT=true
-[2017.12.07-21.58.29:843][592]LogSavePackage: Save=12.33ms
-[2017.12.07-21.58.29:843][592]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/pillersE5D553AC47075F26EBA05882B9423DFC.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/pillers.uasset'
-[2017.12.07-21.58.29:847][592]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/pillers.uasset
-[2017.12.07-21.58.31:530][725]LogTemp: Repeating last play command: Selected Viewport
-[2017.12.07-21.58.31:544][725]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-21.58.31:544][725]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.12.07-21.58.31:544][725]PIE: New page: PIE session: WhiteBoxMap (Dec 7, 2017, 11:58:31 AM)
-[2017.12.07-21.58.31:544][725]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_WhiteBoxMap
-[2017.12.07-21.58.31:563][725]LogPlayLevel: PIE: StaticDuplicateObject took: (0.018064s)
-[2017.12.07-21.58.31:565][725]LogAIModule: Creating AISystem for world WhiteBoxMap
-[2017.12.07-21.58.31:565][725]LogPlayLevel: PIE: World Init took: (0.001821s)
-[2017.12.07-21.58.31:565][725]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/WhiteBoxMap.WhiteBoxMap to /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap (0.020282s)
-[2017.12.07-21.58.31:595][725]LogInit: XAudio2 using 'TOSHIBA-TV-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.12.07-21.58.31:603][725]LogInit: FAudioDevice initialized.
-[2017.12.07-21.58.31:637][725]LogLoad: Game class is 'DDMMOGameMode'
-[2017.12.07-21.58.31:639][725]LogWorld: Bringing World /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap up for play (max tick rate 0) at 2017.12.07-16.58.31
-[2017.12.07-21.58.31:639][725]LogWorld: Bringing up level for play took: 0.001123
-[2017.12.07-21.58.31:641][725]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_WhiteBoxMap 0.529
-[2017.12.07-21.58.31:642][725]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-22.00.07:724][122]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-22.00.07:760][122]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-22.00.33:689][304]LogSavePackage: Save=165.98ms
-[2017.12.07-22.00.33:689][304]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/WhiteBoxMap_Auto430BC08254F0CC760259B5FA7A0F8E6F5.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Autosaves/Game/Maps/WhiteBoxMap_Auto4.umap'
-[2017.12.07-22.00.33:695][304]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Autosaves/Game/Maps/WhiteBoxMap_Auto4.umap
-[2017.12.07-22.00.33:697][304]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/WhiteBoxMap' took 0.207
-[2017.12.07-22.00.33:697][304]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.207
-[2017.12.07-22.42.46:258][ 54]LogEditorFactories: Performing atomic reimport of [J:/!!!projects/thomas adventure game/gray box enviroment/graybox 2/boss room.FBX]
-[2017.12.07-22.42.46:320][ 54]LogFbx: Loading FBX Scene from J:/!!!projects/thomas adventure game/gray box enviroment/graybox 2/boss room.FBX
-[2017.12.07-22.42.46:328][ 54]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.07-22.42.46:380][ 54]LogStaticMesh: Building static mesh boss_room...
-[2017.12.07-22.42.46:397][ 54]LogStaticMesh: Built static mesh [0.02s] /Game/Maps/boss_room.boss_room
-[2017.12.07-22.42.46:401][ 54]LogStaticMesh: Warning: boss_room has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
-[2017.12.07-22.42.46:401][ 54]LogStaticMesh: Warning: boss_room has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
-[2017.12.07-22.42.46:448][ 54]LogEditorFactories: -- imported successfully
-[2017.12.07-22.42.46:450][ 54]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2017.12.07-22.42.46:450][ 54]FBXImport: Warning: boss_room has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
-[2017.12.07-22.42.46:450][ 54]FBXImport: Warning: boss_room has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
-[2017.12.07-22.43.15:798][709]LogSavePackage: Save=181.00ms
-[2017.12.07-22.43.15:798][709]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/WhiteBoxMap_Auto56700D4A449F470986CDC7EB62908626C.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Autosaves/Game/Maps/WhiteBoxMap_Auto5.umap'
-[2017.12.07-22.43.15:802][709]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Autosaves/Game/Maps/WhiteBoxMap_Auto5.umap
-[2017.12.07-22.43.15:805][709]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/WhiteBoxMap' took 0.225
-[2017.12.07-22.43.15:805][709]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.225
-[2017.12.07-22.43.15:808][709]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Maps/boss_room] ([1] browsable assets)...
-[2017.12.07-22.43.15:825][709]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Maps/boss_room.boss_room]
-[2017.12.07-22.43.15:825][709]OBJ SavePackage: Finished generating thumbnails for package [/Game/Maps/boss_room]
-[2017.12.07-22.43.15:825][709]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/boss_room" FILE="C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Autosaves/Game/Maps/boss_room_Auto5.uasset" SILENT=false AUTOSAVING=true
-[2017.12.07-22.43.15:847][709]LogSavePackage: Save=12.81ms
-[2017.12.07-22.43.15:847][709]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/boss_room_Auto5E93AA6824A67AD6980699B9E75595FAD.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Autosaves/Game/Maps/boss_room_Auto5.uasset'
-[2017.12.07-22.43.15:850][709]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Autosaves/Game/Maps/boss_room_Auto5.uasset
-[2017.12.07-22.43.15:850][709]LogFileHelpers: Auto-saving content packages took 0.044
-[2017.12.07-22.43.45:040][ 13]LogEditorFactories: Performing atomic reimport of [J:/!!!projects/thomas adventure game/gray box enviroment/graybox 2/boss room.FBX]
-[2017.12.07-22.43.45:082][ 13]LogFbx: Loading FBX Scene from J:/!!!projects/thomas adventure game/gray box enviroment/graybox 2/boss room.FBX
-[2017.12.07-22.43.45:088][ 13]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.07-22.43.45:117][ 13]LogStaticMesh: Building static mesh boss_room...
-[2017.12.07-22.43.45:129][ 13]LogStaticMesh: Built static mesh [0.01s] /Game/Maps/boss_room.boss_room
-[2017.12.07-22.43.45:131][ 13]LogStaticMesh: Warning: boss_room has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
-[2017.12.07-22.43.45:131][ 13]LogStaticMesh: Warning: boss_room has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
-[2017.12.07-22.43.45:144][ 13]LogEditorFactories: -- imported successfully
-[2017.12.07-22.43.45:147][ 13]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2017.12.07-22.43.45:147][ 13]FBXImport: Warning: boss_room has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
-[2017.12.07-22.43.45:147][ 13]FBXImport: Warning: boss_room has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
-[2017.12.07-22.43.54:352][892]LogEditorFactories: Performing atomic reimport of [J:/!!!projects/thomas adventure game/gray box enviroment/graybox 2/roof.FBX]
-[2017.12.07-22.43.54:400][892]LogFbx: Loading FBX Scene from J:/!!!projects/thomas adventure game/gray box enviroment/graybox 2/roof.FBX
-[2017.12.07-22.43.54:407][892]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.07-22.43.54:408][892]LogFbx: Warning: Triangulating static mesh roof
-[2017.12.07-22.43.54:440][892]LogStaticMesh: Building static mesh roof...
-[2017.12.07-22.43.54:443][892]LogStaticMesh: Built static mesh [0.00s] /Game/Maps/roof.roof
-[2017.12.07-22.43.54:456][892]LogEditorFactories: -- imported successfully
-[2017.12.07-22.43.54:458][892]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2017.12.07-22.44.00:580][402]LogEditorFactories: Performing atomic reimport of [J:/!!!projects/thomas adventure game/gray box enviroment/graybox 2/pillers.FBX]
-[2017.12.07-22.44.00:630][402]LogFbx: Loading FBX Scene from J:/!!!projects/thomas adventure game/gray box enviroment/graybox 2/pillers.FBX
-[2017.12.07-22.44.00:637][402]LogFbx: FBX Scene Loaded Succesfully
-[2017.12.07-22.44.00:638][402]LogFbx: Warning: Triangulating static mesh pillers
-[2017.12.07-22.44.00:670][402]LogStaticMesh: Building static mesh pillers...
-[2017.12.07-22.44.00:679][402]LogStaticMesh: Built static mesh [0.01s] /Game/Maps/pillers.pillers
-[2017.12.07-22.44.00:693][402]LogEditorFactories: -- imported successfully
-[2017.12.07-22.44.00:696][402]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
-[2017.12.07-22.44.11:208][551]LogTemp: Repeating last play command: Selected Viewport
-[2017.12.07-22.44.11:227][551]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-22.44.11:228][551]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.12.07-22.44.11:228][551]PIE: New page: PIE session: WhiteBoxMap (Dec 7, 2017, 12:44:11 PM)
-[2017.12.07-22.44.11:228][551]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_WhiteBoxMap
-[2017.12.07-22.44.11:279][551]LogPlayLevel: PIE: StaticDuplicateObject took: (0.050675s)
-[2017.12.07-22.44.11:281][551]LogAIModule: Creating AISystem for world WhiteBoxMap
-[2017.12.07-22.44.11:281][551]LogPlayLevel: PIE: World Init took: (0.002455s)
-[2017.12.07-22.44.11:282][551]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/WhiteBoxMap.WhiteBoxMap to /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap (0.053734s)
-[2017.12.07-22.44.11:309][551]LogInit: XAudio2 using 'TOSHIBA-TV-4 (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2017.12.07-22.44.11:318][551]LogInit: FAudioDevice initialized.
-[2017.12.07-22.44.11:354][551]LogLoad: Game class is 'DDMMOGameMode'
-[2017.12.07-22.44.11:356][551]LogWorld: Bringing World /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap up for play (max tick rate 0) at 2017.12.07-17.44.11
-[2017.12.07-22.44.11:356][551]LogWorld: Bringing up level for play took: 0.001484
-[2017.12.07-22.44.11:360][551]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_WhiteBoxMap 0.248
-[2017.12.07-22.44.11:360][551]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-22.44.54:037][583]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-22.44.54:071][583]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2017.12.07-22.45.16:821][407]MapCheck: New page: Map Check
-[2017.12.07-22.45.16:948][407]Cmd: MAP REBUILD ALLVISIBLE
-[2017.12.07-22.45.16:948][407]LogEditorServer: Rebuildmap Clear paths rebuilt
-[2017.12.07-22.45.17:124][407]LightingResults: New page: Lighting Build - Dec 7, 2017, 12:45:17 PM
-[2017.12.07-22.45.17:334][407]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
-[2017.12.07-22.45.17:432][407]LogSwarmInterface: [OpenConnection] Connecting to agent ...
-[2017.12.07-22.45.17:447][407]LogSwarmInterface: [TryOpenConnection] Testing the Agent
-[2017.12.07-22.45.18:470][407]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
-[2017.12.07-22.45.18:470][407]LogSwarmInterface: [TryOpenConnection] Local Process ID is 17452
-[2017.12.07-22.45.20:722][407]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
-[2017.12.07-22.45.20:722][407]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
-[2017.12.07-22.45.20:722][407]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
-[2017.12.07-22.45.20:722][407]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
-[2017.12.07-22.45.20:722][407]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
-[2017.12.07-22.45.21:018][407]LogEditorBuildUtils: Build time 0:04
-[2017.12.07-22.45.22:455][486]LightingResults: Warning: pillers Object has overlapping UVs.
-[2017.12.07-22.45.22:455][486]LightingResults: pillers Lightmap UV are overlapping by 7.0%. Please adjust content - Enable Error Coloring to visualize.
-[2017.12.07-22.45.22:495][488]LightingResults: Warning: boss_room Object has overlapping UVs.
-[2017.12.07-22.45.22:495][488]LightingResults: boss_room Lightmap UV are overlapping by 43.5%. Please adjust content - Enable Error Coloring to visualize.
-[2017.12.07-22.45.22:615][497]Job is a success!
-[2017.12.07-22.45.22:735][498]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.011s
-[2017.12.07-22.45.22:735][498]LogVolumetricLightmapImport:      Indirection Texture 16x16x16 = 0.0Mb
-[2017.12.07-22.45.22:735][498]LogVolumetricLightmapImport:      BrickData 15x5x5 = 0.0Mb
-[2017.12.07-22.45.22:735][498]LogVolumetricLightmapImport:      Bricks at Level
-[2017.12.07-22.45.22:735][498]LogVolumetricLightmapImport:          0: 33.3% covering 100.0% of volume
-[2017.12.07-22.45.22:735][498]LogVolumetricLightmapImport:          1: 66.7% covering 3.1% of volume
-[2017.12.07-22.45.22:735][498]LogVolumetricLightmapImport:          2: 0.0% covering 0.0% of volume
-[2017.12.07-22.45.22:904][498]LogTexture: Display: Building textures: LQ_Lightmap_1_1 (DXT1, 128X128)
-[2017.12.07-22.45.22:904][498]LogTexture: Display: Building textures: SkyOcclusion1_1 (AutoDXT, 128X64)
-[2017.12.07-22.45.22:904][498]LogTexture: Display: Building textures: HQ_Lightmap1_1 (AutoDXT, 128X128)
-[2017.12.07-22.45.22:904][498]LogTexture: Display: Building textures: SkyOcclusion1_2 (AutoDXT, 256X128)
-[2017.12.07-22.45.22:904][498]LogTexture: Display: Building textures: HQ_Lightmap1_2 (AutoDXT, 256X256)
-[2017.12.07-22.45.22:904][498]LogTexture: Display: Building textures: LQ_Lightmap_1_2 (DXT1, 256X256)
-[2017.12.07-22.45.22:904][498]LogTexture: Display: Building textures: SkyOcclusion1_3 (AutoDXT, 64X32)
-[2017.12.07-22.45.22:904][498]LogTexture: Display: Building textures: HQ_Lightmap1_3 (AutoDXT, 64X64)
-[2017.12.07-22.45.22:904][498]LogTexture: Display: Building textures: LQ_Lightmap_1_3 (DXT1, 64X64)
-[2017.12.07-22.45.22:904][498]LogTexture: Display: Building textures: ShadowMapTexture2D_5 (G8, 32X32)
-[2017.12.07-22.45.22:904][498]LogTexture: Display: Building textures: ShadowMapTexture2D_2 (G8, 128X64)
-[2017.12.07-22.45.22:904][498]LogTexture: Display: Building textures: ShadowMapTexture2D_3 (G8, 256X64)
-[2017.12.07-22.45.22:972][498]Lightmass on DESKTOP-PSLV36B: 1.15 sec total, 107 ms importing, 8 ms setup, 381 ms photons, 618 ms processing, 0 ms extra exporting [17/17 mappings]. Threads: 4.16 sec total, 612 ms processing.
-[2017.12.07-22.45.23:023][498]LogStaticLightingSystem: Illumination: 5.86 sec (110 ms encoding lightmaps, 9 ms encoding shadowmaps)
-[2017.12.07-22.45.23:024][498]LogStaticLightingSystem: Lightmap texture memory:  0.2 MB (0.2 MB streaming, 0.0 MB non-streaming), 6 textures
-[2017.12.07-22.45.23:024][498]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 3 textures
-[2017.12.07-22.45.23:688][498]DumpUnbuiltLightIteractions
-[2017.12.07-22.45.23:688][498]Lights with unbuilt interactions: 0
-[2017.12.07-22.45.23:688][498]
-[2017.12.07-22.45.23:688][498]Primitives with unbuilt interactions: 0
-[2017.12.07-22.45.23:756][499]Cmd: MAP CHECK NOTIFYRESULTS
-[2017.12.07-22.45.23:757][499]MapCheck: New page: WhiteBoxMap - Dec 7, 2017, 12:45:23 PM
-[2017.12.07-22.45.23:762][499]MapCheck: Warning: boss_room_Object004_14 Static mesh actor has NULL StaticMesh property 
-[2017.12.07-22.45.23:763][499]MapCheck: Warning: boss_room_Object004_14 Static mesh actor has NULL StaticMesh property 
-[2017.12.07-22.45.23:763][499]MapCheck: Warning: boss_room_boss_room_12 Static mesh actor has NULL StaticMesh property 
-[2017.12.07-22.45.23:763][499]MapCheck: Warning: boss_room_boss_room_12 Static mesh actor has NULL StaticMesh property 
-[2017.12.07-22.45.23:776][499]MapCheck: Warning: boss_room_Cylinder001_2 Static mesh actor has NULL StaticMesh property 
-[2017.12.07-22.45.23:776][499]MapCheck: Warning: boss_room_Cylinder001_2 Static mesh actor has NULL StaticMesh property 
-[2017.12.07-22.45.23:776][499]MapCheck: Warning: boss_room_roof_16 Static mesh actor has NULL StaticMesh property 
-[2017.12.07-22.45.23:776][499]MapCheck: Warning: boss_room_roof_16 Static mesh actor has NULL StaticMesh property 
-[2017.12.07-22.45.23:776][499]MapCheck: Warning: boss_room_Object003_18 Static mesh actor has NULL StaticMesh property 
-[2017.12.07-22.45.23:776][499]MapCheck: Warning: boss_room_Object003_18 Static mesh actor has NULL StaticMesh property 
-[2017.12.07-22.45.28:131][499]MapCheck: Map check complete: 0 Error(s), 10 Warning(s), took 4,374.22ms to complete.
-[2017.12.07-22.45.42:618][193]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
-[2017.12.07-22.45.47:515][614]LogEditorViewport: Clicking on Actor (CTRL LMB): PostProcessVolume (PostProcessVolume)
-[2017.12.07-22.45.47:991][644]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
-[2017.12.07-22.45.58:572][731]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
-[2017.12.07-22.46.05:560][352]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/WhiteBoxMap" FILE="C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/WhiteBoxMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2017.12.07-22.46.05:748][352]LogSavePackage: Save=170.39ms
-[2017.12.07-22.46.05:749][352]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/WhiteBoxMap181A148A4E1DD1B5F362BB8A223DB38E.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/WhiteBoxMap.umap'
-[2017.12.07-22.46.05:756][352]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/WhiteBoxMap.umap
-[2017.12.07-22.46.05:794][352]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/WhiteBoxMap_BuiltData" FILE="C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/WhiteBoxMap_BuiltData.uasset" SILENT=true
-[2017.12.07-22.46.05:829][352]LogSavePackage: Save=22.53ms
-[2017.12.07-22.46.05:829][352]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/WhiteBoxMap_BuiltData1FF3F3A946145004C8CEA084510316F6.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/WhiteBoxMap_BuiltData.uasset'
-[2017.12.07-22.46.05:834][352]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/WhiteBoxMap_BuiltData.uasset
-[2017.12.07-22.46.09:298][493]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/boss_room" FILE="C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/boss_room.uasset" SILENT=true
-[2017.12.07-22.46.09:319][493]LogSavePackage: Save=12.07ms
-[2017.12.07-22.46.09:319][493]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/boss_room413C62B245D6F6076F09F89220D99500.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/boss_room.uasset'
-[2017.12.07-22.46.09:324][493]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/boss_room.uasset
-[2017.12.07-22.46.09:343][493]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/pillers" FILE="C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/pillers.uasset" SILENT=true
-[2017.12.07-22.46.09:365][493]LogSavePackage: Save=12.73ms
-[2017.12.07-22.46.09:365][493]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/pillers501A3BBA4D9C330256806E9EEB28B059.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/pillers.uasset'
-[2017.12.07-22.46.09:370][493]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/pillers.uasset
-[2017.12.07-22.46.09:387][493]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/roof" FILE="C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/roof.uasset" SILENT=true
-[2017.12.07-22.46.09:410][493]LogSavePackage: Save=12.66ms
-[2017.12.07-22.46.09:410][493]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/roof3FE2BE514F8FDDD3A47C98A4B647E9EA.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/roof.uasset'
-[2017.12.07-22.46.09:416][493]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/roof.uasset
-[2017.12.07-22.46.09:610][493]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2017.12.07-22.46.09:610][493]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2017.12.07-22.46.09:958][494]Cmd: QUIT_EDITOR
-[2017.12.07-22.46.11:246][494]LogExit: Preparing to exit.
-[2017.12.07-22.46.12:568][494]LogExit: Editor shut down
-[2017.12.07-22.46.12:594][494]LogExit: Transaction tracking system shut down
-[2017.12.07-22.46.12:872][494]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
-[2017.12.07-22.46.12:872][494]LogDirectoryWatcher: A directory notification for 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/' was aborted.
-[2017.12.07-22.46.12:872][494]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
-[2017.12.07-22.46.12:872][494]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Media/MediaCompositing/Content/' was aborted.
-[2017.12.07-22.46.12:872][494]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/AppleARKit/Content/' was aborted.
-[2017.12.07-22.46.12:872][494]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Oculus/OculusVR/Content/' was aborted.
-[2017.12.07-22.46.12:872][494]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Steam/SteamVR/Content/' was aborted.
-[2017.12.07-22.46.14:065][494]LogExit: Object subsystem successfully closed.
-[2017.12.07-22.46.14:262][494]LogD3D11RHI: Shutdown
-[2017.12.07-22.46.14:270][494]LogD3D11RHI: CleanupD3DDevice
-[2017.12.07-22.46.14:295][494]LogD3D11RHI: ~FD3D11DynamicRHI
-[2017.12.07-22.46.15:025][494]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (556)
-[2017.12.07-22.46.15:032][494]LogModuleManager: Shutting down and abandoning module StaticMeshEditor (554)
-[2017.12.07-22.46.15:032][494]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (552)
-[2017.12.07-22.46.15:032][494]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (550)
-[2017.12.07-22.46.15:032][494]LogModuleManager: Shutting down and abandoning module DesktopPlatform (548)
-[2017.12.07-22.46.15:033][494]LogModuleManager: Shutting down and abandoning module SceneOutliner (546)
-[2017.12.07-22.46.15:033][494]LogModuleManager: Shutting down and abandoning module AddContentDialog (544)
-[2017.12.07-22.46.15:045][494]LogDirectoryWatcher: A directory notification for 'D:/UE_4.18/FeaturePacks/' was aborted.
-[2017.12.07-22.46.15:059][494]LogModuleManager: Shutting down and abandoning module WidgetCarousel (543)
-[2017.12.07-22.46.15:059][494]LogModuleManager: Shutting down and abandoning module EditorWidgets (540)
-[2017.12.07-22.46.15:059][494]LogModuleManager: Shutting down and abandoning module CollectionManager (538)
-[2017.12.07-22.46.15:075][494]LogDirectoryWatcher: A directory notification for 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Collections/' was aborted.
-[2017.12.07-22.46.15:075][494]LogDirectoryWatcher: A directory notification for 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Developers/twluc/Collections/' was aborted.
-[2017.12.07-22.46.15:075][494]LogDirectoryWatcher: A directory notification for 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Collections/' was aborted.
-[2017.12.07-22.46.15:075][494]LogModuleManager: Shutting down and abandoning module StatsViewer (536)
-[2017.12.07-22.46.15:080][494]LogModuleManager: Shutting down and abandoning module FoliageEdit (534)
-[2017.12.07-22.46.15:087][494]LogModuleManager: Shutting down and abandoning module LandscapeEditor (532)
-[2017.12.07-22.46.15:116][494]LogModuleManager: Shutting down and abandoning module MeshPaintMode (530)
-[2017.12.07-22.46.15:126][494]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (528)
-[2017.12.07-22.46.15:126][494]LogModuleManager: Shutting down and abandoning module ActorPickerMode (526)
-[2017.12.07-22.46.15:126][494]LogModuleManager: Shutting down and abandoning module GeometryMode (524)
-[2017.12.07-22.46.15:126][494]LogModuleManager: Shutting down and abandoning module TextureAlignMode (522)
-[2017.12.07-22.46.15:126][494]LogModuleManager: Shutting down and abandoning module BspMode (520)
-[2017.12.07-22.46.15:126][494]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (518)
-[2017.12.07-22.46.15:126][494]LogModuleManager: Shutting down and abandoning module HardwareSurvey (516)
-[2017.12.07-22.46.15:126][494]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (514)
-[2017.12.07-22.46.15:139][494]LogModuleManager: Shutting down and abandoning module AutomationWorker (512)
-[2017.12.07-22.46.15:147][494]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (510)
-[2017.12.07-22.46.15:159][494]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (508)
-[2017.12.07-22.46.15:218][494]LogModuleManager: Shutting down and abandoning module PlacementMode (507)
-[2017.12.07-22.46.15:218][494]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (504)
-[2017.12.07-22.46.15:219][494]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (502)
-[2017.12.07-22.46.15:219][494]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (500)
-[2017.12.07-22.46.15:219][494]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (498)
-[2017.12.07-22.46.15:219][494]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (496)
-[2017.12.07-22.46.15:219][494]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (494)
-[2017.12.07-22.46.15:219][494]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (492)
-[2017.12.07-22.46.15:219][494]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (490)
-[2017.12.07-22.46.15:219][494]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (488)
-[2017.12.07-22.46.15:219][494]LogModuleManager: Shutting down and abandoning module CharacterAI (486)
-[2017.12.07-22.46.15:219][494]LogModuleManager: Shutting down and abandoning module AudioCapture (484)
-[2017.12.07-22.46.15:229][494]LogModuleManager: Shutting down and abandoning module SequenceRecorder (483)
-[2017.12.07-22.46.15:237][494]LogModuleManager: Shutting down and abandoning module SmartSnapping (480)
-[2017.12.07-22.46.15:237][494]LogModuleManager: Shutting down and abandoning module SessionServices (478)
-[2017.12.07-22.46.15:237][494]LogModuleManager: Shutting down and abandoning module ViewportSnapping (476)
-[2017.12.07-22.46.15:237][494]LogModuleManager: Shutting down and abandoning module ViewportInteraction (474)
-[2017.12.07-22.46.15:237][494]LogModuleManager: Shutting down and abandoning module ClothPainter (472)
-[2017.12.07-22.46.15:260][494]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (471)
-[2017.12.07-22.46.15:296][494]LogModuleManager: Shutting down and abandoning module LogVisualizer (468)
-[2017.12.07-22.46.15:305][494]LogModuleManager: Shutting down and abandoning module IntroTutorials (466)
-[2017.12.07-22.46.15:341][494]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (465)
-[2017.12.07-22.46.15:362][494]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (462)
-[2017.12.07-22.46.15:380][494]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (460)
-[2017.12.07-22.46.15:380][494]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (458)
-[2017.12.07-22.46.15:380][494]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (457)
-[2017.12.07-22.46.16:297][494]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (454)
-[2017.12.07-22.46.16:297][494]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (452)
-[2017.12.07-22.46.16:297][494]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (450)
-[2017.12.07-22.46.16:297][494]LogModuleManager: Shutting down and abandoning module InputBindingEditor (448)
-[2017.12.07-22.46.16:302][494]LogModuleManager: Shutting down and abandoning module MergeActors (446)
-[2017.12.07-22.46.16:313][494]LogModuleManager: Shutting down and abandoning module SizeMap (444)
-[2017.12.07-22.46.16:313][494]LogModuleManager: Shutting down and abandoning module TreeMap (442)
-[2017.12.07-22.46.16:328][494]LogModuleManager: Shutting down and abandoning module ReferenceViewer (440)
-[2017.12.07-22.46.16:328][494]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (438)
-[2017.12.07-22.46.16:337][494]LogModuleManager: Shutting down and abandoning module LocalizationService (437)
-[2017.12.07-22.46.16:346][494]LogModuleManager: Shutting down and abandoning module HardwareTargeting (434)
-[2017.12.07-22.46.16:346][494]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (432)
-[2017.12.07-22.46.16:346][494]LogModuleManager: Shutting down and abandoning module UndoHistory (430)
-[2017.12.07-22.46.16:347][494]LogModuleManager: Shutting down and abandoning module XmlParser (428)
-[2017.12.07-22.46.16:358][494]LogModuleManager: Shutting down and abandoning module Blutility (426)
-[2017.12.07-22.46.16:358][494]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (424)
-[2017.12.07-22.46.16:359][494]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (423)
-[2017.12.07-22.46.16:359][494]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (420)
-[2017.12.07-22.46.16:359][494]LogModuleManager: Shutting down and abandoning module SettingsEditor (418)
-[2017.12.07-22.46.16:376][494]LogModuleManager: Shutting down and abandoning module ProjectLauncher (416)
-[2017.12.07-22.46.16:389][494]LogModuleManager: Shutting down and abandoning module SessionFrontend (414)
-[2017.12.07-22.46.16:400][494]LogModuleManager: Shutting down and abandoning module ProfilerClient (412)
-[2017.12.07-22.46.16:411][494]LogModuleManager: Shutting down and abandoning module DeviceManager (410)
-[2017.12.07-22.46.16:418][494]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (409)
-[2017.12.07-22.46.16:471][494]LogModuleManager: Shutting down and abandoning module AutomationController (406)
-[2017.12.07-22.46.16:491][494]LogModuleManager: Shutting down and abandoning module AutomationWindow (404)
-[2017.12.07-22.46.16:521][494]LogModuleManager: Shutting down and abandoning module Layers (402)
-[2017.12.07-22.46.16:574][494]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (400)
-[2017.12.07-22.46.16:574][494]LogModuleManager: Shutting down and abandoning module DetailCustomizations (398)
-[2017.12.07-22.46.16:582][494]LogModuleManager: Shutting down and abandoning module PackagesDialog (396)
-[2017.12.07-22.46.16:582][494]LogModuleManager: Shutting down and abandoning module Persona (394)
-[2017.12.07-22.46.16:608][494]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (393)
-[2017.12.07-22.46.16:608][494]LogModuleManager: Shutting down and abandoning module AnimGraph (391)
-[2017.12.07-22.46.16:609][494]LogModuleManager: Shutting down and abandoning module Kismet (388)
-[2017.12.07-22.46.16:633][494]LogModuleManager: Shutting down and abandoning module ClassViewer (386)
-[2017.12.07-22.46.16:633][494]LogModuleManager: Shutting down and abandoning module Toolbox (384)
-[2017.12.07-22.46.16:633][494]LogModuleManager: Shutting down and abandoning module ModuleUI (382)
-[2017.12.07-22.46.16:639][494]LogModuleManager: Shutting down and abandoning module MovieSceneTools (380)
-[2017.12.07-22.46.16:652][494]LogModuleManager: Shutting down and abandoning module OutputLog (378)
-[2017.12.07-22.46.16:672][494]LogModuleManager: Shutting down and abandoning module GammaUI (376)
-[2017.12.07-22.46.16:687][494]LogModuleManager: Shutting down and abandoning module Documentation (374)
-[2017.12.07-22.46.16:687][494]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (372)
-[2017.12.07-22.46.16:687][494]LogModuleManager: Shutting down and abandoning module MovieScene (370)
-[2017.12.07-22.46.16:687][494]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (368)
-[2017.12.07-22.46.16:687][494]LogModuleManager: Shutting down and abandoning module LauncherPlatform (366)
-[2017.12.07-22.46.16:687][494]LogModuleManager: Shutting down and abandoning module AnalyticsET (364)
-[2017.12.07-22.46.16:687][494]LogModuleManager: Shutting down and abandoning module PortalServices (362)
-[2017.12.07-22.46.16:687][494]LogModuleManager: Shutting down and abandoning module PortalRpc (360)
-[2017.12.07-22.46.16:687][494]LogModuleManager: Shutting down and abandoning module MessagingRpc (358)
-[2017.12.07-22.46.16:687][494]LogModuleManager: Shutting down and abandoning module AIModule (356)
-[2017.12.07-22.46.16:687][494]LogModuleManager: Shutting down and abandoning module GameplayDebugger (355)
-[2017.12.07-22.46.16:688][494]LogModuleManager: Shutting down and abandoning module AITestSuite (353)
-[2017.12.07-22.46.16:696][494]LogModuleManager: Shutting down and abandoning module ProfilerService (350)
-[2017.12.07-22.46.16:708][494]LogModuleManager: Shutting down and abandoning module TaskGraph (348)
-[2017.12.07-22.46.16:730][494]LogModuleManager: Shutting down and abandoning module SteamVRController (346)
-[2017.12.07-22.46.16:730][494]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (344)
-[2017.12.07-22.46.16:730][494]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (342)
-[2017.12.07-22.46.16:736][494]LogModuleManager: Shutting down and abandoning module OculusInput (340)
-[2017.12.07-22.46.16:749][494]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (338)
-[2017.12.07-22.46.16:749][494]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (336)
-[2017.12.07-22.46.16:749][494]LogModuleManager: Shutting down and abandoning module CableComponent (334)
-[2017.12.07-22.46.16:762][494]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (332)
-[2017.12.07-22.46.16:762][494]LogModuleManager: Shutting down and abandoning module AndroidPermission (330)
-[2017.12.07-22.46.16:762][494]LogModuleManager: Shutting down and abandoning module ActorSequence (326)
-[2017.12.07-22.46.16:762][494]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (324)
-[2017.12.07-22.46.16:780][494]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (322)
-[2017.12.07-22.46.16:780][494]LogModuleManager: Shutting down and abandoning module MediaCompositing (320)
-[2017.12.07-22.46.16:780][494]LogModuleManager: Shutting down and abandoning module HTML5Networking (318)
-[2017.12.07-22.46.16:780][494]LogModuleManager: Shutting down and abandoning module AlembicImporter (316)
-[2017.12.07-22.46.16:799][494]LogModuleManager: Shutting down and abandoning module AlembicLibrary (315)
-[2017.12.07-22.46.16:799][494]LogModuleManager: Shutting down and abandoning module GeometryCache (314)
-[2017.12.07-22.46.16:813][494]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (313)
-[2017.12.07-22.46.16:813][494]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (308)
-[2017.12.07-22.46.16:813][494]LogModuleManager: Shutting down and abandoning module PluginBrowser (306)
-[2017.12.07-22.46.16:835][494]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (304)
-[2017.12.07-22.46.16:843][494]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (302)
-[2017.12.07-22.46.16:843][494]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (300)
-[2017.12.07-22.46.16:843][494]LogModuleManager: Shutting down and abandoning module UObjectPlugin (298)
-[2017.12.07-22.46.16:843][494]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (296)
-[2017.12.07-22.46.16:857][494]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (294)
-[2017.12.07-22.46.16:878][494]LogModuleManager: Shutting down and abandoning module GitSourceControl (292)
-[2017.12.07-22.46.16:901][494]LogModuleManager: Shutting down and abandoning module SourceControl (291)
-[2017.12.07-22.46.16:915][494]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (288)
-[2017.12.07-22.46.16:915][494]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (286)
-[2017.12.07-22.46.16:915][494]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (284)
-[2017.12.07-22.46.16:915][494]LogModuleManager: Shutting down and abandoning module Paper2DEditor (282)
-[2017.12.07-22.46.16:941][494]LogModuleManager: Shutting down and abandoning module MeshPaint (281)
-[2017.12.07-22.46.16:955][494]LogModuleManager: Shutting down and abandoning module LevelEditor (279)
-[2017.12.07-22.46.16:965][494]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (278)
-[2017.12.07-22.46.16:978][494]LogModuleManager: Shutting down and abandoning module MainFrame (276)
-[2017.12.07-22.46.16:978][494]LogModuleManager: Shutting down and abandoning module HotReload (275)
-[2017.12.07-22.46.16:991][494]LogDirectoryWatcher: A directory notification for 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Binaries/Win64' was aborted.
-[2017.12.07-22.46.17:032][494]LogModuleManager: Shutting down and abandoning module DDMMO (270)
-[2017.12.07-22.46.17:032][494]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (268)
-[2017.12.07-22.46.17:032][494]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (266)
-[2017.12.07-22.46.17:032][494]LogModuleManager: Shutting down and abandoning module PhysXVehicles (264)
-[2017.12.07-22.46.17:032][494]LogModuleManager: Shutting down and abandoning module OculusEditor (262)
-[2017.12.07-22.46.17:032][494]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (260)
-[2017.12.07-22.46.17:032][494]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (258)
-[2017.12.07-22.46.17:032][494]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (256)
-[2017.12.07-22.46.17:057][494]LogModuleManager: Shutting down and abandoning module UdpMessaging (254)
-[2017.12.07-22.46.17:171][494]LogModuleManager: Shutting down and abandoning module TcpMessaging (252)
-[2017.12.07-22.46.17:281][494]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (250)
-[2017.12.07-22.46.17:296][494]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (248)
-[2017.12.07-22.46.17:296][494]LogModuleManager: Shutting down and abandoning module FacialAnimation (246)
-[2017.12.07-22.46.17:296][494]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (244)
-[2017.12.07-22.46.17:321][494]LogModuleManager: Shutting down and abandoning module GraphEditor (243)
-[2017.12.07-22.46.17:354][494]LogModuleManager: Shutting down and abandoning module ContentBrowser (241)
-[2017.12.07-22.46.17:356][494]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (238)
-[2017.12.07-22.46.17:356][494]LogModuleManager: Shutting down and abandoning module Paper2D (236)
-[2017.12.07-22.46.17:356][494]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (234)
-[2017.12.07-22.46.17:369][494]LogModuleManager: Shutting down and abandoning module WmfMedia (232)
-[2017.12.07-22.46.17:378][494]LogModuleManager: Shutting down and abandoning module ImgMedia (230)
-[2017.12.07-22.46.17:378][494]LogModuleManager: Shutting down and abandoning module PacketHandler (228)
-[2017.12.07-22.46.17:378][494]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (226)
-[2017.12.07-22.46.17:378][494]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (224)
-[2017.12.07-22.46.17:396][494]LogModuleManager: Shutting down and abandoning module MediaAssets (222)
-[2017.12.07-22.46.17:396][494]LogModuleManager: Shutting down and abandoning module Media (221)
-[2017.12.07-22.46.17:403][494]LogModuleManager: Shutting down and abandoning module Overlay (218)
-[2017.12.07-22.46.17:403][494]LogModuleManager: Shutting down and abandoning module OverlayEditor (217)
-[2017.12.07-22.46.17:403][494]LogModuleManager: Shutting down and abandoning module VREditor (214)
-[2017.12.07-22.46.17:426][494]LogModuleManager: Shutting down and abandoning module StringTableEditor (212)
-[2017.12.07-22.46.17:431][494]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (210)
-[2017.12.07-22.46.17:432][494]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (208)
-[2017.12.07-22.46.17:454][494]LogModuleManager: Shutting down and abandoning module FunctionalTesting (206)
-[2017.12.07-22.46.17:466][494]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (204)
-[2017.12.07-22.46.17:473][494]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (203)
-[2017.12.07-22.46.17:473][494]LogModuleManager: Shutting down and abandoning module UMG (200)
-[2017.12.07-22.46.17:479][494]LogModuleManager: Shutting down and abandoning module UMGEditor (199)
-[2017.12.07-22.46.17:504][494]LogModuleManager: Shutting down and abandoning module Sequencer (198)
-[2017.12.07-22.46.17:526][494]LogModuleManager: Shutting down and abandoning module MessageLog (195)
-[2017.12.07-22.46.17:526][494]LogModuleManager: Shutting down and abandoning module SlateReflector (190)
-[2017.12.07-22.46.17:548][494]LogModuleManager: Shutting down and abandoning module Slate (188)
-[2017.12.07-22.46.17:548][494]LogModuleManager: Shutting down and abandoning module EditorStyle (186)
-[2017.12.07-22.46.17:551][494]LogModuleManager: Shutting down and abandoning module MRMesh (184)
-[2017.12.07-22.46.17:551][494]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (182)
-[2017.12.07-22.46.17:551][494]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (180)
-[2017.12.07-22.46.17:551][494]LogModuleManager: Shutting down and abandoning module XAudio2 (178)
-[2017.12.07-22.46.17:551][494]LogModuleManager: Shutting down and abandoning module Networking (176)
-[2017.12.07-22.46.17:551][494]LogModuleManager: Shutting down and abandoning module Core (172)
-[2017.12.07-22.46.17:551][494]LogModuleManager: Shutting down and abandoning module LevelSequence (168)
-[2017.12.07-22.46.17:557][494]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (166)
-[2017.12.07-22.46.17:565][494]LogModuleManager: Shutting down and abandoning module KismetCompiler (164)
-[2017.12.07-22.46.17:565][494]LogModuleManager: Shutting down and abandoning module MeshUtilities (162)
-[2017.12.07-22.46.17:577][494]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (161)
-[2017.12.07-22.46.17:590][494]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (160)
-[2017.12.07-22.46.17:591][494]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (159)
-[2017.12.07-22.46.17:606][494]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (157)
-[2017.12.07-22.46.17:606][494]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (155)
-[2017.12.07-22.46.17:617][494]LogModuleManager: Shutting down and abandoning module MaterialBaking (151)
-[2017.12.07-22.46.17:621][494]LogModuleManager: Shutting down and abandoning module DerivedDataCache (148)
-[2017.12.07-22.46.17:735][494]LogDerivedDataCache: Shutdown
-[2017.12.07-22.46.17:735][494]LogModuleManager: Shutting down and abandoning module TargetPlatform (146)
-[2017.12.07-22.46.17:735][494]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (145)
-[2017.12.07-22.46.17:748][494]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (143)
-[2017.12.07-22.46.17:761][494]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (141)
-[2017.12.07-22.46.17:774][494]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (139)
-[2017.12.07-22.46.17:779][494]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (137)
-[2017.12.07-22.46.17:794][494]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (135)
-[2017.12.07-22.46.17:794][494]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (133)
-[2017.12.07-22.46.17:794][494]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (131)
-[2017.12.07-22.46.17:794][494]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (129)
-[2017.12.07-22.46.17:803][494]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (127)
-[2017.12.07-22.46.17:803][494]LogModuleManager: Shutting down and abandoning module ImageWrapper (126)
-[2017.12.07-22.46.17:803][494]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (123)
-[2017.12.07-22.46.17:803][494]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (121)
-[2017.12.07-22.46.17:803][494]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (119)
-[2017.12.07-22.46.17:803][494]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (117)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (115)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (113)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (111)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (109)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (107)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module Messaging (105)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (103)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (101)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (99)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (97)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (95)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (93)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (91)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (89)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (87)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (85)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (83)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (81)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (79)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (77)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (75)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (73)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (71)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (69)
-[2017.12.07-22.46.17:804][494]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (67)
-[2017.12.07-22.46.17:805][494]LogModuleManager: Shutting down and abandoning module InputCore (64)
-[2017.12.07-22.46.17:805][494]LogModuleManager: Shutting down and abandoning module Settings (62)
-[2017.12.07-22.46.17:805][494]LogModuleManager: Shutting down and abandoning module PhysXCooking (60)
-[2017.12.07-22.46.17:805][494]LogModuleManager: Shutting down and abandoning module SteamVR (58)
-[2017.12.07-22.46.17:805][494]LogModuleManager: Shutting down and abandoning module OculusHMD (56)
-[2017.12.07-22.46.17:814][494]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (54)
-[2017.12.07-22.46.17:814][494]LogModuleManager: Shutting down and abandoning module AppleARKit (52)
-[2017.12.07-22.46.17:814][494]LogModuleManager: Shutting down and abandoning module AugmentedReality (51)
-[2017.12.07-22.46.17:814][494]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
-[2017.12.07-22.46.17:814][494]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
-[2017.12.07-22.46.17:837][494]LogModuleManager: Shutting down and abandoning module XMPP (43)
-[2017.12.07-22.46.17:847][494]LogModuleManager: Shutting down and abandoning module HTTP (41)
-[2017.12.07-22.46.17:847][494]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2017.12.07-22.46.17:858][494]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B8B3BBC2E-4EB5-B8DC-1E41-B49BFF7E45D3%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.18.1-3754814%2B%2B%2BUE4%2BRelease-4.18&UserID=f84d12d04a2fa7d6e0216381429fbc7d%7Ccfd5df930c09428eb46c4b4d5a2d1ed6%7C6b49ce86-f40b-42c4-8ed1-9c9db4115256&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2017.12.07-22.46.17:872][494]LogModuleManager: Shutting down and abandoning module SSL (40)
-[2017.12.07-22.46.17:878][494]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
-[2017.12.07-22.46.17:890][494]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
-[2017.12.07-22.46.17:890][494]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
-[2017.12.07-22.46.17:904][494]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
-[2017.12.07-22.46.17:904][494]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
-[2017.12.07-22.46.17:904][494]LogModuleManager: Shutting down and abandoning module Landscape (26)
-[2017.12.07-22.46.17:904][494]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
-[2017.12.07-22.46.17:921][494]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
-[2017.12.07-22.46.17:936][494]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
-[2017.12.07-22.46.17:936][494]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
-[2017.12.07-22.46.17:952][494]LogModuleManager: Shutting down and abandoning module Renderer (16)
-[2017.12.07-22.46.17:952][494]LogModuleManager: Shutting down and abandoning module Engine (14)
-[2017.12.07-22.46.17:952][494]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
-[2017.12.07-22.46.17:952][494]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
-[2017.12.07-22.46.17:959][494]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
-[2017.12.07-22.46.17:959][494]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-[2017.12.07-22.46.17:974][494]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-[2017.12.07-22.46.17:984][494]LogModuleManager: Shutting down and abandoning module PakFile (2)
-[2017.12.07-22.46.18:015][494]LogExit: Exiting.
-[2017.12.07-22.46.18:030][494]Log file closed, 12/07/17 17:46:18
+[2017.12.08-21.02.20:880][  0]LogInit: Selected Device Profile: [Windows]
+[2017.12.08-21.02.20:880][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.12.08-21.02.20:988][  0]LogInit: Computer: DESKTOP-PSLV36B
+[2017.12.08-21.02.20:988][  0]LogInit: User: twluc
+[2017.12.08-21.02.20:988][  0]LogInit: CPU Page size=4096, Cores=4
+[2017.12.08-21.02.20:988][  0]LogInit: High frequency timer resolution =3.613281 MHz
+[2017.12.08-21.02.21:006][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2017.12.08-21.02.21:006][  0]LogMemory: Platform Memory Stats for Windows
+[2017.12.08-21.02.21:006][  0]LogMemory: Process Physical Memory: 272.03 MB used, 272.03 MB peak
+[2017.12.08-21.02.21:006][  0]LogMemory: Process Virtual Memory: 270.03 MB used, 270.03 MB peak
+[2017.12.08-21.02.21:006][  0]LogMemory: Physical Memory: 6388.25 MB used,  1721.92 MB free, 8110.16 MB total
+[2017.12.08-21.02.21:006][  0]LogMemory: Virtual Memory: 629.98 MB used,  1721.92 MB free, 134217728.00 MB total
+[2017.12.08-21.02.22:004][  0]LogInit: Using OS detected language (en-US).
+[2017.12.08-21.02.22:004][  0]LogInit: Using OS detected locale (en-US).
+[2017.12.08-21.02.22:215][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2017.12.08-21.02.22:875][  0]LogInit: Setting process to per monitor DPI aware
+[2017.12.08-21.02.25:084][  0]LogD3D11RHI: D3D11 adapters:
+[2017.12.08-21.02.25:132][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2017.12.08-21.02.25:132][  0]LogD3D11RHI:       4058/0/4055 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x10de
+[2017.12.08-21.02.25:134][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.12.08-21.02.25:134][  0]LogD3D11RHI:       0/0/4055 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.12.08-21.02.25:134][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.12.08-21.02.25:149][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.12.08-21.02.25:149][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2017.12.08-21.02.25:149][  0]LogWindows: EnumDisplayDevices:
+[2017.12.08-21.02.25:149][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2017.12.08-21.02.25:156][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:1)
+[2017.12.08-21.02.25:156][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:1)
+[2017.12.08-21.02.25:156][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2017.12.08-21.02.25:157][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.12.08-21.02.25:157][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2017.12.08-21.02.25:157][  0]LogD3D11RHI:   Driver Version: 388.31 (internal:23.21.13.8831, unified:388.31)
+[2017.12.08-21.02.25:157][  0]LogD3D11RHI:      Driver Date: 11-14-2017
+[2017.12.08-21.02.25:157][  0]LogRHI: Texture pool is 2840 MB (70% of 4058 MB)
+[2017.12.08-21.02.25:187][  0]LogD3D11RHI: Async texture creation enabled
+[2017.12.08-21.02.25:521][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.12.08-21.02.25:657][  0]LogShaderCompilers: Guid format shader working directory is -9 characters bigger than the processId version (C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Intermediate/Shaders/WorkingDirectory/35496/).
+[2017.12.08-21.02.25:657][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/twluc/AppData/Local/Temp/UnrealShaderWorkingDir/B3FD548A47FE2C3DA3A0BDA28C0E1766/'.
+[2017.12.08-21.02.25:663][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2017.12.08-21.02.28:738][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2017.12.08-21.02.28:791][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2017.12.08-21.02.28:839][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2017.12.08-21.02.28:888][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2017.12.08-21.02.28:978][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2017.12.08-21.02.29:026][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2017.12.08-21.02.29:074][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.12.08-21.02.29:124][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2017.12.08-21.02.29:168][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2017.12.08-21.02.29:218][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2017.12.08-21.02.29:274][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2017.12.08-21.02.29:326][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2017.12.08-21.02.29:375][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2017.12.08-21.02.29:426][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2017.12.08-21.02.29:525][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2017.12.08-21.02.29:525][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.12.08-21.02.29:586][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2017.12.08-21.02.29:623][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2017.12.08-21.02.29:785][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2017.12.08-21.02.29:822][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2017.12.08-21.02.29:884][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2017.12.08-21.02.29:945][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.12.08-21.02.30:011][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2017.12.08-21.02.30:096][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2017.12.08-21.02.30:096][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2017.12.08-21.02.31:161][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2017.12.08-21.02.31:433][  0]LogDerivedDataCache: Loaded boot cache 0.27s 79MB C:/Users/twluc/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
+[2017.12.08-21.02.31:433][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/twluc/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc
+[2017.12.08-21.02.31:433][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.12.08-21.02.31:433][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.12.08-21.02.31:433][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.12.08-21.02.31:433][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.12.08-21.02.31:510][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.12.08-21.02.31:525][  0]LogDerivedDataCache: Using Local data cache path C:/Users/twluc/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.12.08-21.02.31:629][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.12.08-21.02.31:706][  0]LogSlate: Using Freetype 2.6.0
+[2017.12.08-21.02.31:794][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.12.08-21.02.31:805][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.12.08-21.02.38:892][  0]LogInit: Selected Device Profile: [Windows]
+[2017.12.08-21.02.40:363][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.12.08-21.02.40:434][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.12.08-21.02.40:442][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.12.08-21.02.40:442][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2017.12.08-21.02.40:442][  0]LogMeshReduction: No automatic mesh merging module available
+[2017.12.08-21.02.40:442][  0]LogMeshMerging: No automatic mesh merging module available
+[2017.12.08-21.02.41:248][  0]LogNetVersion: DDMMO , NetCL: 3709383, EngineNetVer: 2, GameNetVer: 0 (Checksum: 699005191)
+[2017.12.08-21.02.43:050][  0]LogAssetRegistry: FAssetRegistry took 0.0304 seconds to start up
+[2017.12.08-21.02.47:978][  0]LogPackageLocalizationCache: Processed 7 localized package path(s) for 2 prioritized culture(s) in 0.153760 seconds
+[2017.12.08-21.02.48:001][  0]LogUObjectArray: 35900 objects as part of root set at end of initial load.
+[2017.12.08-21.02.48:001][  0]LogUObjectAllocator: 7372016 out of 0 bytes used by permanent object pool.
+[2017.12.08-21.02.48:001][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.12.08-21.02.48:077][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.12.08-21.03.16:659][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.12.08-21.03.16:728][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.12.08-21.03.20:122][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.12.08-21.03.21:368][  0]SourceControl: Source control is disabled
+[2017.12.08-21.03.21:368][  0]SourceControl: Source control is disabled
+[2017.12.08-21.03.21:527][  0]SourceControl: Source control is disabled
+[2017.12.08-21.03.21:603][  0]SourceControl: Source control is disabled
+[2017.12.08-21.03.23:306][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.12.08-21.03.23:667][  0]LogOcInput: OculusInput pre-init called
+[2017.12.08-21.03.24:702][  0]LogEngine: Initializing Engine...
+[2017.12.08-21.03.24:783][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.12.08-21.03.25:803][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.12.08-21.03.25:804][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.12.08-21.03.26:449][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.12.08-21.03.26:666][  0]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.12.08-21.03.26:708][  0]LogInit: FAudioDevice initialized.
+[2017.12.08-21.03.26:799][  0]LogDerivedDataCache: Saved boot cache 0.08s 79MB C:/Users/twluc/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
+[2017.12.08-21.03.26:808][  0]LogInit: Texture streaming: Enabled
+[2017.12.08-21.03.26:968][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.12.08-21.03.27:775][  0]LogInit: Transaction tracking system initialized
+[2017.12.08-21.03.30:601][  0]BlueprintLog: New page: Editor Load
+[2017.12.08-21.03.34:257][  0]LocalizationService: Localization service is disabled
+[2017.12.08-21.03.37:308][  0]LogConsoleResponse: Display: 
+[2017.12.08-21.03.42:602][  0]LogFileCache: Scanning file cache for directory 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/' took 0.03s
+[2017.12.08-21.03.42:602][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.12.08-21.03.42:603][  0]LogCook: Display: Mobile HDR setting 1
+[2017.12.08-21.03.42:684][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2017.12.08-21.03.46:805][  0]SourceControl: Source control is disabled
+[2017.12.08-21.03.46:861][  0]Cmd: MAP LOAD FILE="C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/WhiteBoxMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.12.08-21.03.46:871][  0]LightingResults: New page: Lighting Build
+[2017.12.08-21.03.47:308][  0]MapCheck: New page: Map Check
+[2017.12.08-21.03.47:308][  0]LightingResults: New page: Lighting Build
+[2017.12.08-21.03.48:604][  0]LogAIModule: Creating AISystem for world WhiteBoxMap
+[2017.12.08-21.03.49:341][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.12.08-21.03.49:517][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.12.08-21.03.49:627][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 107.501ms to complete.
+[2017.12.08-21.03.49:627][  0]LogFileHelpers: Loading map 'WhiteBoxMap' took 2.774
+[2017.12.08-21.03.54:143][  0]LogCollectionManager: Loaded 0 collections in 0.004459 seconds
+[2017.12.08-21.03.54:896][  0]LogFileCache: Scanning file cache for directory 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Collections/' took 0.01s
+[2017.12.08-21.03.54:896][  0]LogFileCache: Scanning file cache for directory 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Developers/twluc/Collections/' took 0.01s
+[2017.12.08-21.03.54:896][  0]LogFileCache: Scanning file cache for directory 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Collections/' took 0.01s
+[2017.12.08-21.03.54:896][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2017.12.08-21.03.54:961][  0]LogContentBrowser: Native class hierarchy populated in 0.0625 seconds. Added 2367 classes and 522 folders.
+[2017.12.08-21.03.55:355][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0012 seconds. Added 0 classes and 0 folders.
+[2017.12.08-21.03.57:855][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0012 seconds. Added 0 classes and 0 folders.
+[2017.12.08-21.03.58:131][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0011 seconds. Added 1 classes and 2 folders.
+[2017.12.08-21.03.59:942][  0]LogSlate: Took 0.012632 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.12.08-21.03.59:993][  0]LogSlate: Took 0.001301 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.12.08-21.04.00:348][  0]LogSlate: Took 0.084417 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.12.08-21.04.02:320][  0]LogRenderer: Reallocating scene render targets to support 1272x692 Format 10 NumSamples 1 (Frame:1).
+[2017.12.08-21.04.04:772][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0012 seconds. Added 1 classes and 2 folders.
+[2017.12.08-21.04.04:772][  0]LogLoad: (Engine Initialization) Total time: 120.11 seconds
+[2017.12.08-21.04.04:772][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2017.12.08-21.04.04:797][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.12.08-21.04.06:481][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.12.08-21.04.08:350][  1]LogSlate: Took 0.030310 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.12.08-21.04.08:958][  3]LogAssetRegistry: Asset discovery search completed in 85.9304 seconds
+[2017.12.08-21.04.09:070][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.12.08-21.04.09:070][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.047116 seconds (updated 0 objects)
+[2017.12.08-21.07.07:938][847]LogSlate: Took 0.000580 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.12.08-21.07.08:351][847]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 J:\!!!projects\thomas adventure game\gray box enviroment\graybox 2\Room_5.FBX)
+[2017.12.08-21.07.08:487][847]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2017.12.08-21.07.08:487][847]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2017.12.08-21.07.08:487][847]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2017.12.08-21.07.08:487][847]LogFbx: ItemName: Model, ItemCount : 1
+[2017.12.08-21.07.08:487][847]LogFbx: ItemName: Geometry, ItemCount : 1
+[2017.12.08-21.07.08:496][847]LogFbx: Loading FBX Scene from J:\!!!projects\thomas adventure game\gray box enviroment\graybox 2\Room_5.FBX
+[2017.12.08-21.07.08:514][847]LogFbx: FBX Scene Loaded Succesfully
+[2017.12.08-21.07.12:506][847]LogFbx: Loading FBX Scene from J:\!!!projects\thomas adventure game\gray box enviroment\graybox 2\Room_5.FBX
+[2017.12.08-21.07.12:512][847]LogFbx: FBX Scene Loaded Succesfully
+[2017.12.08-21.07.12:534][847]LogFbx: Warning: Triangulating static mesh Object001
+[2017.12.08-21.07.12:627][847]LogStaticMesh: Building static mesh Room_5...
+[2017.12.08-21.07.12:671][847]LogStaticMesh: Built static mesh [0.05s] /Game/Maps/Room_5.Room_5
+[2017.12.08-21.07.12:736][847]LogStaticMesh: Warning: Room_5 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2017.12.08-21.07.12:736][847]LogStaticMesh: Warning: Room_5 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2017.12.08-21.07.12:845][847]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2017.12.08-21.07.12:845][847]FBXImport: Warning: Room_5 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2017.12.08-21.07.12:845][847]FBXImport: Warning: Room_5 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2017.12.08-21.07.16:666][229]LogActorFactory: Actor Factory created Room_5
+[2017.12.08-21.07.18:425][374]LogActorFactory: Actor Factory created Room_5
+[2017.12.08-21.07.22:471][707]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Room_5)
+[2017.12.08-21.07.25:232][840]LogSlate: Took 0.000220 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.12.08-21.07.26:056][840]LogRenderer: Reallocating scene render targets to support 1432x924 Format 10 NumSamples 1 (Frame:1).
+[2017.12.08-21.07.43:783][115]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Room_5" FILE="C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/Room_5.uasset" SILENT=true
+[2017.12.08-21.07.43:882][115]LogSavePackage: Save=74.82ms
+[2017.12.08-21.07.43:882][115]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Room_5B0905BB64200869DB7D78CAF629BB1F5.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/Room_5.uasset'
+[2017.12.08-21.07.43:924][115]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/Room_5.uasset
+[2017.12.08-21.07.48:247][500]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Room_5)
+[2017.12.08-21.08.30:620][641]LogTemp: Repeating last play command: Selected Viewport
+[2017.12.08-21.08.30:653][641]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
+[2017.12.08-21.08.30:672][641]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.12.08-21.08.30:742][641]PIE: New page: PIE session: WhiteBoxMap (Dec 8, 2017, 11:08:30 AM)
+[2017.12.08-21.08.30:751][641]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_WhiteBoxMap
+[2017.12.08-21.08.30:790][641]LogPlayLevel: PIE: StaticDuplicateObject took: (0.038911s)
+[2017.12.08-21.08.30:791][641]LogAIModule: Creating AISystem for world WhiteBoxMap
+[2017.12.08-21.08.30:805][641]LogPlayLevel: PIE: World Init took: (0.015093s)
+[2017.12.08-21.08.30:805][641]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/WhiteBoxMap.WhiteBoxMap to /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap (0.054482s)
+[2017.12.08-21.08.30:857][641]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.12.08-21.08.30:889][641]LogInit: FAudioDevice initialized.
+[2017.12.08-21.08.30:936][641]LogLoad: Game class is 'DDMMOGameMode'
+[2017.12.08-21.08.31:027][641]LogWorld: Bringing World /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap up for play (max tick rate 0) at 2017.12.08-16.08.31
+[2017.12.08-21.08.31:053][641]LogWorld: Bringing up level for play took: 0.027103
+[2017.12.08-21.08.31:237][641]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0102 seconds. Added 11 classes and 0 folders.
+[2017.12.08-21.08.31:406][641]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_WhiteBoxMap 0.205
+[2017.12.08-21.08.31:406][641]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
+[2017.12.08-21.08.47:953][604]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
+[2017.12.08-21.08.48:071][604]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
+[2017.12.08-21.08.54:219][292]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Room_5)
+[2017.12.08-21.09.06:029][394]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2017.12.08-21.09.07:131][506]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2017.12.08-21.09.09:778][732]LogTemp: Repeating last play command: Selected Viewport
+[2017.12.08-21.09.09:793][732]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
+[2017.12.08-21.09.09:793][732]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.12.08-21.09.09:794][732]PIE: New page: PIE session: WhiteBoxMap (Dec 8, 2017, 11:09:09 AM)
+[2017.12.08-21.09.09:794][732]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_WhiteBoxMap
+[2017.12.08-21.09.09:813][732]LogPlayLevel: PIE: StaticDuplicateObject took: (0.019306s)
+[2017.12.08-21.09.09:814][732]LogAIModule: Creating AISystem for world WhiteBoxMap
+[2017.12.08-21.09.09:814][732]LogPlayLevel: PIE: World Init took: (0.001283s)
+[2017.12.08-21.09.09:815][732]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/WhiteBoxMap.WhiteBoxMap to /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap (0.021011s)
+[2017.12.08-21.09.09:843][732]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.12.08-21.09.09:875][732]LogInit: FAudioDevice initialized.
+[2017.12.08-21.09.09:922][732]LogLoad: Game class is 'DDMMOGameMode'
+[2017.12.08-21.09.09:923][732]LogWorld: Bringing World /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap up for play (max tick rate 0) at 2017.12.08-16.09.09
+[2017.12.08-21.09.09:924][732]LogWorld: Bringing up level for play took: 0.001165
+[2017.12.08-21.09.09:926][732]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_WhiteBoxMap 0.724
+[2017.12.08-21.09.09:926][732]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
+[2017.12.08-21.09.28:955][  1]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
+[2017.12.08-21.09.28:986][  1]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
+[2017.12.08-21.10.00:244][143]Cmd: SELECT NONE
+[2017.12.08-21.10.02:348][333]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/WhiteBoxMap" FILE="C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/WhiteBoxMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.12.08-21.10.02:779][333]LogSavePackage: Save=393.92ms
+[2017.12.08-21.10.02:779][333]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/WhiteBoxMapF2EE54A345325E3174A06A866A58763A.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/WhiteBoxMap.umap'
+[2017.12.08-21.10.02:785][333]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/WhiteBoxMap.umap
+[2017.12.08-21.10.02:822][333]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/WhiteBoxMap_BuiltData" FILE="C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/WhiteBoxMap_BuiltData.uasset" SILENT=true
+[2017.12.08-21.10.02:878][333]LogSavePackage: Save=46.83ms
+[2017.12.08-21.10.02:878][333]LogSavePackage: Moving 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/WhiteBoxMap_BuiltData7A6D90F5443FA6DFF84F7088E2D6B3C4.tmp' to 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/WhiteBoxMap_BuiltData.uasset'
+[2017.12.08-21.10.02:881][333]LogSavePackage: Display: Finished SavePackage C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/WhiteBoxMap_BuiltData.uasset
+[2017.12.08-21.10.03:893][431]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2017.12.08-21.10.03:893][431]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2017.12.08-21.10.04:156][432]Cmd: QUIT_EDITOR
+[2017.12.08-21.10.05:479][432]LogExit: Preparing to exit.
+[2017.12.08-21.10.06:210][432]LogExit: Editor shut down
+[2017.12.08-21.10.06:214][432]LogExit: Transaction tracking system shut down
+[2017.12.08-21.10.06:530][432]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.12.08-21.10.06:530][432]LogDirectoryWatcher: A directory notification for 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/' was aborted.
+[2017.12.08-21.10.06:530][432]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.12.08-21.10.06:530][432]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Media/MediaCompositing/Content/' was aborted.
+[2017.12.08-21.10.06:530][432]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/AppleARKit/Content/' was aborted.
+[2017.12.08-21.10.06:530][432]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Oculus/OculusVR/Content/' was aborted.
+[2017.12.08-21.10.06:530][432]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Steam/SteamVR/Content/' was aborted.
+[2017.12.08-21.10.07:432][432]LogExit: Object subsystem successfully closed.
+[2017.12.08-21.10.07:689][432]LogD3D11RHI: Shutdown
+[2017.12.08-21.10.07:696][432]LogD3D11RHI: CleanupD3DDevice
+[2017.12.08-21.10.07:719][432]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.12.08-21.10.08:358][432]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (554)
+[2017.12.08-21.10.08:358][432]LogModuleManager: Shutting down and abandoning module StaticMeshEditor (552)
+[2017.12.08-21.10.08:358][432]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (550)
+[2017.12.08-21.10.08:358][432]LogModuleManager: Shutting down and abandoning module DesktopPlatform (548)
+[2017.12.08-21.10.08:359][432]LogModuleManager: Shutting down and abandoning module SceneOutliner (546)
+[2017.12.08-21.10.08:359][432]LogModuleManager: Shutting down and abandoning module AddContentDialog (544)
+[2017.12.08-21.10.08:370][432]LogDirectoryWatcher: A directory notification for 'D:/UE_4.18/FeaturePacks/' was aborted.
+[2017.12.08-21.10.08:379][432]LogModuleManager: Shutting down and abandoning module WidgetCarousel (543)
+[2017.12.08-21.10.08:379][432]LogModuleManager: Shutting down and abandoning module EditorWidgets (540)
+[2017.12.08-21.10.08:379][432]LogModuleManager: Shutting down and abandoning module CollectionManager (538)
+[2017.12.08-21.10.08:383][432]LogDirectoryWatcher: A directory notification for 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Collections/' was aborted.
+[2017.12.08-21.10.08:383][432]LogDirectoryWatcher: A directory notification for 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Developers/twluc/Collections/' was aborted.
+[2017.12.08-21.10.08:383][432]LogDirectoryWatcher: A directory notification for 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Collections/' was aborted.
+[2017.12.08-21.10.08:383][432]LogModuleManager: Shutting down and abandoning module StatsViewer (536)
+[2017.12.08-21.10.08:396][432]LogModuleManager: Shutting down and abandoning module FoliageEdit (534)
+[2017.12.08-21.10.08:396][432]LogModuleManager: Shutting down and abandoning module LandscapeEditor (532)
+[2017.12.08-21.10.08:403][432]LogModuleManager: Shutting down and abandoning module MeshPaintMode (530)
+[2017.12.08-21.10.08:403][432]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (528)
+[2017.12.08-21.10.08:403][432]LogModuleManager: Shutting down and abandoning module ActorPickerMode (526)
+[2017.12.08-21.10.08:403][432]LogModuleManager: Shutting down and abandoning module GeometryMode (524)
+[2017.12.08-21.10.08:403][432]LogModuleManager: Shutting down and abandoning module TextureAlignMode (522)
+[2017.12.08-21.10.08:403][432]LogModuleManager: Shutting down and abandoning module BspMode (520)
+[2017.12.08-21.10.08:403][432]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (518)
+[2017.12.08-21.10.08:403][432]LogModuleManager: Shutting down and abandoning module HardwareSurvey (516)
+[2017.12.08-21.10.08:403][432]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (514)
+[2017.12.08-21.10.08:414][432]LogModuleManager: Shutting down and abandoning module AutomationWorker (512)
+[2017.12.08-21.10.08:422][432]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (510)
+[2017.12.08-21.10.08:422][432]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (508)
+[2017.12.08-21.10.08:476][432]LogModuleManager: Shutting down and abandoning module PlacementMode (507)
+[2017.12.08-21.10.08:477][432]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (504)
+[2017.12.08-21.10.08:477][432]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (502)
+[2017.12.08-21.10.08:477][432]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (500)
+[2017.12.08-21.10.08:477][432]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (498)
+[2017.12.08-21.10.08:477][432]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (496)
+[2017.12.08-21.10.08:477][432]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (494)
+[2017.12.08-21.10.08:477][432]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (492)
+[2017.12.08-21.10.08:477][432]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (490)
+[2017.12.08-21.10.08:477][432]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (488)
+[2017.12.08-21.10.08:477][432]LogModuleManager: Shutting down and abandoning module CharacterAI (486)
+[2017.12.08-21.10.08:477][432]LogModuleManager: Shutting down and abandoning module AudioCapture (484)
+[2017.12.08-21.10.08:477][432]LogModuleManager: Shutting down and abandoning module SequenceRecorder (483)
+[2017.12.08-21.10.08:487][432]LogModuleManager: Shutting down and abandoning module SmartSnapping (480)
+[2017.12.08-21.10.08:487][432]LogModuleManager: Shutting down and abandoning module SessionServices (478)
+[2017.12.08-21.10.08:487][432]LogModuleManager: Shutting down and abandoning module ViewportSnapping (476)
+[2017.12.08-21.10.08:487][432]LogModuleManager: Shutting down and abandoning module ViewportInteraction (474)
+[2017.12.08-21.10.08:487][432]LogModuleManager: Shutting down and abandoning module ClothPainter (472)
+[2017.12.08-21.10.08:502][432]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (471)
+[2017.12.08-21.10.08:538][432]LogModuleManager: Shutting down and abandoning module LogVisualizer (468)
+[2017.12.08-21.10.08:560][432]LogModuleManager: Shutting down and abandoning module IntroTutorials (466)
+[2017.12.08-21.10.08:575][432]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (465)
+[2017.12.08-21.10.08:640][432]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (462)
+[2017.12.08-21.10.08:672][432]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (460)
+[2017.12.08-21.10.08:672][432]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (458)
+[2017.12.08-21.10.08:672][432]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (457)
+[2017.12.08-21.10.09:513][432]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (454)
+[2017.12.08-21.10.09:513][432]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (452)
+[2017.12.08-21.10.09:513][432]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (450)
+[2017.12.08-21.10.09:513][432]LogModuleManager: Shutting down and abandoning module InputBindingEditor (448)
+[2017.12.08-21.10.09:519][432]LogModuleManager: Shutting down and abandoning module MergeActors (446)
+[2017.12.08-21.10.09:538][432]LogModuleManager: Shutting down and abandoning module SizeMap (444)
+[2017.12.08-21.10.09:538][432]LogModuleManager: Shutting down and abandoning module TreeMap (442)
+[2017.12.08-21.10.09:546][432]LogModuleManager: Shutting down and abandoning module ReferenceViewer (440)
+[2017.12.08-21.10.09:546][432]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (438)
+[2017.12.08-21.10.09:554][432]LogModuleManager: Shutting down and abandoning module LocalizationService (437)
+[2017.12.08-21.10.09:563][432]LogModuleManager: Shutting down and abandoning module HardwareTargeting (434)
+[2017.12.08-21.10.09:563][432]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (432)
+[2017.12.08-21.10.09:563][432]LogModuleManager: Shutting down and abandoning module UndoHistory (430)
+[2017.12.08-21.10.09:563][432]LogModuleManager: Shutting down and abandoning module XmlParser (428)
+[2017.12.08-21.10.09:575][432]LogModuleManager: Shutting down and abandoning module Blutility (426)
+[2017.12.08-21.10.09:575][432]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (424)
+[2017.12.08-21.10.09:575][432]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (423)
+[2017.12.08-21.10.09:575][432]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (420)
+[2017.12.08-21.10.09:575][432]LogModuleManager: Shutting down and abandoning module SettingsEditor (418)
+[2017.12.08-21.10.09:592][432]LogModuleManager: Shutting down and abandoning module ProjectLauncher (416)
+[2017.12.08-21.10.09:605][432]LogModuleManager: Shutting down and abandoning module SessionFrontend (414)
+[2017.12.08-21.10.09:616][432]LogModuleManager: Shutting down and abandoning module ProfilerClient (412)
+[2017.12.08-21.10.09:628][432]LogModuleManager: Shutting down and abandoning module DeviceManager (410)
+[2017.12.08-21.10.09:635][432]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (409)
+[2017.12.08-21.10.09:688][432]LogModuleManager: Shutting down and abandoning module AutomationController (406)
+[2017.12.08-21.10.09:699][432]LogModuleManager: Shutting down and abandoning module AutomationWindow (404)
+[2017.12.08-21.10.09:722][432]LogModuleManager: Shutting down and abandoning module Layers (402)
+[2017.12.08-21.10.09:749][432]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (400)
+[2017.12.08-21.10.09:749][432]LogModuleManager: Shutting down and abandoning module DetailCustomizations (398)
+[2017.12.08-21.10.09:749][432]LogModuleManager: Shutting down and abandoning module PackagesDialog (396)
+[2017.12.08-21.10.09:749][432]LogModuleManager: Shutting down and abandoning module Persona (394)
+[2017.12.08-21.10.09:775][432]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (393)
+[2017.12.08-21.10.09:775][432]LogModuleManager: Shutting down and abandoning module AnimGraph (391)
+[2017.12.08-21.10.09:775][432]LogModuleManager: Shutting down and abandoning module Kismet (388)
+[2017.12.08-21.10.09:800][432]LogModuleManager: Shutting down and abandoning module ClassViewer (386)
+[2017.12.08-21.10.09:800][432]LogModuleManager: Shutting down and abandoning module Toolbox (384)
+[2017.12.08-21.10.09:800][432]LogModuleManager: Shutting down and abandoning module ModuleUI (382)
+[2017.12.08-21.10.09:806][432]LogModuleManager: Shutting down and abandoning module MovieSceneTools (380)
+[2017.12.08-21.10.09:819][432]LogModuleManager: Shutting down and abandoning module OutputLog (378)
+[2017.12.08-21.10.09:839][432]LogModuleManager: Shutting down and abandoning module GammaUI (376)
+[2017.12.08-21.10.09:854][432]LogModuleManager: Shutting down and abandoning module Documentation (374)
+[2017.12.08-21.10.09:854][432]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (372)
+[2017.12.08-21.10.09:854][432]LogModuleManager: Shutting down and abandoning module MovieScene (370)
+[2017.12.08-21.10.09:854][432]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (368)
+[2017.12.08-21.10.09:854][432]LogModuleManager: Shutting down and abandoning module LauncherPlatform (366)
+[2017.12.08-21.10.09:854][432]LogModuleManager: Shutting down and abandoning module AnalyticsET (364)
+[2017.12.08-21.10.09:854][432]LogModuleManager: Shutting down and abandoning module PortalServices (362)
+[2017.12.08-21.10.09:854][432]LogModuleManager: Shutting down and abandoning module PortalRpc (360)
+[2017.12.08-21.10.09:854][432]LogModuleManager: Shutting down and abandoning module MessagingRpc (358)
+[2017.12.08-21.10.09:854][432]LogModuleManager: Shutting down and abandoning module AIModule (356)
+[2017.12.08-21.10.09:854][432]LogModuleManager: Shutting down and abandoning module GameplayDebugger (355)
+[2017.12.08-21.10.09:854][432]LogModuleManager: Shutting down and abandoning module AITestSuite (353)
+[2017.12.08-21.10.09:863][432]LogModuleManager: Shutting down and abandoning module ProfilerService (350)
+[2017.12.08-21.10.09:867][432]LogModuleManager: Shutting down and abandoning module TaskGraph (348)
+[2017.12.08-21.10.09:897][432]LogModuleManager: Shutting down and abandoning module SteamVRController (346)
+[2017.12.08-21.10.09:897][432]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (344)
+[2017.12.08-21.10.09:897][432]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (342)
+[2017.12.08-21.10.09:903][432]LogModuleManager: Shutting down and abandoning module OculusInput (340)
+[2017.12.08-21.10.09:916][432]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (338)
+[2017.12.08-21.10.09:916][432]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (336)
+[2017.12.08-21.10.09:916][432]LogModuleManager: Shutting down and abandoning module CableComponent (334)
+[2017.12.08-21.10.09:929][432]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (332)
+[2017.12.08-21.10.09:929][432]LogModuleManager: Shutting down and abandoning module AndroidPermission (330)
+[2017.12.08-21.10.09:929][432]LogModuleManager: Shutting down and abandoning module ActorSequence (326)
+[2017.12.08-21.10.09:929][432]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (324)
+[2017.12.08-21.10.09:975][432]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (322)
+[2017.12.08-21.10.09:975][432]LogModuleManager: Shutting down and abandoning module MediaCompositing (320)
+[2017.12.08-21.10.09:975][432]LogModuleManager: Shutting down and abandoning module HTML5Networking (318)
+[2017.12.08-21.10.09:975][432]LogModuleManager: Shutting down and abandoning module AlembicImporter (316)
+[2017.12.08-21.10.09:991][432]LogModuleManager: Shutting down and abandoning module AlembicLibrary (315)
+[2017.12.08-21.10.09:991][432]LogModuleManager: Shutting down and abandoning module GeometryCache (314)
+[2017.12.08-21.10.09:991][432]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (313)
+[2017.12.08-21.10.09:991][432]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (308)
+[2017.12.08-21.10.09:991][432]LogModuleManager: Shutting down and abandoning module PluginBrowser (306)
+[2017.12.08-21.10.10:044][432]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (304)
+[2017.12.08-21.10.10:059][432]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (302)
+[2017.12.08-21.10.10:060][432]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (300)
+[2017.12.08-21.10.10:060][432]LogModuleManager: Shutting down and abandoning module UObjectPlugin (298)
+[2017.12.08-21.10.10:060][432]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (296)
+[2017.12.08-21.10.10:074][432]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (294)
+[2017.12.08-21.10.10:087][432]LogModuleManager: Shutting down and abandoning module GitSourceControl (292)
+[2017.12.08-21.10.10:102][432]LogModuleManager: Shutting down and abandoning module SourceControl (291)
+[2017.12.08-21.10.10:115][432]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (288)
+[2017.12.08-21.10.10:115][432]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (286)
+[2017.12.08-21.10.10:115][432]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (284)
+[2017.12.08-21.10.10:115][432]LogModuleManager: Shutting down and abandoning module Paper2DEditor (282)
+[2017.12.08-21.10.10:130][432]LogModuleManager: Shutting down and abandoning module MeshPaint (281)
+[2017.12.08-21.10.10:131][432]LogModuleManager: Shutting down and abandoning module LevelEditor (279)
+[2017.12.08-21.10.10:152][432]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (278)
+[2017.12.08-21.10.10:161][432]LogModuleManager: Shutting down and abandoning module MainFrame (276)
+[2017.12.08-21.10.10:161][432]LogModuleManager: Shutting down and abandoning module HotReload (275)
+[2017.12.08-21.10.10:174][432]LogDirectoryWatcher: A directory notification for 'C:/Users/twluc/Documents/GitHub/DigitalDurganMMO/DDMMO/Binaries/Win64' was aborted.
+[2017.12.08-21.10.10:175][432]LogModuleManager: Shutting down and abandoning module DDMMO (270)
+[2017.12.08-21.10.10:175][432]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (268)
+[2017.12.08-21.10.10:175][432]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (266)
+[2017.12.08-21.10.10:175][432]LogModuleManager: Shutting down and abandoning module PhysXVehicles (264)
+[2017.12.08-21.10.10:175][432]LogModuleManager: Shutting down and abandoning module OculusEditor (262)
+[2017.12.08-21.10.10:175][432]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (260)
+[2017.12.08-21.10.10:175][432]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (258)
+[2017.12.08-21.10.10:175][432]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (256)
+[2017.12.08-21.10.10:190][432]LogModuleManager: Shutting down and abandoning module UdpMessaging (254)
+[2017.12.08-21.10.10:291][432]LogModuleManager: Shutting down and abandoning module TcpMessaging (252)
+[2017.12.08-21.10.10:407][432]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (250)
+[2017.12.08-21.10.10:421][432]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (248)
+[2017.12.08-21.10.10:421][432]LogModuleManager: Shutting down and abandoning module FacialAnimation (246)
+[2017.12.08-21.10.10:421][432]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (244)
+[2017.12.08-21.10.10:431][432]LogModuleManager: Shutting down and abandoning module GraphEditor (243)
+[2017.12.08-21.10.10:466][432]LogModuleManager: Shutting down and abandoning module ContentBrowser (241)
+[2017.12.08-21.10.10:466][432]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (238)
+[2017.12.08-21.10.10:467][432]LogModuleManager: Shutting down and abandoning module Paper2D (236)
+[2017.12.08-21.10.10:467][432]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (234)
+[2017.12.08-21.10.10:478][432]LogModuleManager: Shutting down and abandoning module WmfMedia (232)
+[2017.12.08-21.10.10:495][432]LogModuleManager: Shutting down and abandoning module ImgMedia (230)
+[2017.12.08-21.10.10:495][432]LogModuleManager: Shutting down and abandoning module PacketHandler (228)
+[2017.12.08-21.10.10:495][432]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (226)
+[2017.12.08-21.10.10:495][432]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (224)
+[2017.12.08-21.10.10:514][432]LogModuleManager: Shutting down and abandoning module MediaAssets (222)
+[2017.12.08-21.10.10:514][432]LogModuleManager: Shutting down and abandoning module Media (221)
+[2017.12.08-21.10.10:520][432]LogModuleManager: Shutting down and abandoning module Overlay (218)
+[2017.12.08-21.10.10:520][432]LogModuleManager: Shutting down and abandoning module OverlayEditor (217)
+[2017.12.08-21.10.10:520][432]LogModuleManager: Shutting down and abandoning module VREditor (214)
+[2017.12.08-21.10.10:535][432]LogModuleManager: Shutting down and abandoning module StringTableEditor (212)
+[2017.12.08-21.10.10:548][432]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (210)
+[2017.12.08-21.10.10:548][432]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (208)
+[2017.12.08-21.10.10:586][432]LogModuleManager: Shutting down and abandoning module FunctionalTesting (206)
+[2017.12.08-21.10.10:591][432]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (204)
+[2017.12.08-21.10.10:615][432]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (203)
+[2017.12.08-21.10.10:615][432]LogModuleManager: Shutting down and abandoning module UMG (200)
+[2017.12.08-21.10.10:621][432]LogModuleManager: Shutting down and abandoning module UMGEditor (199)
+[2017.12.08-21.10.10:654][432]LogModuleManager: Shutting down and abandoning module Sequencer (198)
+[2017.12.08-21.10.10:669][432]LogModuleManager: Shutting down and abandoning module MessageLog (195)
+[2017.12.08-21.10.10:669][432]LogModuleManager: Shutting down and abandoning module SlateReflector (190)
+[2017.12.08-21.10.10:690][432]LogModuleManager: Shutting down and abandoning module Slate (188)
+[2017.12.08-21.10.10:690][432]LogModuleManager: Shutting down and abandoning module EditorStyle (186)
+[2017.12.08-21.10.10:693][432]LogModuleManager: Shutting down and abandoning module MRMesh (184)
+[2017.12.08-21.10.10:693][432]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (182)
+[2017.12.08-21.10.10:693][432]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (180)
+[2017.12.08-21.10.10:693][432]LogModuleManager: Shutting down and abandoning module XAudio2 (178)
+[2017.12.08-21.10.10:693][432]LogModuleManager: Shutting down and abandoning module Networking (176)
+[2017.12.08-21.10.10:693][432]LogModuleManager: Shutting down and abandoning module Core (172)
+[2017.12.08-21.10.10:693][432]LogModuleManager: Shutting down and abandoning module LevelSequence (168)
+[2017.12.08-21.10.10:699][432]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (166)
+[2017.12.08-21.10.10:706][432]LogModuleManager: Shutting down and abandoning module KismetCompiler (164)
+[2017.12.08-21.10.10:706][432]LogModuleManager: Shutting down and abandoning module MeshUtilities (162)
+[2017.12.08-21.10.10:711][432]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (161)
+[2017.12.08-21.10.10:724][432]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (160)
+[2017.12.08-21.10.10:724][432]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (159)
+[2017.12.08-21.10.10:739][432]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (157)
+[2017.12.08-21.10.10:740][432]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (155)
+[2017.12.08-21.10.10:750][432]LogModuleManager: Shutting down and abandoning module MaterialBaking (151)
+[2017.12.08-21.10.10:754][432]LogModuleManager: Shutting down and abandoning module DerivedDataCache (148)
+[2017.12.08-21.10.10:810][432]LogDerivedDataCache: Shutdown
+[2017.12.08-21.10.10:810][432]LogModuleManager: Shutting down and abandoning module TargetPlatform (146)
+[2017.12.08-21.10.10:810][432]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (145)
+[2017.12.08-21.10.10:823][432]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (143)
+[2017.12.08-21.10.10:836][432]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (141)
+[2017.12.08-21.10.10:849][432]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (139)
+[2017.12.08-21.10.10:854][432]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (137)
+[2017.12.08-21.10.10:869][432]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (135)
+[2017.12.08-21.10.10:869][432]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (133)
+[2017.12.08-21.10.10:869][432]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (131)
+[2017.12.08-21.10.10:882][432]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (129)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (127)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module ImageWrapper (126)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (123)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (121)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (119)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (117)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (115)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (113)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (111)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (109)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (107)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module Messaging (105)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (103)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (101)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (99)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (97)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (95)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (93)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (91)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (89)
+[2017.12.08-21.10.10:895][432]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (87)
+[2017.12.08-21.10.10:896][432]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (85)
+[2017.12.08-21.10.10:896][432]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (83)
+[2017.12.08-21.10.10:896][432]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (81)
+[2017.12.08-21.10.10:896][432]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (79)
+[2017.12.08-21.10.10:896][432]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (77)
+[2017.12.08-21.10.10:896][432]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (75)
+[2017.12.08-21.10.10:896][432]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (73)
+[2017.12.08-21.10.10:896][432]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (71)
+[2017.12.08-21.10.10:896][432]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (69)
+[2017.12.08-21.10.10:896][432]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (67)
+[2017.12.08-21.10.10:896][432]LogModuleManager: Shutting down and abandoning module InputCore (64)
+[2017.12.08-21.10.10:896][432]LogModuleManager: Shutting down and abandoning module Settings (62)
+[2017.12.08-21.10.10:896][432]LogModuleManager: Shutting down and abandoning module PhysXCooking (60)
+[2017.12.08-21.10.10:896][432]LogModuleManager: Shutting down and abandoning module SteamVR (58)
+[2017.12.08-21.10.10:896][432]LogModuleManager: Shutting down and abandoning module OculusHMD (56)
+[2017.12.08-21.10.10:905][432]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (54)
+[2017.12.08-21.10.10:905][432]LogModuleManager: Shutting down and abandoning module AppleARKit (52)
+[2017.12.08-21.10.10:906][432]LogModuleManager: Shutting down and abandoning module AugmentedReality (51)
+[2017.12.08-21.10.10:906][432]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2017.12.08-21.10.10:906][432]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2017.12.08-21.10.10:928][432]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2017.12.08-21.10.10:938][432]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2017.12.08-21.10.10:938][432]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.12.08-21.10.10:938][432]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B415F7745-4187-11DD-7678-3BA51E19E5B7%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.18.1-3754814%2B%2B%2BUE4%2BRelease-4.18&UserID=f84d12d04a2fa7d6e0216381429fbc7d%7Ccfd5df930c09428eb46c4b4d5a2d1ed6%7C6b49ce86-f40b-42c4-8ed1-9c9db4115256&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.12.08-21.10.10:949][432]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2017.12.08-21.10.10:961][432]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
+[2017.12.08-21.10.10:965][432]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
+[2017.12.08-21.10.10:965][432]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
+[2017.12.08-21.10.10:979][432]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
+[2017.12.08-21.10.10:993][432]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
+[2017.12.08-21.10.10:993][432]LogModuleManager: Shutting down and abandoning module Landscape (26)
+[2017.12.08-21.10.10:993][432]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+[2017.12.08-21.10.11:011][432]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
+[2017.12.08-21.10.11:028][432]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
+[2017.12.08-21.10.11:028][432]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
+[2017.12.08-21.10.11:028][432]LogModuleManager: Shutting down and abandoning module Renderer (16)
+[2017.12.08-21.10.11:028][432]LogModuleManager: Shutting down and abandoning module Engine (14)
+[2017.12.08-21.10.11:028][432]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
+[2017.12.08-21.10.11:028][432]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
+[2017.12.08-21.10.11:035][432]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
+[2017.12.08-21.10.11:035][432]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.12.08-21.10.11:041][432]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.12.08-21.10.11:041][432]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.12.08-21.10.11:074][432]LogExit: Exiting.
+[2017.12.08-21.10.11:092][432]Log file closed, 12/08/17 16:10:11
