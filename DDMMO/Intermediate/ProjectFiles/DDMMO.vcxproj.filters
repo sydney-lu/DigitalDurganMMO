@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\DDMMO.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{8FB54D82-E5FD-4595-B612-DA5E2565F503}</UniqueIdentifier>
+			<UniqueIdentifier>{C8EF7FF5-CAB4-4511-84AD-6D728CED4B1B}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\DDMMO.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{D404DEBE-FB3C-48E0-B631-07E04E803A93}</UniqueIdentifier>
+			<UniqueIdentifier>{945C7268-EA3A-43AA-B5F8-610DE41DD1F4}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\DDMMO">
-			<UniqueIdentifier>{B86B43B3-AC16-427D-99BA-22FF1980AB4B}</UniqueIdentifier>
+			<UniqueIdentifier>{A28D317E-8417-4CBE-883E-32F30EC6B257}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\DDMMO\DDMMO.Build.cs">
 			<Filter>Source\DDMMO</Filter>
@@ -49,7 +49,7 @@
 			<Filter>Source\DDMMO</Filter>
 		</ClInclude >
 		<Filter Include="Source\DDMMO\Player">
-			<UniqueIdentifier>{3FFD2EAF-ED96-42B0-9252-D489850ED791}</UniqueIdentifier>
+			<UniqueIdentifier>{C3631706-1467-4E8A-B522-224DEFB3E4DB}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\DDMMO\Player\CharacterClass.cpp">
 			<Filter>Source\DDMMO\Player</Filter>
@@ -79,6 +79,12 @@
 			<Filter>Source\DDMMO\Player</Filter>
 		</ClCompile >
 		<ClInclude Include="..\..\Source\DDMMO\Player\DDMMOCharacter.h">
+			<Filter>Source\DDMMO\Player</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\DDMMO\Player\WarriorClass.cpp">
+			<Filter>Source\DDMMO\Player</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DDMMO\Player\WarriorClass.h">
 			<Filter>Source\DDMMO\Player</Filter>
 		</ClInclude >
 	</ItemGroup>
