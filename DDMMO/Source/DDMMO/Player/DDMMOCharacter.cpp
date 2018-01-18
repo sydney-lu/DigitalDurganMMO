@@ -396,7 +396,6 @@ void ADDMMOCharacter::Fire()
 			}
 		}
 	}
-
 }
 
 void ADDMMOCharacter::MoveForward(float Value)
