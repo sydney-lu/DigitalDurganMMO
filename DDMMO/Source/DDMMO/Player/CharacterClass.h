@@ -1,37 +1,43 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Digital Durgan studios. All rights reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Engine/DataAsset.h"
+#include "CharacterClassData.h"
+#include "DDMMOCharacter.h"
+#include "UObject/NoExportTypes.h"
 #include "CharacterClass.generated.h"
 
+
 UCLASS()
-class DDMMO_API UCharacterClass : public UDataAsset
+class DDMMO_API UCharacterClass : public UObject
 {
 	GENERATED_BODY()
-	
-protected:
-
-	UPROPERTY(EditAnywhere, meta = (DisplayName = "Name", MultiLine = true))
-		FString m_className;
-	UPROPERTY(EditAnywhere, meta = (DisplayName = "Style", MultiLine = true))
-		FString m_styleTag;
-	UPROPERTY(EditAnywhere, meta = (DisplayName = "SubStyle", MultiLine = true))
-		FString m_subStyleTag;
-
-	UPROPERTY(EditAnywhere, meta = (DisplayName = "Base Attack", ClampMin = "0.0", UIMin = "0.0"))
-		float m_baseAttack;
-	UPROPERTY(EditAnywhere, meta = (DisplayName = "Base Speed", ClampMin = "0.0", UIMin = "0.0"))
-		float m_baseSpeed;
-	UPROPERTY(EditAnywhere, meta = (DisplayName = "Base Stamina", ClampMin = "0.0", UIMin = "0.0"))
-		float m_baseStamina;
-	UPROPERTY(EditAnywhere, meta = (DisplayName = "Base Defence", ClampMin = "0.0", UIMin = "0.0"))
-		float m_baseDefence;
 
 public:
 
-	FString Description();
-	FVector4 BaseStats();		//(BaseAttack,BaseSpeed,BaseStamina,BaseDefence)
+	UCharacterClassData* m_classData;
+	ADDMMOCharacter* m_player;
 
+	DECLARE_DELEGATE_OneParam(SkillLogic, UCharacterSkillData*);
+	TArray<SkillLogic> SkillLogicDelegates;
+
+public:
+	UCharacterClass();
+	UCharacterClass(ADDMMOCharacter* playerCharacter, UCharacterClassData* classData);
+	void InitClass(ADDMMOCharacter* playerCharacter, UCharacterClassData* classData);
+
+protected:
+
+	UFUNCTION()
+		void DefaultSkill(UCharacterSkillData* skillData);
+
+	UFUNCTION()
+		virtual void BasicAttack();
+
+	UFUNCTION()
+		virtual void BasicRanged();
+
+	UFUNCTION()
+		virtual void BasicBlock();
 };
