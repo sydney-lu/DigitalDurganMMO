@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\DDMMO.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{4BCFE30C-DA2E-41E8-A5F3-1C7FA66ED4DA}</UniqueIdentifier>
+			<UniqueIdentifier>{71C6E684-5A96-4B86-8B20-7252E64576FE}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\DDMMO.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{A6EFEF6F-FF63-4A22-B938-CBEABFCE6690}</UniqueIdentifier>
+			<UniqueIdentifier>{3C0A0097-76A4-4387-B99A-AA4208A7A7A5}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\DDMMO">
-			<UniqueIdentifier>{4F443B5F-A890-4AA0-ACC3-5F3905464BF3}</UniqueIdentifier>
+			<UniqueIdentifier>{18903799-C882-4781-80F1-A69CCFF9E6F0}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\DDMMO\DDMMO.Build.cs">
 			<Filter>Source\DDMMO</Filter>
@@ -49,7 +49,7 @@
 			<Filter>Source\DDMMO</Filter>
 		</ClInclude >
 		<Filter Include="Source\DDMMO\Player">
-			<UniqueIdentifier>{A5D23D20-1352-41E1-B0E3-DEE2493370CC}</UniqueIdentifier>
+			<UniqueIdentifier>{C58EFDC7-6B19-4130-9547-AD4F91E22188}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\DDMMO\Player\CharacterClass.cpp">
 			<Filter>Source\DDMMO\Player</Filter>
@@ -89,6 +89,15 @@
 		</ClCompile >
 		<ClInclude Include="..\..\Source\DDMMO\Player\WarriorClass.h">
 			<Filter>Source\DDMMO\Player</Filter>
+		</ClInclude >
+		<Filter Include="Source\DDMMO\Projectiles">
+			<UniqueIdentifier>{EDDC655D-92B7-4048-89DE-A61ABC7A63B6}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\DDMMO\Projectiles\BaseProjectile.cpp">
+			<Filter>Source\DDMMO\Projectiles</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DDMMO\Projectiles\BaseProjectile.h">
+			<Filter>Source\DDMMO\Projectiles</Filter>
 		</ClInclude >
 	</ItemGroup>
 </Project>
