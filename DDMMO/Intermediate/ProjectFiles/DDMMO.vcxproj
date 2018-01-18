@@ -583,6 +583,7 @@
 		<ClInclude Include="..\..\Source\DDMMO\Player\CharacterSkillData.h" />
 		<ClCompile Include="..\..\Source\DDMMO\Player\DDMMOCharacter.cpp" />
 		<ClInclude Include="..\..\Source\DDMMO\Player\DDMMOCharacter.h" />
+		<ClInclude Include="..\..\Source\DDMMO\Player\SkillDefinitions.h" />
 		<ClCompile Include="..\..\Source\DDMMO\Player\WarriorClass.cpp" />
 		<ClInclude Include="..\..\Source\DDMMO\Player\WarriorClass.h" />
 	</ItemGroup>

@@ -22,9 +22,9 @@ FVector4 UCharacterSkillData::SkillStats()
 	return FVector4(m_castRange, m_abilityRange, m_triggerTimer, m_duration);
 }
 
-FVector UCharacterSkillData::SkillStrength()
+float UCharacterSkillData::SkillDamage()
 {
-	return FVector(m_damage, m_buffStrength, m_debuffStrength);
+	return m_damage;
 }
 
 TArray<ECastLocation> UCharacterSkillData::CastableLocations()
@@ -37,12 +37,12 @@ TArray<EAbilityType> UCharacterSkillData::Type()
 	return m_castTypes;
 }
 
-TArray<EBuffType> UCharacterSkillData::Buff()
+TArray<FBuff> UCharacterSkillData::Buffs()
 {
-	return m_buffTypes;
+	return m_buffs;
 }
 
-TArray<EDebuffType> UCharacterSkillData::Debuff()
+TArray<FDebuff> UCharacterSkillData::Debuffs()
 {
-	return m_debuffTypes;
+	return m_debuffs;
 }

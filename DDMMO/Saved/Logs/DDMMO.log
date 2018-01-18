@@ -1,4 +1,4 @@
-﻿Log file open, 01/13/18 10:50:03
+﻿Log file open, 01/17/18 12:44:51
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -7,12 +7,12 @@ LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
 LogWindows: File 'VtuneApi32e.dll' does not exist
 LogInit: Display: Running engine for game: DDMMO
 LogPlatformFile: Not using cached read wrapper
-LogInit: Display: RandInit(1569306895) SRandInit(1569306895).
+LogInit: Display: RandInit(-969236880) SRandInit(-969236880).
 LogInit: Read version file with build ID '3709383'
 LogInit: Overriding engine version to CL 3709383, compatible CL 3709383
 LogInit: Registered custom module enumerator with build ID '3709383'
 LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 2.192503
+LogStats: Stats thread started at 0.159242
 LogD3D11RHI: Aftermath initialized
 LogPluginManager: Mounting plugin Paper2D
 LogPluginManager: Mounting plugin LightPropagationVolume
@@ -195,1009 +195,454 @@ LogInit: Base directory: D:/Games/Epic Games/UE_4.18/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2018.01.13-15.50.07:163][  0]LogInit: Selected Device Profile: [Windows]
-[2018.01.13-15.50.07:164][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2018.01.13-15.50.07:235][  0]LogInit: Computer: BMO
-[2018.01.13-15.50.07:235][  0]LogInit: User: Ben
-[2018.01.13-15.50.07:235][  0]LogInit: CPU Page size=4096, Cores=4
-[2018.01.13-15.50.07:235][  0]LogInit: High frequency timer resolution =3.903987 MHz
-[2018.01.13-15.50.07:236][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2018.01.13-15.50.07:236][  0]LogMemory: Platform Memory Stats for Windows
-[2018.01.13-15.50.07:236][  0]LogMemory: Process Physical Memory: 269.89 MB used, 269.89 MB peak
-[2018.01.13-15.50.07:236][  0]LogMemory: Process Virtual Memory: 269.85 MB used, 269.85 MB peak
-[2018.01.13-15.50.07:236][  0]LogMemory: Physical Memory: 4799.30 MB used,  11527.25 MB free, 16326.55 MB total
-[2018.01.13-15.50.07:236][  0]LogMemory: Virtual Memory: 627.63 MB used,  11527.25 MB free, 134217728.00 MB total
-[2018.01.13-15.50.07:808][  0]LogInit: Using OS detected language (en-US).
-[2018.01.13-15.50.07:808][  0]LogInit: Using OS detected locale (en-CA).
-[2018.01.13-15.50.07:850][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2018.01.13-15.50.08:469][  0]LogInit: Setting process to per monitor DPI aware
-[2018.01.13-15.50.08:994][  0]LogD3D11RHI: D3D11 adapters:
-[2018.01.13-15.50.09:018][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
-[2018.01.13-15.50.09:018][  0]LogD3D11RHI:       3975/0/8163 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2018.01.13-15.50.09:019][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2018.01.13-15.50.09:019][  0]LogD3D11RHI:       0/0/256 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2018.01.13-15.50.09:019][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2018.01.13-15.50.09:023][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2018.01.13-15.50.09:042][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
-[2018.01.13-15.50.09:042][  0]LogWindows: EnumDisplayDevices:
-[2018.01.13-15.50.09:042][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
-[2018.01.13-15.50.09:042][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:1)
-[2018.01.13-15.50.09:043][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2018.01.13-15.50.09:043][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2018.01.13-15.50.09:043][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2018.01.13-15.50.09:043][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
-[2018.01.13-15.50.09:078][  0]LogD3D11RHI:   Driver Version: 388.59 (internal:23.21.13.8859, unified:388.59)
-[2018.01.13-15.50.09:078][  0]LogD3D11RHI:      Driver Date: 12-5-2017
-[2018.01.13-15.50.09:078][  0]LogRHI: Texture pool is 2782 MB (70% of 3975 MB)
-[2018.01.13-15.50.09:150][  0]LogD3D11RHI: Async texture creation enabled
-[2018.01.13-15.50.09:328][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2018.01.13-15.50.09:458][  0]LogShaderCompilers: Guid format shader working directory is -4 characters bigger than the processId version (../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Intermediate/Shaders/WorkingDirectory/14320/).
-[2018.01.13-15.50.09:458][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Ben/AppData/Local/Temp/UnrealShaderWorkingDir/06CC730F454890B83132FD836848E5FD/'.
-[2018.01.13-15.50.09:458][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2018.01.13-15.50.10:901][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2018.01.13-15.50.10:944][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2018.01.13-15.50.10:978][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2018.01.13-15.50.11:029][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2018.01.13-15.50.11:091][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2018.01.13-15.50.11:135][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2018.01.13-15.50.11:170][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2018.01.13-15.50.11:203][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2018.01.13-15.50.11:230][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2018.01.13-15.50.11:287][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
-[2018.01.13-15.50.11:367][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
-[2018.01.13-15.50.11:432][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
-[2018.01.13-15.50.11:504][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
-[2018.01.13-15.50.11:552][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
-[2018.01.13-15.50.11:679][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
-[2018.01.13-15.50.11:679][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
-[2018.01.13-15.50.11:748][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.01.13-15.50.11:784][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2018.01.13-15.50.11:912][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2018.01.13-15.50.11:995][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2018.01.13-15.50.12:034][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2018.01.13-15.50.12:067][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2018.01.13-15.50.12:146][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2018.01.13-15.50.12:220][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2018.01.13-15.50.12:220][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2018.01.13-15.50.13:128][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2018.01.13-15.50.13:627][  0]LogDerivedDataCache: Loaded boot cache 0.50s 79MB C:/Users/Ben/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
-[2018.01.13-15.50.13:627][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Ben/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc
-[2018.01.13-15.50.13:627][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2018.01.13-15.50.13:627][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2018.01.13-15.50.13:628][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2018.01.13-15.50.13:628][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2018.01.13-15.50.13:732][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2018.01.13-15.50.13:779][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Ben/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2018.01.13-15.50.13:810][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2018.01.13-15.50.13:828][  0]LogSlate: Using Freetype 2.6.0
-[2018.01.13-15.50.13:836][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.01.13-15.50.13:836][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.01.13-15.50.18:453][  0]LogInit: Selected Device Profile: [Windows]
-[2018.01.13-15.50.19:393][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2018.01.13-15.50.19:441][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2018.01.13-15.50.19:458][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2018.01.13-15.50.19:458][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2018.01.13-15.50.19:458][  0]LogMeshReduction: No automatic mesh merging module available
-[2018.01.13-15.50.19:458][  0]LogMeshMerging: No automatic mesh merging module available
-[2018.01.13-15.50.20:032][  0]LogNetVersion: DDMMO , NetCL: 3709383, EngineNetVer: 2, GameNetVer: 0 (Checksum: 699005191)
-[2018.01.13-15.50.20:827][  0]LogAssetRegistry: FAssetRegistry took 0.0406 seconds to start up
-[2018.01.13-15.50.24:189][  0]LogPackageLocalizationCache: Processed 7 localized package path(s) for 2 prioritized culture(s) in 0.124883 seconds
-[2018.01.13-15.50.24:194][  0]LogUObjectArray: 35900 objects as part of root set at end of initial load.
-[2018.01.13-15.50.24:194][  0]LogUObjectAllocator: 7372024 out of 0 bytes used by permanent object pool.
-[2018.01.13-15.50.24:194][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2018.01.13-15.50.24:241][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2018.01.13-15.50.35:888][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2018.01.13-15.50.35:975][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2018.01.13-15.50.38:447][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2018.01.13-15.50.39:714][  0]SourceControl: Source control is disabled
-[2018.01.13-15.50.39:714][  0]SourceControl: Source control is disabled
-[2018.01.13-15.50.39:799][  0]SourceControl: Source control is disabled
-[2018.01.13-15.50.39:927][  0]SourceControl: Source control is disabled
-[2018.01.13-15.50.41:168][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2018.01.13-15.50.41:480][  0]LogOcInput: OculusInput pre-init called
-[2018.01.13-15.50.42:174][  0]LogEngine: Initializing Engine...
-[2018.01.13-15.50.42:282][  0]LogHMD: Failed to initialize OpenVR with code 105
-[2018.01.13-15.50.43:797][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.01.13-15.50.43:830][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.01.13-15.50.44:440][  0]LogAIModule: Creating AISystem for world Untitled
-[2018.01.13-15.50.44:565][  0]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2018.01.13-15.50.44:578][  0]LogInit: FAudioDevice initialized.
-[2018.01.13-15.50.44:740][  0]LogDerivedDataCache: Saved boot cache 0.14s 79MB C:/Users/Ben/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
-[2018.01.13-15.50.44:769][  0]LogInit: Texture streaming: Enabled
-[2018.01.13-15.50.45:148][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2018.01.13-15.50.45:349][  0]LogInit: Transaction tracking system initialized
-[2018.01.13-15.50.45:828][  0]BlueprintLog: New page: Editor Load
-[2018.01.13-15.50.47:242][  0]LocalizationService: Localization service is disabled
-[2018.01.13-15.50.48:499][  0]LogConsoleResponse: Display: 
-[2018.01.13-15.50.50:349][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2018.01.13-15.50.50:349][  0]LogCook: Display: Mobile HDR setting 1
-[2018.01.13-15.50.50:349][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2018.01.13-15.50.51:245][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/DigitalDurgenMMO/DDMMO/Content/' took 0.02s
-[2018.01.13-15.50.52:318][  0]SourceControl: Source control is disabled
-[2018.01.13-15.50.52:342][  0]Cmd: MAP LOAD FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/Maps/WhiteBoxMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2018.01.13-15.50.52:350][  0]LightingResults: New page: Lighting Build
-[2018.01.13-15.50.52:441][  0]MapCheck: New page: Map Check
-[2018.01.13-15.50.52:441][  0]LightingResults: New page: Lighting Build
-[2018.01.13-15.50.53:201][  0]LogAIModule: Creating AISystem for world WhiteBoxMap
-[2018.01.13-15.50.53:482][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2018.01.13-15.50.53:523][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2018.01.13-15.50.53:589][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 65.782ms to complete.
-[2018.01.13-15.50.53:589][  0]LogFileHelpers: Loading map 'WhiteBoxMap' took 1.247
-[2018.01.13-15.50.53:790][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.01.13-15.50.53:790][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.01.13-15.50.54:171][  0]LogCollectionManager: Loaded 0 collections in 0.001158 seconds
-[2018.01.13-15.50.54:348][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/DigitalDurgenMMO/DDMMO/Saved/Collections/' took 0.01s
-[2018.01.13-15.50.54:348][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/DigitalDurgenMMO/DDMMO/Content/Developers/Ben/Collections/' took 0.01s
-[2018.01.13-15.50.54:348][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/DigitalDurgenMMO/DDMMO/Content/Collections/' took 0.01s
-[2018.01.13-15.50.54:349][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2018.01.13-15.50.54:383][  0]LogContentBrowser: Native class hierarchy populated in 0.0331 seconds. Added 2369 classes and 522 folders.
-[2018.01.13-15.50.54:471][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0009 seconds. Added 0 classes and 0 folders.
-[2018.01.13-15.50.55:048][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0024 seconds. Added 0 classes and 0 folders.
-[2018.01.13-15.50.55:161][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0014 seconds. Added 1 classes and 2 folders.
-[2018.01.13-15.50.55:550][  0]LogSlate: Took 0.010165 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2018.01.13-15.50.55:556][  0]LogSlate: Took 0.003725 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2018.01.13-15.50.55:576][  0]LogSlate: Took 0.009324 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2018.01.13-15.50.55:923][  0]LogRenderer: Reallocating scene render targets to support 1148x576 Format 10 NumSamples 1 (Frame:1).
-[2018.01.13-15.50.56:147][  0]LogSlate: Took 0.000390 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2018.01.13-15.50.56:610][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0030 seconds. Added 1 classes and 2 folders.
-[2018.01.13-15.50.56:610][  0]LogLoad: (Engine Initialization) Total time: 58.24 seconds
-[2018.01.13-15.50.56:610][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2018.01.13-15.50.56:610][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
-[2018.01.13-15.50.56:669][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2018.01.13-15.50.57:218][  4]LogAssetRegistry: Asset discovery search completed in 36.4148 seconds
-[2018.01.13-15.50.57:222][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2018.01.13-15.50.57:222][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000129 seconds (updated 0 objects)
-[2018.01.13-15.53.39:368][819]LogSlate: Took 0.000284 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2018.01.13-15.53.39:988][819]LogSlate: Took 0.056885 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
-[2018.01.13-15.57.00:823][169]Running D:/Games/Epic Games/UE_4.18/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="D:/Unreal/DigitalDurgenMMO/DDMMO/DDMMO.uproject" -game -rocket -progress
-[2018.01.13-15.57.01:027][169]Discovering modules, targets and source code for project...
-[2018.01.13-15.57.03:967][169]LogSlate: Took 0.000198 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2018.01.13-15.57.04:719][169]LogVSAccessor: Warning: Couldn't access Visual Studio
-[2018.01.13-15.57.04:822][169]Candidate modules for hot reload:
-[2018.01.13-15.57.04:822][169]  DDMMO
-[2018.01.13-15.57.04:822][169]Launching UnrealBuildTool... [D:/Games/Epic Games/UE_4.18/Engine/Binaries/DotNET/UnrealBuildTool.exe DDMMO -ModuleWithSuffix DDMMO 2721 Win64 Development -editorrecompile -canskiplink "D:/Unreal/DigitalDurgenMMO/DDMMO/DDMMO.uproject" ]
-[2018.01.13-16.00.34:524][169]CompilerResultsLog: New page: Compilation - Jan 13, 2018, 6:00:34 AM
-[2018.01.13-16.00.34:539][169]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
-[2018.01.13-16.00.34:540][169]CompilerResultsLog: Compiling game modules for hot reload
-[2018.01.13-16.00.34:540][169]CompilerResultsLog: Parsing headers for DDMMOEditor
-[2018.01.13-16.00.34:540][169]CompilerResultsLog:   Running UnrealHeaderTool "D:\Unreal\DigitalDurgenMMO\DDMMO\DDMMO.uproject" "D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\DDMMOEditor\Development\DDMMOEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-[2018.01.13-16.00.34:540][169]CompilerResultsLog: Reflection code generated for DDMMOEditor in 8.5345578 seconds
-[2018.01.13-16.00.34:540][169]CompilerResultsLog: Performing 14 actions (4 in parallel)
-[2018.01.13-16.00.34:540][169]CompilerResultsLog: DDMMO.init.gen.cpp
-[2018.01.13-16.00.34:540][169]CompilerResultsLog: CharacterClass.gen.cpp
-[2018.01.13-16.00.34:540][169]CompilerResultsLog: CharacterSkill.gen.cpp
-[2018.01.13-16.00.34:540][169]CompilerResultsLog: CharacterSkillData.gen.cpp
-[2018.01.13-16.00.34:540][169]CompilerResultsLog: CharacterClassData.gen.cpp
-[2018.01.13-16.00.34:540][169]CompilerResultsLog: CharacterSkillData.cpp
-[2018.01.13-16.00.34:541][169]CompilerResultsLog: CharacterSkill.cpp
-[2018.01.13-16.00.34:541][169]CompilerResultsLog: WarriorClass.cpp
-[2018.01.13-16.00.34:541][169]CompilerResultsLog: CharacterClassData.cpp
-[2018.01.13-16.00.34:541][169]CompilerResultsLog: CharacterClass.cpp
-[2018.01.13-16.00.34:541][169]CompilerResultsLog: DDMMO.cpp
-[2018.01.13-16.00.34:541][169]CompilerResultsLog: WarriorClass.gen.cpp
-[2018.01.13-16.00.34:541][169]CompilerResultsLog: [13/14] Link UE4Editor-DDMMO-2721.dll
-[2018.01.13-16.00.34:541][169]CompilerResultsLog: [14/14] Link UE4Editor-DDMMO-2721.lib
-[2018.01.13-16.00.34:541][169]CompilerResultsLog:    Creating library D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-2721.lib and object D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-2721.exp
-[2018.01.13-16.00.34:541][169]CompilerResultsLog:    Creating library D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-2721.suppressed.lib and object D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-2721.suppressed.exp
-[2018.01.13-16.00.34:541][169]CompilerResultsLog: Total build time: 209.25 seconds (Local executor: 188.69 seconds)
-[2018.01.13-16.00.34:552][169]LogMainFrame: MainFrame: Module compiling took 209.833 seconds
-[2018.01.13-16.00.34:723][169]LogClass: Could not find existing class CharacterSkillData in package /Script/DDMMO for HotReload, assuming new class
-[2018.01.13-16.00.34:725][169]LogClass: Could not find existing class WarriorClass in package /Script/DDMMO for HotReload, assuming new class
-[2018.01.13-16.00.34:725][169]LogClass: ESkillTag HotReload.
-[2018.01.13-16.00.34:725][169]LogClass: EDebuffType HotReload.
-[2018.01.13-16.00.34:725][169]LogClass: EBuffType HotReload.
-[2018.01.13-16.00.34:725][169]LogClass: EAbilityType HotReload.
-[2018.01.13-16.00.34:726][169]LogClass: ECastLocation HotReload.
-[2018.01.13-16.00.34:731][169]LogHotReload: Re-instancing CharacterSkillData after hot-reload.
-[2018.01.13-16.00.34:893][169]LogContentBrowser: Native class hierarchy updated for 'DDMMO' in 0.0012 seconds. Added 7 classes and 3 folders.
-[2018.01.13-16.00.34:895][169]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
-[2018.01.13-16.00.35:027][169]LogContentBrowser: Native class hierarchy populated in 0.0107 seconds. Added 2372 classes and 526 folders.
-[2018.01.13-16.00.35:059][169]Display: HotReload took 210.3s.
-[2018.01.13-16.00.35:061][169]Warning: HotReload operation took 210.3s.
-[2018.01.13-16.00.35:568][169]LogHotReload: New module detected: UE4Editor-DDMMO-2721.dll
-[2018.01.13-16.00.36:222][170]LogHotReload: Starting Hot-Reload from IDE
-[2018.01.13-16.00.36:302][170]LogContentBrowser: Native class hierarchy updated for 'DDMMO' in 0.0007 seconds. Added 7 classes and 3 folders.
-[2018.01.13-16.00.36:304][170]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
-[2018.01.13-16.00.36:320][170]LogContentBrowser: Native class hierarchy populated in 0.0077 seconds. Added 2372 classes and 526 folders.
-[2018.01.13-16.00.36:327][170]Display: HotReload took  0.1s.
-[2018.01.13-16.02.27:034][648]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
-[2018.01.13-16.02.28:372][652]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
-[2018.01.13-16.02.50:703][719]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
-[2018.01.13-16.03.00:760][749]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
-[2018.01.13-16.03.20:373][808]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
-[2018.01.13-16.05.35:374][213]LogWindows: LaunchFileInExternalEditor D:/Unreal/DigitalDurgenMMO/DDMMO/Source/DDMMO/Player/WarriorClass.h 
-[2018.01.13-16.05.35:513][213]LogWindows: Launch application code for D:/Unreal/DigitalDurgenMMO/DDMMO/Source/DDMMO/Player/WarriorClass.h : 42
-[2018.01.13-16.05.35:513][213]LogWindows: LaunchFileInExternalEditor D:/Unreal/DigitalDurgenMMO/DDMMO/Source/DDMMO/Player/WarriorClass.cpp 
-[2018.01.13-16.05.35:618][213]LogWindows: Launch application code for D:/Unreal/DigitalDurgenMMO/DDMMO/Source/DDMMO/Player/WarriorClass.cpp : 42
-[2018.01.13-16.05.35:618][213]LogVSAccessor: Warning: Couldn't access Visual Studio
-[2018.01.13-16.05.35:621][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:621][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:622][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:622][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:622][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:622][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:622][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:622][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:622][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:622][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:622][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:622][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:622][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:622][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:622][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:622][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:622][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:622][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:622][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:622][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:622][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:623][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:623][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:623][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:623][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:623][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:623][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:623][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:623][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:623][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:623][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:623][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:623][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:623][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:623][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:623][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:623][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:623][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:623][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:623][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:624][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:624][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:624][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:624][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:624][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:624][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:624][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:624][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:624][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:624][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:624][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:624][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:625][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:627][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:627][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:627][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:686][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:686][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:687][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:688][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.05.35:690][213]LogVSAccessor: Warning: Couldn't access module table
-[2018.01.13-16.11.33:303][449]LogVSAccessor: Warning: Couldn't access Visual Studio
-[2018.01.13-16.11.33:309][449]Candidate modules for hot reload:
-[2018.01.13-16.11.33:309][449]  DDMMO
-[2018.01.13-16.11.33:309][449]Launching UnrealBuildTool... [D:/Games/Epic Games/UE_4.18/Engine/Binaries/DotNET/UnrealBuildTool.exe DDMMO -ModuleWithSuffix DDMMO 9075 Win64 Development -editorrecompile -canskiplink "D:/Unreal/DigitalDurgenMMO/DDMMO/DDMMO.uproject" ]
-[2018.01.13-16.11.33:312][449]Warning: Starting HotReload took  0.0s.
-[2018.01.13-16.11.47:379][ 66]CompilerResultsLog: New page: Compilation - Jan 13, 2018, 6:11:47 AM
-[2018.01.13-16.11.47:379][ 66]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
-[2018.01.13-16.11.47:379][ 66]CompilerResultsLog: Compiling game modules for hot reload
-[2018.01.13-16.11.47:379][ 66]CompilerResultsLog: Parsing headers for DDMMOEditor
-[2018.01.13-16.11.47:379][ 66]CompilerResultsLog:   Running UnrealHeaderTool "D:\Unreal\DigitalDurgenMMO\DDMMO\DDMMO.uproject" "D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\DDMMOEditor\Development\DDMMOEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-[2018.01.13-16.11.47:380][ 66]CompilerResultsLog: Reflection code generated for DDMMOEditor in 6.9772488 seconds
-[2018.01.13-16.11.47:380][ 66]CompilerResultsLog: Performing 7 actions (4 in parallel)
-[2018.01.13-16.11.47:380][ 66]CompilerResultsLog: CharacterClass.gen.cpp
-[2018.01.13-16.11.47:380][ 66]CompilerResultsLog: WarriorClass.cpp
-[2018.01.13-16.11.47:380][ 66]CompilerResultsLog: CharacterClass.cpp
-[2018.01.13-16.11.47:380][ 66]CompilerResultsLog: DDMMO.init.gen.cpp
-[2018.01.13-16.11.47:380][ 66]CompilerResultsLog: WarriorClass.gen.cpp
-[2018.01.13-16.11.47:380][ 66]CompilerResultsLog: [6/7] Link UE4Editor-DDMMO-9075.dll
-[2018.01.13-16.11.47:380][ 66]CompilerResultsLog: [7/7] Link UE4Editor-DDMMO-9075.lib
-[2018.01.13-16.11.47:380][ 66]CompilerResultsLog:    Creating library D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-9075.lib and object D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-9075.exp
-[2018.01.13-16.11.47:380][ 66]CompilerResultsLog:    Creating library D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-9075.suppressed.lib and object D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-9075.suppressed.exp
-[2018.01.13-16.11.47:380][ 66]CompilerResultsLog: Total build time: 13.71 seconds (Local executor: 2.63 seconds)
-[2018.01.13-16.11.47:380][ 66]LogMainFrame: MainFrame: Module compiling took 14.077 seconds
-[2018.01.13-16.11.47:456][ 66]LogClass: Could not find existing class WarriorClass in package /Script/DDMMO for HotReload, assuming new class
-[2018.01.13-16.11.47:456][ 66]LogClass: Function Block is new.
-[2018.01.13-16.11.47:456][ 66]LogClass: Function Downfall is new.
-[2018.01.13-16.11.47:456][ 66]LogClass: Function Leap is new.
-[2018.01.13-16.11.47:456][ 66]LogClass: Function LeapingStrike is new.
-[2018.01.13-16.11.47:456][ 66]LogClass: Function Retaliation is new.
-[2018.01.13-16.11.47:456][ 66]LogClass: Function ShieldBash is new.
-[2018.01.13-16.11.47:456][ 66]LogClass: Function WarriorPride is new.
-[2018.01.13-16.11.47:456][ 66]LogClass: ESkillTag HotReload.
-[2018.01.13-16.11.47:456][ 66]LogClass: EDebuffType HotReload.
-[2018.01.13-16.11.47:456][ 66]LogClass: EBuffType HotReload.
-[2018.01.13-16.11.47:456][ 66]LogClass: EAbilityType HotReload.
-[2018.01.13-16.11.47:456][ 66]LogClass: ECastLocation HotReload.
-[2018.01.13-16.11.47:459][ 66]LogHotReload: Re-instancing WarriorClass after hot-reload.
-[2018.01.13-16.11.47:503][ 66]LogContentBrowser: Native class hierarchy updated for 'DDMMO' in 0.0007 seconds. Added 7 classes and 3 folders.
-[2018.01.13-16.11.47:504][ 66]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
-[2018.01.13-16.11.47:540][ 66]LogContentBrowser: Native class hierarchy populated in 0.0080 seconds. Added 2372 classes and 526 folders.
-[2018.01.13-16.11.47:540][ 66]Display: HotReload took 14.2s.
-[2018.01.13-16.20.30:545][992]LogVSAccessor: Warning: Couldn't access Visual Studio
-[2018.01.13-16.20.30:551][992]Candidate modules for hot reload:
-[2018.01.13-16.20.30:551][992]  DDMMO
-[2018.01.13-16.20.30:551][992]Launching UnrealBuildTool... [D:/Games/Epic Games/UE_4.18/Engine/Binaries/DotNET/UnrealBuildTool.exe DDMMO -ModuleWithSuffix DDMMO 4318 Win64 Development -editorrecompile -canskiplink "D:/Unreal/DigitalDurgenMMO/DDMMO/DDMMO.uproject" ]
-[2018.01.13-16.20.30:554][992]Warning: Starting HotReload took  0.0s.
-[2018.01.13-16.20.31:957][138]LogSlate: Took 0.027883 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/DroidSansMono.ttf' (77K)
-[2018.01.13-16.20.45:262][685]CompilerResultsLog: New page: Compilation - Jan 13, 2018, 6:20:45 AM
-[2018.01.13-16.20.45:262][685]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
-[2018.01.13-16.20.45:262][685]CompilerResultsLog: Compiling game modules for hot reload
-[2018.01.13-16.20.45:262][685]CompilerResultsLog: Parsing headers for DDMMOEditor
-[2018.01.13-16.20.45:262][685]CompilerResultsLog:   Running UnrealHeaderTool "D:\Unreal\DigitalDurgenMMO\DDMMO\DDMMO.uproject" "D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\DDMMOEditor\Development\DDMMOEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-[2018.01.13-16.20.45:263][685]CompilerResultsLog: Reflection code generated for DDMMOEditor in 8.4436682 seconds
-[2018.01.13-16.20.45:263][685]CompilerResultsLog: Performing 7 actions (4 in parallel)
-[2018.01.13-16.20.45:263][685]CompilerResultsLog: CharacterClass.gen.cpp
-[2018.01.13-16.20.45:263][685]CompilerResultsLog: DDMMO.init.gen.cpp
-[2018.01.13-16.20.45:263][685]CompilerResultsLog: CharacterClass.cpp
-[2018.01.13-16.20.45:263][685]CompilerResultsLog: WarriorClass.cpp
-[2018.01.13-16.20.45:263][685]CompilerResultsLog: WarriorClass.gen.cpp
-[2018.01.13-16.20.45:263][685]CompilerResultsLog: Error: D:\Unreal\DigitalDurgenMMO\DDMMO\Source\DDMMO\Player\CharacterClass.cpp(7) : error C2039: 'classData': is not a member of 'UCharacterClass'
-[2018.01.13-16.20.45:263][685]CompilerResultsLog: Error: d:\unreal\digitaldurgenmmo\ddmmo\source\ddmmo\player\CharacterClass.h(12) : note: see declaration of 'UCharacterClass'
-[2018.01.13-16.20.45:263][685]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: D:\Unreal\DigitalDurgenMMO\DDMMO\Binaries\Win64\UE4Editor-DDMMO-4318.dll
-[2018.01.13-16.20.45:263][685]CompilerResultsLog: Total build time: 14.53 seconds (Local executor: 0.00 seconds)
-[2018.01.13-16.20.45:263][685]LogMainFrame: MainFrame: Module compiling took 14.718 seconds
-[2018.01.13-16.20.45:263][685]Warning: HotReload failed, recompile failed
-[2018.01.13-16.21.45:451][829]LogVSAccessor: Warning: Couldn't access Visual Studio
-[2018.01.13-16.21.45:457][829]Candidate modules for hot reload:
-[2018.01.13-16.21.45:457][829]  DDMMO
-[2018.01.13-16.21.45:457][829]Launching UnrealBuildTool... [D:/Games/Epic Games/UE_4.18/Engine/Binaries/DotNET/UnrealBuildTool.exe DDMMO -ModuleWithSuffix DDMMO 9513 Win64 Development -editorrecompile -canskiplink "D:/Unreal/DigitalDurgenMMO/DDMMO/DDMMO.uproject" ]
-[2018.01.13-16.21.45:460][829]Warning: Starting HotReload took  0.0s.
-[2018.01.13-16.21.59:369][351]CompilerResultsLog: New page: Compilation - Jan 13, 2018, 6:21:59 AM
-[2018.01.13-16.21.59:369][351]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
-[2018.01.13-16.21.59:369][351]CompilerResultsLog: Compiling game modules for hot reload
-[2018.01.13-16.21.59:369][351]CompilerResultsLog: Parsing headers for DDMMOEditor
-[2018.01.13-16.21.59:369][351]CompilerResultsLog:   Running UnrealHeaderTool "D:\Unreal\DigitalDurgenMMO\DDMMO\DDMMO.uproject" "D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\DDMMOEditor\Development\DDMMOEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-[2018.01.13-16.21.59:369][351]CompilerResultsLog: Reflection code generated for DDMMOEditor in 8.0988773 seconds
-[2018.01.13-16.21.59:369][351]CompilerResultsLog: Performing 3 actions (4 in parallel)
-[2018.01.13-16.21.59:370][351]CompilerResultsLog: CharacterClass.cpp
-[2018.01.13-16.21.59:370][351]CompilerResultsLog: [2/3] Link UE4Editor-DDMMO-9513.dll
-[2018.01.13-16.21.59:370][351]CompilerResultsLog: [3/3] Link UE4Editor-DDMMO-9513.lib
-[2018.01.13-16.21.59:370][351]CompilerResultsLog:    Creating library D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-9513.lib and object D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-9513.exp
-[2018.01.13-16.21.59:370][351]CompilerResultsLog:    Creating library D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-9513.suppressed.lib and object D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-9513.suppressed.exp
-[2018.01.13-16.21.59:370][351]CompilerResultsLog: Total build time: 13.64 seconds (Local executor: 1.42 seconds)
-[2018.01.13-16.21.59:370][351]LogMainFrame: MainFrame: Module compiling took 13.919 seconds
-[2018.01.13-16.21.59:450][351]LogClass: Could not find existing class CharacterClass in package /Script/DDMMO for HotReload, assuming new class
-[2018.01.13-16.21.59:450][351]LogClass: Function DefaultSkill is new.
-[2018.01.13-16.21.59:454][351]LogClass: Could not find existing class WarriorClass in package /Script/DDMMO for HotReload, assuming new class
-[2018.01.13-16.21.59:454][351]LogClass: Function Block is new.
-[2018.01.13-16.21.59:454][351]LogClass: Function Downfall is new.
-[2018.01.13-16.21.59:454][351]LogClass: Function Leap is new.
-[2018.01.13-16.21.59:454][351]LogClass: Function LeapingStrike is new.
-[2018.01.13-16.21.59:454][351]LogClass: Function Retaliation is new.
-[2018.01.13-16.21.59:454][351]LogClass: Function ShieldBash is new.
-[2018.01.13-16.21.59:454][351]LogClass: Function WarriorPride is new.
-[2018.01.13-16.21.59:454][351]LogClass: ESkillTag HotReload.
-[2018.01.13-16.21.59:454][351]LogClass: EDebuffType HotReload.
-[2018.01.13-16.21.59:454][351]LogClass: EBuffType HotReload.
-[2018.01.13-16.21.59:454][351]LogClass: EAbilityType HotReload.
-[2018.01.13-16.21.59:454][351]LogClass: ECastLocation HotReload.
-[2018.01.13-16.21.59:457][351]LogHotReload: Re-instancing CharacterClass after hot-reload.
-[2018.01.13-16.21.59:512][351]LogHotReload: Re-instancing WarriorClass after hot-reload.
-[2018.01.13-16.21.59:554][351]LogContentBrowser: Native class hierarchy updated for 'DDMMO' in 0.0007 seconds. Added 7 classes and 3 folders.
-[2018.01.13-16.21.59:556][351]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
-[2018.01.13-16.21.59:589][351]LogContentBrowser: Native class hierarchy populated in 0.0073 seconds. Added 2372 classes and 526 folders.
-[2018.01.13-16.21.59:589][351]Display: HotReload took 14.1s.
-[2018.01.13-18.01.31:840][946]LogTemp: Repeating last play command: Selected Viewport
-[2018.01.13-18.01.31:959][946]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2018.01.13-18.01.31:973][946]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.01.13-18.01.32:002][946]PIE: New page: PIE session: WhiteBoxMap (Jan 13, 2018, 8:01:32 AM)
-[2018.01.13-18.01.32:012][946]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_WhiteBoxMap
-[2018.01.13-18.01.32:076][946]LogPlayLevel: PIE: StaticDuplicateObject took: (0.063949s)
-[2018.01.13-18.01.32:077][946]LogAIModule: Creating AISystem for world WhiteBoxMap
-[2018.01.13-18.01.32:088][946]LogPlayLevel: PIE: World Init took: (0.011983s)
-[2018.01.13-18.01.32:093][946]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/WhiteBoxMap.WhiteBoxMap to /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap (0.081424s)
-[2018.01.13-18.01.32:145][946]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2018.01.13-18.01.32:153][946]LogInit: FAudioDevice initialized.
-[2018.01.13-18.01.32:250][946]LogLoad: Game class is 'DDMMOGameMode'
-[2018.01.13-18.01.32:351][946]LogWorld: Bringing World /Game/Maps/UEDPIE_0_WhiteBoxMap.WhiteBoxMap up for play (max tick rate 0) at 2018.01.13-13.01.32
-[2018.01.13-18.01.32:369][946]LogWorld: Bringing up level for play took: 0.019202
-[2018.01.13-18.01.32:609][946]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0007 seconds. Added 11 classes and 0 folders.
-[2018.01.13-18.01.32:783][946]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_WhiteBoxMap 1.255
-[2018.01.13-18.01.32:784][946]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2018.01.13-18.01.36:804][379]LogTemp: Warning: LMB Pressed
-[2018.01.13-18.01.36:804][379]LogTemp: Warning: LMB Released
-[2018.01.13-18.01.39:850][704]LogEditorViewport: Clicking on Actor (LMB): MMOCharacter_C (MMOCharacter)
-[2018.01.13-18.01.41:240][705]LogSlate: Took 0.006033 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2018.01.13-18.02.06:428][351]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0010 seconds. Added 116 classes and 0 folders.
-[2018.01.13-18.02.20:473][268]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2018.01.13-18.02.20:585][268]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap' with GeneratedClass '/Game/Maps/WhiteBoxMap.WhiteBoxMap_C' with ClassGeneratedBy '/Game/Maps/WhiteBoxMap.WhiteBoxMap:PersistentLevel.WhiteBoxMap'
-[2018.01.13-18.11.37:650][110]LogVSAccessor: Warning: Couldn't access Visual Studio
-[2018.01.13-18.11.37:656][110]Candidate modules for hot reload:
-[2018.01.13-18.11.37:656][110]  DDMMO
-[2018.01.13-18.11.37:656][110]Launching UnrealBuildTool... [D:/Games/Epic Games/UE_4.18/Engine/Binaries/DotNET/UnrealBuildTool.exe DDMMO -ModuleWithSuffix DDMMO 1097 Win64 Development -editorrecompile -canskiplink "D:/Unreal/DigitalDurgenMMO/DDMMO/DDMMO.uproject" ]
-[2018.01.13-18.11.37:660][110]Warning: Starting HotReload took  0.0s.
-[2018.01.13-18.11.57:200][562]CompilerResultsLog: New page: Compilation - Jan 13, 2018, 8:11:57 AM
-[2018.01.13-18.11.57:200][562]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
-[2018.01.13-18.11.57:200][562]CompilerResultsLog: Compiling game modules for hot reload
-[2018.01.13-18.11.57:200][562]CompilerResultsLog: Parsing headers for DDMMOEditor
-[2018.01.13-18.11.57:200][562]CompilerResultsLog:   Running UnrealHeaderTool "D:\Unreal\DigitalDurgenMMO\DDMMO\DDMMO.uproject" "D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\DDMMOEditor\Development\DDMMOEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-[2018.01.13-18.11.57:200][562]CompilerResultsLog: Reflection code generated for DDMMOEditor in 6.9806654 seconds
-[2018.01.13-18.11.57:200][562]CompilerResultsLog: Performing 7 actions (4 in parallel)
-[2018.01.13-18.11.57:200][562]CompilerResultsLog: DDMMO.init.gen.cpp
-[2018.01.13-18.11.57:200][562]CompilerResultsLog: CharacterClass.gen.cpp
-[2018.01.13-18.11.57:200][562]CompilerResultsLog: WarriorClass.cpp
-[2018.01.13-18.11.57:200][562]CompilerResultsLog: CharacterClass.cpp
-[2018.01.13-18.11.57:200][562]CompilerResultsLog: WarriorClass.gen.cpp
-[2018.01.13-18.11.57:200][562]CompilerResultsLog: [6/7] Link UE4Editor-DDMMO-1097.dll
-[2018.01.13-18.11.57:200][562]CompilerResultsLog: [7/7] Link UE4Editor-DDMMO-1097.lib
-[2018.01.13-18.11.57:200][562]CompilerResultsLog:    Creating library D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-1097.lib and object D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-1097.exp
-[2018.01.13-18.11.57:200][562]CompilerResultsLog:    Creating library D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-1097.suppressed.lib and object D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-1097.suppressed.exp
-[2018.01.13-18.11.57:200][562]CompilerResultsLog: Total build time: 19.08 seconds (Local executor: 8.06 seconds)
-[2018.01.13-18.11.57:200][562]LogMainFrame: MainFrame: Module compiling took 19.549 seconds
-[2018.01.13-18.11.57:305][562]LogClass: Could not find existing class CharacterClass in package /Script/DDMMO for HotReload, assuming new class
-[2018.01.13-18.11.57:305][562]LogClass: Function BasicAttack is new.
-[2018.01.13-18.11.57:305][562]LogClass: Function BasicBlock is new.
-[2018.01.13-18.11.57:305][562]LogClass: Function BasicRanged is new.
-[2018.01.13-18.11.57:305][562]LogClass: Function DefaultSkill is new.
-[2018.01.13-18.11.57:310][562]LogClass: Could not find existing class WarriorClass in package /Script/DDMMO for HotReload, assuming new class
-[2018.01.13-18.11.57:310][562]LogClass: Function BasicAttack is new.
-[2018.01.13-18.11.57:310][562]LogClass: Function BasicBlock is new.
-[2018.01.13-18.11.57:310][562]LogClass: Function BasicRanged is new.
-[2018.01.13-18.11.57:310][562]LogClass: Function Block is new.
-[2018.01.13-18.11.57:310][562]LogClass: Function Downfall is new.
-[2018.01.13-18.11.57:310][562]LogClass: Function Leap is new.
-[2018.01.13-18.11.57:310][562]LogClass: Function LeapingStrike is new.
-[2018.01.13-18.11.57:310][562]LogClass: Function Retaliation is new.
-[2018.01.13-18.11.57:310][562]LogClass: Function ShieldBash is new.
-[2018.01.13-18.11.57:310][562]LogClass: Function WarriorPride is new.
-[2018.01.13-18.11.57:310][562]LogClass: ESkillTag HotReload.
-[2018.01.13-18.11.57:310][562]LogClass: EDebuffType HotReload.
-[2018.01.13-18.11.57:310][562]LogClass: EBuffType HotReload.
-[2018.01.13-18.11.57:310][562]LogClass: EAbilityType HotReload.
-[2018.01.13-18.11.57:310][562]LogClass: ECastLocation HotReload.
-[2018.01.13-18.11.57:314][562]LogHotReload: Re-instancing CharacterClass after hot-reload.
-[2018.01.13-18.11.57:390][562]LogHotReload: Re-instancing WarriorClass after hot-reload.
-[2018.01.13-18.11.57:468][562]LogContentBrowser: Native class hierarchy updated for 'DDMMO' in 0.0007 seconds. Added 7 classes and 3 folders.
-[2018.01.13-18.11.57:470][562]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
-[2018.01.13-18.11.57:736][562]LogContentBrowser: Native class hierarchy populated in 0.0077 seconds. Added 2372 classes and 526 folders.
-[2018.01.13-18.11.57:736][562]Display: HotReload took 20.1s.
-[2018.01.13-18.33.44:220][713]LogVSAccessor: Warning: Couldn't access Visual Studio
-[2018.01.13-18.33.44:225][713]Candidate modules for hot reload:
-[2018.01.13-18.33.44:225][713]  DDMMO
-[2018.01.13-18.33.44:225][713]Launching UnrealBuildTool... [D:/Games/Epic Games/UE_4.18/Engine/Binaries/DotNET/UnrealBuildTool.exe DDMMO -ModuleWithSuffix DDMMO 229 Win64 Development -editorrecompile -canskiplink "D:/Unreal/DigitalDurgenMMO/DDMMO/DDMMO.uproject" ]
-[2018.01.13-18.33.44:228][713]Warning: Starting HotReload took  0.0s.
-[2018.01.13-18.33.57:869][331]CompilerResultsLog: New page: Compilation - Jan 13, 2018, 8:33:57 AM
-[2018.01.13-18.33.57:870][331]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
-[2018.01.13-18.33.57:870][331]CompilerResultsLog: Compiling game modules for hot reload
-[2018.01.13-18.33.57:870][331]CompilerResultsLog: Parsing headers for DDMMOEditor
-[2018.01.13-18.33.57:870][331]CompilerResultsLog:   Running UnrealHeaderTool "D:\Unreal\DigitalDurgenMMO\DDMMO\DDMMO.uproject" "D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\DDMMOEditor\Development\DDMMOEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-[2018.01.13-18.33.57:870][331]CompilerResultsLog: Reflection code generated for DDMMOEditor in 8.3397698 seconds
-[2018.01.13-18.33.57:870][331]CompilerResultsLog: Performing 6 actions (4 in parallel)
-[2018.01.13-18.33.57:870][331]CompilerResultsLog: CharacterClass.gen.cpp
-[2018.01.13-18.33.57:870][331]CompilerResultsLog: WarriorClass.gen.cpp
-[2018.01.13-18.33.57:870][331]CompilerResultsLog: WarriorClass.cpp
-[2018.01.13-18.33.57:870][331]CompilerResultsLog: CharacterClass.cpp
-[2018.01.13-18.33.57:870][331]CompilerResultsLog: Error: D:\Unreal\DigitalDurgenMMO\DDMMO\Source\DDMMO\Player/CharacterClass.h(15) : error C2338: You have to define UCharacterClass::UCharacterClass() or UCharacterClass::UCharacterClass(const FObjectInitializer&). This is required by UObject system to work correctly.D:\Unreal\DigitalDurgenMMO\DDMMO\Source\DDMMO\Player/CharacterClass.h(15): error C2338: You have to define UCharacterClass::UCharacterClass() or UCharacterClass::UCharacterClass(const FObjectInitializer&). This is required by UObject system to work correctly.D:\Unreal\DigitalDurgenMMO\DDMMO\Source\DDMMO\Player/CharacterClass.h(15): error C2338: You have to define UCharacterClass::UCharacterClass() or UCharacterClass::UCharacterClass(const FObjectInitializer&). This is required by UObject system to work correctly.
-[2018.01.13-18.33.57:870][331]CompilerResultsLog: 
-[2018.01.13-18.33.57:870][331]CompilerResultsLog: Error: d:\unreal\digitaldurgenmmo\ddmmo\source\ddmmo\player\CharacterClass.h(15) : error C2338: You have to define UCharacterClass::UCharacterClass() or UCharacterClass::UCharacterClass(const FObjectInitializer&). This is required by UObject system to work correctly.
-[2018.01.13-18.33.57:870][331]CompilerResultsLog: 
-[2018.01.13-18.33.57:870][331]CompilerResultsLog: Error: D:\Unreal\DigitalDurgenMMO\DDMMO\Source\DDMMO\Player/WarriorClass.h(15) : error C2512: 'UCharacterClass': no appropriate default constructor available
-[2018.01.13-18.33.57:870][331]CompilerResultsLog: Error: D:\Unreal\DigitalDurgenMMO\DDMMO\Source\DDMMO\Player/CharacterClass.h(13) : note: see declaration of 'UCharacterClass'
-[2018.01.13-18.33.57:871][331]CompilerResultsLog: Error: d:\unreal\digitaldurgenmmo\ddmmo\source\ddmmo\player\WarriorClass.h(15) : error C2512: 'UCharacterClass': no appropriate default constructor available
-[2018.01.13-18.33.57:871][331]CompilerResultsLog: Error: D:\Unreal\DigitalDurgenMMO\DDMMO\Source\DDMMO\Player/CharacterClass.h(13) : note: see declaration of 'UCharacterClass'
-[2018.01.13-18.33.57:871][331]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: D:\Unreal\DigitalDurgenMMO\DDMMO\Binaries\Win64\UE4Editor-DDMMO-229.dll
-[2018.01.13-18.33.57:871][331]CompilerResultsLog: Total build time: 13.46 seconds (Local executor: 0.00 seconds)
-[2018.01.13-18.33.57:871][331]LogMainFrame: MainFrame: Module compiling took 13.651 seconds
-[2018.01.13-18.33.57:871][331]Warning: HotReload failed, recompile failed
-[2018.01.13-18.35.31:880][372]LogVSAccessor: Warning: Couldn't access Visual Studio
-[2018.01.13-18.35.31:886][372]Candidate modules for hot reload:
-[2018.01.13-18.35.31:886][372]  DDMMO
-[2018.01.13-18.35.31:887][372]Launching UnrealBuildTool... [D:/Games/Epic Games/UE_4.18/Engine/Binaries/DotNET/UnrealBuildTool.exe DDMMO -ModuleWithSuffix DDMMO 5672 Win64 Development -editorrecompile -canskiplink "D:/Unreal/DigitalDurgenMMO/DDMMO/DDMMO.uproject" ]
-[2018.01.13-18.35.31:889][372]Warning: Starting HotReload took  0.0s.
-[2018.01.13-18.35.46:909][664]CompilerResultsLog: New page: Compilation - Jan 13, 2018, 8:35:46 AM
-[2018.01.13-18.35.46:925][664]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
-[2018.01.13-18.35.46:925][664]CompilerResultsLog: Compiling game modules for hot reload
-[2018.01.13-18.35.46:925][664]CompilerResultsLog: Parsing headers for DDMMOEditor
-[2018.01.13-18.35.46:925][664]CompilerResultsLog:   Running UnrealHeaderTool "D:\Unreal\DigitalDurgenMMO\DDMMO\DDMMO.uproject" "D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\DDMMOEditor\Development\DDMMOEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-[2018.01.13-18.35.46:925][664]CompilerResultsLog: Reflection code generated for DDMMOEditor in 8.1501201 seconds
-[2018.01.13-18.35.46:925][664]CompilerResultsLog: Performing 6 actions (4 in parallel)
-[2018.01.13-18.35.46:925][664]CompilerResultsLog: CharacterClass.cpp
-[2018.01.13-18.35.46:925][664]CompilerResultsLog: WarriorClass.gen.cpp
-[2018.01.13-18.35.46:925][664]CompilerResultsLog: CharacterClass.gen.cpp
-[2018.01.13-18.35.46:925][664]CompilerResultsLog: WarriorClass.cpp
-[2018.01.13-18.35.46:925][664]CompilerResultsLog: [5/6] Link UE4Editor-DDMMO-5672.dll
-[2018.01.13-18.35.46:925][664]CompilerResultsLog: [6/6] Link UE4Editor-DDMMO-5672.lib
-[2018.01.13-18.35.46:925][664]CompilerResultsLog:    Creating library D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-5672.lib and object D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-5672.exp
-[2018.01.13-18.35.46:926][664]CompilerResultsLog:    Creating library D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-5672.suppressed.lib and object D:\Unreal\DigitalDurgenMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-5672.suppressed.exp
-[2018.01.13-18.35.46:926][664]CompilerResultsLog: Total build time: 14.67 seconds (Local executor: 2.42 seconds)
-[2018.01.13-18.35.46:926][664]LogMainFrame: MainFrame: Module compiling took 15.045 seconds
-[2018.01.13-18.35.47:020][664]LogClass: ESkillTag HotReload.
-[2018.01.13-18.35.47:020][664]LogClass: EDebuffType HotReload.
-[2018.01.13-18.35.47:020][664]LogClass: EBuffType HotReload.
-[2018.01.13-18.35.47:020][664]LogClass: EAbilityType HotReload.
-[2018.01.13-18.35.47:020][664]LogClass: ECastLocation HotReload.
-[2018.01.13-18.35.47:023][664]LogContentBrowser: Native class hierarchy updated for 'DDMMO' in 0.0007 seconds. Added 7 classes and 3 folders.
-[2018.01.13-18.35.47:025][664]Display: HotReload successful (14 functions remapped  0 scriptstructs remapped)
-[2018.01.13-18.35.47:298][664]LogContentBrowser: Native class hierarchy populated in 0.0079 seconds. Added 2372 classes and 526 folders.
-[2018.01.13-18.35.47:298][664]Display: HotReload took 15.4s.
-[2018.01.13-19.25.21:243][ 45]LogSlate: Took 0.000219 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2018.01.13-19.25.30:318][ 72]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/WhiteBoxMap' took 0.047
-[2018.01.13-19.25.30:364][ 72]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/WorriorClassData/Warrior] ([1] browsable assets)...
-[2018.01.13-19.25.30:364][ 72]OBJ SavePackage: Finished generating thumbnails for package [/Game/WorriorClassData/Warrior]
-[2018.01.13-19.25.30:364][ 72]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/WorriorClassData/Warrior" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Autosaves/Game/WorriorClassData/Warrior_Auto1.uasset" SILENT=false AUTOSAVING=true
-[2018.01.13-19.25.30:378][ 72]LogSavePackage: Save=12.99ms
-[2018.01.13-19.25.30:379][ 72]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Warrior_Auto1FE27AAD44CB1DE84B520929F9CE335CA.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Autosaves/Game/WorriorClassData/Warrior_Auto1.uasset'
-[2018.01.13-19.25.30:380][ 72]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Autosaves/Game/WorriorClassData/Warrior_Auto1.uasset
-[2018.01.13-19.25.30:380][ 72]LogFileHelpers: Auto-saving content packages took 0.037
-[2018.01.13-19.26.33:871][457]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/WarriorClassData/Warrior" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/WarriorClassData/Warrior.uasset" SILENT=true
-[2018.01.13-19.26.33:874][457]LogSavePackage: Save=1.12ms
-[2018.01.13-19.26.33:874][457]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Warrior589B960142594CE5E1CC5385BCB2EC77.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/WarriorClassData/Warrior.uasset'
-[2018.01.13-19.26.33:876][457]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/WarriorClassData/Warrior.uasset
-[2018.01.13-19.26.33:879][457]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/WarriorClassData/NewDataAsset" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/WarriorClassData/NewDataAsset.uasset" SILENT=true
-[2018.01.13-19.26.33:882][457]LogSavePackage: Save=1.23ms
-[2018.01.13-19.26.33:882][457]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/NewDataAssetE6EBEBAE41580BED320FB88D2BB7502C.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/WarriorClassData/NewDataAsset.uasset'
-[2018.01.13-19.26.33:884][457]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/WarriorClassData/NewDataAsset.uasset
-[2018.01.13-19.26.47:169][973]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/WarriorClassData/Warrior/Warrior" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/WarriorClassData/Warrior/Warrior.uasset" SILENT=true
-[2018.01.13-19.26.47:172][973]LogSavePackage: Save=1.24ms
-[2018.01.13-19.26.47:172][973]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/WarriorAA5673634C93C4D64BEE758FBA039C39.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/WarriorClassData/Warrior/Warrior.uasset'
-[2018.01.13-19.26.47:175][973]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/WarriorClassData/Warrior/Warrior.uasset
-[2018.01.13-19.26.47:177][973]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/WarriorClassData/Warrior/NewDataAsset" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/WarriorClassData/Warrior/NewDataAsset.uasset" SILENT=true
-[2018.01.13-19.26.47:179][973]LogSavePackage: Save=1.09ms
-[2018.01.13-19.26.47:179][973]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/NewDataAsset7EEE23D64AE37ABA4314F091A3E4E63A.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/WarriorClassData/Warrior/NewDataAsset.uasset'
-[2018.01.13-19.26.47:181][973]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/WarriorClassData/Warrior/NewDataAsset.uasset
-[2018.01.13-19.27.02:936][768]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ClassData/Warrior/Warrior" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/ClassData/Warrior/Warrior.uasset" SILENT=true
-[2018.01.13-19.27.02:939][768]LogSavePackage: Save=1.20ms
-[2018.01.13-19.27.02:939][768]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/WarriorD4FE22C4405762AE7C2AF1AC0582C1C8.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/ClassData/Warrior/Warrior.uasset'
-[2018.01.13-19.27.02:941][768]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/ClassData/Warrior/Warrior.uasset
-[2018.01.13-19.27.02:944][768]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ClassData/Warrior/NewDataAsset" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/ClassData/Warrior/NewDataAsset.uasset" SILENT=true
-[2018.01.13-19.27.02:946][768]LogSavePackage: Save=1.17ms
-[2018.01.13-19.27.02:946][768]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/NewDataAssetA127E5E04BBB7F97BC0E93B6C2CC855F.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/ClassData/Warrior/NewDataAsset.uasset'
-[2018.01.13-19.27.02:948][768]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/ClassData/Warrior/NewDataAsset.uasset
-[2018.01.13-19.27.17:471][459]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/Warrior/Warrior" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/Warrior/Warrior.uasset" SILENT=true
-[2018.01.13-19.27.17:474][459]LogSavePackage: Save=1.42ms
-[2018.01.13-19.27.17:474][459]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/WarriorEAB27A7348A2CD93870CBA907D741694.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/Warrior/Warrior.uasset'
-[2018.01.13-19.27.17:477][459]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/Warrior/Warrior.uasset
-[2018.01.13-19.27.17:479][459]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/Warrior/NewDataAsset" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/Warrior/NewDataAsset.uasset" SILENT=true
-[2018.01.13-19.27.17:481][459]LogSavePackage: Save=1.07ms
-[2018.01.13-19.27.17:481][459]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/NewDataAsset5624A10E4D2AB3BAC1B60D9050318C25.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/Warrior/NewDataAsset.uasset'
-[2018.01.13-19.27.17:484][459]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/Warrior/NewDataAsset.uasset
-[2018.01.13-19.27.28:137][684]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/Warrior/WarriorData" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/Warrior/WarriorData.uasset" SILENT=true
-[2018.01.13-19.27.28:139][684]LogSavePackage: Save=1.19ms
-[2018.01.13-19.27.28:139][684]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/WarriorData3DB7622C47CDB24EE38218833EB64DD3.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/Warrior/WarriorData.uasset'
-[2018.01.13-19.27.28:142][684]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/Warrior/WarriorData.uasset
-[2018.01.13-19.27.49:387][192]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/Warrior/Leap" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/Warrior/Leap.uasset" SILENT=true
-[2018.01.13-19.27.49:390][192]LogSavePackage: Save=1.29ms
-[2018.01.13-19.27.49:390][192]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Leap396C2F4E43376958623CC8B02E448DD3.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/Warrior/Leap.uasset'
-[2018.01.13-19.27.49:393][192]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/Warrior/Leap.uasset
-[2018.01.13-19.32.13:638][ 66]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/WarriorData" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorData.uasset" SILENT=true
-[2018.01.13-19.32.13:640][ 66]LogSavePackage: Save=1.17ms
-[2018.01.13-19.32.13:640][ 66]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/WarriorDataB08A4FC249B57FC976B1FE954332ABB2.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorData.uasset'
-[2018.01.13-19.32.13:643][ 66]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorData.uasset
-[2018.01.13-19.32.27:171][652]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/WarriorSkillsData/Block" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Block.uasset" SILENT=true
-[2018.01.13-19.32.27:174][652]LogSavePackage: Save=1.31ms
-[2018.01.13-19.32.27:174][652]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Block1E13F88043320434EBB192B7D29D5825.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Block.uasset'
-[2018.01.13-19.32.27:177][652]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Block.uasset
-[2018.01.13-19.32.27:179][652]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/WarriorSkillsData/Leap" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Leap.uasset" SILENT=true
-[2018.01.13-19.32.27:182][652]LogSavePackage: Save=1.21ms
-[2018.01.13-19.32.27:182][652]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/LeapC16C364A4760514EA6D24581F635C0B9.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Leap.uasset'
-[2018.01.13-19.32.27:184][652]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Leap.uasset
-[2018.01.13-19.32.27:187][652]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/WarriorSkillsData/Grab" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Grab.uasset" SILENT=true
-[2018.01.13-19.32.27:189][652]LogSavePackage: Save=1.35ms
-[2018.01.13-19.32.27:189][652]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/GrabCC0D33CC4A738A565DEB48A3FB93A65D.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Grab.uasset'
-[2018.01.13-19.32.27:192][652]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Grab.uasset
-[2018.01.13-19.32.27:197][652]LogSavePackage: Save=1.43ms
-[2018.01.13-19.32.27:197][652]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/SkyStrike7A04DFEF4592023FA408CDA75EE0E035.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/SkyStrike.uasset'
-[2018.01.13-19.32.27:200][652]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/SkyStrike.uasset
-[2018.01.13-19.32.27:205][652]LogSavePackage: Save=1.50ms
-[2018.01.13-19.32.27:205][652]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Downfall394C98F64505EC086D0833B7E44B6958.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Downfall.uasset'
-[2018.01.13-19.32.27:208][652]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Downfall.uasset
-[2018.01.13-19.32.27:210][652]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/WarriorSkillsData/Bash" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Bash.uasset" SILENT=true
-[2018.01.13-19.32.27:212][652]LogSavePackage: Save=1.14ms
-[2018.01.13-19.32.27:212][652]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Bash392F8E294D72B0F9024D12A40385F5FC.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Bash.uasset'
-[2018.01.13-19.32.27:215][652]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Bash.uasset
-[2018.01.13-19.32.27:221][652]LogSavePackage: Save=1.49ms
-[2018.01.13-19.32.27:221][652]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Retaliation286FB5824A6B27333AFC299C95C630A3.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Retaliation.uasset'
-[2018.01.13-19.32.27:223][652]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Retaliation.uasset
-[2018.01.13-19.32.27:228][652]LogSavePackage: Save=1.50ms
-[2018.01.13-19.32.27:228][652]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/LeapingStrike6D435ACF40F28DC8A9CE23B36B1089EF.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/LeapingStrike.uasset'
-[2018.01.13-19.32.27:231][652]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/LeapingStrike.uasset
-[2018.01.13-19.34.47:238][624]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/WarriorData" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorData.uasset" SILENT=true
-[2018.01.13-19.34.47:243][624]LogSavePackage: Save=1.39ms
-[2018.01.13-19.34.47:243][624]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/WarriorData053B9BFC4105C18FC525529C580157E0.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorData.uasset'
-[2018.01.13-19.34.47:246][624]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorData.uasset
-[2018.01.13-19.34.49:188][848]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/WarriorData" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorData.uasset" SILENT=true
-[2018.01.13-19.34.49:191][848]LogSavePackage: Save=1.25ms
-[2018.01.13-19.34.49:192][848]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/WarriorData9A85C00443E6AD798266C4B3DD57B035.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorData.uasset'
-[2018.01.13-19.34.49:193][848]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorData.uasset
-[2018.01.13-19.37.55:028][233]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/WhiteBoxMap' took 0.013
-[2018.01.13-19.37.55:031][233]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/CharacterClassData/WarriorSkillsData/Bash] ([1] browsable assets)...
-[2018.01.13-19.37.55:031][233]OBJ SavePackage: Finished generating thumbnails for package [/Game/CharacterClassData/WarriorSkillsData/Bash]
-[2018.01.13-19.37.55:035][233]LogSavePackage: Save=1.22ms
-[2018.01.13-19.37.55:035][233]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Bash_Auto2F8BCDBD34CE8C91AFC1EC9962834FC4E.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Autosaves/Game/CharacterClassData/WarriorSkillsData/Bash_Auto2.uasset'
-[2018.01.13-19.37.55:036][233]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Autosaves/Game/CharacterClassData/WarriorSkillsData/Bash_Auto2.uasset
-[2018.01.13-19.37.55:036][233]LogFileHelpers: Auto-saving content packages took 0.007
-[2018.01.13-19.38.53:523][197]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/WarriorSkillsData/Bash" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Bash.uasset" SILENT=true
-[2018.01.13-19.38.53:527][197]LogSavePackage: Save=1.16ms
-[2018.01.13-19.38.53:527][197]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Bash140D96AA4ECB094BEB8400B455C1F0F7.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Bash.uasset'
-[2018.01.13-19.38.53:530][197]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Bash.uasset
-[2018.01.13-19.41.41:790][782]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/WarriorSkillsData/Block" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Block.uasset" SILENT=true
-[2018.01.13-19.41.41:794][782]LogSavePackage: Save=1.12ms
-[2018.01.13-19.41.41:794][782]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Block9701B7B945FD46FF0320C9AC335B6B90.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Block.uasset'
-[2018.01.13-19.41.41:797][782]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Block.uasset
-[2018.01.13-19.45.13:747][128]LogSavePackage: Save=1.15ms
-[2018.01.13-19.45.13:747][128]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Downfall5E7DDF5A4D9AA482ABCC9898285C6629.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Downfall.uasset'
-[2018.01.13-19.45.13:749][128]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Downfall.uasset
-[2018.01.13-19.45.27:992][797]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/WarriorSkillsData/Bash" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Bash.uasset" SILENT=true
-[2018.01.13-19.45.27:997][797]LogSavePackage: Save=1.72ms
-[2018.01.13-19.45.27:997][797]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Bash1FAABF33470E44943AD5F08DB5FBC2E1.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Bash.uasset'
-[2018.01.13-19.45.28:001][797]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Bash.uasset
-[2018.01.13-19.45.37:391][911]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/WarriorSkillsData/Block" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Block.uasset" SILENT=true
-[2018.01.13-19.45.37:395][911]LogSavePackage: Save=1.12ms
-[2018.01.13-19.45.37:395][911]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/BlockDE476C0D4A21A72540C11A8B9C17E626.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Block.uasset'
-[2018.01.13-19.45.37:397][911]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Block.uasset
-[2018.01.13-19.45.58:481][705]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/WarriorSkillsData/Block" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Block.uasset" SILENT=true
-[2018.01.13-19.45.58:484][705]LogSavePackage: Save=1.17ms
-[2018.01.13-19.45.58:484][705]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Block8956889048E83B3A9267FAA2A92EFCE4.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Block.uasset'
-[2018.01.13-19.45.58:485][705]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Block.uasset
-[2018.01.13-19.47.27:391][796]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/WarriorSkillsData/Grab" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Grab.uasset" SILENT=true
-[2018.01.13-19.47.27:396][796]LogSavePackage: Save=1.13ms
-[2018.01.13-19.47.27:396][796]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Grab25F516C142A3C44E918C63B9455611D4.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Grab.uasset'
-[2018.01.13-19.47.27:399][796]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Grab.uasset
-[2018.01.13-19.48.25:826][152]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/WarriorSkillsData/Leap" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Leap.uasset" SILENT=true
-[2018.01.13-19.48.25:830][152]LogSavePackage: Save=1.12ms
-[2018.01.13-19.48.25:830][152]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Leap8417A4D5465EFA9025ABDC8B605ACA0E.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Leap.uasset'
-[2018.01.13-19.48.25:833][152]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Leap.uasset
-[2018.01.13-19.48.44:058][263]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/WarriorSkillsData/Leap" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Leap.uasset" SILENT=true
-[2018.01.13-19.48.44:061][263]LogSavePackage: Save=1.14ms
-[2018.01.13-19.48.44:061][263]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Leap1CA969AD4097FA55A31D8E96CA1B2EB6.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Leap.uasset'
-[2018.01.13-19.48.44:064][263]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Leap.uasset
-[2018.01.13-19.48.49:397][895]LogSavePackage: Save=1.03ms
-[2018.01.13-19.48.49:397][895]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/LeapingStrike2D71BC434CFC62919A4A9BBF153AA993.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/LeapingStrike.uasset'
-[2018.01.13-19.48.49:400][895]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/LeapingStrike.uasset
-[2018.01.13-19.49.26:911][371]LogSavePackage: Save=1.15ms
-[2018.01.13-19.49.26:911][371]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/LeapingStrike32FBD3C34A8B32708487D39D76583549.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/LeapingStrike.uasset'
-[2018.01.13-19.49.26:914][371]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/LeapingStrike.uasset
-[2018.01.13-19.49.38:643][748]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/WarriorSkillsData/Block" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Block.uasset" SILENT=true
-[2018.01.13-19.49.38:648][748]LogSavePackage: Save=1.07ms
-[2018.01.13-19.49.38:648][748]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/BlockFB730CAA413982B3F91DDC87C66E28EE.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Block.uasset'
-[2018.01.13-19.49.38:650][748]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Block.uasset
-[2018.01.13-19.49.48:180][866]LogSavePackage: Save=1.15ms
-[2018.01.13-19.49.48:180][866]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Downfall6DEDDFC54E7CA115FA924488B116BF7A.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Downfall.uasset'
-[2018.01.13-19.49.48:183][866]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Downfall.uasset
-[2018.01.13-19.49.54:809][646]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/WarriorSkillsData/Grab" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Grab.uasset" SILENT=true
-[2018.01.13-19.49.54:813][646]LogSavePackage: Save=1.12ms
-[2018.01.13-19.49.54:813][646]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Grab4B0520B1402664C1A392CD8A46497C22.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Grab.uasset'
-[2018.01.13-19.49.54:815][646]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Grab.uasset
-[2018.01.13-19.50.43:972][362]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/WhiteBoxMap' took 0.012
-[2018.01.13-19.50.43:974][362]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/CharacterClassData/WarriorSkillsData/Retaliation] ([1] browsable assets)...
-[2018.01.13-19.50.43:974][362]OBJ SavePackage: Finished generating thumbnails for package [/Game/CharacterClassData/WarriorSkillsData/Retaliation]
-[2018.01.13-19.50.43:979][362]LogSavePackage: Save=1.32ms
-[2018.01.13-19.50.43:979][362]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Retaliation_Auto3D021BD4A443662F059E98186DA84D3DB.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Autosaves/Game/CharacterClassData/WarriorSkillsData/Retaliation_Auto3.uasset'
-[2018.01.13-19.50.43:980][362]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Autosaves/Game/CharacterClassData/WarriorSkillsData/Retaliation_Auto3.uasset
-[2018.01.13-19.50.43:980][362]LogFileHelpers: Auto-saving content packages took 0.007
-[2018.01.13-19.53.14:380][224]LogSavePackage: Save=1.13ms
-[2018.01.13-19.53.14:380][224]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Retaliation2A68F013451C14C90DD2E28771447FBE.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Retaliation.uasset'
-[2018.01.13-19.53.14:383][224]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Retaliation.uasset
-[2018.01.13-19.54.12:798][221]LogSavePackage: Save=1.15ms
-[2018.01.13-19.54.12:798][221]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Downfall0A652C35478B8616C277B0AC272540E7.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Downfall.uasset'
-[2018.01.13-19.54.12:801][221]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Downfall.uasset
-[2018.01.13-19.54.38:113][192]LogSavePackage: Save=1.18ms
-[2018.01.13-19.54.38:113][192]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Retaliation7D49AEBE4184FC84C6AA36AFD328609C.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Retaliation.uasset'
-[2018.01.13-19.54.38:115][192]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Retaliation.uasset
-[2018.01.13-19.57.15:733][ 54]LogSavePackage: Save=1.20ms
-[2018.01.13-19.57.15:733][ 54]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/SkyStrike8705B25F42D3476638502A96C649790D.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/SkyStrike.uasset'
-[2018.01.13-19.57.15:735][ 54]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/SkyStrike.uasset
-[2018.01.13-19.57.16:567][150]LogSavePackage: Save=1.09ms
-[2018.01.13-19.57.16:568][150]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/SkyStrike2380806B464E96B82132DB8D98A03152.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/SkyStrike.uasset'
-[2018.01.13-19.57.16:569][150]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/SkyStrike.uasset
-[2018.01.13-19.57.21:445][708]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/WhiteBoxMap" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/Maps/WhiteBoxMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.01.13-19.57.21:570][708]LogSavePackage: Save=104.56ms
-[2018.01.13-19.57.21:570][708]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/WhiteBoxMap5F17233A4DA451B7D37B7EBB58829509.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/Maps/WhiteBoxMap.umap'
-[2018.01.13-19.57.21:573][708]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/Maps/WhiteBoxMap.umap
-[2018.01.13-19.57.24:212][  8]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharacterClassData/WarriorSkillsData/Leap" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Leap.uasset" SILENT=true
-[2018.01.13-19.57.24:216][  8]LogSavePackage: Save=1.09ms
-[2018.01.13-19.57.24:216][  8]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/Leap33F7CF9A45935104C3949B96873B0DAC.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Leap.uasset'
-[2018.01.13-19.57.24:219][  8]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/CharacterClassData/WarriorSkillsData/Leap.uasset
-[2018.01.13-19.57.26:477][273]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/WhiteBoxMap" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/Maps/WhiteBoxMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.01.13-19.57.26:590][273]LogSavePackage: Save=98.96ms
-[2018.01.13-19.57.26:590][273]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/WhiteBoxMap68A182E84B766318FD6504B52322563E.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/Maps/WhiteBoxMap.umap'
-[2018.01.13-19.57.26:593][273]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/Maps/WhiteBoxMap.umap
-[2018.01.13-19.57.32:795][ 12]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/WhiteBoxMap" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/Maps/WhiteBoxMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.01.13-19.57.32:906][ 12]LogSavePackage: Save=96.92ms
-[2018.01.13-19.57.32:906][ 12]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/WhiteBoxMap2A53AE974C3030C5059CAB99CE03A6BE.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/Maps/WhiteBoxMap.umap'
-[2018.01.13-19.57.32:910][ 12]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/Maps/WhiteBoxMap.umap
-[2018.01.13-19.57.42:444][150]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/WhiteBoxMap" FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/Maps/WhiteBoxMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.01.13-19.57.42:566][150]LogSavePackage: Save=106.93ms
-[2018.01.13-19.57.42:566][150]LogSavePackage: Moving '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Saved/WhiteBoxMap176A497C4CD5700159CF27827D1F0091.tmp' to '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/Maps/WhiteBoxMap.umap'
-[2018.01.13-19.57.42:567][150]LogFileManager: Warning: DeleteFile was unable to delete '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/Maps/WhiteBoxMap.umap', retrying in .5s...
-[2018.01.13-19.57.43:069][150]LogFileManager: Warning: DeleteFile recovered during retry!
-[2018.01.13-19.57.43:079][150]LogSavePackage: Display: Finished SavePackage ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/Maps/WhiteBoxMap.umap
-[2018.01.13-19.57.44:634][314]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.01.13-19.57.44:634][314]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.01.13-19.57.44:787][315]Cmd: QUIT_EDITOR
-[2018.01.13-19.57.45:620][315]LogExit: Preparing to exit.
-[2018.01.13-19.57.45:958][315]LogDirectoryWatcher: A directory notification for 'D:/Unreal/DigitalDurgenMMO/DDMMO/Content/' was aborted.
-[2018.01.13-19.57.45:976][315]LogExit: Editor shut down
-[2018.01.13-19.57.45:979][315]LogExit: Transaction tracking system shut down
-[2018.01.13-19.57.46:024][315]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
-[2018.01.13-19.57.46:024][315]LogDirectoryWatcher: A directory notification for '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/' was aborted.
-[2018.01.13-19.57.46:024][315]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
-[2018.01.13-19.57.46:024][315]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Media/MediaCompositing/Content/' was aborted.
-[2018.01.13-19.57.46:024][315]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/AppleARKit/Content/' was aborted.
-[2018.01.13-19.57.46:024][315]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Oculus/OculusVR/Content/' was aborted.
-[2018.01.13-19.57.46:024][315]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Steam/SteamVR/Content/' was aborted.
-[2018.01.13-19.57.46:081][315]LogExit: Object subsystem successfully closed.
-[2018.01.13-19.57.46:097][315]LogD3D11RHI: Shutdown
-[2018.01.13-19.57.46:097][315]LogD3D11RHI: CleanupD3DDevice
-[2018.01.13-19.57.46:099][315]LogD3D11RHI: ~FD3D11DynamicRHI
-[2018.01.13-19.57.46:106][315]LogModuleManager: Shutting down and abandoning module DDMMO (560)
-[2018.01.13-19.57.46:106][315]LogModuleManager: Shutting down and abandoning module BlueprintGraph (558)
-[2018.01.13-19.57.46:106][315]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (556)
-[2018.01.13-19.57.46:106][315]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (550)
-[2018.01.13-19.57.46:106][315]LogModuleManager: Shutting down and abandoning module DesktopPlatform (548)
-[2018.01.13-19.57.46:106][315]LogModuleManager: Shutting down and abandoning module SceneOutliner (546)
-[2018.01.13-19.57.46:106][315]LogModuleManager: Shutting down and abandoning module AddContentDialog (544)
-[2018.01.13-19.57.46:106][315]LogDirectoryWatcher: A directory notification for 'D:/Games/Epic Games/UE_4.18/FeaturePacks/' was aborted.
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module WidgetCarousel (543)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module EditorWidgets (540)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module CollectionManager (538)
-[2018.01.13-19.57.46:107][315]LogDirectoryWatcher: A directory notification for 'D:/Unreal/DigitalDurgenMMO/DDMMO/Content/Collections/' was aborted.
-[2018.01.13-19.57.46:107][315]LogDirectoryWatcher: A directory notification for 'D:/Unreal/DigitalDurgenMMO/DDMMO/Content/Developers/Ben/Collections/' was aborted.
-[2018.01.13-19.57.46:107][315]LogDirectoryWatcher: A directory notification for 'D:/Unreal/DigitalDurgenMMO/DDMMO/Saved/Collections/' was aborted.
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module StatsViewer (536)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module FoliageEdit (534)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module LandscapeEditor (532)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module MeshPaintMode (530)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (528)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module ActorPickerMode (526)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module GeometryMode (524)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module TextureAlignMode (522)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module BspMode (520)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (518)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module HardwareSurvey (516)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (514)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module AutomationWorker (512)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (510)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (508)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module PlacementMode (507)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (504)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (502)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (500)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (498)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (496)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (494)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (492)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (490)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (488)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module CharacterAI (486)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module AudioCapture (484)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module SequenceRecorder (483)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module SmartSnapping (480)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module SessionServices (478)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module ViewportSnapping (476)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module ViewportInteraction (474)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module ClothPainter (472)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (471)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module LogVisualizer (468)
-[2018.01.13-19.57.46:107][315]LogModuleManager: Shutting down and abandoning module IntroTutorials (466)
-[2018.01.13-19.57.46:108][315]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (465)
-[2018.01.13-19.57.46:108][315]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (462)
-[2018.01.13-19.57.46:108][315]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (460)
-[2018.01.13-19.57.46:108][315]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (458)
-[2018.01.13-19.57.46:108][315]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (457)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (454)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (452)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (450)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module InputBindingEditor (448)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module MergeActors (446)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module SizeMap (444)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module TreeMap (442)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module ReferenceViewer (440)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (438)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module LocalizationService (437)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module HardwareTargeting (434)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (432)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module UndoHistory (430)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module XmlParser (428)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module Blutility (426)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (424)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (423)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (420)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module SettingsEditor (418)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module ProjectLauncher (416)
-[2018.01.13-19.57.47:003][315]LogModuleManager: Shutting down and abandoning module SessionFrontend (414)
-[2018.01.13-19.57.47:004][315]LogModuleManager: Shutting down and abandoning module ProfilerClient (412)
-[2018.01.13-19.57.47:004][315]LogModuleManager: Shutting down and abandoning module DeviceManager (410)
-[2018.01.13-19.57.47:004][315]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (409)
-[2018.01.13-19.57.47:059][315]LogModuleManager: Shutting down and abandoning module AutomationController (406)
-[2018.01.13-19.57.47:059][315]LogModuleManager: Shutting down and abandoning module AutomationWindow (404)
-[2018.01.13-19.57.47:059][315]LogModuleManager: Shutting down and abandoning module Layers (402)
-[2018.01.13-19.57.47:059][315]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (400)
-[2018.01.13-19.57.47:059][315]LogModuleManager: Shutting down and abandoning module DetailCustomizations (398)
-[2018.01.13-19.57.47:059][315]LogModuleManager: Shutting down and abandoning module PackagesDialog (396)
-[2018.01.13-19.57.47:059][315]LogModuleManager: Shutting down and abandoning module Persona (394)
-[2018.01.13-19.57.47:059][315]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (393)
-[2018.01.13-19.57.47:059][315]LogModuleManager: Shutting down and abandoning module AnimGraph (391)
-[2018.01.13-19.57.47:059][315]LogModuleManager: Shutting down and abandoning module Kismet (388)
-[2018.01.13-19.57.47:067][315]LogModuleManager: Shutting down and abandoning module ClassViewer (386)
-[2018.01.13-19.57.47:069][315]LogModuleManager: Shutting down and abandoning module Toolbox (384)
-[2018.01.13-19.57.47:069][315]LogModuleManager: Shutting down and abandoning module ModuleUI (382)
-[2018.01.13-19.57.47:069][315]LogModuleManager: Shutting down and abandoning module MovieSceneTools (380)
-[2018.01.13-19.57.47:069][315]LogModuleManager: Shutting down and abandoning module OutputLog (378)
-[2018.01.13-19.57.47:069][315]LogModuleManager: Shutting down and abandoning module GammaUI (376)
-[2018.01.13-19.57.47:069][315]LogModuleManager: Shutting down and abandoning module Documentation (374)
-[2018.01.13-19.57.47:069][315]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (372)
-[2018.01.13-19.57.47:069][315]LogModuleManager: Shutting down and abandoning module MovieScene (370)
-[2018.01.13-19.57.47:069][315]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (368)
-[2018.01.13-19.57.47:069][315]LogModuleManager: Shutting down and abandoning module LauncherPlatform (366)
-[2018.01.13-19.57.47:069][315]LogModuleManager: Shutting down and abandoning module AnalyticsET (364)
-[2018.01.13-19.57.47:069][315]LogModuleManager: Shutting down and abandoning module PortalServices (362)
-[2018.01.13-19.57.47:069][315]LogModuleManager: Shutting down and abandoning module PortalRpc (360)
-[2018.01.13-19.57.47:069][315]LogModuleManager: Shutting down and abandoning module MessagingRpc (358)
-[2018.01.13-19.57.47:069][315]LogModuleManager: Shutting down and abandoning module AIModule (356)
-[2018.01.13-19.57.47:069][315]LogModuleManager: Shutting down and abandoning module GameplayDebugger (355)
-[2018.01.13-19.57.47:069][315]LogModuleManager: Shutting down and abandoning module AITestSuite (353)
-[2018.01.13-19.57.47:069][315]LogModuleManager: Shutting down and abandoning module ProfilerService (350)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module TaskGraph (348)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module SteamVRController (346)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (344)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (342)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module OculusInput (340)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (338)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (336)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module CableComponent (334)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (332)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module AndroidPermission (330)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module ActorSequence (326)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (324)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (322)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module MediaCompositing (320)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module HTML5Networking (318)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module AlembicImporter (316)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module AlembicLibrary (315)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module GeometryCache (314)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (313)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (308)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module PluginBrowser (306)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (304)
-[2018.01.13-19.57.47:196][315]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (302)
-[2018.01.13-19.57.47:197][315]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (300)
-[2018.01.13-19.57.47:197][315]LogModuleManager: Shutting down and abandoning module UObjectPlugin (298)
-[2018.01.13-19.57.47:197][315]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (296)
-[2018.01.13-19.57.47:197][315]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (294)
-[2018.01.13-19.57.47:197][315]LogModuleManager: Shutting down and abandoning module GitSourceControl (292)
-[2018.01.13-19.57.47:197][315]LogModuleManager: Shutting down and abandoning module SourceControl (291)
-[2018.01.13-19.57.47:197][315]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (288)
-[2018.01.13-19.57.47:197][315]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (286)
-[2018.01.13-19.57.47:197][315]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (284)
-[2018.01.13-19.57.47:197][315]LogModuleManager: Shutting down and abandoning module Paper2DEditor (282)
-[2018.01.13-19.57.47:197][315]LogModuleManager: Shutting down and abandoning module MeshPaint (281)
-[2018.01.13-19.57.47:197][315]LogModuleManager: Shutting down and abandoning module LevelEditor (279)
-[2018.01.13-19.57.47:197][315]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (278)
-[2018.01.13-19.57.47:197][315]LogModuleManager: Shutting down and abandoning module MainFrame (276)
-[2018.01.13-19.57.47:197][315]LogModuleManager: Shutting down and abandoning module HotReload (275)
-[2018.01.13-19.57.47:198][315]LogDirectoryWatcher: A directory notification for 'D:/Unreal/DigitalDurgenMMO/DDMMO/Binaries/Win64' was aborted.
-[2018.01.13-19.57.47:198][315]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (268)
-[2018.01.13-19.57.47:198][315]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (266)
-[2018.01.13-19.57.47:198][315]LogModuleManager: Shutting down and abandoning module PhysXVehicles (264)
-[2018.01.13-19.57.47:198][315]LogModuleManager: Shutting down and abandoning module OculusEditor (262)
-[2018.01.13-19.57.47:198][315]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (260)
-[2018.01.13-19.57.47:198][315]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (258)
-[2018.01.13-19.57.47:198][315]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (256)
-[2018.01.13-19.57.47:198][315]LogModuleManager: Shutting down and abandoning module UdpMessaging (254)
-[2018.01.13-19.57.47:299][315]LogModuleManager: Shutting down and abandoning module TcpMessaging (252)
-[2018.01.13-19.57.47:400][315]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (250)
-[2018.01.13-19.57.47:400][315]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (248)
-[2018.01.13-19.57.47:400][315]LogModuleManager: Shutting down and abandoning module FacialAnimation (246)
-[2018.01.13-19.57.47:400][315]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (244)
-[2018.01.13-19.57.47:400][315]LogModuleManager: Shutting down and abandoning module GraphEditor (243)
-[2018.01.13-19.57.47:400][315]LogModuleManager: Shutting down and abandoning module ContentBrowser (241)
-[2018.01.13-19.57.47:401][315]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (238)
-[2018.01.13-19.57.47:401][315]LogModuleManager: Shutting down and abandoning module Paper2D (236)
-[2018.01.13-19.57.47:401][315]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (234)
-[2018.01.13-19.57.47:401][315]LogModuleManager: Shutting down and abandoning module WmfMedia (232)
-[2018.01.13-19.57.47:401][315]LogModuleManager: Shutting down and abandoning module ImgMedia (230)
-[2018.01.13-19.57.47:401][315]LogModuleManager: Shutting down and abandoning module PacketHandler (228)
-[2018.01.13-19.57.47:401][315]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (226)
-[2018.01.13-19.57.47:401][315]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (224)
-[2018.01.13-19.57.47:401][315]LogModuleManager: Shutting down and abandoning module MediaAssets (222)
-[2018.01.13-19.57.47:401][315]LogModuleManager: Shutting down and abandoning module Media (221)
-[2018.01.13-19.57.47:407][315]LogModuleManager: Shutting down and abandoning module Overlay (218)
-[2018.01.13-19.57.47:407][315]LogModuleManager: Shutting down and abandoning module OverlayEditor (217)
-[2018.01.13-19.57.47:407][315]LogModuleManager: Shutting down and abandoning module VREditor (214)
-[2018.01.13-19.57.47:407][315]LogModuleManager: Shutting down and abandoning module StringTableEditor (212)
-[2018.01.13-19.57.47:407][315]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (210)
-[2018.01.13-19.57.47:407][315]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (208)
-[2018.01.13-19.57.47:407][315]LogModuleManager: Shutting down and abandoning module FunctionalTesting (206)
-[2018.01.13-19.57.47:407][315]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (204)
-[2018.01.13-19.57.47:407][315]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (203)
-[2018.01.13-19.57.47:407][315]LogModuleManager: Shutting down and abandoning module UMG (200)
-[2018.01.13-19.57.47:407][315]LogModuleManager: Shutting down and abandoning module UMGEditor (199)
-[2018.01.13-19.57.47:407][315]LogModuleManager: Shutting down and abandoning module Sequencer (198)
-[2018.01.13-19.57.47:407][315]LogModuleManager: Shutting down and abandoning module MessageLog (195)
-[2018.01.13-19.57.47:407][315]LogModuleManager: Shutting down and abandoning module SlateReflector (190)
-[2018.01.13-19.57.47:407][315]LogModuleManager: Shutting down and abandoning module Slate (188)
-[2018.01.13-19.57.47:407][315]LogModuleManager: Shutting down and abandoning module EditorStyle (186)
-[2018.01.13-19.57.47:409][315]LogModuleManager: Shutting down and abandoning module MRMesh (184)
-[2018.01.13-19.57.47:409][315]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (182)
-[2018.01.13-19.57.47:409][315]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (180)
-[2018.01.13-19.57.47:409][315]LogModuleManager: Shutting down and abandoning module XAudio2 (178)
-[2018.01.13-19.57.47:409][315]LogModuleManager: Shutting down and abandoning module Networking (176)
-[2018.01.13-19.57.47:409][315]LogModuleManager: Shutting down and abandoning module Core (172)
-[2018.01.13-19.57.47:409][315]LogModuleManager: Shutting down and abandoning module LevelSequence (168)
-[2018.01.13-19.57.47:409][315]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (166)
-[2018.01.13-19.57.47:409][315]LogModuleManager: Shutting down and abandoning module KismetCompiler (164)
-[2018.01.13-19.57.47:409][315]LogModuleManager: Shutting down and abandoning module MeshUtilities (162)
-[2018.01.13-19.57.47:409][315]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (161)
-[2018.01.13-19.57.47:410][315]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (160)
-[2018.01.13-19.57.47:410][315]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (159)
-[2018.01.13-19.57.47:410][315]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (157)
-[2018.01.13-19.57.47:410][315]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (155)
-[2018.01.13-19.57.47:410][315]LogModuleManager: Shutting down and abandoning module MaterialBaking (151)
-[2018.01.13-19.57.47:410][315]LogModuleManager: Shutting down and abandoning module DerivedDataCache (148)
-[2018.01.13-19.57.47:489][315]LogDerivedDataCache: Shutdown
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module TargetPlatform (146)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (145)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (143)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (141)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (139)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (137)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (135)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (133)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (131)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (129)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (127)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module ImageWrapper (126)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (123)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (121)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (119)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (117)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (115)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (113)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (111)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (109)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (107)
-[2018.01.13-19.57.47:489][315]LogModuleManager: Shutting down and abandoning module Messaging (105)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (103)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (101)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (99)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (97)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (95)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (93)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (91)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (89)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (87)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (85)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (83)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (81)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (79)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (77)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (75)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (73)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (71)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (69)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (67)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module InputCore (64)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module Settings (62)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module PhysXCooking (60)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module SteamVR (58)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module OculusHMD (56)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (54)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module AppleARKit (52)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module AugmentedReality (51)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module XMPP (43)
-[2018.01.13-19.57.47:490][315]LogModuleManager: Shutting down and abandoning module HTTP (41)
-[2018.01.13-19.57.47:490][315]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2018.01.13-19.57.47:490][315]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B9CB63F54-43A1-B256-1AB7-F9AFB2C5EF45%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.18.0-3709383%2B%2B%2BUE4%2BRelease-4.18&UserID=beecfab74453ec42fd9eda96829f0e02%7C8cce4fd1e42d4986ac046a5bcede236c%7C34a05206-24f3-445e-8486-5ec5dedaed86&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2018.01.13-19.57.47:496][315]LogModuleManager: Shutting down and abandoning module SSL (40)
-[2018.01.13-19.57.47:497][315]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
-[2018.01.13-19.57.47:498][315]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
-[2018.01.13-19.57.47:498][315]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
-[2018.01.13-19.57.47:498][315]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
-[2018.01.13-19.57.47:498][315]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
-[2018.01.13-19.57.47:498][315]LogModuleManager: Shutting down and abandoning module Landscape (26)
-[2018.01.13-19.57.47:498][315]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
-[2018.01.13-19.57.47:499][315]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
-[2018.01.13-19.57.47:499][315]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
-[2018.01.13-19.57.47:499][315]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
-[2018.01.13-19.57.47:499][315]LogModuleManager: Shutting down and abandoning module Renderer (16)
-[2018.01.13-19.57.47:499][315]LogModuleManager: Shutting down and abandoning module Engine (14)
-[2018.01.13-19.57.47:499][315]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
-[2018.01.13-19.57.47:499][315]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
-[2018.01.13-19.57.47:499][315]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
-[2018.01.13-19.57.47:499][315]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-[2018.01.13-19.57.47:499][315]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-[2018.01.13-19.57.47:499][315]LogModuleManager: Shutting down and abandoning module PakFile (2)
-[2018.01.13-19.57.47:501][315]LogExit: Exiting.
-[2018.01.13-19.57.47:511][315]Log file closed, 01/13/18 14:57:47
+[2018.01.17-17.44.53:542][  0]LogInit: Selected Device Profile: [Windows]
+[2018.01.17-17.44.53:542][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.01.17-17.44.53:585][  0]LogInit: Computer: BMO
+[2018.01.17-17.44.53:585][  0]LogInit: User: Ben
+[2018.01.17-17.44.53:585][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.01.17-17.44.53:585][  0]LogInit: High frequency timer resolution =3.903987 MHz
+[2018.01.17-17.44.53:585][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2018.01.17-17.44.53:585][  0]LogMemory: Platform Memory Stats for Windows
+[2018.01.17-17.44.53:585][  0]LogMemory: Process Physical Memory: 270.11 MB used, 270.11 MB peak
+[2018.01.17-17.44.53:585][  0]LogMemory: Process Virtual Memory: 269.82 MB used, 269.82 MB peak
+[2018.01.17-17.44.53:585][  0]LogMemory: Physical Memory: 6411.99 MB used,  9914.57 MB free, 16326.55 MB total
+[2018.01.17-17.44.53:585][  0]LogMemory: Virtual Memory: 627.63 MB used,  9914.57 MB free, 134217728.00 MB total
+[2018.01.17-17.44.53:685][  0]LogInit: Using OS detected language (en-US).
+[2018.01.17-17.44.53:685][  0]LogInit: Using OS detected locale (en-CA).
+[2018.01.17-17.44.53:687][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2018.01.17-17.44.54:038][  0]LogInit: Setting process to per monitor DPI aware
+[2018.01.17-17.44.54:242][  0]LogD3D11RHI: D3D11 adapters:
+[2018.01.17-17.44.54:267][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2018.01.17-17.44.54:267][  0]LogD3D11RHI:       3975/0/8163 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2018.01.17-17.44.54:268][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.01.17-17.44.54:268][  0]LogD3D11RHI:       0/0/256 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.01.17-17.44.54:268][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.01.17-17.44.54:272][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.01.17-17.44.54:272][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2018.01.17-17.44.54:272][  0]LogWindows: EnumDisplayDevices:
+[2018.01.17-17.44.54:272][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2018.01.17-17.44.54:272][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:1)
+[2018.01.17-17.44.54:273][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2018.01.17-17.44.54:273][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2018.01.17-17.44.54:273][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2018.01.17-17.44.54:273][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2018.01.17-17.44.54:273][  0]LogD3D11RHI:   Driver Version: 388.59 (internal:23.21.13.8859, unified:388.59)
+[2018.01.17-17.44.54:273][  0]LogD3D11RHI:      Driver Date: 12-5-2017
+[2018.01.17-17.44.54:273][  0]LogRHI: Texture pool is 2782 MB (70% of 3975 MB)
+[2018.01.17-17.44.54:283][  0]LogD3D11RHI: Async texture creation enabled
+[2018.01.17-17.44.54:303][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2018.01.17-17.44.54:353][  0]LogShaderCompilers: Guid format shader working directory is -3 characters bigger than the processId version (../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Intermediate/Shaders/WorkingDirectory/6640/).
+[2018.01.17-17.44.54:353][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Ben/AppData/Local/Temp/UnrealShaderWorkingDir/90BCB8B44BB2622479888EAD86AA89D5/'.
+[2018.01.17-17.44.54:353][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.01.17-17.44.55:104][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.01.17-17.44.55:141][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.01.17-17.44.55:177][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.01.17-17.44.55:212][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.01.17-17.44.55:246][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.01.17-17.44.55:281][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.01.17-17.44.55:316][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.01.17-17.44.55:351][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.01.17-17.44.55:381][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.01.17-17.44.55:415][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2018.01.17-17.44.55:450][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2018.01.17-17.44.55:484][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2018.01.17-17.44.55:518][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2018.01.17-17.44.55:555][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2018.01.17-17.44.55:624][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2018.01.17-17.44.55:625][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.01.17-17.44.55:658][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.01.17-17.44.55:685][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.01.17-17.44.55:752][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.01.17-17.44.55:772][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.01.17-17.44.55:808][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.01.17-17.44.55:843][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.01.17-17.44.55:877][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.01.17-17.44.55:910][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.01.17-17.44.55:910][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.01.17-17.44.56:200][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.01.17-17.44.56:304][  0]LogDerivedDataCache: Loaded boot cache 0.10s 79MB C:/Users/Ben/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
+[2018.01.17-17.44.56:304][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Ben/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc
+[2018.01.17-17.44.56:304][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.01.17-17.44.56:304][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.01.17-17.44.56:304][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.01.17-17.44.56:304][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.01.17-17.44.56:321][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.01.17-17.44.56:334][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Ben/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.01.17-17.44.56:343][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.01.17-17.44.56:343][  0]LogSlate: Using Freetype 2.6.0
+[2018.01.17-17.44.56:344][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.01.17-17.44.56:344][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.01.17-17.44.56:646][  0]LogInit: Selected Device Profile: [Windows]
+[2018.01.17-17.44.56:808][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.01.17-17.44.56:832][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.01.17-17.44.56:832][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.01.17-17.44.56:832][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.01.17-17.44.56:832][  0]LogMeshReduction: No automatic mesh merging module available
+[2018.01.17-17.44.56:832][  0]LogMeshMerging: No automatic mesh merging module available
+[2018.01.17-17.44.56:923][  0]LogNetVersion: DDMMO , NetCL: 3709383, EngineNetVer: 2, GameNetVer: 0 (Checksum: 699005191)
+[2018.01.17-17.44.57:046][  0]LogAssetRegistry: FAssetRegistry took 0.0253 seconds to start up
+[2018.01.17-17.44.57:755][  0]LogPackageLocalizationCache: Processed 7 localized package path(s) for 2 prioritized culture(s) in 0.360386 seconds
+[2018.01.17-17.44.57:763][  0]LogUObjectArray: 35900 objects as part of root set at end of initial load.
+[2018.01.17-17.44.57:763][  0]LogUObjectAllocator: 7372024 out of 0 bytes used by permanent object pool.
+[2018.01.17-17.44.57:763][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.01.17-17.44.57:802][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2018.01.17-17.44.59:796][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.01.17-17.44.59:830][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.01.17-17.45.04:233][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2018.01.17-17.45.04:532][  0]SourceControl: Source control is disabled
+[2018.01.17-17.45.04:532][  0]SourceControl: Source control is disabled
+[2018.01.17-17.45.04:572][  0]SourceControl: Source control is disabled
+[2018.01.17-17.45.04:608][  0]SourceControl: Source control is disabled
+[2018.01.17-17.45.05:187][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.01.17-17.45.05:488][  0]LogOcInput: OculusInput pre-init called
+[2018.01.17-17.45.05:727][  0]LogEngine: Initializing Engine...
+[2018.01.17-17.45.05:733][  0]LogHMD: Failed to initialize OpenVR with code 105
+[2018.01.17-17.45.06:006][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.01.17-17.45.06:006][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.01.17-17.45.06:108][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.01.17-17.45.06:124][  0]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.01.17-17.45.06:132][  0]LogInit: FAudioDevice initialized.
+[2018.01.17-17.45.06:273][  0]LogDerivedDataCache: Saved boot cache 0.14s 79MB C:/Users/Ben/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
+[2018.01.17-17.45.06:291][  0]LogInit: Texture streaming: Enabled
+[2018.01.17-17.45.06:360][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.01.17-17.45.06:360][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Crashed, SessionId={CFD619E2-4965-CC27-BC0E-B4B75C9B9454}
+[2018.01.17-17.45.06:437][  0]LogInit: Transaction tracking system initialized
+[2018.01.17-17.45.06:620][  0]BlueprintLog: New page: Editor Load
+[2018.01.17-17.45.07:248][  0]LocalizationService: Localization service is disabled
+[2018.01.17-17.45.08:275][  0]LogConsoleResponse: Display: 
+[2018.01.17-17.45.08:423][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.01.17-17.45.08:423][  0]LogCook: Display: Mobile HDR setting 1
+[2018.01.17-17.45.08:423][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.01.17-17.45.09:178][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/DigitalDurgenMMO/DDMMO/Content/' took 0.01s
+[2018.01.17-17.45.09:223][  0]SourceControl: Source control is disabled
+[2018.01.17-17.45.09:223][  0]Cmd: MAP LOAD FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/Maps/WhiteBoxMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.01.17-17.45.09:224][  0]LightingResults: New page: Lighting Build
+[2018.01.17-17.45.09:249][  0]MapCheck: New page: Map Check
+[2018.01.17-17.45.09:249][  0]LightingResults: New page: Lighting Build
+[2018.01.17-17.45.09:440][  0]LogAIModule: Creating AISystem for world WhiteBoxMap
+[2018.01.17-17.45.09:445][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.01.17-17.45.09:454][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.01.17-17.45.09:514][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 60.469ms to complete.
+[2018.01.17-17.45.09:514][  0]LogFileHelpers: Loading map 'WhiteBoxMap' took 0.291
+[2018.01.17-17.45.09:662][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.01.17-17.45.09:663][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.01.17-17.45.09:793][  0]LogCollectionManager: Loaded 0 collections in 0.001117 seconds
+[2018.01.17-17.45.09:860][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/DigitalDurgenMMO/DDMMO/Saved/Collections/' took 0.01s
+[2018.01.17-17.45.09:860][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/DigitalDurgenMMO/DDMMO/Content/Developers/Ben/Collections/' took 0.01s
+[2018.01.17-17.45.09:860][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/DigitalDurgenMMO/DDMMO/Content/Collections/' took 0.01s
+[2018.01.17-17.45.09:860][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2018.01.17-17.45.09:868][  0]LogContentBrowser: Native class hierarchy populated in 0.0073 seconds. Added 2370 classes and 522 folders.
+[2018.01.17-17.45.09:906][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2018.01.17-17.45.09:943][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2018.01.17-17.45.09:972][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2018.01.17-17.45.10:002][  0]LogSlate: Took 0.000199 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.01.17-17.45.10:005][  0]LogSlate: Took 0.000201 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.01.17-17.45.10:009][  0]LogSlate: Took 0.000141 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.01.17-17.45.10:088][  0]LogRenderer: Reallocating scene render targets to support 1148x576 Format 10 NumSamples 1 (Frame:1).
+[2018.01.17-17.45.10:230][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2018.01.17-17.45.10:230][  0]LogLoad: (Engine Initialization) Total time: 19.43 seconds
+[2018.01.17-17.45.10:230][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.01.17-17.45.10:230][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2018.01.17-17.45.10:255][  0]LogAssetRegistry: Asset discovery search completed in 13.2314 seconds
+[2018.01.17-17.45.10:279][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.01.17-17.45.10:279][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000134 seconds (updated 0 objects)
+[2018.01.17-17.45.10:285][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.01.17-17.45.10:353][  0]LogSlate: Took 0.000163 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.01.17-18.28.02:859][323]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.01.17-18.28.02:859][323]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.01.17-18.28.02:997][324]Cmd: QUIT_EDITOR
+[2018.01.17-18.28.03:020][324]LogExit: Preparing to exit.
+[2018.01.17-18.28.04:136][324]LogDirectoryWatcher: A directory notification for 'D:/Unreal/DigitalDurgenMMO/DDMMO/Content/' was aborted.
+[2018.01.17-18.28.04:160][324]LogExit: Editor shut down
+[2018.01.17-18.28.04:165][324]LogExit: Transaction tracking system shut down
+[2018.01.17-18.28.04:250][324]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2018.01.17-18.28.04:250][324]LogDirectoryWatcher: A directory notification for '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/' was aborted.
+[2018.01.17-18.28.04:250][324]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2018.01.17-18.28.04:250][324]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Media/MediaCompositing/Content/' was aborted.
+[2018.01.17-18.28.04:250][324]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/AppleARKit/Content/' was aborted.
+[2018.01.17-18.28.04:250][324]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Oculus/OculusVR/Content/' was aborted.
+[2018.01.17-18.28.04:250][324]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Steam/SteamVR/Content/' was aborted.
+[2018.01.17-18.28.04:285][324]LogExit: Object subsystem successfully closed.
+[2018.01.17-18.28.04:305][324]LogD3D11RHI: Shutdown
+[2018.01.17-18.28.04:305][324]LogD3D11RHI: CleanupD3DDevice
+[2018.01.17-18.28.04:306][324]LogD3D11RHI: ~FD3D11DynamicRHI
+[2018.01.17-18.28.04:312][324]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (550)
+[2018.01.17-18.28.04:312][324]LogModuleManager: Shutting down and abandoning module DesktopPlatform (548)
+[2018.01.17-18.28.04:312][324]LogModuleManager: Shutting down and abandoning module SceneOutliner (546)
+[2018.01.17-18.28.04:312][324]LogModuleManager: Shutting down and abandoning module AddContentDialog (544)
+[2018.01.17-18.28.04:312][324]LogDirectoryWatcher: A directory notification for 'D:/Games/Epic Games/UE_4.18/FeaturePacks/' was aborted.
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module WidgetCarousel (543)
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module EditorWidgets (540)
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module CollectionManager (538)
+[2018.01.17-18.28.04:313][324]LogDirectoryWatcher: A directory notification for 'D:/Unreal/DigitalDurgenMMO/DDMMO/Content/Collections/' was aborted.
+[2018.01.17-18.28.04:313][324]LogDirectoryWatcher: A directory notification for 'D:/Unreal/DigitalDurgenMMO/DDMMO/Content/Developers/Ben/Collections/' was aborted.
+[2018.01.17-18.28.04:313][324]LogDirectoryWatcher: A directory notification for 'D:/Unreal/DigitalDurgenMMO/DDMMO/Saved/Collections/' was aborted.
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module StatsViewer (536)
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module FoliageEdit (534)
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module LandscapeEditor (532)
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module MeshPaintMode (530)
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (528)
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module ActorPickerMode (526)
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module GeometryMode (524)
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module TextureAlignMode (522)
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module BspMode (520)
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (518)
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module HardwareSurvey (516)
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (514)
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module AutomationWorker (512)
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (510)
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (508)
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module PlacementMode (507)
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (504)
+[2018.01.17-18.28.04:313][324]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (502)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (500)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (498)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (496)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (494)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (492)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (490)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (488)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module CharacterAI (486)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module AudioCapture (484)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module SequenceRecorder (483)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module SmartSnapping (480)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module SessionServices (478)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module ViewportSnapping (476)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module ViewportInteraction (474)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module ClothPainter (472)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (471)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module LogVisualizer (468)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module IntroTutorials (466)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (465)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (462)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (460)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (458)
+[2018.01.17-18.28.04:314][324]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (457)
+[2018.01.17-18.28.04:385][324]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (454)
+[2018.01.17-18.28.04:385][324]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (452)
+[2018.01.17-18.28.04:385][324]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (450)
+[2018.01.17-18.28.04:385][324]LogModuleManager: Shutting down and abandoning module InputBindingEditor (448)
+[2018.01.17-18.28.04:385][324]LogModuleManager: Shutting down and abandoning module MergeActors (446)
+[2018.01.17-18.28.04:385][324]LogModuleManager: Shutting down and abandoning module SizeMap (444)
+[2018.01.17-18.28.04:385][324]LogModuleManager: Shutting down and abandoning module TreeMap (442)
+[2018.01.17-18.28.04:385][324]LogModuleManager: Shutting down and abandoning module ReferenceViewer (440)
+[2018.01.17-18.28.04:385][324]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (438)
+[2018.01.17-18.28.04:386][324]LogModuleManager: Shutting down and abandoning module LocalizationService (437)
+[2018.01.17-18.28.04:386][324]LogModuleManager: Shutting down and abandoning module HardwareTargeting (434)
+[2018.01.17-18.28.04:386][324]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (432)
+[2018.01.17-18.28.04:386][324]LogModuleManager: Shutting down and abandoning module UndoHistory (430)
+[2018.01.17-18.28.04:386][324]LogModuleManager: Shutting down and abandoning module XmlParser (428)
+[2018.01.17-18.28.04:386][324]LogModuleManager: Shutting down and abandoning module Blutility (426)
+[2018.01.17-18.28.04:386][324]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (424)
+[2018.01.17-18.28.04:386][324]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (423)
+[2018.01.17-18.28.04:386][324]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (420)
+[2018.01.17-18.28.04:386][324]LogModuleManager: Shutting down and abandoning module SettingsEditor (418)
+[2018.01.17-18.28.04:386][324]LogModuleManager: Shutting down and abandoning module ProjectLauncher (416)
+[2018.01.17-18.28.04:386][324]LogModuleManager: Shutting down and abandoning module SessionFrontend (414)
+[2018.01.17-18.28.04:386][324]LogModuleManager: Shutting down and abandoning module ProfilerClient (412)
+[2018.01.17-18.28.04:386][324]LogModuleManager: Shutting down and abandoning module DeviceManager (410)
+[2018.01.17-18.28.04:386][324]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (409)
+[2018.01.17-18.28.04:440][324]LogModuleManager: Shutting down and abandoning module AutomationController (406)
+[2018.01.17-18.28.04:440][324]LogModuleManager: Shutting down and abandoning module AutomationWindow (404)
+[2018.01.17-18.28.04:440][324]LogModuleManager: Shutting down and abandoning module Layers (402)
+[2018.01.17-18.28.04:440][324]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (400)
+[2018.01.17-18.28.04:440][324]LogModuleManager: Shutting down and abandoning module DetailCustomizations (398)
+[2018.01.17-18.28.04:440][324]LogModuleManager: Shutting down and abandoning module PackagesDialog (396)
+[2018.01.17-18.28.04:440][324]LogModuleManager: Shutting down and abandoning module Persona (394)
+[2018.01.17-18.28.04:440][324]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (393)
+[2018.01.17-18.28.04:440][324]LogModuleManager: Shutting down and abandoning module AnimGraph (391)
+[2018.01.17-18.28.04:440][324]LogModuleManager: Shutting down and abandoning module Kismet (388)
+[2018.01.17-18.28.04:441][324]LogModuleManager: Shutting down and abandoning module ClassViewer (386)
+[2018.01.17-18.28.04:441][324]LogModuleManager: Shutting down and abandoning module Toolbox (384)
+[2018.01.17-18.28.04:441][324]LogModuleManager: Shutting down and abandoning module ModuleUI (382)
+[2018.01.17-18.28.04:441][324]LogModuleManager: Shutting down and abandoning module MovieSceneTools (380)
+[2018.01.17-18.28.04:441][324]LogModuleManager: Shutting down and abandoning module OutputLog (378)
+[2018.01.17-18.28.04:441][324]LogModuleManager: Shutting down and abandoning module GammaUI (376)
+[2018.01.17-18.28.04:441][324]LogModuleManager: Shutting down and abandoning module Documentation (374)
+[2018.01.17-18.28.04:441][324]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (372)
+[2018.01.17-18.28.04:441][324]LogModuleManager: Shutting down and abandoning module MovieScene (370)
+[2018.01.17-18.28.04:441][324]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (368)
+[2018.01.17-18.28.04:441][324]LogModuleManager: Shutting down and abandoning module LauncherPlatform (366)
+[2018.01.17-18.28.04:441][324]LogModuleManager: Shutting down and abandoning module AnalyticsET (364)
+[2018.01.17-18.28.04:441][324]LogModuleManager: Shutting down and abandoning module PortalServices (362)
+[2018.01.17-18.28.04:441][324]LogModuleManager: Shutting down and abandoning module PortalRpc (360)
+[2018.01.17-18.28.04:441][324]LogModuleManager: Shutting down and abandoning module MessagingRpc (358)
+[2018.01.17-18.28.04:441][324]LogModuleManager: Shutting down and abandoning module AIModule (356)
+[2018.01.17-18.28.04:441][324]LogModuleManager: Shutting down and abandoning module GameplayDebugger (355)
+[2018.01.17-18.28.04:441][324]LogModuleManager: Shutting down and abandoning module AITestSuite (353)
+[2018.01.17-18.28.04:441][324]LogModuleManager: Shutting down and abandoning module ProfilerService (350)
+[2018.01.17-18.28.04:460][324]LogModuleManager: Shutting down and abandoning module TaskGraph (348)
+[2018.01.17-18.28.04:460][324]LogModuleManager: Shutting down and abandoning module SteamVRController (346)
+[2018.01.17-18.28.04:460][324]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (344)
+[2018.01.17-18.28.04:460][324]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (342)
+[2018.01.17-18.28.04:460][324]LogModuleManager: Shutting down and abandoning module OculusInput (340)
+[2018.01.17-18.28.04:460][324]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (338)
+[2018.01.17-18.28.04:460][324]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (336)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module CableComponent (334)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (332)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module AndroidPermission (330)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module ActorSequence (326)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (324)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (322)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module MediaCompositing (320)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module HTML5Networking (318)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module AlembicImporter (316)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module AlembicLibrary (315)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module GeometryCache (314)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (313)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (308)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module PluginBrowser (306)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (304)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (302)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (300)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module UObjectPlugin (298)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (296)
+[2018.01.17-18.28.04:461][324]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (294)
+[2018.01.17-18.28.04:462][324]LogModuleManager: Shutting down and abandoning module GitSourceControl (292)
+[2018.01.17-18.28.04:462][324]LogModuleManager: Shutting down and abandoning module SourceControl (291)
+[2018.01.17-18.28.04:462][324]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (288)
+[2018.01.17-18.28.04:462][324]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (286)
+[2018.01.17-18.28.04:462][324]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (284)
+[2018.01.17-18.28.04:462][324]LogModuleManager: Shutting down and abandoning module Paper2DEditor (282)
+[2018.01.17-18.28.04:462][324]LogModuleManager: Shutting down and abandoning module MeshPaint (281)
+[2018.01.17-18.28.04:462][324]LogModuleManager: Shutting down and abandoning module LevelEditor (279)
+[2018.01.17-18.28.04:463][324]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (278)
+[2018.01.17-18.28.04:463][324]LogModuleManager: Shutting down and abandoning module MainFrame (276)
+[2018.01.17-18.28.04:463][324]LogModuleManager: Shutting down and abandoning module HotReload (275)
+[2018.01.17-18.28.04:463][324]LogDirectoryWatcher: A directory notification for 'D:/Unreal/DigitalDurgenMMO/DDMMO/Binaries/Win64' was aborted.
+[2018.01.17-18.28.04:464][324]LogModuleManager: Shutting down and abandoning module DDMMO (270)
+[2018.01.17-18.28.04:464][324]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (268)
+[2018.01.17-18.28.04:464][324]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (266)
+[2018.01.17-18.28.04:464][324]LogModuleManager: Shutting down and abandoning module PhysXVehicles (264)
+[2018.01.17-18.28.04:464][324]LogModuleManager: Shutting down and abandoning module OculusEditor (262)
+[2018.01.17-18.28.04:464][324]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (260)
+[2018.01.17-18.28.04:464][324]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (258)
+[2018.01.17-18.28.04:464][324]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (256)
+[2018.01.17-18.28.04:464][324]LogModuleManager: Shutting down and abandoning module UdpMessaging (254)
+[2018.01.17-18.28.04:565][324]LogModuleManager: Shutting down and abandoning module TcpMessaging (252)
+[2018.01.17-18.28.04:666][324]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (250)
+[2018.01.17-18.28.04:666][324]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (248)
+[2018.01.17-18.28.04:666][324]LogModuleManager: Shutting down and abandoning module FacialAnimation (246)
+[2018.01.17-18.28.04:666][324]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (244)
+[2018.01.17-18.28.04:666][324]LogModuleManager: Shutting down and abandoning module GraphEditor (243)
+[2018.01.17-18.28.04:666][324]LogModuleManager: Shutting down and abandoning module ContentBrowser (241)
+[2018.01.17-18.28.04:667][324]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (238)
+[2018.01.17-18.28.04:667][324]LogModuleManager: Shutting down and abandoning module Paper2D (236)
+[2018.01.17-18.28.04:667][324]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (234)
+[2018.01.17-18.28.04:667][324]LogModuleManager: Shutting down and abandoning module WmfMedia (232)
+[2018.01.17-18.28.04:668][324]LogModuleManager: Shutting down and abandoning module ImgMedia (230)
+[2018.01.17-18.28.04:668][324]LogModuleManager: Shutting down and abandoning module PacketHandler (228)
+[2018.01.17-18.28.04:668][324]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (226)
+[2018.01.17-18.28.04:668][324]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (224)
+[2018.01.17-18.28.04:668][324]LogModuleManager: Shutting down and abandoning module MediaAssets (222)
+[2018.01.17-18.28.04:668][324]LogModuleManager: Shutting down and abandoning module Media (221)
+[2018.01.17-18.28.04:674][324]LogModuleManager: Shutting down and abandoning module Overlay (218)
+[2018.01.17-18.28.04:674][324]LogModuleManager: Shutting down and abandoning module OverlayEditor (217)
+[2018.01.17-18.28.04:674][324]LogModuleManager: Shutting down and abandoning module VREditor (214)
+[2018.01.17-18.28.04:674][324]LogModuleManager: Shutting down and abandoning module StringTableEditor (212)
+[2018.01.17-18.28.04:674][324]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (210)
+[2018.01.17-18.28.04:674][324]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (208)
+[2018.01.17-18.28.04:674][324]LogModuleManager: Shutting down and abandoning module FunctionalTesting (206)
+[2018.01.17-18.28.04:674][324]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (204)
+[2018.01.17-18.28.04:674][324]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (203)
+[2018.01.17-18.28.04:674][324]LogModuleManager: Shutting down and abandoning module UMG (200)
+[2018.01.17-18.28.04:675][324]LogModuleManager: Shutting down and abandoning module UMGEditor (199)
+[2018.01.17-18.28.04:675][324]LogModuleManager: Shutting down and abandoning module Sequencer (198)
+[2018.01.17-18.28.04:675][324]LogModuleManager: Shutting down and abandoning module MessageLog (195)
+[2018.01.17-18.28.04:675][324]LogModuleManager: Shutting down and abandoning module SlateReflector (190)
+[2018.01.17-18.28.04:675][324]LogModuleManager: Shutting down and abandoning module Slate (188)
+[2018.01.17-18.28.04:675][324]LogModuleManager: Shutting down and abandoning module EditorStyle (186)
+[2018.01.17-18.28.04:678][324]LogModuleManager: Shutting down and abandoning module MRMesh (184)
+[2018.01.17-18.28.04:678][324]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (182)
+[2018.01.17-18.28.04:678][324]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (180)
+[2018.01.17-18.28.04:678][324]LogModuleManager: Shutting down and abandoning module XAudio2 (178)
+[2018.01.17-18.28.04:678][324]LogModuleManager: Shutting down and abandoning module Networking (176)
+[2018.01.17-18.28.04:678][324]LogModuleManager: Shutting down and abandoning module Core (172)
+[2018.01.17-18.28.04:678][324]LogModuleManager: Shutting down and abandoning module LevelSequence (168)
+[2018.01.17-18.28.04:678][324]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (166)
+[2018.01.17-18.28.04:678][324]LogModuleManager: Shutting down and abandoning module KismetCompiler (164)
+[2018.01.17-18.28.04:678][324]LogModuleManager: Shutting down and abandoning module MeshUtilities (162)
+[2018.01.17-18.28.04:678][324]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (161)
+[2018.01.17-18.28.04:678][324]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (160)
+[2018.01.17-18.28.04:678][324]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (159)
+[2018.01.17-18.28.04:679][324]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (157)
+[2018.01.17-18.28.04:679][324]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (155)
+[2018.01.17-18.28.04:679][324]LogModuleManager: Shutting down and abandoning module MaterialBaking (151)
+[2018.01.17-18.28.04:679][324]LogModuleManager: Shutting down and abandoning module DerivedDataCache (148)
+[2018.01.17-18.28.04:728][324]LogDerivedDataCache: Shutdown
+[2018.01.17-18.28.04:728][324]LogModuleManager: Shutting down and abandoning module TargetPlatform (146)
+[2018.01.17-18.28.04:728][324]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (145)
+[2018.01.17-18.28.04:728][324]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (143)
+[2018.01.17-18.28.04:728][324]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (141)
+[2018.01.17-18.28.04:728][324]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (139)
+[2018.01.17-18.28.04:728][324]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (137)
+[2018.01.17-18.28.04:728][324]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (135)
+[2018.01.17-18.28.04:728][324]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (133)
+[2018.01.17-18.28.04:728][324]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (131)
+[2018.01.17-18.28.04:728][324]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (129)
+[2018.01.17-18.28.04:729][324]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (127)
+[2018.01.17-18.28.04:729][324]LogModuleManager: Shutting down and abandoning module ImageWrapper (126)
+[2018.01.17-18.28.04:729][324]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (123)
+[2018.01.17-18.28.04:729][324]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (121)
+[2018.01.17-18.28.04:729][324]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (119)
+[2018.01.17-18.28.04:729][324]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (117)
+[2018.01.17-18.28.04:729][324]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (115)
+[2018.01.17-18.28.04:729][324]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (113)
+[2018.01.17-18.28.04:729][324]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (111)
+[2018.01.17-18.28.04:729][324]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (109)
+[2018.01.17-18.28.04:729][324]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (107)
+[2018.01.17-18.28.04:729][324]LogModuleManager: Shutting down and abandoning module Messaging (105)
+[2018.01.17-18.28.04:730][324]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (103)
+[2018.01.17-18.28.04:730][324]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (101)
+[2018.01.17-18.28.04:730][324]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (99)
+[2018.01.17-18.28.04:730][324]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (97)
+[2018.01.17-18.28.04:730][324]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (95)
+[2018.01.17-18.28.04:730][324]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (93)
+[2018.01.17-18.28.04:730][324]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (91)
+[2018.01.17-18.28.04:730][324]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (89)
+[2018.01.17-18.28.04:730][324]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (87)
+[2018.01.17-18.28.04:730][324]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (85)
+[2018.01.17-18.28.04:730][324]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (83)
+[2018.01.17-18.28.04:730][324]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (81)
+[2018.01.17-18.28.04:730][324]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (79)
+[2018.01.17-18.28.04:730][324]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (77)
+[2018.01.17-18.28.04:730][324]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (75)
+[2018.01.17-18.28.04:730][324]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (73)
+[2018.01.17-18.28.04:731][324]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (71)
+[2018.01.17-18.28.04:731][324]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (69)
+[2018.01.17-18.28.04:731][324]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (67)
+[2018.01.17-18.28.04:731][324]LogModuleManager: Shutting down and abandoning module InputCore (64)
+[2018.01.17-18.28.04:731][324]LogModuleManager: Shutting down and abandoning module Settings (62)
+[2018.01.17-18.28.04:731][324]LogModuleManager: Shutting down and abandoning module PhysXCooking (60)
+[2018.01.17-18.28.04:731][324]LogModuleManager: Shutting down and abandoning module SteamVR (58)
+[2018.01.17-18.28.04:731][324]LogModuleManager: Shutting down and abandoning module OculusHMD (56)
+[2018.01.17-18.28.04:731][324]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (54)
+[2018.01.17-18.28.04:731][324]LogModuleManager: Shutting down and abandoning module AppleARKit (52)
+[2018.01.17-18.28.04:731][324]LogModuleManager: Shutting down and abandoning module AugmentedReality (51)
+[2018.01.17-18.28.04:731][324]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2018.01.17-18.28.04:731][324]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2018.01.17-18.28.04:731][324]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2018.01.17-18.28.04:732][324]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2018.01.17-18.28.04:732][324]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2018.01.17-18.28.04:732][324]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BB18003C4-4F82-4418-52C6-1C8629B0E489%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.18.0-3709383%2B%2B%2BUE4%2BRelease-4.18&UserID=beecfab74453ec42fd9eda96829f0e02%7C8cce4fd1e42d4986ac046a5bcede236c%7C34a05206-24f3-445e-8486-5ec5dedaed86&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2018.01.17-18.28.04:735][324]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2018.01.17-18.28.04:740][324]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
+[2018.01.17-18.28.04:740][324]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
+[2018.01.17-18.28.04:740][324]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
+[2018.01.17-18.28.04:740][324]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
+[2018.01.17-18.28.04:741][324]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
+[2018.01.17-18.28.04:741][324]LogModuleManager: Shutting down and abandoning module Landscape (26)
+[2018.01.17-18.28.04:741][324]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+[2018.01.17-18.28.04:742][324]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
+[2018.01.17-18.28.04:743][324]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
+[2018.01.17-18.28.04:743][324]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
+[2018.01.17-18.28.04:743][324]LogModuleManager: Shutting down and abandoning module Renderer (16)
+[2018.01.17-18.28.04:743][324]LogModuleManager: Shutting down and abandoning module Engine (14)
+[2018.01.17-18.28.04:743][324]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
+[2018.01.17-18.28.04:743][324]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
+[2018.01.17-18.28.04:743][324]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
+[2018.01.17-18.28.04:743][324]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2018.01.17-18.28.04:743][324]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2018.01.17-18.28.04:743][324]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2018.01.17-18.28.04:751][324]LogExit: Exiting.
+[2018.01.17-18.28.04:793][324]Log file closed, 01/17/18 13:28:04
