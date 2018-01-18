@@ -10,6 +10,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include <EngineGlobals.h>
 #include <Runtime/Engine/Classes/Engine/Engine.h>
+#include "Projectiles/BaseProjectile.h"
 
 ADDMMOCharacter::ADDMMOCharacter()
 {
@@ -32,7 +33,7 @@ ADDMMOCharacter::ADDMMOCharacter()
 	BasicAttackSpeed = 1.f;
 	BasicAttackRange = 20.f;
 
-	MuzzleOffset = FVector(0.f, 0.f, 0.f);
+	//MuzzleOffset = FVector(0.f, 0.f, 0.f);
 	
 	//MeleeCollider = CreateDefaultSubobject<USphereComponent>("Melee Sphere Collider");
 	//MeleeCollider->SetupAttachment(RootComponent);
@@ -369,7 +370,32 @@ void ADDMMOCharacter::SkillOemplus()
 
 void ADDMMOCharacter::Fire()
 {
-	UE_LOG(LogTemp, Display, TEXT("Pew, Pew"));
+	//UE_LOG(LogTemp, Display, TEXT("Pew, Pew"));
+	if (ProjectileClass)
+	{
+		FVector CameraLocation;
+		FRotator CameraRotation;
+		GetActorEyesViewPoint(CameraLocation, CameraRotation);
+
+		FVector MuzzleLocation = CameraLocation + FTransform(CameraRotation).TransformVector(MuzzleOffset);
+		FRotator MuzzleRotation = CameraRotation;
+		//MuzzleRotation.Pitch += 10.0f;
+
+		UWorld* World = GetWorld();
+		if (World)
+		{
+			FActorSpawnParameters SpawnParams;
+			SpawnParams.Owner = this;
+			SpawnParams.Instigator = Instigator;
+
+			ABaseProjectile* Projectile = World->SpawnActor<ABaseProjectile>(ProjectileClass, MuzzleLocation, MuzzleRotation, SpawnParams);
+			if (Projectile)
+			{
+				FVector LaunchDirection = MuzzleRotation.Vector();
+				Projectile->FireInDirection(LaunchDirection);
+			}
+		}
+	}
 
 }
 
