@@ -119,6 +119,14 @@ protected:	// Skill Functions
 	void SkillOemminus();
 	void SkillOemplus();
 
+	void Fire();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Weapon)
+	FVector MuzzleOffset;
+
+	UPROPERTY(EditDefaultsOnly, Category = Projectile)
+	TSubclassOf<class ABaseProjectile> ProjectileClass;
+
 protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 

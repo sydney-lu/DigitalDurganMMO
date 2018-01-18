@@ -31,6 +31,8 @@ ADDMMOCharacter::ADDMMOCharacter()
 
 	BasicAttackSpeed = 1.f;
 	BasicAttackRange = 20.f;
+
+	MuzzleOffset = FVector(0.f, 0.f, 0.f);
 	
 	//MeleeCollider = CreateDefaultSubobject<USphereComponent>("Melee Sphere Collider");
 	//MeleeCollider->SetupAttachment(RootComponent);
@@ -222,8 +224,8 @@ void ADDMMOCharacter::RMBPressed()
 			{
 				UE_LOG(LogTemp, Warning, TEXT("You're using your ranged attack"));
 				SetPlayerState(PlayerCharacterState::CASTING);
-
 				Mana_CUR--;
+				Fire();
 			}
 		}
 	}
@@ -363,6 +365,12 @@ void ADDMMOCharacter::SkillOemplus()
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill binded to '='."));
 	}
+}
+
+void ADDMMOCharacter::Fire()
+{
+	UE_LOG(LogTemp, Display, TEXT("Pew, Pew"));
+
 }
 
 void ADDMMOCharacter::MoveForward(float Value)
