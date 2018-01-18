@@ -16,14 +16,31 @@ ADDMMOCharacter::ADDMMOCharacter()
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 	BaseTurnRate = 45.f;
 	BaseLookUpRate = 45.f;
-	Zoom_Power = 55.0f;
-	ZoomIn_Max = 75.0f;
-	ZoomOut_Max = 1000.0f;
+
+	Zoom_Power = 75.0f;
+	ZoomIn_MAX = 800.0f;
+	ZoomOut_MAX = 1250.0f;
+
+	Health_MAX = 50.f;
+	Mana_MAX = 25.f;
+	Stamina_MAX = 25.f;
+
+	Health_CUR = Health_MAX;
+	Mana_CUR = Mana_MAX;
+	Stamina_CUR = Stamina_MAX;
+
+	BasicAttackSpeed = 1.f;
+	BasicAttackRange = 20.f;
+	
+	//MeleeCollider = CreateDefaultSubobject<USphereComponent>("Melee Sphere Collider");
+	//MeleeCollider->SetupAttachment(RootComponent);
 
 	// Don't rotate when the controller rotates. Let that just affect the camera.
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationYaw = false;
 	bUseControllerRotationRoll = false;
+
+	CurrentState = PlayerCharacterState(PlayerCharacterState::IDLE);
 
 	// Configure character movement
 	GetCharacterMovement()->bOrientRotationToMovement = true; // Character moves in the direction of input...	
@@ -34,14 +51,15 @@ ADDMMOCharacter::ADDMMOCharacter()
 	// Create a camera boom (pulls in towards the player if there is a collision)
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
-	CameraBoom->TargetArmLength = ZoomOut_Max; // The camera follows at this distance behind the character	
+	CameraBoom->TargetArmLength = ZoomOut_MAX; // The camera follows at this distance behind the character	
 	CameraBoom->bUsePawnControlRotation = true; // Rotate the arm based on the controller
-	CameraZoom_v = ZoomOut_Max;
+	CameraZoom_v = ZoomOut_MAX;
 
 	// Create a follow camera
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
+
 }
 
 
@@ -50,7 +68,8 @@ void ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	check(PlayerInputComponent);
 
 	//	W.I.P camera controls for MMORPG
-	PlayerInputComponent->BindAction("RMB", IE_Pressed, this, &ADDMMOCharacter::RMB);
+	PlayerInputComponent->BindAction("RMB", IE_Pressed, this, &ADDMMOCharacter::RMBPressed);
+	PlayerInputComponent->BindAction("RMB", IE_Released, this, &ADDMMOCharacter::RMBReleased);
 	PlayerInputComponent->BindAction("LMB", IE_Pressed, this, &ADDMMOCharacter::LMBPressed);
 	PlayerInputComponent->BindAction("LMB", IE_Released, this, &ADDMMOCharacter::LMBReleased);
 	PlayerInputComponent->BindAction("ZoomIn", IE_Pressed, this, &ADDMMOCharacter::ZoomIn);
@@ -90,6 +109,11 @@ void ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAction("Skill=", IE_Pressed, this, &ADDMMOCharacter::SkillOemplus);
 }
 
+void ADDMMOCharacter::SetPlayerState(PlayerCharacterState NewState)
+{
+	CurrentState = NewState;
+}
+
 void ADDMMOCharacter::TurnAtRate(float Rate)
 {
 	AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
@@ -104,20 +128,20 @@ void ADDMMOCharacter::ZoomIn()
 {
 	if (Controller != NULL)
 	{
-		//UE_LOG(LogTemp, Warning, TEXT("Camera Zoom = %f - %f"), CameraZoom_v, Zoom_Power);
+		UE_LOG(LogTemp, Warning, TEXT("Camera Zoom = %f - %f"), CameraZoom_v, Zoom_Power);
 		CameraZoom_v = CameraZoom_v - Zoom_Power;
 
-		if (CameraZoom_v <= ZoomIn_Max)
+		if (CameraZoom_v <= ZoomIn_MAX)
 		{
-			//UE_LOG(LogTemp, Warning, TEXT("Zoom In Max"));
-			CameraBoom->TargetArmLength = ZoomIn_Max;
-			CameraZoom_v = ZoomIn_Max;
+			UE_LOG(LogTemp, Warning, TEXT("Zoom In Max"));
+			CameraBoom->TargetArmLength = ZoomIn_MAX;
+			CameraZoom_v = ZoomIn_MAX;
 		}
 
 		else
 		{
-			//UE_LOG(LogTemp, Display, TEXT("CameraBoom Arm Length: %f"), CameraBoom->TargetArmLength);
-			//UE_LOG(LogTemp, Warning, TEXT("Zooming In"));
+			UE_LOG(LogTemp, Display, TEXT("CameraBoom Arm Length: %f"), CameraBoom->TargetArmLength);
+			UE_LOG(LogTemp, Warning, TEXT("Zooming In"));
 			CameraBoom->TargetArmLength = CameraZoom_v;
 		}
 	}
@@ -127,20 +151,20 @@ void ADDMMOCharacter::ZoomOut()
 {
 	if (Controller != NULL)
 	{
-		//UE_LOG(LogTemp, Warning, TEXT("Camera Zoom = %f - %f"), CameraZoom_v, Zoom_Power);
+		UE_LOG(LogTemp, Warning, TEXT("Camera Zoom = %f - %f"), CameraZoom_v, Zoom_Power);
 		CameraZoom_v = CameraZoom_v + Zoom_Power;
 
-		if (CameraZoom_v >= ZoomOut_Max)
+		if (CameraZoom_v >= ZoomOut_MAX)
 		{
-			//UE_LOG(LogTemp, Warning, TEXT("Zoom Out Max"));
-			CameraBoom->TargetArmLength = ZoomOut_Max;
-			CameraZoom_v = ZoomOut_Max;
+			UE_LOG(LogTemp, Warning, TEXT("Zoom Out Max"));
+			CameraBoom->TargetArmLength = ZoomOut_MAX;
+			CameraZoom_v = ZoomOut_MAX;
 		}
 
 		else
 		{
-			//UE_LOG(LogTemp, Display, TEXT("CameraBoom Arm Length: %f"), CameraBoom->TargetArmLength);
-			//UE_LOG(LogTemp, Warning, TEXT("Zooming Out"));
+			UE_LOG(LogTemp, Display, TEXT("CameraBoom Arm Length: %f"), CameraBoom->TargetArmLength);
+			UE_LOG(LogTemp, Warning, TEXT("Zooming Out"));
 			CameraBoom->TargetArmLength = CameraZoom_v;
 		}
 	}
@@ -154,21 +178,22 @@ void ADDMMOCharacter::OpenBag()
 	}
 }
 
-void ADDMMOCharacter::RMB()
-{
-	if (Controller != NULL)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("RMB"));
-	}
-}
-
 void ADDMMOCharacter::LMBPressed()
 {
 	if (Controller != NULL)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("LMB Pressed"));
-		//APlayerController* MyController = GetWorld()->GetFirstPlayerController();
-		//MyController->bShowMouseCursor = false;
+		if (Stamina_CUR > 0)
+		{
+			//APlayerController* MyController = GetWorld()->GetFirstPlayerController();
+			//MyController->bShowMouseCursor = false;
+			if (CurrentState == PlayerCharacterState::IDLE)
+			{
+				UE_LOG(LogTemp, Warning, TEXT("You're using your melee attack"));
+				SetPlayerState(PlayerCharacterState::ATTACKING);
+
+				Stamina_CUR--;
+			}
+		}
 	}
 }
 
@@ -176,11 +201,46 @@ void ADDMMOCharacter::LMBReleased()
 {
 	if (Controller != NULL)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("LMB Released"));
+		//UE_LOG(LogTemp, Warning, TEXT("LMB Released"));
 		//APlayerController* MyController = GetWorld()->GetFirstPlayerController();
-		//MyController->bShowMouseCursor = true;
+		if (CurrentState == PlayerCharacterState::ATTACKING)
+		{
+			//MyController->bShowMouseCursor = true;
+			SetPlayerState(PlayerCharacterState::IDLE);
+		}
 	}
 }
+
+void ADDMMOCharacter::RMBPressed()
+{
+	if (Controller != NULL)
+	{
+		//UE_LOG(LogTemp, Warning, TEXT("RMB"));
+		if (Mana_CUR > 0)
+		{
+			if (CurrentState == PlayerCharacterState::IDLE)
+			{
+				UE_LOG(LogTemp, Warning, TEXT("You're using your ranged attack"));
+				SetPlayerState(PlayerCharacterState::CASTING);
+
+				Mana_CUR--;
+			}
+		}
+	}
+}
+
+void ADDMMOCharacter::RMBReleased()
+{
+	if (Controller != NULL)
+	{
+		//UE_LOG(LogTemp, Warning, TEXT("RMB"));
+		if (CurrentState == PlayerCharacterState::CASTING)
+		{
+			SetPlayerState(PlayerCharacterState::IDLE);
+		}
+	}
+}
+
 
 void ADDMMOCharacter::CharacterInfo()
 {
@@ -202,7 +262,10 @@ void ADDMMOCharacter::Interact()
 {
 	if (Controller != NULL)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for Interaction is in progress."));
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Restored Health, Mana, and Stamina."));
+		Health_CUR = Health_MAX;
+		Mana_CUR = Mana_MAX;
+		Stamina_CUR = Stamina_MAX;
 	}
 }
 
