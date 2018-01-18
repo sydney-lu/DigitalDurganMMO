@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
-<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ItemGroup>
 		<None Include="..\..\DDMMO.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{1DFD9AD6-426E-4048-BB8C-6E042D644633}</UniqueIdentifier>
+			<UniqueIdentifier>{4BCFE30C-DA2E-41E8-A5F3-1C7FA66ED4DA}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\DDMMO.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{493BC086-2583-4C82-942A-B0A041469246}</UniqueIdentifier>
+			<UniqueIdentifier>{A6EFEF6F-FF63-4A22-B938-CBEABFCE6690}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\DDMMO">
-			<UniqueIdentifier>{4F2032F4-7703-45C0-88B2-9460A9A4F3F9}</UniqueIdentifier>
+			<UniqueIdentifier>{4F443B5F-A890-4AA0-ACC3-5F3905464BF3}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\DDMMO\DDMMO.Build.cs">
 			<Filter>Source\DDMMO</Filter>
@@ -49,7 +49,7 @@
 			<Filter>Source\DDMMO</Filter>
 		</ClInclude >
 		<Filter Include="Source\DDMMO\Player">
-			<UniqueIdentifier>{071B65A3-E2A2-4EBF-B71D-64715AA1ABC9}</UniqueIdentifier>
+			<UniqueIdentifier>{A5D23D20-1352-41E1-B0E3-DEE2493370CC}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\DDMMO\Player\CharacterClass.cpp">
 			<Filter>Source\DDMMO\Player</Filter>
