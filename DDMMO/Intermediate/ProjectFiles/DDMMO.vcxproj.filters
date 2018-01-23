@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
-<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ItemGroup>
 		<None Include="..\..\DDMMO.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{1DFD9AD6-426E-4048-BB8C-6E042D644633}</UniqueIdentifier>
+			<UniqueIdentifier>{118EB1FE-9C8F-4B80-BF7E-9AF2E7ECB806}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\DDMMO.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{493BC086-2583-4C82-942A-B0A041469246}</UniqueIdentifier>
+			<UniqueIdentifier>{C4F0C502-E962-4D5E-979B-84CFB902A167}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\DDMMO">
-			<UniqueIdentifier>{4F2032F4-7703-45C0-88B2-9460A9A4F3F9}</UniqueIdentifier>
+			<UniqueIdentifier>{B3C88065-F3E4-461C-A53A-3826D32AAB4F}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\DDMMO\DDMMO.Build.cs">
 			<Filter>Source\DDMMO</Filter>
@@ -49,7 +49,7 @@
 			<Filter>Source\DDMMO</Filter>
 		</ClInclude >
 		<Filter Include="Source\DDMMO\Player">
-			<UniqueIdentifier>{071B65A3-E2A2-4EBF-B71D-64715AA1ABC9}</UniqueIdentifier>
+			<UniqueIdentifier>{2D13BFB7-B511-41BA-A5DE-8139BF511203}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\DDMMO\Player\CharacterClass.cpp">
 			<Filter>Source\DDMMO\Player</Filter>
@@ -89,6 +89,15 @@
 		</ClCompile >
 		<ClInclude Include="..\..\Source\DDMMO\Player\WarriorClass.h">
 			<Filter>Source\DDMMO\Player</Filter>
+		</ClInclude >
+		<Filter Include="Source\DDMMO\Projectiles">
+			<UniqueIdentifier>{55157D7A-791B-41C4-A44A-1D4D77E283A8}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\DDMMO\Projectiles\BaseProjectile.cpp">
+			<Filter>Source\DDMMO\Projectiles</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DDMMO\Projectiles\BaseProjectile.h">
+			<Filter>Source\DDMMO\Projectiles</Filter>
 		</ClInclude >
 	</ItemGroup>
 </Project>
