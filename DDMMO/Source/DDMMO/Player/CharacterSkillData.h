@@ -24,7 +24,7 @@ protected:
 		ESkillTag m_tag;
 	UPROPERTY(EditAnywhere, meta = (DisplayName = "Image"), Category = UIInfo)
 		UTexture2D* m_image;
-	UPROPERTY(EditAnywhere, meta = (DisplayName = "Description", MultiLine = true), Category = UIInfo)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (DisplayName = "Description", MultiLine = true), Category = UIInfo)
 		FString m_description;
 
 	UPROPERTY(EditAnywhere, meta = (DisplayName = "Cost", ClampMin = "0.0", UIMin = "0.0"), Category = CastInfo)

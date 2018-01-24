@@ -12,7 +12,11 @@ class DDMMO_API UPlayerInfoWidget : public UUserWidget
 {
 	GENERATED_BODY()
 
-protected:
+public:
+
 	UFUNCTION(BlueprintNativeEvent)
 		void OnInitialize();
+
+	UFUNCTION(BlueprintNativeEvent)
+		void ToggleVisible();
 };

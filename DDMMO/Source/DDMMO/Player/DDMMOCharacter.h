@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "PlayerInfoWidget.h"
 #include "DDMMOCharacter.generated.h"
 
 //  Player can only be in one state at a time
@@ -43,6 +44,12 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	PlayerCharacterState CurrentState;
+
+	UPROPERTY()
+	UPlayerInfoWidget* SkillSelectionWidget;
+
+	UPROPERTY(BlueprintReadWrite)
+	UPlayerInfoWidget* SelectedWidged;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseTurnRate;
@@ -98,6 +105,11 @@ protected:	// Camera Functions
 	void RMBReleased();
 	void LMBPressed();
 	void LMBReleased();
+
+protected:	//UI Functions
+
+	UFUNCTION(BlueprintCallable)
+	void SetSkillSelection(UPlayerInfoWidget* widget);
 
 protected:	// Action Functions
 	void OpenBag();
