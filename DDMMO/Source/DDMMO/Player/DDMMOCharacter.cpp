@@ -62,7 +62,6 @@ ADDMMOCharacter::ADDMMOCharacter()
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
-
 }
 
 
@@ -173,6 +172,11 @@ void ADDMMOCharacter::ZoomOut()
 	}
 }
 
+void ADDMMOCharacter::SetSkillSelection(UPlayerInfoWidget* widget)
+{
+	SkillSelectionWidget = widget;
+}
+
 void ADDMMOCharacter::OpenBag()
 {
 	if (Controller != NULL)
@@ -257,7 +261,8 @@ void ADDMMOCharacter::SkillInfo()
 {
 	if (Controller != NULL)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the Skill Info is in progress."));
+		if (SkillSelectionWidget) SkillSelectionWidget->ToggleVisible();
+		else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the Skill Info is in progress."));
 	}
 }
 

@@ -12,6 +12,16 @@ ESkillTag UCharacterSkillData::Tag()
 	return m_tag;
 }
 
+FString UCharacterSkillData::Description()
+{
+	return m_description;
+}
+
+UTexture2D * UCharacterSkillData::GetImage()
+{
+	return m_image;
+}
+
 FVector4 UCharacterSkillData::CastInfo()
 {
 	return FVector4(m_cost, m_castTime, m_cooldown, m_charges);
