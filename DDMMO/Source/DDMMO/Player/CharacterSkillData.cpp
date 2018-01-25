@@ -12,7 +12,7 @@ ESkillTag UCharacterSkillData::Tag()
 	return m_tag;
 }
 
-FString UCharacterSkillData::Description()
+FText UCharacterSkillData::Description()
 {
 	return m_description;
 }

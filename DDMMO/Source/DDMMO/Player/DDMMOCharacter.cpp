@@ -5,6 +5,7 @@
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
+#include "WarriorClass.h" // Only Here For Testing Classes, Will not be needed with a proper Class Selection Screen.
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
@@ -62,6 +63,9 @@ ADDMMOCharacter::ADDMMOCharacter()
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
+
+	// Skill Delegates
+	SkillLogicDelegates.SetNum(12);
 }
 
 
@@ -174,7 +178,31 @@ void ADDMMOCharacter::ZoomOut()
 
 void ADDMMOCharacter::SetSkillSelection(UPlayerInfoWidget* widget)
 {
-	SkillSelectionWidget = widget;
+	skillSelectionWidget = widget;
+}
+
+void ADDMMOCharacter::SetSkillDelegate(int index, UCharacterSkillData* skillData)
+{
+	if (!characterClass) // Temp Class Selection Code
+		characterClass = NewObject<UWarriorClass>();
+
+	if (characterClass)
+	{
+		if (characterClass->FindFunction(skillData->Name()))
+		{
+			// Bind UFunction found in characterClass Named the same skillData
+			SkillLogicDelegates[index].BindUFunction(characterClass, skillData->Name(), skillData);
+			// Check if UFunction was Found and properly bound, else Bind to DefaultSkill
+			if (!SkillLogicDelegates[index].IsBound())
+			{
+				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegata: No UFucntion was found"));
+				SkillLogicDelegates[index].BindUFunction(characterClass, FName("DefaultSkill"), skillData);
+			}
+			else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("SetSkillDelegata Success"));
+		}
+		else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegata: No UFucntion was found"));
+	}
+	else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegata: No CharacterClass Selected"));
 }
 
 void ADDMMOCharacter::OpenBag()
@@ -261,7 +289,7 @@ void ADDMMOCharacter::SkillInfo()
 {
 	if (Controller != NULL)
 	{
-		if (SkillSelectionWidget) SkillSelectionWidget->ToggleVisible();
+		if (skillSelectionWidget) skillSelectionWidget->ToggleVisible();
 		else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the Skill Info is in progress."));
 	}
 }
@@ -277,19 +305,12 @@ void ADDMMOCharacter::Interact()
 	}
 }
 
-void ADDMMOCharacter::SkillZero()
-{
-	if (Controller != NULL)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill binded to '0'."));
-	}
-}
-
 void ADDMMOCharacter::SkillOne()
 {
 	if (Controller != NULL)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill binded to '1'."));
+		if (!SkillLogicDelegates[0].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '1'."));
 	}
 }
 
@@ -297,7 +318,8 @@ void ADDMMOCharacter::SkillTwo()
 {
 	if (Controller != NULL)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill binded to '2'."));
+		if (!SkillLogicDelegates[1].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '2'."));
 	}
 }
 
@@ -305,7 +327,8 @@ void ADDMMOCharacter::SkillThree()
 {
 	if (Controller != NULL)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill binded to '3'."));
+		if (!SkillLogicDelegates[2].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '3'."));
 	}
 }
 
@@ -313,7 +336,8 @@ void ADDMMOCharacter::SkillFour()
 {
 	if (Controller != NULL)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill binded to '4'."));
+		if (!SkillLogicDelegates[3].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '4'."));
 	}
 }
 
@@ -321,7 +345,8 @@ void ADDMMOCharacter::SkillFive()
 {
 	if (Controller != NULL)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill binded to '5'."));
+		if (!SkillLogicDelegates[4].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '5'."));
 	}
 }
 
@@ -329,7 +354,8 @@ void ADDMMOCharacter::SkillSix()
 {
 	if (Controller != NULL)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill binded to '6'."));
+		if (!SkillLogicDelegates[5].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '6'."));
 	}
 }
 
@@ -337,7 +363,8 @@ void ADDMMOCharacter::SkillSeven()
 {
 	if (Controller != NULL)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill binded to '7'."));
+		if (!SkillLogicDelegates[6].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '7'."));
 	}
 }
 
@@ -345,7 +372,8 @@ void ADDMMOCharacter::SkillEight()
 {
 	if (Controller != NULL)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill binded to '8'."));
+		if (!SkillLogicDelegates[7].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '8'."));
 	}
 }
 
@@ -353,7 +381,17 @@ void ADDMMOCharacter::SkillNine()
 {
 	if (Controller != NULL)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill binded to '9'."));
+		if (!SkillLogicDelegates[8].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '9'."));
+	}
+}
+
+void ADDMMOCharacter::SkillZero()
+{
+	if (Controller != NULL)
+	{
+		if (!SkillLogicDelegates[9].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '0'."));
 	}
 }
 
@@ -361,7 +399,8 @@ void ADDMMOCharacter::SkillOemminus()
 {
 	if (Controller != NULL)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill binded to '-'."));
+		if (!SkillLogicDelegates[10].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '-'."));
 	}
 }
 
@@ -369,7 +408,8 @@ void ADDMMOCharacter::SkillOemplus()
 {
 	if (Controller != NULL)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill binded to '='."));
+		if (!SkillLogicDelegates[11].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '='."));
 	}
 }
 

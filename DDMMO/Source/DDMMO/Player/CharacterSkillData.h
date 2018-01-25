@@ -18,14 +18,14 @@ public:
 	
 protected:
 
-	UPROPERTY(EditAnywhere, meta = (DisplayName = "Name"), Category = UIInfo)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (DisplayName = "Name"), Category = UIInfo)
 		FName m_skillName;
 	UPROPERTY(EditAnywhere, meta = (DisplayName = "Tag"), Category = UIInfo)
 		ESkillTag m_tag;
 	UPROPERTY(EditAnywhere, meta = (DisplayName = "Image"), Category = UIInfo)
 		UTexture2D* m_image;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (DisplayName = "Description", MultiLine = true), Category = UIInfo)
-		FString m_description;
+		FText m_description;
 
 	UPROPERTY(EditAnywhere, meta = (DisplayName = "Cost", ClampMin = "0.0", UIMin = "0.0"), Category = CastInfo)
 		float m_cost;
@@ -60,7 +60,7 @@ protected:
 public:
 	FName Name();
 	ESkillTag Tag();
-	FString Description();
+	FText Description();
 
 	UFUNCTION(BlueprintCallable)
 		UTexture2D* GetImage();
