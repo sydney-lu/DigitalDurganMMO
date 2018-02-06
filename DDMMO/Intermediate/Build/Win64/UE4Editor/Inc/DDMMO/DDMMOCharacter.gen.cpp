@@ -18,11 +18,14 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 	DDMMO_API UClass* Z_Construct_UClass_ADDMMOCharacter_NoRegister();
 	DDMMO_API UClass* Z_Construct_UClass_ADDMMOCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+	DDMMO_API UFunction* Z_Construct_UFunction_ADDMMOCharacter_SetSkillDelegate();
+	DDMMO_API UClass* Z_Construct_UClass_UCharacterSkillData_NoRegister();
 	DDMMO_API UFunction* Z_Construct_UFunction_ADDMMOCharacter_SetSkillSelection();
 	DDMMO_API UClass* Z_Construct_UClass_UPlayerInfoWidget_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	DDMMO_API UClass* Z_Construct_UClass_ABaseProjectile_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	DDMMO_API UClass* Z_Construct_UClass_UCharacterClass_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 // End Cross Module References
@@ -98,9 +101,36 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 	{
 		UClass* Class = ADDMMOCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "SetSkillDelegate", (Native)&ADDMMOCharacter::execSetSkillDelegate },
 			{ "SetSkillSelection", (Native)&ADDMMOCharacter::execSetSkillSelection },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	UFunction* Z_Construct_UFunction_ADDMMOCharacter_SetSkillDelegate()
+	{
+		struct DDMMOCharacter_eventSetSkillDelegate_Parms
+		{
+			int32 index;
+			UCharacterSkillData* skillData;
+		};
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_skillData = { UE4CodeGen_Private::EPropertyClass::Object, "skillData", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(DDMMOCharacter_eventSetSkillDelegate_Parms, skillData), Z_Construct_UClass_UCharacterSkillData_NoRegister, METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_index = { UE4CodeGen_Private::EPropertyClass::Int, "index", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(DDMMOCharacter_eventSetSkillDelegate_Parms, index), METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_skillData,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_index,
+			};
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_ADDMMOCharacter, "SetSkillDelegate", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04080401, sizeof(DDMMOCharacter_eventSetSkillDelegate_Parms), PropPointers, ARRAY_COUNT(PropPointers), 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UFunction* Z_Construct_UFunction_ADDMMOCharacter_SetSkillSelection()
 	{
@@ -145,6 +175,7 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 				(UObject* (*)())Z_Construct_UPackage__Script_DDMMO,
 			};
 			static const FClassFunctionLinkInfo FuncInfo[] = {
+				{ &Z_Construct_UFunction_ADDMMOCharacter_SetSkillDelegate, "SetSkillDelegate" }, // 2206333035
 				{ &Z_Construct_UFunction_ADDMMOCharacter_SetSkillSelection, "SetSkillSelection" }, // 898956610
 			};
 #if WITH_METADATA
@@ -260,21 +291,6 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 #endif
 			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseTurnRate = { UE4CodeGen_Private::EPropertyClass::Float, "BaseTurnRate", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000020015, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, BaseTurnRate), METADATA_PARAMS(NewProp_BaseTurnRate_MetaData, ARRAY_COUNT(NewProp_BaseTurnRate_MetaData)) };
 #if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SelectedWidged_MetaData[] = {
-				{ "Category", "DDMMOCharacter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SelectedWidged = { UE4CodeGen_Private::EPropertyClass::Object, "SelectedWidged", RF_Public|RF_Transient|RF_MarkAsNative, 0x001000000008000c, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, SelectedWidged), Z_Construct_UClass_UPlayerInfoWidget_NoRegister, METADATA_PARAMS(NewProp_SelectedWidged_MetaData, ARRAY_COUNT(NewProp_SelectedWidged_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SkillSelectionWidget_MetaData[] = {
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SkillSelectionWidget = { UE4CodeGen_Private::EPropertyClass::Object, "SkillSelectionWidget", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080008, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, SkillSelectionWidget), Z_Construct_UClass_UPlayerInfoWidget_NoRegister, METADATA_PARAMS(NewProp_SkillSelectionWidget_MetaData, ARRAY_COUNT(NewProp_SkillSelectionWidget_MetaData)) };
-#if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentState_MetaData[] = {
 				{ "Category", "DDMMOCharacter" },
 				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
@@ -283,6 +299,29 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 #endif
 			static const UE4CodeGen_Private::FEnumPropertyParams NewProp_CurrentState = { UE4CodeGen_Private::EPropertyClass::Enum, "CurrentState", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, CurrentState), Z_Construct_UEnum_DDMMO_PlayerCharacterState, METADATA_PARAMS(NewProp_CurrentState_MetaData, ARRAY_COUNT(NewProp_CurrentState_MetaData)) };
 			static const UE4CodeGen_Private::FBytePropertyParams NewProp_CurrentState_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, 0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_characterClass_MetaData[] = {
+				{ "Category", "DDMMOCharacter" },
+				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_characterClass = { UE4CodeGen_Private::EPropertyClass::Object, "characterClass", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000020001, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, characterClass), Z_Construct_UClass_UCharacterClass_NoRegister, METADATA_PARAMS(NewProp_characterClass_MetaData, ARRAY_COUNT(NewProp_characterClass_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SelectedWidged_MetaData[] = {
+				{ "Category", "DDMMOCharacter" },
+				{ "EditInline", "true" },
+				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SelectedWidged = { UE4CodeGen_Private::EPropertyClass::Object, "SelectedWidged", RF_Public|RF_Transient|RF_MarkAsNative, 0x001000000008000c, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, SelectedWidged), Z_Construct_UClass_UPlayerInfoWidget_NoRegister, METADATA_PARAMS(NewProp_SelectedWidged_MetaData, ARRAY_COUNT(NewProp_SelectedWidged_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_skillSelectionWidget_MetaData[] = {
+				{ "EditInline", "true" },
+				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
+				{ "ToolTip", "Class UI References" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_skillSelectionWidget = { UE4CodeGen_Private::EPropertyClass::Object, "skillSelectionWidget", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080008, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, skillSelectionWidget), Z_Construct_UClass_UPlayerInfoWidget_NoRegister, METADATA_PARAMS(NewProp_skillSelectionWidget_MetaData, ARRAY_COUNT(NewProp_skillSelectionWidget_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FollowCamera_MetaData[] = {
 				{ "AllowPrivateAccess", "true" },
@@ -317,10 +356,11 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_Health_MAX,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_BaseLookUpRate,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_BaseTurnRate,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_SelectedWidged,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_SkillSelectionWidget,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_CurrentState,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_CurrentState_Underlying,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_characterClass,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_SelectedWidged,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_skillSelectionWidget,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_FollowCamera,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_CameraBoom,
 			};
@@ -342,7 +382,7 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADDMMOCharacter, 1523640407);
+	IMPLEMENT_CLASS(ADDMMOCharacter, 1630518580);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ADDMMOCharacter(Z_Construct_UClass_ADDMMOCharacter, &ADDMMOCharacter::StaticClass, TEXT("/Script/DDMMO"), TEXT("ADDMMOCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ADDMMOCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

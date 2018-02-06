@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "CharacterClass.h"
+#include "CharacterClassData.h"
 #include "PlayerInfoWidget.h"
 #include "DDMMOCharacter.generated.h"
 
@@ -25,6 +27,8 @@ enum class PlayerCharacterState : uint8
 
 };
 
+DECLARE_DELEGATE(SkillLogic);
+
 UCLASS(config=Game)
 class ADDMMOCharacter : public ACharacter
 {
@@ -36,6 +40,19 @@ class ADDMMOCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FollowCamera;
 
+	TArray<SkillLogic> SkillLogicDelegates;
+
+public:	// Class UI References
+
+	UPROPERTY()
+		UPlayerInfoWidget* skillSelectionWidget;
+
+	UPROPERTY(BlueprintReadWrite)
+		UPlayerInfoWidget* SelectedWidged;
+
+	UPROPERTY(VisibleAnywhere)
+		UCharacterClass* characterClass;
+
 public:
 	ADDMMOCharacter();
 
@@ -44,12 +61,6 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	PlayerCharacterState CurrentState;
-
-	UPROPERTY()
-	UPlayerInfoWidget* SkillSelectionWidget;
-
-	UPROPERTY(BlueprintReadWrite)
-	UPlayerInfoWidget* SelectedWidged;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseTurnRate;
@@ -110,6 +121,8 @@ protected:	//UI Functions
 
 	UFUNCTION(BlueprintCallable)
 	void SetSkillSelection(UPlayerInfoWidget* widget);
+	UFUNCTION(BlueprintCallable)
+	void SetSkillDelegate(int index, UCharacterSkillData* skillData);
 
 protected:	// Action Functions
 	void OpenBag();

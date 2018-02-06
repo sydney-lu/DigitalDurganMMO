@@ -8,13 +8,24 @@
 #include "ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UCharacterSkillData;
 class UPlayerInfoWidget;
 #ifdef DDMMO_DDMMOCharacter_generated_h
 #error "DDMMOCharacter.generated.h already included, missing '#pragma once' in DDMMOCharacter.h"
 #endif
 #define DDMMO_DDMMOCharacter_generated_h
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_31_RPC_WRAPPERS \
+#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_35_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execSetSkillDelegate) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_index); \
+		P_GET_OBJECT(UCharacterSkillData,Z_Param_skillData); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->SetSkillDelegate(Z_Param_index,Z_Param_skillData); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execSetSkillSelection) \
 	{ \
@@ -26,7 +37,17 @@ class UPlayerInfoWidget;
 	}
 
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_31_RPC_WRAPPERS_NO_PURE_DECLS \
+#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_35_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSetSkillDelegate) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_index); \
+		P_GET_OBJECT(UCharacterSkillData,Z_Param_skillData); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->SetSkillDelegate(Z_Param_index,Z_Param_skillData); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execSetSkillSelection) \
 	{ \
@@ -38,7 +59,7 @@ class UPlayerInfoWidget;
 	}
 
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_31_INCLASS_NO_PURE_DECLS \
+#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_35_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesADDMMOCharacter(); \
 	friend DDMMO_API class UClass* Z_Construct_UClass_ADDMMOCharacter(); \
@@ -48,7 +69,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_31_INCLASS \
+#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_35_INCLASS \
 private: \
 	static void StaticRegisterNativesADDMMOCharacter(); \
 	friend DDMMO_API class UClass* Z_Construct_UClass_ADDMMOCharacter(); \
@@ -58,7 +79,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_31_STANDARD_CONSTRUCTORS \
+#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_35_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ADDMMOCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ADDMMOCharacter) \
@@ -71,7 +92,7 @@ private: \
 public:
 
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_31_ENHANCED_CONSTRUCTORS \
+#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_35_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ADDMMOCharacter(ADDMMOCharacter&&); \
@@ -82,32 +103,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADDMMOCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ADDMMOCharacter)
 
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_31_PRIVATE_PROPERTY_OFFSET \
+#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_35_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(ADDMMOCharacter, CameraBoom); } \
 	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(ADDMMOCharacter, FollowCamera); } \
 	FORCEINLINE static uint32 __PPO__MuzzleOffset() { return STRUCT_OFFSET(ADDMMOCharacter, MuzzleOffset); } \
 	FORCEINLINE static uint32 __PPO__ProjectileClass() { return STRUCT_OFFSET(ADDMMOCharacter, ProjectileClass); }
 
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_28_PROLOG
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_31_GENERATED_BODY_LEGACY \
+#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_32_PROLOG
+#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_35_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_31_PRIVATE_PROPERTY_OFFSET \
-	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_31_RPC_WRAPPERS \
-	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_31_INCLASS \
-	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_31_STANDARD_CONSTRUCTORS \
+	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_35_PRIVATE_PROPERTY_OFFSET \
+	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_35_RPC_WRAPPERS \
+	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_35_INCLASS \
+	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_35_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_31_GENERATED_BODY \
+#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_35_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_31_PRIVATE_PROPERTY_OFFSET \
-	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_31_RPC_WRAPPERS_NO_PURE_DECLS \
-	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_31_INCLASS_NO_PURE_DECLS \
-	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_31_ENHANCED_CONSTRUCTORS \
+	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_35_PRIVATE_PROPERTY_OFFSET \
+	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_35_RPC_WRAPPERS_NO_PURE_DECLS \
+	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_35_INCLASS_NO_PURE_DECLS \
+	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_35_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
