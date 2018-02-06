@@ -37,7 +37,11 @@ protected:
 public:
 
 	FString Description();
-	FVector4 BaseStats();		//(BaseAttack,BaseSpeed,BaseStamina,BaseDefence)
+
+	float BaseAttack();
+	float BaseSpeed();
+	float BaseStamina();
+	float BaseDefence();
 
 	TArray<UCharacterSkillData*> SkillsData();
 };
