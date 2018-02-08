@@ -1,4 +1,4 @@
-﻿Log file open, 02/06/18 16:18:24
+﻿Log file open, 02/07/18 23:44:55
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -7,12 +7,12 @@ LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
 LogWindows: File 'VtuneApi32e.dll' does not exist
 LogInit: Display: Running engine for game: DDMMO
 LogPlatformFile: Not using cached read wrapper
-LogInit: Display: RandInit(1764798310) SRandInit(1764798310).
+LogInit: Display: RandInit(99724860) SRandInit(99724860).
 LogInit: Read version file with build ID '3709383'
-LogInit: Overriding engine version to CL 3709383, compatible CL 3709383
+LogInit: Overriding engine version to CL 3832480, compatible CL 3709383
 LogInit: Registered custom module enumerator with build ID '3709383'
 LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.157558
+LogStats: Stats thread started at 0.190994
 LogD3D11RHI: Aftermath initialized
 LogPluginManager: Mounting plugin Paper2D
 LogPluginManager: Mounting plugin LightPropagationVolume
@@ -77,7 +77,7 @@ LogPluginManager: Mounting plugin ProceduralMeshComponent
 LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WindowsMoviePlayer
-LogModuleManager: Display: Found up-to-date module file ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Binaries/Win64/UE4Editor-DDMMO-2420.dll (API version 3709383).
+LogModuleManager: Display: Found up-to-date module file ../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Binaries/Win64/UE4Editor-DDMMO-5470.dll (API version 3709383).
 LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll (API version 3709383).
 LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2DEditor.dll (API version 3709383).
 LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-PaperSpriteSheetImporter.dll (API version 3709383).
@@ -173,8 +173,8 @@ LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
 LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
 LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
 LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
-LogInit: Build: ++UE4+Release-4.18-CL-3709383
-LogInit: Engine Version: 4.18.0-3709383+++UE4+Release-4.18
+LogInit: Build: ++UE4+Release-4.18-CL-3832480
+LogInit: Engine Version: 4.18.3-3832480+++UE4+Release-4.18
 LogInit: Compatible Engine Version: 4.18.0-3709383+++UE4+Release-4.18
 LogInit: Net CL: 3709383
 LogDevObjectVersion: Number of dev versions registered: 16
@@ -194,477 +194,1239 @@ LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
 LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
 LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
 LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 12
-LogInit: Compiled (64-bit): Oct 20 2017 10:39:19
+LogInit: Compiled (64-bit): Jan 12 2018 02:04:55
 LogInit: Compiled with Visual C++: 19.00.24215.01
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.18
 LogInit: Command line:  
-LogInit: Base directory: D:/Games/Epic Games/UE_4.18/Engine/Binaries/Win64/
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.18/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2018.02.06-21.18.26:366][  0]LogInit: Selected Device Profile: [Windows]
-[2018.02.06-21.18.26:366][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2018.02.06-21.18.26:374][  0]LogInit: Computer: BMO
-[2018.02.06-21.18.26:374][  0]LogInit: User: Ben
-[2018.02.06-21.18.26:374][  0]LogInit: CPU Page size=4096, Cores=4
-[2018.02.06-21.18.26:374][  0]LogInit: High frequency timer resolution =3.903984 MHz
-[2018.02.06-21.18.26:374][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2018.02.06-21.18.26:374][  0]LogMemory: Platform Memory Stats for Windows
-[2018.02.06-21.18.26:374][  0]LogMemory: Process Physical Memory: 271.01 MB used, 271.01 MB peak
-[2018.02.06-21.18.26:374][  0]LogMemory: Process Virtual Memory: 271.93 MB used, 271.93 MB peak
-[2018.02.06-21.18.26:374][  0]LogMemory: Physical Memory: 6497.88 MB used,  9828.68 MB free, 16326.55 MB total
-[2018.02.06-21.18.26:374][  0]LogMemory: Virtual Memory: 629.69 MB used,  9828.68 MB free, 134217728.00 MB total
-[2018.02.06-21.18.26:469][  0]LogInit: Using OS detected language (en-US).
-[2018.02.06-21.18.26:470][  0]LogInit: Using OS detected locale (en-CA).
-[2018.02.06-21.18.26:476][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2018.02.06-21.18.26:853][  0]LogInit: Setting process to per monitor DPI aware
-[2018.02.06-21.18.27:050][  0]LogD3D11RHI: D3D11 adapters:
-[2018.02.06-21.18.27:078][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
-[2018.02.06-21.18.27:078][  0]LogD3D11RHI:       3975/0/8163 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2018.02.06-21.18.27:079][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2018.02.06-21.18.27:079][  0]LogD3D11RHI:       0/0/256 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2018.02.06-21.18.27:079][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2018.02.06-21.18.27:082][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2018.02.06-21.18.27:082][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
-[2018.02.06-21.18.27:082][  0]LogWindows: EnumDisplayDevices:
-[2018.02.06-21.18.27:082][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
-[2018.02.06-21.18.27:082][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:1)
-[2018.02.06-21.18.27:083][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2018.02.06-21.18.27:083][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2018.02.06-21.18.27:083][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2018.02.06-21.18.27:083][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
-[2018.02.06-21.18.27:083][  0]LogD3D11RHI:   Driver Version: 388.59 (internal:23.21.13.8859, unified:388.59)
-[2018.02.06-21.18.27:083][  0]LogD3D11RHI:      Driver Date: 12-5-2017
-[2018.02.06-21.18.27:083][  0]LogRHI: Texture pool is 2782 MB (70% of 3975 MB)
-[2018.02.06-21.18.27:093][  0]LogD3D11RHI: Async texture creation enabled
-[2018.02.06-21.18.27:114][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2018.02.06-21.18.27:166][  0]LogShaderCompilers: Guid format shader working directory is -3 characters bigger than the processId version (../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Intermediate/Shaders/WorkingDirectory/6648/).
-[2018.02.06-21.18.27:166][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Ben/AppData/Local/Temp/UnrealShaderWorkingDir/956D7BD24745722516AC4180B0E5E3D5/'.
-[2018.02.06-21.18.27:167][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2018.02.06-21.18.27:910][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2018.02.06-21.18.27:947][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2018.02.06-21.18.27:983][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2018.02.06-21.18.28:018][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2018.02.06-21.18.28:052][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2018.02.06-21.18.28:086][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2018.02.06-21.18.28:120][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2018.02.06-21.18.28:154][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2018.02.06-21.18.28:181][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2018.02.06-21.18.28:228][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
-[2018.02.06-21.18.28:262][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
-[2018.02.06-21.18.28:295][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
-[2018.02.06-21.18.28:328][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
-[2018.02.06-21.18.28:361][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
-[2018.02.06-21.18.28:429][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
-[2018.02.06-21.18.28:429][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
-[2018.02.06-21.18.28:462][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.02.06-21.18.28:486][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2018.02.06-21.18.28:550][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2018.02.06-21.18.28:568][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2018.02.06-21.18.28:600][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2018.02.06-21.18.28:633][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2018.02.06-21.18.28:665][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2018.02.06-21.18.28:698][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2018.02.06-21.18.28:698][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2018.02.06-21.18.28:973][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2018.02.06-21.18.29:050][  0]LogDerivedDataCache: Loaded boot cache 0.08s 79MB C:/Users/Ben/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
-[2018.02.06-21.18.29:050][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Ben/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc
-[2018.02.06-21.18.29:051][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2018.02.06-21.18.29:051][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2018.02.06-21.18.29:051][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2018.02.06-21.18.29:051][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2018.02.06-21.18.29:065][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2018.02.06-21.18.29:077][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Ben/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2018.02.06-21.18.29:086][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2018.02.06-21.18.29:086][  0]LogSlate: Using Freetype 2.6.0
-[2018.02.06-21.18.29:087][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.02.06-21.18.29:087][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.02.06-21.18.29:408][  0]LogInit: Selected Device Profile: [Windows]
-[2018.02.06-21.18.29:628][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2018.02.06-21.18.29:652][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2018.02.06-21.18.29:652][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2018.02.06-21.18.29:652][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2018.02.06-21.18.29:652][  0]LogMeshReduction: No automatic mesh merging module available
-[2018.02.06-21.18.29:652][  0]LogMeshMerging: No automatic mesh merging module available
-[2018.02.06-21.18.29:678][  0]LogNetVersion: DDMMO , NetCL: 3709383, EngineNetVer: 2, GameNetVer: 0 (Checksum: 699005191)
-[2018.02.06-21.18.29:798][  0]LogAssetRegistry: FAssetRegistry took 0.0249 seconds to start up
-[2018.02.06-21.18.30:193][  0]LogPackageLocalizationCache: Processed 7 localized package path(s) for 2 prioritized culture(s) in 0.045047 seconds
-[2018.02.06-21.18.30:198][  0]LogUObjectArray: 35900 objects as part of root set at end of initial load.
-[2018.02.06-21.18.30:198][  0]LogUObjectAllocator: 7372016 out of 0 bytes used by permanent object pool.
-[2018.02.06-21.18.30:198][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2018.02.06-21.18.30:226][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2018.02.06-21.18.32:225][  0]LogSubstanceCoreModule: Substance [CPU] Engine Loaded, Max Texture Size = 2048
-[2018.02.06-21.18.32:248][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2018.02.06-21.18.32:292][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2018.02.06-21.18.32:836][  0]LogLinker: Error: HOTRELOADED_CharacterSkillData_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/HUD/SkillSelectionWidget.uasset)
-[2018.02.06-21.18.32:838][  0]LogLinker: Error: HOTRELOADED_CharacterSkillData_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/HUD/SkillSelectionWidget.uasset)
-[2018.02.06-21.18.32:838][  0]LogLinker: Error: HOTRELOADED_CharacterSkillData_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/HUD/SkillSelectionWidget.uasset)
-[2018.02.06-21.18.32:839][  0]LogLinker: Error: HOTRELOADED_CharacterSkillData_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/HUD/SkillSelectionWidget.uasset)
-[2018.02.06-21.18.32:839][  0]LogLinker: Error: HOTRELOADED_CharacterSkillData_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/HUD/SkillSelectionWidget.uasset)
-[2018.02.06-21.18.32:839][  0]LogLinker: Error: HOTRELOADED_CharacterSkillData_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/HUD/SkillSelectionWidget.uasset)
-[2018.02.06-21.18.33:075][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2018.02.06-21.18.33:364][  0]SourceControl: Source control is disabled
-[2018.02.06-21.18.33:364][  0]SourceControl: Source control is disabled
-[2018.02.06-21.18.33:401][  0]SourceControl: Source control is disabled
-[2018.02.06-21.18.33:436][  0]SourceControl: Source control is disabled
-[2018.02.06-21.18.33:987][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2018.02.06-21.18.34:222][  0]LogOcInput: OculusInput pre-init called
-[2018.02.06-21.18.34:626][  0]LogEngine: Initializing Engine...
-[2018.02.06-21.18.34:633][  0]LogHMD: Failed to initialize OpenVR with code 105
-[2018.02.06-21.18.34:845][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.02.06-21.18.34:845][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.02.06-21.18.34:947][  0]LogAIModule: Creating AISystem for world Untitled
-[2018.02.06-21.18.34:964][  0]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2018.02.06-21.18.34:973][  0]LogInit: FAudioDevice initialized.
-[2018.02.06-21.18.35:125][  0]LogDerivedDataCache: Saved boot cache 0.15s 79MB C:/Users/Ben/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
-[2018.02.06-21.18.35:136][  0]LogInit: Texture streaming: Enabled
-[2018.02.06-21.18.35:208][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2018.02.06-21.18.35:305][  0]LogInit: Transaction tracking system initialized
-[2018.02.06-21.18.35:531][  0]BlueprintLog: New page: Editor Load
-[2018.02.06-21.18.36:254][  0]LocalizationService: Localization service is disabled
-[2018.02.06-21.18.36:934][  0]LogConsoleResponse: Display: 
-[2018.02.06-21.18.37:070][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2018.02.06-21.18.37:070][  0]LogCook: Display: Mobile HDR setting 1
-[2018.02.06-21.18.37:070][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2018.02.06-21.18.37:849][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/DigitalDurgenMMO/DDMMO/Content/' took 0.01s
-[2018.02.06-21.18.37:881][  0]SourceControl: Source control is disabled
-[2018.02.06-21.18.37:881][  0]Cmd: MAP LOAD FILE="../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/Maps/WhiteBoxMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2018.02.06-21.18.37:881][  0]LightingResults: New page: Lighting Build
-[2018.02.06-21.18.37:909][  0]MapCheck: New page: Map Check
-[2018.02.06-21.18.37:909][  0]LightingResults: New page: Lighting Build
-[2018.02.06-21.18.38:266][  0]LogAIModule: Creating AISystem for world WhiteBoxMap
-[2018.02.06-21.18.38:282][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2018.02.06-21.18.38:302][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2018.02.06-21.18.38:347][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 44.669ms to complete.
-[2018.02.06-21.18.38:347][  0]LogFileHelpers: Loading map 'WhiteBoxMap' took 0.466
-[2018.02.06-21.18.38:415][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.02.06-21.18.38:415][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.02.06-21.18.38:481][  0]LogCollectionManager: Loaded 0 collections in 0.001055 seconds
-[2018.02.06-21.18.38:550][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/DigitalDurgenMMO/DDMMO/Saved/Collections/' took 0.01s
-[2018.02.06-21.18.38:550][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/DigitalDurgenMMO/DDMMO/Content/Developers/Ben/Collections/' took 0.01s
-[2018.02.06-21.18.38:550][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal/DigitalDurgenMMO/DDMMO/Content/Collections/' took 0.01s
-[2018.02.06-21.18.38:550][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2018.02.06-21.18.38:558][  0]LogContentBrowser: Native class hierarchy populated in 0.0081 seconds. Added 2395 classes and 534 folders.
-[2018.02.06-21.18.38:600][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0008 seconds. Added 0 classes and 0 folders.
-[2018.02.06-21.18.38:637][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0008 seconds. Added 0 classes and 0 folders.
-[2018.02.06-21.18.38:666][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
-[2018.02.06-21.18.38:758][  0]LogSlate: Took 0.000153 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2018.02.06-21.18.38:760][  0]LogSlate: Took 0.000208 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2018.02.06-21.18.38:764][  0]LogSlate: Took 0.000218 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2018.02.06-21.18.38:850][  0]LogRenderer: Reallocating scene render targets to support 1080x552 Format 10 NumSamples 1 (Frame:1).
-[2018.02.06-21.18.39:010][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
-[2018.02.06-21.18.39:010][  0]LogLoad: (Engine Initialization) Total time: 14.92 seconds
-[2018.02.06-21.18.39:010][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2018.02.06-21.18.39:010][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
-[2018.02.06-21.18.39:040][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2018.02.06-21.18.39:079][  0]LogSlate: Took 0.000257 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2018.02.06-21.18.39:088][  1]LogSubstanceLiveLink: Warning: Unable to send data along socket, closing connection
-[2018.02.06-21.18.39:100][  1]LogAssetRegistry: Asset discovery search completed in 9.3241 seconds
-[2018.02.06-21.18.39:101][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2018.02.06-21.18.39:101][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000059 seconds (updated 0 objects)
-[2018.02.06-21.19.05:245][960]LogSlate: Took 0.000148 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2018.02.06-21.19.16:676][293]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.02.06-21.19.16:676][293]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.02.06-21.19.16:821][294]Cmd: QUIT_EDITOR
-[2018.02.06-21.19.16:841][294]LogExit: Preparing to exit.
-[2018.02.06-21.19.17:383][294]LogDirectoryWatcher: A directory notification for 'D:/Unreal/DigitalDurgenMMO/DDMMO/Content/' was aborted.
-[2018.02.06-21.19.17:408][294]LogExit: Editor shut down
-[2018.02.06-21.19.17:410][294]LogExit: Transaction tracking system shut down
-[2018.02.06-21.19.17:597][294]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
-[2018.02.06-21.19.17:597][294]LogDirectoryWatcher: A directory notification for '../../../../../../Unreal/DigitalDurgenMMO/DDMMO/Content/' was aborted.
-[2018.02.06-21.19.17:598][294]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
-[2018.02.06-21.19.17:598][294]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Media/MediaCompositing/Content/' was aborted.
-[2018.02.06-21.19.17:598][294]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/AppleARKit/Content/' was aborted.
-[2018.02.06-21.19.17:598][294]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Oculus/OculusVR/Content/' was aborted.
-[2018.02.06-21.19.17:598][294]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Steam/SteamVR/Content/' was aborted.
-[2018.02.06-21.19.17:645][294]LogExit: Object subsystem successfully closed.
-[2018.02.06-21.19.17:812][294]LogD3D11RHI: Shutdown
-[2018.02.06-21.19.17:812][294]LogD3D11RHI: CleanupD3DDevice
-[2018.02.06-21.19.17:831][294]LogD3D11RHI: ~FD3D11DynamicRHI
-[2018.02.06-21.19.17:837][294]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (562)
-[2018.02.06-21.19.17:837][294]LogModuleManager: Shutting down and abandoning module DesktopPlatform (560)
-[2018.02.06-21.19.17:837][294]LogModuleManager: Shutting down and abandoning module SceneOutliner (558)
-[2018.02.06-21.19.17:837][294]LogModuleManager: Shutting down and abandoning module AddContentDialog (556)
-[2018.02.06-21.19.17:837][294]LogDirectoryWatcher: A directory notification for 'D:/Games/Epic Games/UE_4.18/FeaturePacks/' was aborted.
-[2018.02.06-21.19.17:838][294]LogModuleManager: Shutting down and abandoning module WidgetCarousel (555)
-[2018.02.06-21.19.17:838][294]LogModuleManager: Shutting down and abandoning module EditorWidgets (552)
-[2018.02.06-21.19.17:838][294]LogModuleManager: Shutting down and abandoning module CollectionManager (550)
-[2018.02.06-21.19.17:838][294]LogDirectoryWatcher: A directory notification for 'D:/Unreal/DigitalDurgenMMO/DDMMO/Content/Collections/' was aborted.
-[2018.02.06-21.19.17:838][294]LogDirectoryWatcher: A directory notification for 'D:/Unreal/DigitalDurgenMMO/DDMMO/Content/Developers/Ben/Collections/' was aborted.
-[2018.02.06-21.19.17:838][294]LogDirectoryWatcher: A directory notification for 'D:/Unreal/DigitalDurgenMMO/DDMMO/Saved/Collections/' was aborted.
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module StatsViewer (548)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module FoliageEdit (546)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module LandscapeEditor (544)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module MeshPaintMode (542)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (540)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module ActorPickerMode (538)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module GeometryMode (536)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module TextureAlignMode (534)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module BspMode (532)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (530)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module HardwareSurvey (528)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (526)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module AutomationWorker (524)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (522)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (520)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module PlacementMode (519)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (516)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (514)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (512)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (510)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (508)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (506)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (504)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (502)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (500)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module CharacterAI (498)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module AudioCapture (496)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module SequenceRecorder (495)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module SmartSnapping (492)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module SessionServices (490)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module ViewportSnapping (488)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module ViewportInteraction (486)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module ClothPainter (484)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (483)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module LogVisualizer (480)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module IntroTutorials (478)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (477)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (474)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (472)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (470)
-[2018.02.06-21.19.17:839][294]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (469)
-[2018.02.06-21.19.18:613][294]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (466)
-[2018.02.06-21.19.18:613][294]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (464)
-[2018.02.06-21.19.18:613][294]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (462)
-[2018.02.06-21.19.18:613][294]LogModuleManager: Shutting down and abandoning module InputBindingEditor (460)
-[2018.02.06-21.19.18:613][294]LogModuleManager: Shutting down and abandoning module MergeActors (458)
-[2018.02.06-21.19.18:614][294]LogModuleManager: Shutting down and abandoning module SizeMap (456)
-[2018.02.06-21.19.18:614][294]LogModuleManager: Shutting down and abandoning module TreeMap (454)
-[2018.02.06-21.19.18:614][294]LogModuleManager: Shutting down and abandoning module ReferenceViewer (452)
-[2018.02.06-21.19.18:614][294]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (450)
-[2018.02.06-21.19.18:614][294]LogModuleManager: Shutting down and abandoning module LocalizationService (449)
-[2018.02.06-21.19.18:614][294]LogModuleManager: Shutting down and abandoning module HardwareTargeting (446)
-[2018.02.06-21.19.18:614][294]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (444)
-[2018.02.06-21.19.18:614][294]LogModuleManager: Shutting down and abandoning module UndoHistory (442)
-[2018.02.06-21.19.18:614][294]LogModuleManager: Shutting down and abandoning module XmlParser (440)
-[2018.02.06-21.19.18:614][294]LogModuleManager: Shutting down and abandoning module Blutility (438)
-[2018.02.06-21.19.18:614][294]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (436)
-[2018.02.06-21.19.18:614][294]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (435)
-[2018.02.06-21.19.18:614][294]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (432)
-[2018.02.06-21.19.18:614][294]LogModuleManager: Shutting down and abandoning module SettingsEditor (430)
-[2018.02.06-21.19.18:614][294]LogModuleManager: Shutting down and abandoning module ProjectLauncher (428)
-[2018.02.06-21.19.18:614][294]LogModuleManager: Shutting down and abandoning module SessionFrontend (426)
-[2018.02.06-21.19.18:614][294]LogModuleManager: Shutting down and abandoning module ProfilerClient (424)
-[2018.02.06-21.19.18:615][294]LogModuleManager: Shutting down and abandoning module DeviceManager (422)
-[2018.02.06-21.19.18:615][294]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (421)
-[2018.02.06-21.19.18:669][294]LogModuleManager: Shutting down and abandoning module AutomationController (418)
-[2018.02.06-21.19.18:669][294]LogModuleManager: Shutting down and abandoning module AutomationWindow (416)
-[2018.02.06-21.19.18:669][294]LogModuleManager: Shutting down and abandoning module Layers (414)
-[2018.02.06-21.19.18:669][294]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (412)
-[2018.02.06-21.19.18:669][294]LogModuleManager: Shutting down and abandoning module DetailCustomizations (410)
-[2018.02.06-21.19.18:669][294]LogModuleManager: Shutting down and abandoning module PackagesDialog (408)
-[2018.02.06-21.19.18:669][294]LogModuleManager: Shutting down and abandoning module Persona (406)
-[2018.02.06-21.19.18:669][294]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (405)
-[2018.02.06-21.19.18:669][294]LogModuleManager: Shutting down and abandoning module AnimGraph (403)
-[2018.02.06-21.19.18:669][294]LogModuleManager: Shutting down and abandoning module Kismet (400)
-[2018.02.06-21.19.18:670][294]LogModuleManager: Shutting down and abandoning module ClassViewer (398)
-[2018.02.06-21.19.18:670][294]LogModuleManager: Shutting down and abandoning module Toolbox (396)
-[2018.02.06-21.19.18:670][294]LogModuleManager: Shutting down and abandoning module ModuleUI (394)
-[2018.02.06-21.19.18:670][294]LogModuleManager: Shutting down and abandoning module MovieSceneTools (392)
-[2018.02.06-21.19.18:671][294]LogModuleManager: Shutting down and abandoning module OutputLog (390)
-[2018.02.06-21.19.18:671][294]LogModuleManager: Shutting down and abandoning module GammaUI (388)
-[2018.02.06-21.19.18:671][294]LogModuleManager: Shutting down and abandoning module Documentation (386)
-[2018.02.06-21.19.18:671][294]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (384)
-[2018.02.06-21.19.18:671][294]LogModuleManager: Shutting down and abandoning module MovieScene (382)
-[2018.02.06-21.19.18:671][294]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (380)
-[2018.02.06-21.19.18:671][294]LogModuleManager: Shutting down and abandoning module LauncherPlatform (378)
-[2018.02.06-21.19.18:671][294]LogModuleManager: Shutting down and abandoning module AnalyticsET (376)
-[2018.02.06-21.19.18:671][294]LogModuleManager: Shutting down and abandoning module PortalServices (374)
-[2018.02.06-21.19.18:671][294]LogModuleManager: Shutting down and abandoning module PortalRpc (372)
-[2018.02.06-21.19.18:671][294]LogModuleManager: Shutting down and abandoning module MessagingRpc (370)
-[2018.02.06-21.19.18:671][294]LogModuleManager: Shutting down and abandoning module AIModule (368)
-[2018.02.06-21.19.18:671][294]LogModuleManager: Shutting down and abandoning module GameplayDebugger (367)
-[2018.02.06-21.19.18:671][294]LogModuleManager: Shutting down and abandoning module AITestSuite (365)
-[2018.02.06-21.19.18:671][294]LogModuleManager: Shutting down and abandoning module ProfilerService (362)
-[2018.02.06-21.19.18:871][294]LogModuleManager: Shutting down and abandoning module TaskGraph (360)
-[2018.02.06-21.19.18:871][294]LogModuleManager: Shutting down and abandoning module SubstanceLiveLink (358)
-[2018.02.06-21.19.18:871][294]LogModuleManager: Shutting down and abandoning module SubstanceSource (356)
-[2018.02.06-21.19.18:871][294]LogModuleManager: Shutting down and abandoning module SubstanceEditor (354)
-[2018.02.06-21.19.18:871][294]LogModuleManager: Shutting down and abandoning module SteamVRController (352)
-[2018.02.06-21.19.18:871][294]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (350)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (348)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module OculusInput (346)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (344)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (342)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module CableComponent (340)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (338)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module AndroidPermission (336)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module ActorSequence (332)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (330)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (328)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module MediaCompositing (326)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module HTML5Networking (324)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module AlembicImporter (322)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module AlembicLibrary (321)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module GeometryCache (320)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (319)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (314)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module PluginBrowser (312)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (310)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (308)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (306)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module UObjectPlugin (304)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (302)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (300)
-[2018.02.06-21.19.18:872][294]LogModuleManager: Shutting down and abandoning module GitSourceControl (298)
-[2018.02.06-21.19.18:873][294]LogModuleManager: Shutting down and abandoning module SourceControl (297)
-[2018.02.06-21.19.18:873][294]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (294)
-[2018.02.06-21.19.18:873][294]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (292)
-[2018.02.06-21.19.18:873][294]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (290)
-[2018.02.06-21.19.18:873][294]LogModuleManager: Shutting down and abandoning module Paper2DEditor (288)
-[2018.02.06-21.19.18:873][294]LogModuleManager: Shutting down and abandoning module MeshPaint (287)
-[2018.02.06-21.19.18:873][294]LogModuleManager: Shutting down and abandoning module LevelEditor (285)
-[2018.02.06-21.19.18:874][294]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (284)
-[2018.02.06-21.19.18:874][294]LogModuleManager: Shutting down and abandoning module MainFrame (282)
-[2018.02.06-21.19.18:874][294]LogModuleManager: Shutting down and abandoning module HotReload (281)
-[2018.02.06-21.19.18:874][294]LogDirectoryWatcher: A directory notification for 'D:/Unreal/DigitalDurgenMMO/DDMMO/Binaries/Win64' was aborted.
-[2018.02.06-21.19.18:875][294]LogModuleManager: Shutting down and abandoning module DDMMO (276)
-[2018.02.06-21.19.18:875][294]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (274)
-[2018.02.06-21.19.18:875][294]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (272)
-[2018.02.06-21.19.18:875][294]LogModuleManager: Shutting down and abandoning module PhysXVehicles (270)
-[2018.02.06-21.19.18:875][294]LogModuleManager: Shutting down and abandoning module OculusEditor (268)
-[2018.02.06-21.19.18:875][294]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (266)
-[2018.02.06-21.19.18:875][294]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (264)
-[2018.02.06-21.19.18:875][294]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (262)
-[2018.02.06-21.19.18:875][294]LogModuleManager: Shutting down and abandoning module ApexDestructionEditor (260)
-[2018.02.06-21.19.18:875][294]LogModuleManager: Shutting down and abandoning module ApexDestruction (258)
-[2018.02.06-21.19.18:875][294]LogModuleManager: Shutting down and abandoning module UdpMessaging (256)
-[2018.02.06-21.19.18:976][294]LogModuleManager: Shutting down and abandoning module TcpMessaging (254)
-[2018.02.06-21.19.19:077][294]LogModuleManager: Shutting down and abandoning module SubstanceCore (252)
-[2018.02.06-21.19.19:077][294]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (250)
-[2018.02.06-21.19.19:077][294]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (248)
-[2018.02.06-21.19.19:077][294]LogModuleManager: Shutting down and abandoning module FacialAnimation (246)
-[2018.02.06-21.19.19:077][294]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (244)
-[2018.02.06-21.19.19:077][294]LogModuleManager: Shutting down and abandoning module GraphEditor (243)
-[2018.02.06-21.19.19:077][294]LogModuleManager: Shutting down and abandoning module ContentBrowser (241)
-[2018.02.06-21.19.19:078][294]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (238)
-[2018.02.06-21.19.19:078][294]LogModuleManager: Shutting down and abandoning module Paper2D (236)
-[2018.02.06-21.19.19:078][294]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (234)
-[2018.02.06-21.19.19:078][294]LogModuleManager: Shutting down and abandoning module WmfMedia (232)
-[2018.02.06-21.19.19:079][294]LogModuleManager: Shutting down and abandoning module ImgMedia (230)
-[2018.02.06-21.19.19:079][294]LogModuleManager: Shutting down and abandoning module PacketHandler (228)
-[2018.02.06-21.19.19:079][294]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (226)
-[2018.02.06-21.19.19:079][294]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (224)
-[2018.02.06-21.19.19:079][294]LogModuleManager: Shutting down and abandoning module MediaAssets (222)
-[2018.02.06-21.19.19:079][294]LogModuleManager: Shutting down and abandoning module Media (221)
-[2018.02.06-21.19.19:085][294]LogModuleManager: Shutting down and abandoning module Overlay (218)
-[2018.02.06-21.19.19:085][294]LogModuleManager: Shutting down and abandoning module OverlayEditor (217)
-[2018.02.06-21.19.19:085][294]LogModuleManager: Shutting down and abandoning module VREditor (214)
-[2018.02.06-21.19.19:085][294]LogModuleManager: Shutting down and abandoning module StringTableEditor (212)
-[2018.02.06-21.19.19:085][294]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (210)
-[2018.02.06-21.19.19:085][294]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (208)
-[2018.02.06-21.19.19:085][294]LogModuleManager: Shutting down and abandoning module FunctionalTesting (206)
-[2018.02.06-21.19.19:085][294]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (204)
-[2018.02.06-21.19.19:085][294]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (203)
-[2018.02.06-21.19.19:085][294]LogModuleManager: Shutting down and abandoning module UMG (200)
-[2018.02.06-21.19.19:085][294]LogModuleManager: Shutting down and abandoning module UMGEditor (199)
-[2018.02.06-21.19.19:085][294]LogModuleManager: Shutting down and abandoning module Sequencer (198)
-[2018.02.06-21.19.19:086][294]LogModuleManager: Shutting down and abandoning module MessageLog (195)
-[2018.02.06-21.19.19:086][294]LogModuleManager: Shutting down and abandoning module SlateReflector (190)
-[2018.02.06-21.19.19:086][294]LogModuleManager: Shutting down and abandoning module Slate (188)
-[2018.02.06-21.19.19:086][294]LogModuleManager: Shutting down and abandoning module EditorStyle (186)
-[2018.02.06-21.19.19:088][294]LogModuleManager: Shutting down and abandoning module MRMesh (184)
-[2018.02.06-21.19.19:089][294]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (182)
-[2018.02.06-21.19.19:089][294]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (180)
-[2018.02.06-21.19.19:089][294]LogModuleManager: Shutting down and abandoning module XAudio2 (178)
-[2018.02.06-21.19.19:089][294]LogModuleManager: Shutting down and abandoning module Networking (176)
-[2018.02.06-21.19.19:089][294]LogModuleManager: Shutting down and abandoning module Core (172)
-[2018.02.06-21.19.19:089][294]LogModuleManager: Shutting down and abandoning module LevelSequence (168)
-[2018.02.06-21.19.19:089][294]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (166)
-[2018.02.06-21.19.19:089][294]LogModuleManager: Shutting down and abandoning module KismetCompiler (164)
-[2018.02.06-21.19.19:089][294]LogModuleManager: Shutting down and abandoning module MeshUtilities (162)
-[2018.02.06-21.19.19:089][294]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (161)
-[2018.02.06-21.19.19:089][294]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (160)
-[2018.02.06-21.19.19:089][294]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (159)
-[2018.02.06-21.19.19:089][294]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (157)
-[2018.02.06-21.19.19:089][294]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (155)
-[2018.02.06-21.19.19:089][294]LogModuleManager: Shutting down and abandoning module MaterialBaking (151)
-[2018.02.06-21.19.19:089][294]LogModuleManager: Shutting down and abandoning module DerivedDataCache (148)
-[2018.02.06-21.19.19:098][294]LogDerivedDataCache: Shutdown
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module TargetPlatform (146)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (145)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (143)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (141)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (139)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (137)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (135)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (133)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (131)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (129)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (127)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module ImageWrapper (126)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (123)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (121)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (119)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (117)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (115)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (113)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (111)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (109)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (107)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module Messaging (105)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (103)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (101)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (99)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (97)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (95)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (93)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (91)
-[2018.02.06-21.19.19:098][294]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (89)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (87)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (85)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (83)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (81)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (79)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (77)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (75)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (73)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (71)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (69)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (67)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module InputCore (64)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module Settings (62)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module PhysXCooking (60)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module SteamVR (58)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module OculusHMD (56)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (54)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module AppleARKit (52)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module AugmentedReality (51)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module XMPP (43)
-[2018.02.06-21.19.19:099][294]LogModuleManager: Shutting down and abandoning module HTTP (41)
-[2018.02.06-21.19.19:099][294]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2018.02.06-21.19.19:099][294]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BEA1738A4-4B8D-78B8-87D3-949A3FD47297%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.18.0-3709383%2B%2B%2BUE4%2BRelease-4.18&UserID=beecfab74453ec42fd9eda96829f0e02%7C8cce4fd1e42d4986ac046a5bcede236c%7C34a05206-24f3-445e-8486-5ec5dedaed86&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2018.02.06-21.19.19:107][294]LogModuleManager: Shutting down and abandoning module SSL (40)
-[2018.02.06-21.19.19:109][294]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
-[2018.02.06-21.19.19:109][294]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
-[2018.02.06-21.19.19:109][294]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
-[2018.02.06-21.19.19:109][294]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
-[2018.02.06-21.19.19:109][294]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
-[2018.02.06-21.19.19:109][294]LogModuleManager: Shutting down and abandoning module Landscape (26)
-[2018.02.06-21.19.19:109][294]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
-[2018.02.06-21.19.19:110][294]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
-[2018.02.06-21.19.19:110][294]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
-[2018.02.06-21.19.19:110][294]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
-[2018.02.06-21.19.19:110][294]LogModuleManager: Shutting down and abandoning module Renderer (16)
-[2018.02.06-21.19.19:110][294]LogModuleManager: Shutting down and abandoning module Engine (14)
-[2018.02.06-21.19.19:110][294]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
-[2018.02.06-21.19.19:110][294]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
-[2018.02.06-21.19.19:110][294]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
-[2018.02.06-21.19.19:110][294]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-[2018.02.06-21.19.19:110][294]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-[2018.02.06-21.19.19:110][294]LogModuleManager: Shutting down and abandoning module PakFile (2)
-[2018.02.06-21.19.19:114][294]LogExit: Exiting.
-[2018.02.06-21.19.19:141][294]Log file closed, 02/06/18 16:19:19
+[2018.02.08-04.44.58:541][  0]LogInit: Selected Device Profile: [Windows]
+[2018.02.08-04.44.58:541][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.02.08-04.44.58:602][  0]LogInit: Computer: DESKTOP-874FDI1
+[2018.02.08-04.44.58:602][  0]LogInit: User: Lu
+[2018.02.08-04.44.58:602][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.02.08-04.44.58:602][  0]LogInit: High frequency timer resolution =2.537595 MHz
+[2018.02.08-04.44.58:602][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2018.02.08-04.44.58:603][  0]LogMemory: Platform Memory Stats for Windows
+[2018.02.08-04.44.58:603][  0]LogMemory: Process Physical Memory: 274.31 MB used, 274.31 MB peak
+[2018.02.08-04.44.58:603][  0]LogMemory: Process Virtual Memory: 273.86 MB used, 273.86 MB peak
+[2018.02.08-04.44.58:603][  0]LogMemory: Physical Memory: 6006.02 MB used,  10263.43 MB free, 16269.45 MB total
+[2018.02.08-04.44.58:603][  0]LogMemory: Virtual Memory: 681.70 MB used,  10263.43 MB free, 134217728.00 MB total
+[2018.02.08-04.44.59:071][  0]LogInit: Using OS detected language (en-US).
+[2018.02.08-04.44.59:071][  0]LogInit: Using OS detected locale (en-CA).
+[2018.02.08-04.44.59:300][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2018.02.08-04.44.59:945][  0]LogInit: Setting process to per monitor DPI aware
+[2018.02.08-04.45.04:848][  0]LogD3D11RHI: D3D11 adapters:
+[2018.02.08-04.45.04:926][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 980M' (Feature Level 11_0)
+[2018.02.08-04.45.04:926][  0]LogD3D11RHI:       4055/0/8134 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2018.02.08-04.45.04:934][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
+[2018.02.08-04.45.04:934][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2018.02.08-04.45.04:937][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.02.08-04.45.04:937][  0]LogD3D11RHI:       0/0/8134 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.02.08-04.45.04:937][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.02.08-04.45.04:949][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.02.08-04.45.04:949][  0]LogD3D11RHI:     GPU DeviceId: 0x13d7 (for the marketing name, search the web for "GPU Device Id")
+[2018.02.08-04.45.04:949][  0]LogWindows: EnumDisplayDevices:
+[2018.02.08-04.45.04:949][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
+[2018.02.08-04.45.04:949][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:1)
+[2018.02.08-04.45.04:950][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.02.08-04.45.04:950][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2018.02.08-04.45.04:950][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 980M
+[2018.02.08-04.45.04:950][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2018.02.08-04.45.04:950][  0]LogD3D11RHI:      Driver Date: Unknown
+[2018.02.08-04.45.04:950][  0]LogRHI: Texture pool is 2839 MB (70% of 4055 MB)
+[2018.02.08-04.45.04:988][  0]LogD3D11RHI: Async texture creation enabled
+[2018.02.08-04.45.05:009][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2018.02.08-04.45.05:011][  0]LogShaderCompilers: Guid format shader working directory is -23 characters bigger than the processId version (../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Intermediate/Shaders/WorkingDirectory/7224/).
+[2018.02.08-04.45.05:012][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Lu/AppData/Local/Temp/UnrealShaderWorkingDir/AFD13BD94DBA0B08C6C8078451CFC8C7/'.
+[2018.02.08-04.45.05:012][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.02.08-04.45.12:430][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.02.08-04.45.12:562][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.02.08-04.45.12:688][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.02.08-04.45.12:818][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.02.08-04.45.13:005][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.02.08-04.45.13:111][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.02.08-04.45.13:225][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.02.08-04.45.13:351][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.02.08-04.45.13:463][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.02.08-04.45.13:575][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2018.02.08-04.45.13:683][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2018.02.08-04.45.13:800][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2018.02.08-04.45.13:928][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2018.02.08-04.45.14:055][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2018.02.08-04.45.14:306][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2018.02.08-04.45.14:306][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.02.08-04.45.14:504][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.02.08-04.45.14:606][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.02.08-04.45.14:825][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.02.08-04.45.14:880][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.02.08-04.45.14:996][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.02.08-04.45.15:128][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.02.08-04.45.15:247][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.02.08-04.45.15:377][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.02.08-04.45.15:377][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.02.08-04.45.16:295][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.02.08-04.45.16:413][  0]LogDerivedDataCache: Loaded boot cache 0.12s 79MB C:/Users/Lu/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
+[2018.02.08-04.45.16:414][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Lu/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc
+[2018.02.08-04.45.16:414][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.02.08-04.45.16:414][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.02.08-04.45.16:414][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.02.08-04.45.16:414][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.02.08-04.45.16:441][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.02.08-04.45.16:454][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Lu/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.02.08-04.45.16:472][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.02.08-04.45.16:473][  0]LogSlate: Using Freetype 2.6.0
+[2018.02.08-04.45.16:515][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.02.08-04.45.16:515][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.02.08-04.45.20:843][  0]LogInit: Selected Device Profile: [Windows]
+[2018.02.08-04.45.21:484][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.02.08-04.45.21:566][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.02.08-04.45.21:566][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.02.08-04.45.21:566][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.02.08-04.45.21:566][  0]LogMeshReduction: No automatic mesh merging module available
+[2018.02.08-04.45.21:566][  0]LogMeshMerging: No automatic mesh merging module available
+[2018.02.08-04.45.21:629][  0]LogNetVersion: DDMMO , NetCL: 3709383, EngineNetVer: 2, GameNetVer: 0 (Checksum: 699005191)
+[2018.02.08-04.45.21:932][  0]LogAssetRegistry: FAssetRegistry took 0.0305 seconds to start up
+[2018.02.08-04.45.23:003][  0]LogPackageLocalizationCache: Processed 7 localized package path(s) for 2 prioritized culture(s) in 0.130522 seconds
+[2018.02.08-04.45.23:013][  0]LogUObjectArray: 35870 objects as part of root set at end of initial load.
+[2018.02.08-04.45.23:013][  0]LogUObjectAllocator: 7363696 out of 0 bytes used by permanent object pool.
+[2018.02.08-04.45.23:013][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.02.08-04.45.23:124][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2018.02.08-04.46.31:976][  0]LogSubstanceCoreModule: Substance [CPU] Engine Loaded, Max Texture Size = 2048
+[2018.02.08-04.46.32:050][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.02.08-04.46.32:101][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.02.08-04.46.33:089][  0]LogLinker: Error: HOTRELOADED_CharacterSkillData_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/HUD/SkillSelectionWidget.uasset)
+[2018.02.08-04.46.33:091][  0]LogLinker: Error: HOTRELOADED_CharacterSkillData_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/HUD/SkillSelectionWidget.uasset)
+[2018.02.08-04.46.33:092][  0]LogLinker: Error: HOTRELOADED_CharacterSkillData_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/HUD/SkillSelectionWidget.uasset)
+[2018.02.08-04.46.33:093][  0]LogLinker: Error: HOTRELOADED_CharacterSkillData_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/HUD/SkillSelectionWidget.uasset)
+[2018.02.08-04.46.33:093][  0]LogLinker: Error: HOTRELOADED_CharacterSkillData_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/HUD/SkillSelectionWidget.uasset)
+[2018.02.08-04.46.33:093][  0]LogLinker: Error: HOTRELOADED_CharacterSkillData_0 has an inappropriate outermost, it was probably saved with a deprecated outer (file: ../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/HUD/SkillSelectionWidget.uasset)
+[2018.02.08-04.46.33:540][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2018.02.08-04.46.34:100][  0]SourceControl: Source control is disabled
+[2018.02.08-04.46.34:100][  0]SourceControl: Source control is disabled
+[2018.02.08-04.46.34:194][  0]SourceControl: Source control is disabled
+[2018.02.08-04.46.34:274][  0]SourceControl: Source control is disabled
+[2018.02.08-04.46.35:511][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.02.08-04.46.35:853][  0]LogOcInput: OculusInput pre-init called
+[2018.02.08-04.46.36:820][  0]LogEngine: Initializing Engine...
+[2018.02.08-04.46.36:823][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.02.08-04.46.37:076][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.02.08-04.46.37:076][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.02.08-04.46.37:248][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.02.08-04.46.37:256][  0]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1 Chroma)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.02.08-04.46.37:276][  0]LogInit: FAudioDevice initialized.
+[2018.02.08-04.46.37:440][  0]LogDerivedDataCache: Saved boot cache 0.16s 79MB C:/Users/Lu/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
+[2018.02.08-04.46.37:448][  0]LogInit: Texture streaming: Enabled
+[2018.02.08-04.46.37:574][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.02.08-04.46.37:743][  0]LogInit: Transaction tracking system initialized
+[2018.02.08-04.46.38:164][  0]BlueprintLog: New page: Editor Load
+[2018.02.08-04.46.39:462][  0]LocalizationService: Localization service is disabled
+[2018.02.08-04.46.40:461][  0]LogConsoleResponse: Display: 
+[2018.02.08-04.46.40:980][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.02.08-04.46.40:980][  0]LogCook: Display: Mobile HDR setting 1
+[2018.02.08-04.46.40:980][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.02.08-04.46.41:202][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/' took 0.02s
+[2018.02.08-04.46.42:863][  0]SourceControl: Source control is disabled
+[2018.02.08-04.46.42:863][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/WhiteBoxMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.02.08-04.46.42:864][  0]LightingResults: New page: Lighting Build
+[2018.02.08-04.46.42:928][  0]MapCheck: New page: Map Check
+[2018.02.08-04.46.42:928][  0]LightingResults: New page: Lighting Build
+[2018.02.08-04.46.46:274][  0]LogAIModule: Creating AISystem for world WhiteBoxMap
+[2018.02.08-04.46.46:307][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.02.08-04.46.46:332][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.02.08-04.46.46:406][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 73.609ms to complete.
+[2018.02.08-04.46.46:406][  0]LogFileHelpers: Loading map 'WhiteBoxMap' took 3.542
+[2018.02.08-04.46.46:678][  0]LogCollectionManager: Loaded 0 collections in 0.002087 seconds
+[2018.02.08-04.46.46:777][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Collections/' took 0.01s
+[2018.02.08-04.46.46:778][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Developers/Lu/Collections/' took 0.01s
+[2018.02.08-04.46.46:778][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Collections/' took 0.01s
+[2018.02.08-04.46.46:778][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2018.02.08-04.46.46:790][  0]LogContentBrowser: Native class hierarchy populated in 0.0127 seconds. Added 2400 classes and 537 folders.
+[2018.02.08-04.46.46:878][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0014 seconds. Added 0 classes and 0 folders.
+[2018.02.08-04.46.47:184][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0022 seconds. Added 0 classes and 0 folders.
+[2018.02.08-04.46.47:239][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0014 seconds. Added 1 classes and 2 folders.
+[2018.02.08-04.46.48:851][  0]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2018.02.08-04.46.48:886][  0]LogSlate: Took 0.000197 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.02.08-04.46.48:894][  0]LogSlate: Took 0.000665 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.02.08-04.46.48:919][  0]LogSlate: Took 0.016462 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.02.08-04.46.48:920][  0]LogSlate: Took 0.000173 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2018.02.08-04.46.49:125][  0]LogTemp: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.DDMMO
+[2018.02.08-04.46.49:126][  0]LogTemp: CWD: C:\Program Files\Epic Games\UE_4.18\Engine\Binaries\DotNET\IOS
+[2018.02.08-04.46.49:126][  0]LogTemp: Initial Dir: C:\Program Files\Epic Games\UE_4.18
+[2018.02.08-04.46.49:126][  0]LogTemp: Env CWD: C:\Program Files\Epic Games\UE_4.18\Engine\Binaries\DotNET\IOS
+[2018.02.08-04.46.49:126][  0]LogTemp: BranchPath = DESKTOP-874FDI1/C/Program Files/Epic Games/UE_4.18/Engine/Binaries --- GameBranchPath = DESKTOP-874FDI1/C/Program Files/Epic Games/UE_4.18/Engine/Binaries
+[2018.02.08-04.46.49:127][  0]LogTemp: IPP ERROR: Could not find provision directory 'C:\Users\Lu\AppData\Local/Apple Computer/MobileDevice/Provisioning Profiles/'.
+[2018.02.08-04.46.49:127][  0]LogRenderer: Reallocating scene render targets to support 1180x648 Format 10 NumSamples 1 (Frame:1).
+[2018.02.08-04.46.49:372][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0018 seconds. Added 1 classes and 2 folders.
+[2018.02.08-04.46.49:373][  0]LogLoad: (Engine Initialization) Total time: 115.58 seconds
+[2018.02.08-04.46.49:373][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.02.08-04.46.49:373][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2018.02.08-04.46.49:373][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2018.02.08-04.46.49:739][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.02.08-04.46.49:780][  1]LogSubstanceLiveLink: Warning: Unable to send data along socket, closing connection
+[2018.02.08-04.46.50:059][  1]LogAssetRegistry: Asset discovery search completed in 88.1487 seconds
+[2018.02.08-04.46.50:063][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.02.08-04.46.50:063][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000313 seconds (updated 0 objects)
+[2018.02.08-04.46.50:715][  3]LogSlate: Took 0.000310 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.02.08-04.57.28:912][888]LogSlate: Took 0.000225 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.02.08-04.57.33:064][131]LogSlate: Took 0.000184 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.02.08-04.57.33:168][131]LogAIModule: Creating AISystem for world GreyBoxMap
+[2018.02.08-04.57.33:192][131]Cmd: MAP LOAD FILE="../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/GreyBoxMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.02.08-04.57.33:192][131]LightingResults: New page: Lighting Build
+[2018.02.08-04.57.33:193][131]LoadErrors: New page: Loading map: GreyBoxMap.umap
+[2018.02.08-04.57.33:196][131]MapCheck: New page: Map Check
+[2018.02.08-04.57.33:196][131]LightingResults: New page: Lighting Build
+[2018.02.08-04.57.33:225][131]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.02.08-04.57.33:337][131]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.02.08-04.57.33:420][131]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 82.89ms to complete.
+[2018.02.08-04.57.33:421][131]LogFileHelpers: Loading map 'GreyBoxMap' took 0.230
+[2018.02.08-04.57.39:933][481]LogTemp: Repeating last play command: Selected Viewport
+[2018.02.08-04.57.40:056][481]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.02.08-04.57.40:057][481]PIE: New page: PIE session: GreyBoxMap (Feb 7, 2018, 6:57:40 PM)
+[2018.02.08-04.57.40:057][481]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GreyBoxMap
+[2018.02.08-04.57.40:058][481]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001537s)
+[2018.02.08-04.57.40:059][481]LogAIModule: Creating AISystem for world GreyBoxMap
+[2018.02.08-04.57.40:059][481]LogPlayLevel: PIE: World Init took: (0.000882s)
+[2018.02.08-04.57.40:060][481]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GreyBoxMap.GreyBoxMap to /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap (0.002834s)
+[2018.02.08-04.57.40:076][481]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1 Chroma)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.02.08-04.57.40:100][481]LogInit: FAudioDevice initialized.
+[2018.02.08-04.57.40:147][481]LogLoad: Game class is 'DDMMOGameMode'
+[2018.02.08-04.57.40:152][481]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap up for play (max tick rate 60) at 2018.02.07-23.57.40
+[2018.02.08-04.57.40:152][481]LogWorld: Bringing up level for play took: 0.002491
+[2018.02.08-04.57.40:230][481]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0028 seconds. Added 11 classes and 0 folders.
+[2018.02.08-04.57.40:244][481]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GreyBoxMap 0.995
+[2018.02.08-04.57.49:314][910]LogVSAccessor: Warning: Couldn't access Visual Studio
+[2018.02.08-04.57.49:323][910]Candidate modules for hot reload:
+[2018.02.08-04.57.49:323][910]  DDMMO
+[2018.02.08-04.57.49:323][910]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.18/Engine/Binaries/DotNET/UnrealBuildTool.exe DDMMO -ModuleWithSuffix DDMMO 2746 Win64 Development -editorrecompile -canskiplink "C:/Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/DDMMO.uproject" ]
+[2018.02.08-04.57.49:367][910]Warning: Starting HotReload took  0.1s.
+[2018.02.08-04.59.24:684][750]CompilerResultsLog: New page: Compilation - Feb 7, 2018, 6:59:24 PM
+[2018.02.08-04.59.24:684][750]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.02.08-04.59.24:684][750]CompilerResultsLog: Creating makefile for hot reloading DDMMO (ini files are newer than UBTMakefile)
+[2018.02.08-04.59.24:685][750]CompilerResultsLog: Compiling game modules for hot reload
+[2018.02.08-04.59.24:685][750]CompilerResultsLog: Parsing headers for DDMMOEditor
+[2018.02.08-04.59.24:685][750]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\DDMMO.uproject" "C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\DDMMOEditor\Development\DDMMOEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.02.08-04.59.24:685][750]CompilerResultsLog: Reflection code generated for DDMMOEditor in 13.0830873 seconds
+[2018.02.08-04.59.24:685][750]CompilerResultsLog: Performing 8 actions (4 in parallel)
+[2018.02.08-04.59.24:685][750]CompilerResultsLog: DDMMOCharacter.cpp
+[2018.02.08-04.59.24:685][750]CompilerResultsLog: DDMMOGameMode.cpp
+[2018.02.08-04.59.24:685][750]CompilerResultsLog: CharacterClass.cpp
+[2018.02.08-04.59.24:685][750]CompilerResultsLog: DDMMOCharacter.gen.cpp
+[2018.02.08-04.59.24:685][750]CompilerResultsLog: WarriorClass.cpp
+[2018.02.08-04.59.24:685][750]CompilerResultsLog: WarriorClass.gen.cpp
+[2018.02.08-04.59.24:685][750]CompilerResultsLog: [7/8] Link UE4Editor-DDMMO-2746.dll
+[2018.02.08-04.59.24:685][750]CompilerResultsLog: [8/8] Link UE4Editor-DDMMO-2746.lib
+[2018.02.08-04.59.24:685][750]CompilerResultsLog:    Creating library C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-2746.lib and object C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-2746.exp
+[2018.02.08-04.59.24:685][750]CompilerResultsLog:    Creating library C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-2746.suppressed.lib and object C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-2746.suppressed.exp
+[2018.02.08-04.59.24:685][750]CompilerResultsLog: Error: DDMMOCharacter.cpp.obj : error LNK2019: unresolved external symbol "protected: void __cdecl ADDMMOCharacter::RMBPressed(void)" (?RMBPressed@ADDMMOCharacter@@IEAAXXZ) referenced in function "protected: virtual void __cdecl ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent *)" (?SetupPlayerInputComponent@ADDMMOCharacter@@MEAAXPEAVUInputComponent@@@Z)
+[2018.02.08-04.59.24:685][750]CompilerResultsLog: Error: DDMMOCharacter.cpp.obj : error LNK2019: unresolved external symbol "protected: void __cdecl ADDMMOCharacter::RMBReleased(void)" (?RMBReleased@ADDMMOCharacter@@IEAAXXZ) referenced in function "protected: virtual void __cdecl ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent *)" (?SetupPlayerInputComponent@ADDMMOCharacter@@MEAAXPEAVUInputComponent@@@Z)
+[2018.02.08-04.59.24:686][750]CompilerResultsLog: Error: DDMMOCharacter.cpp.obj : error LNK2019: unresolved external symbol "protected: void __cdecl ADDMMOCharacter::SkillInfo(void)" (?SkillInfo@ADDMMOCharacter@@IEAAXXZ) referenced in function "protected: virtual void __cdecl ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent *)" (?SetupPlayerInputComponent@ADDMMOCharacter@@MEAAXPEAVUInputComponent@@@Z)
+[2018.02.08-04.59.24:686][750]CompilerResultsLog: Error: DDMMOCharacter.cpp.obj : error LNK2019: unresolved external symbol "protected: void __cdecl ADDMMOCharacter::Interact(void)" (?Interact@ADDMMOCharacter@@IEAAXXZ) referenced in function "protected: virtual void __cdecl ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent *)" (?SetupPlayerInputComponent@ADDMMOCharacter@@MEAAXPEAVUInputComponent@@@Z)
+[2018.02.08-04.59.24:686][750]CompilerResultsLog: Error: C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Binaries\Win64\UE4Editor-DDMMO-2746.dll : fatal error LNK1120: 4 unresolved externals
+[2018.02.08-04.59.24:686][750]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Binaries\Win64\UE4Editor-DDMMO-2746.dll
+[2018.02.08-04.59.24:686][750]CompilerResultsLog: Total build time: 94.83 seconds (Local executor: 0.00 seconds)
+[2018.02.08-04.59.24:686][750]LogMainFrame: MainFrame: Module compiling took 95.371 seconds
+[2018.02.08-04.59.24:686][750]Warning: HotReload failed, recompile failed
+[2018.02.08-05.00.13:493][448]LogVSAccessor: Warning: Couldn't access Visual Studio
+[2018.02.08-05.00.13:509][448]Candidate modules for hot reload:
+[2018.02.08-05.00.13:509][448]  DDMMO
+[2018.02.08-05.00.13:509][448]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.18/Engine/Binaries/DotNET/UnrealBuildTool.exe DDMMO -ModuleWithSuffix DDMMO 8907 Win64 Development -editorrecompile -canskiplink "C:/Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/DDMMO.uproject" ]
+[2018.02.08-05.00.13:554][448]Warning: Starting HotReload took  0.1s.
+[2018.02.08-05.00.19:438][683]CompilerResultsLog: New page: Compilation - Feb 7, 2018, 7:00:19 PM
+[2018.02.08-05.00.19:438][683]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.02.08-05.00.19:438][683]CompilerResultsLog: Compiling game modules for hot reload
+[2018.02.08-05.00.19:438][683]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.02.08-05.00.19:438][683]CompilerResultsLog: DDMMOCharacter.cpp
+[2018.02.08-05.00.19:439][683]CompilerResultsLog: [2/3] Link UE4Editor-DDMMO-8907.dll
+[2018.02.08-05.00.19:439][683]CompilerResultsLog: [3/3] Link UE4Editor-DDMMO-8907.lib
+[2018.02.08-05.00.19:439][683]CompilerResultsLog:    Creating library C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-8907.suppressed.lib and object C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-8907.suppressed.exp
+[2018.02.08-05.00.19:439][683]CompilerResultsLog:    Creating library C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-8907.lib and object C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-8907.exp
+[2018.02.08-05.00.19:439][683]CompilerResultsLog: Error: DDMMOCharacter.cpp.obj : error LNK2019: unresolved external symbol "protected: void __cdecl ADDMMOCharacter::SkillInfo(void)" (?SkillInfo@ADDMMOCharacter@@IEAAXXZ) referenced in function "protected: virtual void __cdecl ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent *)" (?SetupPlayerInputComponent@ADDMMOCharacter@@MEAAXPEAVUInputComponent@@@Z)
+[2018.02.08-05.00.19:439][683]CompilerResultsLog: Error: C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Binaries\Win64\UE4Editor-DDMMO-8907.dll : fatal error LNK1120: 1 unresolved externals
+[2018.02.08-05.00.19:439][683]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Binaries\Win64\UE4Editor-DDMMO-8907.dll
+[2018.02.08-05.00.19:439][683]CompilerResultsLog: Total build time: 5.26 seconds (Local executor: 0.00 seconds)
+[2018.02.08-05.00.19:439][683]LogMainFrame: MainFrame: Module compiling took 5.946 seconds
+[2018.02.08-05.00.19:439][683]Warning: HotReload failed, recompile failed
+[2018.02.08-05.00.43:839][538]LogVSAccessor: Warning: Couldn't access Visual Studio
+[2018.02.08-05.00.43:849][538]Candidate modules for hot reload:
+[2018.02.08-05.00.43:849][538]  DDMMO
+[2018.02.08-05.00.43:849][538]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.18/Engine/Binaries/DotNET/UnrealBuildTool.exe DDMMO -ModuleWithSuffix DDMMO 1442 Win64 Development -editorrecompile -canskiplink "C:/Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/DDMMO.uproject" ]
+[2018.02.08-05.00.43:944][538]Warning: Starting HotReload took  0.1s.
+[2018.02.08-05.00.50:184][906]CompilerResultsLog: New page: Compilation - Feb 7, 2018, 7:00:50 PM
+[2018.02.08-05.00.50:185][906]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.02.08-05.00.50:185][906]CompilerResultsLog: Compiling game modules for hot reload
+[2018.02.08-05.00.50:185][906]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.02.08-05.00.50:185][906]CompilerResultsLog: DDMMOCharacter.cpp
+[2018.02.08-05.00.50:185][906]CompilerResultsLog: [2/3] Link UE4Editor-DDMMO-1442.dll
+[2018.02.08-05.00.50:185][906]CompilerResultsLog: [3/3] Link UE4Editor-DDMMO-1442.lib
+[2018.02.08-05.00.50:185][906]CompilerResultsLog:    Creating library C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-1442.suppressed.lib and object C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-1442.suppressed.exp
+[2018.02.08-05.00.50:185][906]CompilerResultsLog:    Creating library C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-1442.lib and object C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-1442.exp
+[2018.02.08-05.00.50:185][906]CompilerResultsLog: Total build time: 5.95 seconds (Local executor: 4.54 seconds)
+[2018.02.08-05.00.50:185][906]LogMainFrame: MainFrame: Module compiling took 6.347 seconds
+[2018.02.08-05.00.50:263][906]LogClass: PlayerCharacterState HotReload.
+[2018.02.08-05.00.50:263][906]LogClass: ESkillTag HotReload.
+[2018.02.08-05.00.50:263][906]LogClass: EDebuffType HotReload.
+[2018.02.08-05.00.50:264][906]LogClass: EBuffType HotReload.
+[2018.02.08-05.00.50:264][906]LogClass: EAbilityType HotReload.
+[2018.02.08-05.00.50:264][906]LogClass: ECastLocation HotReload.
+[2018.02.08-05.00.50:264][906]LogClass: Debuff HotReload.
+[2018.02.08-05.00.50:264][906]LogClass: Buff HotReload.
+[2018.02.08-05.00.50:278][906]LogContentBrowser: Native class hierarchy updated for 'DDMMO' in 0.0026 seconds. Added 14 classes and 7 folders.
+[2018.02.08-05.00.50:282][906]Display: HotReload successful (22 functions remapped  2 scriptstructs remapped)
+[2018.02.08-05.00.50:375][906]LogContentBrowser: Native class hierarchy populated in 0.0109 seconds. Added 2402 classes and 541 folders.
+[2018.02.08-05.00.50:375][906]Display: HotReload took  6.5s.
+[2018.02.08-05.00.54:617][157]LogTemp: Repeating last play command: Selected Viewport
+[2018.02.08-05.00.54:647][157]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.02.08-05.00.54:647][157]PIE: New page: PIE session: GreyBoxMap (Feb 7, 2018, 7:00:54 PM)
+[2018.02.08-05.00.54:647][157]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GreyBoxMap
+[2018.02.08-05.00.54:648][157]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001062s)
+[2018.02.08-05.00.54:649][157]LogAIModule: Creating AISystem for world GreyBoxMap
+[2018.02.08-05.00.54:649][157]LogPlayLevel: PIE: World Init took: (0.000859s)
+[2018.02.08-05.00.54:649][157]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GreyBoxMap.GreyBoxMap to /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap (0.002279s)
+[2018.02.08-05.00.54:664][157]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1 Chroma)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.02.08-05.00.54:679][157]LogInit: FAudioDevice initialized.
+[2018.02.08-05.00.54:717][157]LogLoad: Game class is 'DDMMOGameMode'
+[2018.02.08-05.00.54:719][157]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap up for play (max tick rate 60) at 2018.02.08-00.00.54
+[2018.02.08-05.00.54:719][157]LogWorld: Bringing up level for play took: 0.001978
+[2018.02.08-05.00.54:728][157]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GreyBoxMap -0.522
+[2018.02.08-05.01.24:956][792]LogVSAccessor: Warning: Couldn't access Visual Studio
+[2018.02.08-05.01.24:965][792]Candidate modules for hot reload:
+[2018.02.08-05.01.24:965][792]  DDMMO
+[2018.02.08-05.01.24:966][792]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.18/Engine/Binaries/DotNET/UnrealBuildTool.exe DDMMO -ModuleWithSuffix DDMMO 2740 Win64 Development -editorrecompile -canskiplink "C:/Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/DDMMO.uproject" ]
+[2018.02.08-05.01.25:006][792]Warning: Starting HotReload took  0.1s.
+[2018.02.08-05.01.26:598][887]CompilerResultsLog: New page: Compilation - Feb 7, 2018, 7:01:26 PM
+[2018.02.08-05.01.26:598][887]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.02.08-05.01.26:598][887]CompilerResultsLog: Compiling game modules for hot reload
+[2018.02.08-05.01.26:598][887]CompilerResultsLog: Target is up to date
+[2018.02.08-05.01.26:598][887]CompilerResultsLog: Total build time: 1.27 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2018.02.08-05.01.26:598][887]LogMainFrame: MainFrame: Module compiling took 1.642 seconds
+[2018.02.08-05.01.26:628][887]LogContentBrowser: Native class hierarchy populated in 0.0118 seconds. Added 2402 classes and 541 folders.
+[2018.02.08-05.01.26:628][887]Display: HotReload took  1.7s.
+[2018.02.08-05.01.29:712][ 70]LogTemp: Repeating last play command: Selected Viewport
+[2018.02.08-05.01.29:740][ 70]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.02.08-05.01.29:740][ 70]PIE: New page: PIE session: GreyBoxMap (Feb 7, 2018, 7:01:29 PM)
+[2018.02.08-05.01.29:740][ 70]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GreyBoxMap
+[2018.02.08-05.01.29:742][ 70]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001371s)
+[2018.02.08-05.01.29:743][ 70]LogAIModule: Creating AISystem for world GreyBoxMap
+[2018.02.08-05.01.29:743][ 70]LogPlayLevel: PIE: World Init took: (0.000968s)
+[2018.02.08-05.01.29:743][ 70]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GreyBoxMap.GreyBoxMap to /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap (0.002786s)
+[2018.02.08-05.01.29:755][ 70]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1 Chroma)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.02.08-05.01.29:769][ 70]LogInit: FAudioDevice initialized.
+[2018.02.08-05.01.29:806][ 70]LogLoad: Game class is 'DDMMOGameMode'
+[2018.02.08-05.01.29:808][ 70]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap up for play (max tick rate 60) at 2018.02.08-00.01.29
+[2018.02.08-05.01.29:809][ 70]LogWorld: Bringing up level for play took: 0.001504
+[2018.02.08-05.01.29:816][ 70]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GreyBoxMap 0.566
+[2018.02.08-05.02.12:032][342]LogVSAccessor: Warning: Couldn't access Visual Studio
+[2018.02.08-05.02.12:043][342]Candidate modules for hot reload:
+[2018.02.08-05.02.12:043][342]  DDMMO
+[2018.02.08-05.02.12:043][342]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.18/Engine/Binaries/DotNET/UnrealBuildTool.exe DDMMO -ModuleWithSuffix DDMMO 6194 Win64 Development -editorrecompile -canskiplink "C:/Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/DDMMO.uproject" ]
+[2018.02.08-05.02.12:193][342]Warning: Starting HotReload took  0.2s.
+[2018.02.08-05.02.18:161][692]CompilerResultsLog: New page: Compilation - Feb 7, 2018, 7:02:18 PM
+[2018.02.08-05.02.18:162][692]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.02.08-05.02.18:162][692]CompilerResultsLog: Compiling game modules for hot reload
+[2018.02.08-05.02.18:162][692]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.02.08-05.02.18:162][692]CompilerResultsLog: DDMMOCharacter.cpp
+[2018.02.08-05.02.18:162][692]CompilerResultsLog: [2/3] Link UE4Editor-DDMMO-6194.dll
+[2018.02.08-05.02.18:162][692]CompilerResultsLog: [3/3] Link UE4Editor-DDMMO-6194.lib
+[2018.02.08-05.02.18:162][692]CompilerResultsLog:    Creating library C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-6194.suppressed.lib and object C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-6194.suppressed.exp
+[2018.02.08-05.02.18:162][692]CompilerResultsLog:    Creating library C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-6194.lib and object C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-6194.exp
+[2018.02.08-05.02.18:162][692]CompilerResultsLog: Total build time: 5.69 seconds (Local executor: 4.23 seconds)
+[2018.02.08-05.02.18:162][692]LogMainFrame: MainFrame: Module compiling took 6.129 seconds
+[2018.02.08-05.02.18:258][692]LogClass: PlayerCharacterState HotReload.
+[2018.02.08-05.02.18:258][692]LogClass: ESkillTag HotReload.
+[2018.02.08-05.02.18:258][692]LogClass: EDebuffType HotReload.
+[2018.02.08-05.02.18:258][692]LogClass: EBuffType HotReload.
+[2018.02.08-05.02.18:258][692]LogClass: EAbilityType HotReload.
+[2018.02.08-05.02.18:258][692]LogClass: ECastLocation HotReload.
+[2018.02.08-05.02.18:258][692]LogClass: Debuff HotReload.
+[2018.02.08-05.02.18:258][692]LogClass: Buff HotReload.
+[2018.02.08-05.02.18:267][692]LogContentBrowser: Native class hierarchy updated for 'DDMMO' in 0.0019 seconds. Added 14 classes and 7 folders.
+[2018.02.08-05.02.18:269][692]Display: HotReload successful (22 functions remapped  2 scriptstructs remapped)
+[2018.02.08-05.02.18:330][692]LogContentBrowser: Native class hierarchy populated in 0.0108 seconds. Added 2402 classes and 541 folders.
+[2018.02.08-05.02.18:330][692]Display: HotReload took  6.3s.
+[2018.02.08-05.02.20:752][833]LogTemp: Repeating last play command: Selected Viewport
+[2018.02.08-05.02.20:779][833]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.02.08-05.02.20:779][833]PIE: New page: PIE session: GreyBoxMap (Feb 7, 2018, 7:02:20 PM)
+[2018.02.08-05.02.20:779][833]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GreyBoxMap
+[2018.02.08-05.02.20:780][833]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001096s)
+[2018.02.08-05.02.20:782][833]LogAIModule: Creating AISystem for world GreyBoxMap
+[2018.02.08-05.02.20:782][833]LogPlayLevel: PIE: World Init took: (0.002074s)
+[2018.02.08-05.02.20:783][833]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GreyBoxMap.GreyBoxMap to /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap (0.003786s)
+[2018.02.08-05.02.20:797][833]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1 Chroma)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.02.08-05.02.20:812][833]LogInit: FAudioDevice initialized.
+[2018.02.08-05.02.20:849][833]LogLoad: Game class is 'DDMMOGameMode'
+[2018.02.08-05.02.20:851][833]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap up for play (max tick rate 60) at 2018.02.08-00.02.20
+[2018.02.08-05.02.20:851][833]LogWorld: Bringing up level for play took: 0.001542
+[2018.02.08-05.02.20:862][833]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GreyBoxMap -0.388
+[2018.02.08-05.02.23:019][962]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-327.00 Y=503.06 Z=0.00 Location: X=542.26 Y=-228.60 Z=121.79 Normal: X=0.35 Y=-0.18 Z=-0.92 PenetrationDepth:56.937 Actor:BaseProjectile_BP_C_2 Component:SphereMeshComponent BoneName:None (0 other events since notify)
+[2018.02.08-05.02.26:600][177]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-544.03 Y=-253.05 Z=0.00 Location: X=507.51 Y=228.15 Z=121.23 Normal: X=0.78 Y=0.57 Z=-0.25 PenetrationDepth:28.397 Actor:BaseProjectile_BP_C_20 Component:SphereMeshComponent BoneName:None (1 other events since notify)
+[2018.02.08-05.02.27:601][237]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-255.86 Y=-274.62 Z=0.00 Location: X=180.05 Y=92.67 Z=120.98 Normal: X=0.66 Y=0.73 Z=-0.18 PenetrationDepth:27.173 Actor:BaseProjectile_BP_C_24 Component:SphereMeshComponent BoneName:None (3 other events since notify)
+[2018.02.08-05.02.29:202][333]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=47.75 Y=90.59 Z=0.00 Location: X=-13.38 Y=-270.95 Z=120.15 Normal: X=-0.35 Y=-0.66 Z=-0.67 PenetrationDepth:47.729 Actor:BaseProjectile_BP_C_28 Component:SphereMeshComponent BoneName:None (1 other events since notify)
+[2018.02.08-05.02.32:321][520]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=599.72 Y=-18.20 Z=0.00 Location: X=-52.27 Y=-27.63 Z=121.94 Normal: X=-0.27 Y=0.03 Z=-0.96 PenetrationDepth:57.774 Actor:BaseProjectile_BP_C_39 Component:SphereMeshComponent BoneName:None (0 other events since notify)
+[2018.02.08-05.02.36:866][788]LogEditorViewport: Clicking on Actor (LMB): DestructibleCube_C (DestructibleCube)
+[2018.02.08-06.02.53:254][973]LogVSAccessor: Warning: Couldn't access Visual Studio
+[2018.02.08-06.02.53:263][973]Candidate modules for hot reload:
+[2018.02.08-06.02.53:263][973]  DDMMO
+[2018.02.08-06.02.53:264][973]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.18/Engine/Binaries/DotNET/UnrealBuildTool.exe DDMMO -ModuleWithSuffix DDMMO 7871 Win64 Development -editorrecompile -canskiplink "C:/Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/DDMMO.uproject" ]
+[2018.02.08-06.02.53:313][973]Warning: Starting HotReload took  0.1s.
+[2018.02.08-06.02.54:847][ 64]CompilerResultsLog: New page: Compilation - Feb 7, 2018, 8:02:54 PM
+[2018.02.08-06.02.54:848][ 64]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.02.08-06.02.54:849][ 64]CompilerResultsLog: Compiling game modules for hot reload
+[2018.02.08-06.02.54:849][ 64]CompilerResultsLog: Target is up to date
+[2018.02.08-06.02.54:849][ 64]CompilerResultsLog: Total build time: 1.21 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2018.02.08-06.02.54:849][ 64]LogMainFrame: MainFrame: Module compiling took 1.594 seconds
+[2018.02.08-06.02.54:915][ 64]LogContentBrowser: Native class hierarchy populated in 0.0184 seconds. Added 2402 classes and 541 folders.
+[2018.02.08-06.02.54:915][ 64]Display: HotReload took  1.7s.
+[2018.02.08-06.03.03:142][287]LogTemp: Repeating last play command: Selected Viewport
+[2018.02.08-06.03.03:179][287]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.02.08-06.03.03:179][287]PIE: New page: PIE session: GreyBoxMap (Feb 7, 2018, 8:03:03 PM)
+[2018.02.08-06.03.03:180][287]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GreyBoxMap
+[2018.02.08-06.03.03:183][287]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002943s)
+[2018.02.08-06.03.03:185][287]LogAIModule: Creating AISystem for world GreyBoxMap
+[2018.02.08-06.03.03:186][287]LogPlayLevel: PIE: World Init took: (0.003058s)
+[2018.02.08-06.03.03:187][287]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GreyBoxMap.GreyBoxMap to /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap (0.007095s)
+[2018.02.08-06.03.03:203][287]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1 Chroma)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.02.08-06.03.03:217][287]LogInit: FAudioDevice initialized.
+[2018.02.08-06.03.03:254][287]LogLoad: Game class is 'DDMMOGameMode'
+[2018.02.08-06.03.03:258][287]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap up for play (max tick rate 60) at 2018.02.08-01.03.03
+[2018.02.08-06.03.03:258][287]LogWorld: Bringing up level for play took: 0.002741
+[2018.02.08-06.03.03:270][287]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GreyBoxMap 0.02
+[2018.02.08-06.03.04:798][376]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-115.49 Y=588.78 Z=0.00 Location: X=895.25 Y=-394.90 Z=121.08 Normal: X=0.89 Y=-0.35 Z=-0.27 PenetrationDepth:20.310 Actor:BaseProjectile_BP_C_0 Component:SphereMeshComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.03.05:915][443]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-450.69 Y=396.08 Z=0.00 Location: X=839.71 Y=-216.17 Z=121.15 Normal: X=0.96 Y=-0.08 Z=-0.28 PenetrationDepth:17.113 Actor:BaseProjectile_BP_C_2 Component:SphereMeshComponent BoneName:None (1 other events since notify)
+[2018.02.08-06.03.13:202][880]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=344.01 Y=491.59 Z=0.00 Location: X=67.46 Y=-138.00 Z=116.99 Normal: X=-0.48 Y=-0.68 Z=-0.56 PenetrationDepth:32.242 Actor:BaseProjectile_BP_C_14 Component:SphereMeshComponent BoneName:None (1 other events since notify)
+[2018.02.08-06.03.20:353][309]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=43.81 Y=403.49 Z=0.00 Location: X=916.41 Y=753.70 Z=105.97 Normal: X=-0.70 Y=-0.17 Z=-0.69 PenetrationDepth:0.344 Actor:BaseProjectile_BP_C_46 Component:SphereMeshComponent BoneName:None (1 other events since notify)
+[2018.02.08-06.03.47:940][960]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
+[2018.02.08-06.03.49:019][ 11]Cmd: EDIT COPY
+[2018.02.08-06.03.49:320][ 23]Cmd: EDIT PASTE
+[2018.02.08-06.03.51:612][150]Cmd: TRANSACTION UNDO
+[2018.02.08-06.03.51:612][150]LogEditorTransaction: Undo Move Actors
+[2018.02.08-06.03.59:991][644]Cmd: TRANSACTION UNDO
+[2018.02.08-06.03.59:991][644]LogEditorTransaction: Undo Scale Actors
+[2018.02.08-06.04.15:733][579]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GreyBoxMap" FILE="../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/GreyBoxMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.02.08-06.04.15:834][579]LogSavePackage: Save=79.45ms
+[2018.02.08-06.04.15:834][579]LogSavePackage: Moving '../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/GreyBoxMapDE14D53A4BA9E05007EB77B0CB26DAF7.tmp' to '../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/GreyBoxMap.umap'
+[2018.02.08-06.04.15:841][579]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/GreyBoxMap.umap
+[2018.02.08-06.04.18:585][698]LogSlate: Took 0.000164 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.02.08-06.04.18:694][698]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0021 seconds. Added 116 classes and 0 folders.
+[2018.02.08-06.04.20:031][698]LogSlate: Took 0.023250 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2018.02.08-06.04.34:503][171]LogSlate: Took 0.021547 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.02.08-06.04.41:046][558]LogClass: Warning: In asset 'None', there is an enum property of type 'ECollisionEnabled' with an invalid value of ''
+[2018.02.08-06.04.41:047][558]LogClass: Warning: In asset 'None', there is an enum property of type 'ECollisionEnabled' with an invalid value of ''
+[2018.02.08-06.04.41:047][558]LogClass: Warning: In asset 'None', there is an enum property of type 'ECollisionChannel' with an invalid value of ''
+[2018.02.08-06.04.41:048][558]LogClass: Warning: In asset 'None', there is an enum property of type 'ECollisionChannel' with an invalid value of ''
+[2018.02.08-06.04.42:726][658]LogClass: Warning: In asset 'None', there is an enum property of type 'ECanBeCharacterBase' with an invalid value of ''
+[2018.02.08-06.04.42:726][658]LogClass: Warning: In asset 'None', there is an enum property of type 'ECanBeCharacterBase' with an invalid value of ''
+[2018.02.08-06.04.58:093][578]BlueprintLog: New page: Compile BaseProjectile_BP
+[2018.02.08-06.04.58:871][600]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Projectiles/BaseProjectile_BP" FILE="../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Projectiles/BaseProjectile_BP.uasset" SILENT=true
+[2018.02.08-06.04.58:906][600]LogSavePackage: Save=26.28ms
+[2018.02.08-06.04.58:907][600]LogSavePackage: Moving '../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/BaseProjectile_BP62FB2B7C4A261F0F0B89158D1AA150C2.tmp' to '../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Projectiles/BaseProjectile_BP.uasset'
+[2018.02.08-06.04.58:912][600]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Projectiles/BaseProjectile_BP.uasset
+[2018.02.08-06.05.00:565][699]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube2)
+[2018.02.08-06.05.02:081][788]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube2)
+[2018.02.08-06.05.08:747][182]LogEditorViewport: Clicking on Actor (LMB): DestructibleCube_C (DestructibleCube)
+[2018.02.08-06.05.16:482][639]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube2)
+[2018.02.08-06.05.35:848][782]LogVSAccessor: Warning: Couldn't access Visual Studio
+[2018.02.08-06.05.35:856][782]Candidate modules for hot reload:
+[2018.02.08-06.05.35:856][782]  DDMMO
+[2018.02.08-06.05.35:856][782]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.18/Engine/Binaries/DotNET/UnrealBuildTool.exe DDMMO -ModuleWithSuffix DDMMO 1853 Win64 Development -editorrecompile -canskiplink "C:/Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/DDMMO.uproject" ]
+[2018.02.08-06.05.35:906][782]Warning: Starting HotReload took  0.1s.
+[2018.02.08-06.05.41:464][114]BlueprintLog: New page: Compile BaseProjectile_BP
+[2018.02.08-06.05.42:388][145]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Projectiles/BaseProjectile_BP" FILE="../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Projectiles/BaseProjectile_BP.uasset" SILENT=true
+[2018.02.08-06.05.42:421][145]LogSavePackage: Save=25.18ms
+[2018.02.08-06.05.42:421][145]LogSavePackage: Moving '../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/BaseProjectile_BP71F751154FD5537FCFBD7D83A6437886.tmp' to '../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Projectiles/BaseProjectile_BP.uasset'
+[2018.02.08-06.05.42:426][145]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Projectiles/BaseProjectile_BP.uasset
+[2018.02.08-06.06.00:549][224]CompilerResultsLog: New page: Compilation - Feb 7, 2018, 8:06:00 PM
+[2018.02.08-06.06.00:549][224]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.02.08-06.06.00:550][224]CompilerResultsLog: Creating makefile for hot reloading DDMMO (ini files are newer than UBTMakefile)
+[2018.02.08-06.06.00:550][224]CompilerResultsLog: Compiling game modules for hot reload
+[2018.02.08-06.06.00:550][224]CompilerResultsLog: Target is up to date
+[2018.02.08-06.06.00:550][224]CompilerResultsLog: Total build time: 24.38 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2018.02.08-06.06.00:550][224]LogMainFrame: MainFrame: Module compiling took 24.702 seconds
+[2018.02.08-06.06.00:864][224]LogContentBrowser: Native class hierarchy populated in 0.0155 seconds. Added 2402 classes and 541 folders.
+[2018.02.08-06.06.00:864][224]Display: HotReload took 25.0s.
+[2018.02.08-06.06.02:621][324]LogTemp: Repeating last play command: Selected Viewport
+[2018.02.08-06.06.02:658][324]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.02.08-06.06.02:658][324]PIE: New page: PIE session: GreyBoxMap (Feb 7, 2018, 8:06:02 PM)
+[2018.02.08-06.06.02:658][324]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GreyBoxMap
+[2018.02.08-06.06.02:659][324]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001131s)
+[2018.02.08-06.06.02:660][324]LogAIModule: Creating AISystem for world GreyBoxMap
+[2018.02.08-06.06.02:660][324]LogPlayLevel: PIE: World Init took: (0.000844s)
+[2018.02.08-06.06.02:661][324]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GreyBoxMap.GreyBoxMap to /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap (0.002562s)
+[2018.02.08-06.06.02:709][324]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1 Chroma)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.02.08-06.06.02:724][324]LogInit: FAudioDevice initialized.
+[2018.02.08-06.06.02:758][324]LogLoad: Game class is 'DDMMOGameMode'
+[2018.02.08-06.06.02:760][324]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap up for play (max tick rate 60) at 2018.02.08-01.06.02
+[2018.02.08-06.06.02:760][324]LogWorld: Bringing up level for play took: 0.001550
+[2018.02.08-06.06.02:768][324]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GreyBoxMap -0.482
+[2018.02.08-06.06.04:504][428]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=40.09 Y=598.66 Z=0.00 Location: X=892.03 Y=-469.80 Z=122.04 Normal: X=0.02 Y=-0.11 Z=-0.99 PenetrationDepth:60.813 Actor:BaseProjectile_BP_C_0 Component:SphereComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.06.04:504][428]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.04:504][428]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.06:404][542]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.06:404][542]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.06:970][576]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.06:970][576]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.10:853][809]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.10:853][809]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.13:788][985]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.13:788][985]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.15:521][ 89]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=520.35 Y=298.73 Z=0.00 Location: X=1225.69 Y=1597.14 Z=121.72 Normal: X=-0.39 Y=-0.20 Z=-0.90 PenetrationDepth:59.022 Actor:BaseProjectile_BP_C_7 Component:SphereComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.06.15:522][ 89]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.15:522][ 89]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.16:204][130]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.16:204][130]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.16:455][145]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.16:455][145]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.16:704][160]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.16:704][160]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.17:487][207]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.17:487][207]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.18:220][251]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.18:220][251]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.19:003][298]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.19:004][298]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.21:170][428]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.21:170][428]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.21:756][463]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.21:756][463]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.22:371][500]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.22:372][500]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.23:172][548]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.23:172][548]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.23:820][587]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.23:820][587]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.24:253][613]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.24:254][613]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.24:437][624]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.24:437][624]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.24:637][636]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.24:637][636]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.24:804][646]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.24:804][646]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.24:953][655]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.24:953][655]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.25:104][664]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.25:104][664]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.25:270][674]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.25:270][674]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.25:420][683]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.25:421][683]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.25:538][690]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.25:538][690]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.25:587][693]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.25:587][693]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.25:788][705]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.25:788][705]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.26:472][746]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.26:472][746]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.26:688][759]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.26:688][759]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.26:888][771]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.26:888][771]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.27:038][780]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.27:038][780]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.27:221][791]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.27:222][791]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.27:586][813]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.27:587][813]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.27:738][822]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.27:738][822]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.27:905][832]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.27:905][832]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.28:071][842]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.28:071][842]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.29:388][921]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.29:388][921]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.29:705][940]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.29:705][940]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.29:956][955]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.29:956][955]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.30:122][965]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.30:122][965]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.31:255][ 33]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.31:256][ 33]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.31:805][ 66]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.31:805][ 66]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.32:089][ 83]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.32:089][ 83]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.32:570][112]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.32:571][112]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.33:470][166]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.33:470][166]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.33:720][181]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.33:721][181]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.33:987][197]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.33:987][197]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.34:489][227]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.34:489][227]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.35:076][261]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=187.78 Y=-569.86 Z=0.00 Location: X=-590.08 Y=798.06 Z=121.90 Normal: X=-0.10 Y=0.30 Z=-0.95 PenetrationDepth:60.022 Actor:BaseProjectile_BP_C_53 Component:SphereComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.06.35:077][261]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.35:077][261]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.35:424][282]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.35:424][282]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.35:591][292]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.35:591][292]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.35:757][302]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.35:757][302]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.35:924][312]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.35:925][312]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.36:075][321]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.36:075][321]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.36:160][326]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.36:161][326]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.36:443][343]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.36:443][343]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.36:660][356]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.36:660][356]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.36:860][368]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.36:860][368]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.37:076][381]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.37:077][381]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.40:726][600]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.40:726][600]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.41:042][619]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.41:042][619]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.41:276][633]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.41:277][633]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.41:459][644]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.41:459][644]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.41:592][652]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.41:592][652]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.41:776][663]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.41:776][663]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.50:076][161]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-357.59 Y=481.80 Z=0.00 Location: X=-704.78 Y=504.16 Z=121.95 Normal: X=0.13 Y=-0.23 Z=-0.96 PenetrationDepth:60.301 Actor:BaseProjectile_BP_C_70 Component:SphereComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.06.50:077][161]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.50:077][161]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.50:575][191]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.50:575][191]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.50:758][202]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.50:758][202]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.50:925][212]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.50:925][212]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.51:091][222]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.51:091][222]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.51:225][230]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.51:225][230]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.51:558][250]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.51:558][250]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.51:725][260]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.51:725][260]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.51:891][270]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.51:891][270]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.52:058][280]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.52:058][280]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.52:208][289]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.52:208][289]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.52:374][299]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.52:375][299]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.06.54:993][456]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.06.54:993][456]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.02:293][894]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.02:294][894]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.02:943][933]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.02:943][933]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.03:176][947]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.03:176][947]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.03:394][960]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.03:394][960]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.04:026][998]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.04:027][998]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.04:411][ 21]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.04:412][ 21]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.04:544][ 29]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.04:544][ 29]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.04:760][ 42]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.04:760][ 42]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.04:944][ 53]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.04:944][ 53]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.06:058][120]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.06:058][120]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.06:275][133]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.06:275][133]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.06:476][145]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.06:476][145]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.06:661][156]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.06:661][156]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.06:691][158]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.06:692][158]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.06:878][169]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.06:878][169]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.07:061][180]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.07:061][180]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.07:827][226]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.07:828][226]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.08:027][238]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-49.55 Y=-597.95 Z=0.00 Location: X=-1151.31 Y=18.35 Z=122.01 Normal: X=0.18 Y=0.01 Z=-0.98 PenetrationDepth:60.631 Actor:BaseProjectile_BP_C_100 Component:SphereComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.07.08:027][238]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.08:028][238]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.08:194][248]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.08:194][248]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.08:360][258]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.08:361][258]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.08:742][281]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.08:743][281]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.08:925][292]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.08:926][292]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.09:078][301]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.09:078][301]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.09:276][313]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.09:276][313]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.09:494][326]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.09:494][326]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.09:692][338]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.09:693][338]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.09:859][348]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.09:859][348]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.10:042][359]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.10:043][359]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.11:694][450]LogTemp: Repeating last play command: Selected Viewport
+[2018.02.08-06.07.11:723][450]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.02.08-06.07.11:723][450]PIE: New page: PIE session: GreyBoxMap (Feb 7, 2018, 8:07:11 PM)
+[2018.02.08-06.07.11:723][450]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GreyBoxMap
+[2018.02.08-06.07.11:725][450]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001348s)
+[2018.02.08-06.07.11:726][450]LogAIModule: Creating AISystem for world GreyBoxMap
+[2018.02.08-06.07.11:726][450]LogPlayLevel: PIE: World Init took: (0.000942s)
+[2018.02.08-06.07.11:726][450]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GreyBoxMap.GreyBoxMap to /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap (0.002953s)
+[2018.02.08-06.07.11:752][450]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1 Chroma)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.02.08-06.07.11:766][450]LogInit: FAudioDevice initialized.
+[2018.02.08-06.07.11:801][450]LogLoad: Game class is 'DDMMOGameMode'
+[2018.02.08-06.07.11:803][450]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap up for play (max tick rate 60) at 2018.02.08-01.07.11
+[2018.02.08-06.07.11:804][450]LogWorld: Bringing up level for play took: 0.001594
+[2018.02.08-06.07.11:814][450]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GreyBoxMap 0.565
+[2018.02.08-06.07.16:071][705]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.16:071][705]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.17:873][813]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.17:873][813]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.18:973][879]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.18:973][879]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.19:673][921]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.19:673][921]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.20:388][964]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.20:388][964]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.20:604][977]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.20:604][977]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.20:838][991]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.20:838][991]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.21:887][ 54]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.21:887][ 54]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.22:137][ 69]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.22:138][ 69]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.22:338][ 81]LogTemp: Warning: Projectile Destroyed
+[2018.02.08-06.07.22:338][ 81]LogTemp: Warning: Hit generated, actor is null
+[2018.02.08-06.07.56:171][ 41]LogVSAccessor: Warning: Couldn't access Visual Studio
+[2018.02.08-06.07.56:178][ 41]Candidate modules for hot reload:
+[2018.02.08-06.07.56:179][ 41]  DDMMO
+[2018.02.08-06.07.56:179][ 41]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.18/Engine/Binaries/DotNET/UnrealBuildTool.exe DDMMO -ModuleWithSuffix DDMMO 2023 Win64 Development -editorrecompile -canskiplink "C:/Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/DDMMO.uproject" ]
+[2018.02.08-06.07.56:202][ 41]Warning: Starting HotReload took  0.0s.
+[2018.02.08-06.07.59:837][254]CompilerResultsLog: New page: Compilation - Feb 7, 2018, 8:07:59 PM
+[2018.02.08-06.07.59:837][254]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.02.08-06.07.59:837][254]CompilerResultsLog: Compiling game modules for hot reload
+[2018.02.08-06.07.59:837][254]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.02.08-06.07.59:837][254]CompilerResultsLog: BaseProjectile.cpp
+[2018.02.08-06.07.59:837][254]CompilerResultsLog: [2/3] Link UE4Editor-DDMMO-2023.dll
+[2018.02.08-06.07.59:837][254]CompilerResultsLog: [3/3] Link UE4Editor-DDMMO-2023.lib
+[2018.02.08-06.07.59:837][254]CompilerResultsLog:    Creating library C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-2023.lib and object C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-2023.exp
+[2018.02.08-06.07.59:838][254]CompilerResultsLog:    Creating library C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-2023.suppressed.lib and object C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-2023.suppressed.exp
+[2018.02.08-06.07.59:838][254]CompilerResultsLog: Total build time: 3.28 seconds (Local executor: 2.23 seconds)
+[2018.02.08-06.07.59:838][254]LogMainFrame: MainFrame: Module compiling took 3.666 seconds
+[2018.02.08-06.07.59:965][254]LogClass: PlayerCharacterState HotReload.
+[2018.02.08-06.07.59:965][254]LogClass: ESkillTag HotReload.
+[2018.02.08-06.07.59:965][254]LogClass: EDebuffType HotReload.
+[2018.02.08-06.07.59:965][254]LogClass: EBuffType HotReload.
+[2018.02.08-06.07.59:965][254]LogClass: EAbilityType HotReload.
+[2018.02.08-06.07.59:965][254]LogClass: ECastLocation HotReload.
+[2018.02.08-06.07.59:965][254]LogClass: Debuff HotReload.
+[2018.02.08-06.07.59:965][254]LogClass: Buff HotReload.
+[2018.02.08-06.07.59:974][254]LogContentBrowser: Native class hierarchy updated for 'DDMMO' in 0.0017 seconds. Added 14 classes and 7 folders.
+[2018.02.08-06.07.59:979][254]Display: HotReload successful (22 functions remapped  2 scriptstructs remapped)
+[2018.02.08-06.08.00:363][254]LogContentBrowser: Native class hierarchy populated in 0.0105 seconds. Added 2402 classes and 541 folders.
+[2018.02.08-06.08.00:363][254]Display: HotReload took  4.2s.
+[2018.02.08-06.08.04:451][363]LogVSAccessor: Warning: Couldn't access Visual Studio
+[2018.02.08-06.08.04:459][363]Candidate modules for hot reload:
+[2018.02.08-06.08.04:459][363]  DDMMO
+[2018.02.08-06.08.04:459][363]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.18/Engine/Binaries/DotNET/UnrealBuildTool.exe DDMMO -ModuleWithSuffix DDMMO 1614 Win64 Development -editorrecompile -canskiplink "C:/Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/DDMMO.uproject" ]
+[2018.02.08-06.08.04:491][363]Warning: Starting HotReload took  0.0s.
+[2018.02.08-06.08.07:803][556]CompilerResultsLog: New page: Compilation - Feb 7, 2018, 8:08:07 PM
+[2018.02.08-06.08.07:803][556]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.02.08-06.08.07:804][556]CompilerResultsLog: Compiling game modules for hot reload
+[2018.02.08-06.08.07:804][556]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.02.08-06.08.07:804][556]CompilerResultsLog: BaseProjectile.cpp
+[2018.02.08-06.08.07:804][556]CompilerResultsLog: [2/3] Link UE4Editor-DDMMO-1614.dll
+[2018.02.08-06.08.07:804][556]CompilerResultsLog: [3/3] Link UE4Editor-DDMMO-1614.lib
+[2018.02.08-06.08.07:804][556]CompilerResultsLog:    Creating library C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-1614.suppressed.lib and object C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-1614.suppressed.exp
+[2018.02.08-06.08.07:805][556]CompilerResultsLog:    Creating library C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-1614.lib and object C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-DDMMO-1614.exp
+[2018.02.08-06.08.07:805][556]CompilerResultsLog: Total build time: 3.07 seconds (Local executor: 2.02 seconds)
+[2018.02.08-06.08.07:805][556]LogMainFrame: MainFrame: Module compiling took 3.354 seconds
+[2018.02.08-06.08.07:977][556]LogClass: PlayerCharacterState HotReload.
+[2018.02.08-06.08.07:977][556]LogClass: ESkillTag HotReload.
+[2018.02.08-06.08.07:977][556]LogClass: EDebuffType HotReload.
+[2018.02.08-06.08.07:977][556]LogClass: EBuffType HotReload.
+[2018.02.08-06.08.07:977][556]LogClass: EAbilityType HotReload.
+[2018.02.08-06.08.07:978][556]LogClass: ECastLocation HotReload.
+[2018.02.08-06.08.07:978][556]LogClass: Debuff HotReload.
+[2018.02.08-06.08.07:978][556]LogClass: Buff HotReload.
+[2018.02.08-06.08.07:986][556]LogContentBrowser: Native class hierarchy updated for 'DDMMO' in 0.0015 seconds. Added 14 classes and 7 folders.
+[2018.02.08-06.08.07:990][556]Display: HotReload successful (22 functions remapped  2 scriptstructs remapped)
+[2018.02.08-06.08.08:347][556]LogContentBrowser: Native class hierarchy populated in 0.0103 seconds. Added 2402 classes and 541 folders.
+[2018.02.08-06.08.08:347][556]Display: HotReload took  3.9s.
+[2018.02.08-06.08.11:454][738]LogTemp: Repeating last play command: Selected Viewport
+[2018.02.08-06.08.11:483][738]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.02.08-06.08.11:483][738]PIE: New page: PIE session: GreyBoxMap (Feb 7, 2018, 8:08:11 PM)
+[2018.02.08-06.08.11:483][738]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GreyBoxMap
+[2018.02.08-06.08.11:485][738]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001657s)
+[2018.02.08-06.08.11:486][738]LogAIModule: Creating AISystem for world GreyBoxMap
+[2018.02.08-06.08.11:487][738]LogPlayLevel: PIE: World Init took: (0.001090s)
+[2018.02.08-06.08.11:487][738]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GreyBoxMap.GreyBoxMap to /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap (0.003493s)
+[2018.02.08-06.08.11:552][738]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1 Chroma)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.02.08-06.08.11:567][738]LogInit: FAudioDevice initialized.
+[2018.02.08-06.08.11:599][738]LogLoad: Game class is 'DDMMOGameMode'
+[2018.02.08-06.08.11:601][738]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap up for play (max tick rate 60) at 2018.02.08-01.08.11
+[2018.02.08-06.08.11:602][738]LogWorld: Bringing up level for play took: 0.001603
+[2018.02.08-06.08.11:609][738]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GreyBoxMap 0.36
+[2018.02.08-06.08.19:462][205]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=372.37 Y=470.47 Z=0.00 Location: X=1070.90 Y=106.72 Z=119.63 Normal: X=-0.63 Y=0.44 Z=-0.63 PenetrationDepth:47.487 Actor:BaseProjectile_BP_C_21 Component:SphereComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.08.47:780][848]BlueprintLog: New page: Compile MMOCharacter
+[2018.02.08-06.08.49:798][933]LogTemp: Repeating last play command: Selected Viewport
+[2018.02.08-06.08.49:834][933]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.02.08-06.08.49:834][933]PIE: New page: PIE session: GreyBoxMap (Feb 7, 2018, 8:08:49 PM)
+[2018.02.08-06.08.49:835][933]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GreyBoxMap
+[2018.02.08-06.08.49:836][933]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001070s)
+[2018.02.08-06.08.49:837][933]LogAIModule: Creating AISystem for world GreyBoxMap
+[2018.02.08-06.08.49:837][933]LogPlayLevel: PIE: World Init took: (0.000882s)
+[2018.02.08-06.08.49:837][933]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GreyBoxMap.GreyBoxMap to /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap (0.002495s)
+[2018.02.08-06.08.49:871][933]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1 Chroma)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.02.08-06.08.49:885][933]LogInit: FAudioDevice initialized.
+[2018.02.08-06.08.49:918][933]LogLoad: Game class is 'DDMMOGameMode'
+[2018.02.08-06.08.49:920][933]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap up for play (max tick rate 60) at 2018.02.08-01.08.49
+[2018.02.08-06.08.49:921][933]LogWorld: Bringing up level for play took: 0.001610
+[2018.02.08-06.08.49:929][933]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GreyBoxMap 0.679
+[2018.02.08-06.09.07:424][975]BlueprintLog: New page: Compile MMOCharacter
+[2018.02.08-06.09.09:187][ 42]LogTemp: Repeating last play command: Selected Viewport
+[2018.02.08-06.09.09:219][ 42]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.02.08-06.09.09:220][ 42]PIE: New page: PIE session: GreyBoxMap (Feb 7, 2018, 8:09:09 PM)
+[2018.02.08-06.09.09:220][ 42]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GreyBoxMap
+[2018.02.08-06.09.09:221][ 42]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001046s)
+[2018.02.08-06.09.09:222][ 42]LogAIModule: Creating AISystem for world GreyBoxMap
+[2018.02.08-06.09.09:222][ 42]LogPlayLevel: PIE: World Init took: (0.000857s)
+[2018.02.08-06.09.09:222][ 42]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GreyBoxMap.GreyBoxMap to /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap (0.002459s)
+[2018.02.08-06.09.09:248][ 42]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1 Chroma)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.02.08-06.09.09:263][ 42]LogInit: FAudioDevice initialized.
+[2018.02.08-06.09.09:293][ 42]LogLoad: Game class is 'DDMMOGameMode'
+[2018.02.08-06.09.09:296][ 42]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap up for play (max tick rate 60) at 2018.02.08-01.09.09
+[2018.02.08-06.09.09:296][ 42]LogWorld: Bringing up level for play took: 0.001601
+[2018.02.08-06.09.09:303][ 42]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GreyBoxMap 0.054
+[2018.02.08-06.09.16:936][494]BlueprintLog: New page: Compile MMOCharacter
+[2018.02.08-06.09.18:713][556]LogTemp: Repeating last play command: Selected Viewport
+[2018.02.08-06.09.18:743][556]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.02.08-06.09.18:743][556]PIE: New page: PIE session: GreyBoxMap (Feb 7, 2018, 8:09:18 PM)
+[2018.02.08-06.09.18:744][556]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GreyBoxMap
+[2018.02.08-06.09.18:745][556]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001086s)
+[2018.02.08-06.09.18:746][556]LogAIModule: Creating AISystem for world GreyBoxMap
+[2018.02.08-06.09.18:746][556]LogPlayLevel: PIE: World Init took: (0.000809s)
+[2018.02.08-06.09.18:746][556]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GreyBoxMap.GreyBoxMap to /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap (0.002495s)
+[2018.02.08-06.09.18:772][556]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1 Chroma)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.02.08-06.09.18:785][556]LogInit: FAudioDevice initialized.
+[2018.02.08-06.09.18:816][556]LogLoad: Game class is 'DDMMOGameMode'
+[2018.02.08-06.09.18:818][556]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap up for play (max tick rate 60) at 2018.02.08-01.09.18
+[2018.02.08-06.09.18:819][556]LogWorld: Bringing up level for play took: 0.001636
+[2018.02.08-06.09.18:827][556]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GreyBoxMap -0.423
+[2018.02.08-06.09.30:618][263]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-218.28 Y=-558.89 Z=0.00 Location: X=535.11 Y=-770.39 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_20 Component:SphereComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.09.32:218][359]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-473.53 Y=368.46 Z=0.00 Location: X=-136.46 Y=-767.58 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_26 Component:SphereComponent BoneName:None (3 other events since notify)
+[2018.02.08-06.09.38:287][723]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=593.29 Y=89.49 Z=0.00 Location: X=414.24 Y=143.21 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_37 Component:SphereComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.09.40:087][831]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=136.10 Y=-10.78 Z=0.00 Location: X=433.09 Y=145.23 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_45 Component:SphereComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.09.51:681][463]BlueprintLog: New page: Compile MMOCharacter
+[2018.02.08-06.09.54:570][584]LogTemp: Repeating last play command: Selected Viewport
+[2018.02.08-06.09.54:603][584]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.02.08-06.09.54:604][584]PIE: New page: PIE session: GreyBoxMap (Feb 7, 2018, 8:09:54 PM)
+[2018.02.08-06.09.54:604][584]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GreyBoxMap
+[2018.02.08-06.09.54:605][584]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001106s)
+[2018.02.08-06.09.54:606][584]LogAIModule: Creating AISystem for world GreyBoxMap
+[2018.02.08-06.09.54:606][584]LogPlayLevel: PIE: World Init took: (0.000826s)
+[2018.02.08-06.09.54:606][584]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GreyBoxMap.GreyBoxMap to /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap (0.002475s)
+[2018.02.08-06.09.54:639][584]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1 Chroma)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.02.08-06.09.54:654][584]LogInit: FAudioDevice initialized.
+[2018.02.08-06.09.54:686][584]LogLoad: Game class is 'DDMMOGameMode'
+[2018.02.08-06.09.54:688][584]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap up for play (max tick rate 60) at 2018.02.08-01.09.54
+[2018.02.08-06.09.54:688][584]LogWorld: Bringing up level for play took: 0.001652
+[2018.02.08-06.09.54:700][584]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GreyBoxMap -0.55
+[2018.02.08-06.09.56:606][698]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=11.05 Y=204.38 Z=0.00 Location: X=720.20 Y=-611.47 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_3 Component:SphereComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.09.57:723][765]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=571.39 Y=183.06 Z=0.00 Location: X=1038.05 Y=-153.97 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_8 Component:SphereComponent BoneName:None (4 other events since notify)
+[2018.02.08-06.10.05:257][216]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-406.69 Y=-48.71 Z=0.00 Location: X=1154.19 Y=-133.55 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_32 Component:SphereComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.10.06:774][307]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-233.99 Y=552.50 Z=0.00 Location: X=372.95 Y=166.74 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_37 Component:SphereComponent BoneName:None (1 other events since notify)
+[2018.02.08-06.10.10:857][552]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=192.57 Y=-568.26 Z=0.00 Location: X=269.73 Y=415.57 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_45 Component:SphereComponent BoneName:None (2 other events since notify)
+[2018.02.08-06.10.55:826][135]LogTemp: Repeating last play command: Selected Viewport
+[2018.02.08-06.10.55:865][135]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.02.08-06.10.55:865][135]PIE: New page: PIE session: GreyBoxMap (Feb 7, 2018, 8:10:55 PM)
+[2018.02.08-06.10.55:865][135]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GreyBoxMap
+[2018.02.08-06.10.55:867][135]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001150s)
+[2018.02.08-06.10.55:867][135]LogAIModule: Creating AISystem for world GreyBoxMap
+[2018.02.08-06.10.55:867][135]LogPlayLevel: PIE: World Init took: (0.000798s)
+[2018.02.08-06.10.55:868][135]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GreyBoxMap.GreyBoxMap to /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap (0.002502s)
+[2018.02.08-06.10.55:902][135]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1 Chroma)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.02.08-06.10.55:918][135]LogInit: FAudioDevice initialized.
+[2018.02.08-06.10.55:953][135]LogLoad: Game class is 'DDMMOGameMode'
+[2018.02.08-06.10.55:956][135]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap up for play (max tick rate 60) at 2018.02.08-01.10.55
+[2018.02.08-06.10.55:957][135]LogWorld: Bringing up level for play took: 0.002042
+[2018.02.08-06.10.55:965][135]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GreyBoxMap 0.715
+[2018.02.08-06.10.57:818][246]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-599.91 Y=10.47 Z=0.00 Location: X=633.05 Y=-622.54 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_1 Component:SphereComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.11.01:285][454]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=42.42 Y=598.50 Z=0.00 Location: X=514.34 Y=193.30 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_9 Component:SphereComponent BoneName:None (2 other events since notify)
+[2018.02.08-06.11.02:502][527]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=539.82 Y=261.89 Z=0.00 Location: X=911.92 Y=647.72 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_13 Component:SphereComponent BoneName:None (3 other events since notify)
+[2018.02.08-06.11.03:502][587]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=595.60 Y=-72.55 Z=0.00 Location: X=1287.48 Y=765.44 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_16 Component:SphereComponent BoneName:None (2 other events since notify)
+[2018.02.08-06.11.04:619][654]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-572.57 Y=-179.35 Z=0.00 Location: X=1298.80 Y=387.03 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_20 Component:SphereComponent BoneName:None (3 other events since notify)
+[2018.02.08-06.11.09:319][936]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-4.23 Y=599.99 Z=0.00 Location: X=13.85 Y=316.57 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_25 Component:SphereComponent BoneName:None (4 other events since notify)
+[2018.02.08-06.11.10:619][ 14]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=521.28 Y=297.11 Z=0.00 Location: X=346.65 Y=607.21 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_32 Component:SphereComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.11.11:652][ 76]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=174.58 Y=-574.04 Z=0.00 Location: X=549.06 Y=375.28 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_35 Component:SphereComponent BoneName:None (2 other events since notify)
+[2018.02.08-06.11.18:503][487]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-599.82 Y=-14.49 Z=0.00 Location: X=622.06 Y=87.60 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_50 Component:SphereComponent BoneName:None (3 other events since notify)
+[2018.02.08-06.11.39:262][726]LogTemp: Repeating last play command: Selected Viewport
+[2018.02.08-06.11.39:295][726]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.02.08-06.11.39:296][726]PIE: New page: PIE session: GreyBoxMap (Feb 7, 2018, 8:11:39 PM)
+[2018.02.08-06.11.39:296][726]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GreyBoxMap
+[2018.02.08-06.11.39:297][726]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001359s)
+[2018.02.08-06.11.39:298][726]LogAIModule: Creating AISystem for world GreyBoxMap
+[2018.02.08-06.11.39:298][726]LogPlayLevel: PIE: World Init took: (0.000857s)
+[2018.02.08-06.11.39:299][726]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GreyBoxMap.GreyBoxMap to /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap (0.002803s)
+[2018.02.08-06.11.39:325][726]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1 Chroma)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.02.08-06.11.39:340][726]LogInit: FAudioDevice initialized.
+[2018.02.08-06.11.39:375][726]LogLoad: Game class is 'DDMMOGameMode'
+[2018.02.08-06.11.39:377][726]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap up for play (max tick rate 60) at 2018.02.08-01.11.39
+[2018.02.08-06.11.39:378][726]LogWorld: Bringing up level for play took: 0.001728
+[2018.02.08-06.11.39:386][726]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GreyBoxMap 0.137
+[2018.02.08-06.11.40:790][810]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-487.20 Y=350.20 Z=0.00 Location: X=576.71 Y=-478.10 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_0 Component:SphereComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.12.00:685][990]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MMOCharacter/MMOCharacter" FILE="../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/MMOCharacter/MMOCharacter.uasset" SILENT=true
+[2018.02.08-06.12.00:770][990]LogSavePackage: Save=73.30ms
+[2018.02.08-06.12.00:771][990]LogSavePackage: Moving '../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/MMOCharacterD95D49344061FE56AA7E91A4BCBD7AE0.tmp' to '../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/MMOCharacter/MMOCharacter.uasset'
+[2018.02.08-06.12.00:775][990]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/MMOCharacter/MMOCharacter.uasset
+[2018.02.08-06.12.09:548][516]LogTemp: Repeating last play command: Selected Viewport
+[2018.02.08-06.12.09:582][516]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.02.08-06.12.09:582][516]PIE: New page: PIE session: GreyBoxMap (Feb 7, 2018, 8:12:09 PM)
+[2018.02.08-06.12.09:582][516]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GreyBoxMap
+[2018.02.08-06.12.09:584][516]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001542s)
+[2018.02.08-06.12.09:585][516]LogAIModule: Creating AISystem for world GreyBoxMap
+[2018.02.08-06.12.09:585][516]LogPlayLevel: PIE: World Init took: (0.000878s)
+[2018.02.08-06.12.09:585][516]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GreyBoxMap.GreyBoxMap to /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap (0.003160s)
+[2018.02.08-06.12.09:615][516]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1 Chroma)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.02.08-06.12.09:627][516]LogInit: FAudioDevice initialized.
+[2018.02.08-06.12.09:663][516]LogLoad: Game class is 'DDMMOGameMode'
+[2018.02.08-06.12.09:665][516]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GreyBoxMap.GreyBoxMap up for play (max tick rate 60) at 2018.02.08-01.12.09
+[2018.02.08-06.12.09:666][516]LogWorld: Bringing up level for play took: 0.001572
+[2018.02.08-06.12.09:673][516]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GreyBoxMap 0.424
+[2018.02.08-06.12.13:515][746]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-173.32 Y=574.42 Z=0.00 Location: X=1010.64 Y=393.82 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_2 Component:SphereComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.12.15:816][884]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-486.83 Y=350.71 Z=0.00 Location: X=1487.97 Y=1093.32 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_5 Component:SphereComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.12.18:116][ 22]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-398.16 Y=-448.85 Z=0.00 Location: X=992.54 Y=897.83 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_12 Component:SphereComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.12.21:916][250]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=191.08 Y=-282.85 Z=0.00 Location: X=943.38 Y=805.11 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_18 Component:SphereComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.12.26:133][503]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=255.32 Y=-443.72 Z=0.00 Location: X=1096.54 Y=569.47 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_20 Component:SphereComponent BoneName:None (1 other events since notify)
+[2018.02.08-06.12.27:899][609]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=397.31 Y=449.60 Z=0.00 Location: X=1317.61 Y=732.20 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_27 Component:SphereComponent BoneName:None (0 other events since notify)
+[2018.02.08-06.12.31:283][812]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=-71.33 Y=41.50 Z=0.00 Location: X=1280.79 Y=854.88 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_39 Component:SphereComponent BoneName:None (2 other events since notify)
+[2018.02.08-06.12.32:300][873]LogCharacterMovement: MMOCharacter_C_0 is stuck and failed to move! Velocity: X=17.33 Y=599.75 Z=0.00 Location: X=1412.56 Y=1253.12 Z=122.06 Normal: X=0.00 Y=0.00 Z=-1.00 PenetrationDepth:60.911 Actor:BaseProjectile_BP_C_44 Component:SphereComponent BoneName:None (4 other events since notify)
+[2018.02.08-06.12.50:608][867]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GreyBoxMap" FILE="../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/GreyBoxMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.02.08-06.12.50:664][867]LogSavePackage: Save=20.15ms
+[2018.02.08-06.12.50:664][867]LogSavePackage: Moving '../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/GreyBoxMap50A3E16C4D203952A270458762F96CF2.tmp' to '../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/GreyBoxMap.umap'
+[2018.02.08-06.12.50:668][867]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Maps/GreyBoxMap.umap
+[2018.02.08-06.12.50:717][867]LogFileHelpers: Saving map 'GreyBoxMap' took 0.183
+[2018.02.08-06.12.50:930][867]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2018.02.08-06.12.51:295][868]Cmd: QUIT_EDITOR
+[2018.02.08-06.12.51:948][868]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.02.08-06.12.51:964][868]LogExit: Preparing to exit.
+[2018.02.08-06.12.53:046][868]LogDirectoryWatcher: A directory notification for 'C:/Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/' was aborted.
+[2018.02.08-06.12.53:133][868]LogExit: Editor shut down
+[2018.02.08-06.12.53:161][868]LogExit: Transaction tracking system shut down
+[2018.02.08-06.12.53:330][868]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2018.02.08-06.12.53:330][868]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/' was aborted.
+[2018.02.08-06.12.53:330][868]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2018.02.08-06.12.53:330][868]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Media/MediaCompositing/Content/' was aborted.
+[2018.02.08-06.12.53:330][868]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/AppleARKit/Content/' was aborted.
+[2018.02.08-06.12.53:330][868]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Oculus/OculusVR/Content/' was aborted.
+[2018.02.08-06.12.53:330][868]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Steam/SteamVR/Content/' was aborted.
+[2018.02.08-06.12.53:481][868]LogExit: Object subsystem successfully closed.
+[2018.02.08-06.12.53:507][868]LogD3D11RHI: Shutdown
+[2018.02.08-06.12.53:507][868]LogD3D11RHI: CleanupD3DDevice
+[2018.02.08-06.12.53:512][868]LogD3D11RHI: ~FD3D11DynamicRHI
+[2018.02.08-06.12.53:529][868]LogModuleManager: Shutting down and abandoning module DDMMO (572)
+[2018.02.08-06.12.53:529][868]LogModuleManager: Shutting down and abandoning module BlueprintGraph (570)
+[2018.02.08-06.12.53:529][868]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (566)
+[2018.02.08-06.12.53:529][868]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (564)
+[2018.02.08-06.12.53:529][868]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (562)
+[2018.02.08-06.12.53:529][868]LogModuleManager: Shutting down and abandoning module DesktopPlatform (560)
+[2018.02.08-06.12.53:529][868]LogModuleManager: Shutting down and abandoning module SceneOutliner (558)
+[2018.02.08-06.12.53:529][868]LogModuleManager: Shutting down and abandoning module AddContentDialog (556)
+[2018.02.08-06.12.53:529][868]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.18/FeaturePacks/' was aborted.
+[2018.02.08-06.12.53:536][868]LogModuleManager: Shutting down and abandoning module WidgetCarousel (555)
+[2018.02.08-06.12.53:536][868]LogModuleManager: Shutting down and abandoning module EditorWidgets (552)
+[2018.02.08-06.12.53:536][868]LogModuleManager: Shutting down and abandoning module CollectionManager (550)
+[2018.02.08-06.12.53:536][868]LogDirectoryWatcher: A directory notification for 'C:/Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Collections/' was aborted.
+[2018.02.08-06.12.53:536][868]LogDirectoryWatcher: A directory notification for 'C:/Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Content/Developers/Lu/Collections/' was aborted.
+[2018.02.08-06.12.53:536][868]LogDirectoryWatcher: A directory notification for 'C:/Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Saved/Collections/' was aborted.
+[2018.02.08-06.12.53:536][868]LogModuleManager: Shutting down and abandoning module StatsViewer (548)
+[2018.02.08-06.12.53:536][868]LogModuleManager: Shutting down and abandoning module FoliageEdit (546)
+[2018.02.08-06.12.53:536][868]LogModuleManager: Shutting down and abandoning module LandscapeEditor (544)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module MeshPaintMode (542)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (540)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module ActorPickerMode (538)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module GeometryMode (536)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module TextureAlignMode (534)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module BspMode (532)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (530)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module HardwareSurvey (528)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (526)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module AutomationWorker (524)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (522)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (520)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module PlacementMode (519)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (516)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (514)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (512)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (510)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (508)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (506)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (504)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (502)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (500)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module CharacterAI (498)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module AudioCapture (496)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module SequenceRecorder (495)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module SmartSnapping (492)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module SessionServices (490)
+[2018.02.08-06.12.53:537][868]LogModuleManager: Shutting down and abandoning module ViewportSnapping (488)
+[2018.02.08-06.12.53:538][868]LogModuleManager: Shutting down and abandoning module ViewportInteraction (486)
+[2018.02.08-06.12.53:538][868]LogModuleManager: Shutting down and abandoning module ClothPainter (484)
+[2018.02.08-06.12.53:538][868]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (483)
+[2018.02.08-06.12.53:538][868]LogModuleManager: Shutting down and abandoning module LogVisualizer (480)
+[2018.02.08-06.12.53:538][868]LogModuleManager: Shutting down and abandoning module IntroTutorials (478)
+[2018.02.08-06.12.53:538][868]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (477)
+[2018.02.08-06.12.53:538][868]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (474)
+[2018.02.08-06.12.53:538][868]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (472)
+[2018.02.08-06.12.53:538][868]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (470)
+[2018.02.08-06.12.53:538][868]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (469)
+[2018.02.08-06.12.53:588][868]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (466)
+[2018.02.08-06.12.53:588][868]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (464)
+[2018.02.08-06.12.53:588][868]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (462)
+[2018.02.08-06.12.53:588][868]LogModuleManager: Shutting down and abandoning module InputBindingEditor (460)
+[2018.02.08-06.12.53:588][868]LogModuleManager: Shutting down and abandoning module MergeActors (458)
+[2018.02.08-06.12.53:588][868]LogModuleManager: Shutting down and abandoning module SizeMap (456)
+[2018.02.08-06.12.53:588][868]LogModuleManager: Shutting down and abandoning module TreeMap (454)
+[2018.02.08-06.12.53:588][868]LogModuleManager: Shutting down and abandoning module ReferenceViewer (452)
+[2018.02.08-06.12.53:589][868]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (450)
+[2018.02.08-06.12.53:589][868]LogModuleManager: Shutting down and abandoning module LocalizationService (449)
+[2018.02.08-06.12.53:589][868]LogModuleManager: Shutting down and abandoning module HardwareTargeting (446)
+[2018.02.08-06.12.53:589][868]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (444)
+[2018.02.08-06.12.53:589][868]LogModuleManager: Shutting down and abandoning module UndoHistory (442)
+[2018.02.08-06.12.53:589][868]LogModuleManager: Shutting down and abandoning module XmlParser (440)
+[2018.02.08-06.12.53:589][868]LogModuleManager: Shutting down and abandoning module Blutility (438)
+[2018.02.08-06.12.53:589][868]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (436)
+[2018.02.08-06.12.53:589][868]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (435)
+[2018.02.08-06.12.53:589][868]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (432)
+[2018.02.08-06.12.53:589][868]LogModuleManager: Shutting down and abandoning module SettingsEditor (430)
+[2018.02.08-06.12.53:589][868]LogModuleManager: Shutting down and abandoning module ProjectLauncher (428)
+[2018.02.08-06.12.53:589][868]LogModuleManager: Shutting down and abandoning module SessionFrontend (426)
+[2018.02.08-06.12.53:589][868]LogModuleManager: Shutting down and abandoning module ProfilerClient (424)
+[2018.02.08-06.12.53:589][868]LogModuleManager: Shutting down and abandoning module DeviceManager (422)
+[2018.02.08-06.12.53:589][868]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (421)
+[2018.02.08-06.12.53:644][868]LogModuleManager: Shutting down and abandoning module AutomationController (418)
+[2018.02.08-06.12.53:644][868]LogModuleManager: Shutting down and abandoning module AutomationWindow (416)
+[2018.02.08-06.12.53:644][868]LogModuleManager: Shutting down and abandoning module Layers (414)
+[2018.02.08-06.12.53:644][868]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (412)
+[2018.02.08-06.12.53:644][868]LogModuleManager: Shutting down and abandoning module DetailCustomizations (410)
+[2018.02.08-06.12.53:644][868]LogModuleManager: Shutting down and abandoning module PackagesDialog (408)
+[2018.02.08-06.12.53:644][868]LogModuleManager: Shutting down and abandoning module Persona (406)
+[2018.02.08-06.12.53:644][868]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (405)
+[2018.02.08-06.12.53:644][868]LogModuleManager: Shutting down and abandoning module AnimGraph (403)
+[2018.02.08-06.12.53:644][868]LogModuleManager: Shutting down and abandoning module Kismet (400)
+[2018.02.08-06.12.53:661][868]LogModuleManager: Shutting down and abandoning module ClassViewer (398)
+[2018.02.08-06.12.53:661][868]LogModuleManager: Shutting down and abandoning module Toolbox (396)
+[2018.02.08-06.12.53:661][868]LogModuleManager: Shutting down and abandoning module ModuleUI (394)
+[2018.02.08-06.12.53:661][868]LogModuleManager: Shutting down and abandoning module MovieSceneTools (392)
+[2018.02.08-06.12.53:661][868]LogModuleManager: Shutting down and abandoning module OutputLog (390)
+[2018.02.08-06.12.53:661][868]LogModuleManager: Shutting down and abandoning module GammaUI (388)
+[2018.02.08-06.12.53:661][868]LogModuleManager: Shutting down and abandoning module Documentation (386)
+[2018.02.08-06.12.53:661][868]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (384)
+[2018.02.08-06.12.53:661][868]LogModuleManager: Shutting down and abandoning module MovieScene (382)
+[2018.02.08-06.12.53:661][868]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (380)
+[2018.02.08-06.12.53:661][868]LogModuleManager: Shutting down and abandoning module LauncherPlatform (378)
+[2018.02.08-06.12.53:661][868]LogModuleManager: Shutting down and abandoning module AnalyticsET (376)
+[2018.02.08-06.12.53:661][868]LogModuleManager: Shutting down and abandoning module PortalServices (374)
+[2018.02.08-06.12.53:661][868]LogModuleManager: Shutting down and abandoning module PortalRpc (372)
+[2018.02.08-06.12.53:661][868]LogModuleManager: Shutting down and abandoning module MessagingRpc (370)
+[2018.02.08-06.12.53:661][868]LogModuleManager: Shutting down and abandoning module AIModule (368)
+[2018.02.08-06.12.53:662][868]LogModuleManager: Shutting down and abandoning module GameplayDebugger (367)
+[2018.02.08-06.12.53:662][868]LogModuleManager: Shutting down and abandoning module AITestSuite (365)
+[2018.02.08-06.12.53:662][868]LogModuleManager: Shutting down and abandoning module ProfilerService (362)
+[2018.02.08-06.12.53:843][868]LogModuleManager: Shutting down and abandoning module TaskGraph (360)
+[2018.02.08-06.12.53:843][868]LogModuleManager: Shutting down and abandoning module SubstanceLiveLink (358)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module SubstanceSource (356)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module SubstanceEditor (354)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module SteamVRController (352)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (350)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (348)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module OculusInput (346)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (344)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (342)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module CableComponent (340)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (338)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module AndroidPermission (336)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module ActorSequence (332)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (330)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (328)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module MediaCompositing (326)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module HTML5Networking (324)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module AlembicImporter (322)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module AlembicLibrary (321)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module GeometryCache (320)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (319)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (314)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module PluginBrowser (312)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (310)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (308)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (306)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module UObjectPlugin (304)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (302)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (300)
+[2018.02.08-06.12.53:844][868]LogModuleManager: Shutting down and abandoning module GitSourceControl (298)
+[2018.02.08-06.12.53:845][868]LogModuleManager: Shutting down and abandoning module SourceControl (297)
+[2018.02.08-06.12.53:845][868]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (294)
+[2018.02.08-06.12.53:845][868]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (292)
+[2018.02.08-06.12.53:845][868]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (290)
+[2018.02.08-06.12.53:845][868]LogModuleManager: Shutting down and abandoning module Paper2DEditor (288)
+[2018.02.08-06.12.53:845][868]LogModuleManager: Shutting down and abandoning module MeshPaint (287)
+[2018.02.08-06.12.53:845][868]LogModuleManager: Shutting down and abandoning module LevelEditor (285)
+[2018.02.08-06.12.53:846][868]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (284)
+[2018.02.08-06.12.53:846][868]LogModuleManager: Shutting down and abandoning module MainFrame (282)
+[2018.02.08-06.12.53:846][868]LogModuleManager: Shutting down and abandoning module HotReload (281)
+[2018.02.08-06.12.53:846][868]LogDirectoryWatcher: A directory notification for 'C:/Users/Lu/Documents/GitHub/DigitalDurganMMO/DDMMO/Binaries/Win64' was aborted.
+[2018.02.08-06.12.53:847][868]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (274)
+[2018.02.08-06.12.53:847][868]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (272)
+[2018.02.08-06.12.53:847][868]LogModuleManager: Shutting down and abandoning module PhysXVehicles (270)
+[2018.02.08-06.12.53:847][868]LogModuleManager: Shutting down and abandoning module OculusEditor (268)
+[2018.02.08-06.12.53:847][868]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (266)
+[2018.02.08-06.12.53:847][868]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (264)
+[2018.02.08-06.12.53:847][868]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (262)
+[2018.02.08-06.12.53:847][868]LogModuleManager: Shutting down and abandoning module ApexDestructionEditor (260)
+[2018.02.08-06.12.53:847][868]LogModuleManager: Shutting down and abandoning module ApexDestruction (258)
+[2018.02.08-06.12.53:847][868]LogModuleManager: Shutting down and abandoning module UdpMessaging (256)
+[2018.02.08-06.12.53:948][868]LogModuleManager: Shutting down and abandoning module TcpMessaging (254)
+[2018.02.08-06.12.54:049][868]LogModuleManager: Shutting down and abandoning module SubstanceCore (252)
+[2018.02.08-06.12.54:049][868]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (250)
+[2018.02.08-06.12.54:049][868]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (248)
+[2018.02.08-06.12.54:049][868]LogModuleManager: Shutting down and abandoning module FacialAnimation (246)
+[2018.02.08-06.12.54:049][868]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (244)
+[2018.02.08-06.12.54:049][868]LogModuleManager: Shutting down and abandoning module GraphEditor (243)
+[2018.02.08-06.12.54:049][868]LogModuleManager: Shutting down and abandoning module ContentBrowser (241)
+[2018.02.08-06.12.54:050][868]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (238)
+[2018.02.08-06.12.54:050][868]LogModuleManager: Shutting down and abandoning module Paper2D (236)
+[2018.02.08-06.12.54:050][868]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (234)
+[2018.02.08-06.12.54:050][868]LogModuleManager: Shutting down and abandoning module WmfMedia (232)
+[2018.02.08-06.12.54:053][868]LogModuleManager: Shutting down and abandoning module ImgMedia (230)
+[2018.02.08-06.12.54:053][868]LogModuleManager: Shutting down and abandoning module PacketHandler (228)
+[2018.02.08-06.12.54:053][868]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (226)
+[2018.02.08-06.12.54:053][868]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (224)
+[2018.02.08-06.12.54:053][868]LogModuleManager: Shutting down and abandoning module MediaAssets (222)
+[2018.02.08-06.12.54:053][868]LogModuleManager: Shutting down and abandoning module Media (221)
+[2018.02.08-06.12.54:059][868]LogModuleManager: Shutting down and abandoning module Overlay (218)
+[2018.02.08-06.12.54:059][868]LogModuleManager: Shutting down and abandoning module OverlayEditor (217)
+[2018.02.08-06.12.54:059][868]LogModuleManager: Shutting down and abandoning module VREditor (214)
+[2018.02.08-06.12.54:059][868]LogModuleManager: Shutting down and abandoning module StringTableEditor (212)
+[2018.02.08-06.12.54:059][868]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (210)
+[2018.02.08-06.12.54:059][868]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (208)
+[2018.02.08-06.12.54:059][868]LogModuleManager: Shutting down and abandoning module FunctionalTesting (206)
+[2018.02.08-06.12.54:059][868]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (204)
+[2018.02.08-06.12.54:060][868]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (203)
+[2018.02.08-06.12.54:060][868]LogModuleManager: Shutting down and abandoning module UMG (200)
+[2018.02.08-06.12.54:060][868]LogModuleManager: Shutting down and abandoning module UMGEditor (199)
+[2018.02.08-06.12.54:060][868]LogModuleManager: Shutting down and abandoning module Sequencer (198)
+[2018.02.08-06.12.54:060][868]LogModuleManager: Shutting down and abandoning module MessageLog (195)
+[2018.02.08-06.12.54:060][868]LogModuleManager: Shutting down and abandoning module SlateReflector (190)
+[2018.02.08-06.12.54:060][868]LogModuleManager: Shutting down and abandoning module Slate (188)
+[2018.02.08-06.12.54:060][868]LogModuleManager: Shutting down and abandoning module EditorStyle (186)
+[2018.02.08-06.12.54:063][868]LogModuleManager: Shutting down and abandoning module MRMesh (184)
+[2018.02.08-06.12.54:063][868]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (182)
+[2018.02.08-06.12.54:063][868]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (180)
+[2018.02.08-06.12.54:063][868]LogModuleManager: Shutting down and abandoning module XAudio2 (178)
+[2018.02.08-06.12.54:063][868]LogModuleManager: Shutting down and abandoning module Networking (176)
+[2018.02.08-06.12.54:063][868]LogModuleManager: Shutting down and abandoning module Core (172)
+[2018.02.08-06.12.54:063][868]LogModuleManager: Shutting down and abandoning module LevelSequence (168)
+[2018.02.08-06.12.54:063][868]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (166)
+[2018.02.08-06.12.54:072][868]LogModuleManager: Shutting down and abandoning module KismetCompiler (164)
+[2018.02.08-06.12.54:072][868]LogModuleManager: Shutting down and abandoning module MeshUtilities (162)
+[2018.02.08-06.12.54:072][868]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (161)
+[2018.02.08-06.12.54:072][868]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (160)
+[2018.02.08-06.12.54:072][868]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (159)
+[2018.02.08-06.12.54:072][868]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (157)
+[2018.02.08-06.12.54:072][868]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (155)
+[2018.02.08-06.12.54:072][868]LogModuleManager: Shutting down and abandoning module MaterialBaking (151)
+[2018.02.08-06.12.54:072][868]LogModuleManager: Shutting down and abandoning module DerivedDataCache (148)
+[2018.02.08-06.12.54:130][868]LogDerivedDataCache: Shutdown
+[2018.02.08-06.12.54:130][868]LogModuleManager: Shutting down and abandoning module TargetPlatform (146)
+[2018.02.08-06.12.54:130][868]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (145)
+[2018.02.08-06.12.54:130][868]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (143)
+[2018.02.08-06.12.54:130][868]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (141)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (139)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (137)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (135)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (133)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (131)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (129)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (127)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module ImageWrapper (126)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (123)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (121)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (119)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (117)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (115)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (113)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (111)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (109)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (107)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module Messaging (105)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (103)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (101)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (99)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (97)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (95)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (93)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (91)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (89)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (87)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (85)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (83)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (81)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (79)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (77)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (75)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (73)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (71)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (69)
+[2018.02.08-06.12.54:131][868]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (67)
+[2018.02.08-06.12.54:132][868]LogModuleManager: Shutting down and abandoning module InputCore (64)
+[2018.02.08-06.12.54:132][868]LogModuleManager: Shutting down and abandoning module Settings (62)
+[2018.02.08-06.12.54:132][868]LogModuleManager: Shutting down and abandoning module PhysXCooking (60)
+[2018.02.08-06.12.54:132][868]LogModuleManager: Shutting down and abandoning module SteamVR (58)
+[2018.02.08-06.12.54:132][868]LogModuleManager: Shutting down and abandoning module OculusHMD (56)
+[2018.02.08-06.12.54:132][868]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (54)
+[2018.02.08-06.12.54:132][868]LogModuleManager: Shutting down and abandoning module AppleARKit (52)
+[2018.02.08-06.12.54:132][868]LogModuleManager: Shutting down and abandoning module AugmentedReality (51)
+[2018.02.08-06.12.54:132][868]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2018.02.08-06.12.54:132][868]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2018.02.08-06.12.54:132][868]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2018.02.08-06.12.54:132][868]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2018.02.08-06.12.54:132][868]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2018.02.08-06.12.54:132][868]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B43654C23-46B0-7A8B-FCFD-2FBCE4DDE610%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.18.3-3832480%2B%2B%2BUE4%2BRelease-4.18&UserID=c29409724f818083361eae88a2d5ac6f%7Ccfa258bac58044869ccb06aef1c85141%7C2ff2746b-82ff-4a93-bf9d-a0a4c578d255&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2018.02.08-06.12.54:161][868]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2018.02.08-06.12.54:162][868]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
+[2018.02.08-06.12.54:162][868]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
+[2018.02.08-06.12.54:162][868]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
+[2018.02.08-06.12.54:162][868]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
+[2018.02.08-06.12.54:163][868]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
+[2018.02.08-06.12.54:163][868]LogModuleManager: Shutting down and abandoning module Landscape (26)
+[2018.02.08-06.12.54:163][868]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+[2018.02.08-06.12.54:167][868]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
+[2018.02.08-06.12.54:167][868]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
+[2018.02.08-06.12.54:167][868]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
+[2018.02.08-06.12.54:167][868]LogModuleManager: Shutting down and abandoning module Renderer (16)
+[2018.02.08-06.12.54:167][868]LogModuleManager: Shutting down and abandoning module Engine (14)
+[2018.02.08-06.12.54:167][868]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
+[2018.02.08-06.12.54:167][868]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
+[2018.02.08-06.12.54:167][868]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
+[2018.02.08-06.12.54:167][868]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2018.02.08-06.12.54:167][868]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2018.02.08-06.12.54:167][868]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2018.02.08-06.12.54:185][868]LogExit: Exiting.
+[2018.02.08-06.12.54:214][868]Log file closed, 02/08/18 01:12:54
