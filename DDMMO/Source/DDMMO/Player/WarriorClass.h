@@ -41,8 +41,14 @@ private:
 		void Retaliation(UCharacterSkillData* skillData);
 
 	UFUNCTION()
-		void ShieldBash(UCharacterSkillData* skillData);
+		void Bash(UCharacterSkillData* skillData);
 
 	UFUNCTION()
 		void Downfall(UCharacterSkillData* skillData);
+
+	UFUNCTION()
+		void SkyStrike(UCharacterSkillData* skillData);
+
+	UFUNCTION()
+		void Grab(UCharacterSkillData* skillData);
 };
