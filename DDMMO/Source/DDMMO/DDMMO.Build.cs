@@ -7,7 +7,6 @@ public class DDMMO : ModuleRules
 	public DDMMO(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "AIModule", "GamePlayTasks", "Slate", "SlateCore", "UMG" });
     }
 }
