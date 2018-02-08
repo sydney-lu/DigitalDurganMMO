@@ -10,6 +10,10 @@
 			<Configuration>DebugGame_Game</Configuration>
 			<Platform>x64</Platform>
 		</ProjectConfiguration>
+		<ProjectConfiguration Include="DebugGame_Game|Tegra-Android">
+			<Configuration>DebugGame_Game</Configuration>
+			<Platform>Tegra-Android</Platform>
+		</ProjectConfiguration>
 		<ProjectConfiguration Include="DebugGame_Editor|Win32">
 			<Configuration>DebugGame_Editor</Configuration>
 			<Platform>Win32</Platform>
@@ -17,6 +21,10 @@
 		<ProjectConfiguration Include="DebugGame_Editor|x64">
 			<Configuration>DebugGame_Editor</Configuration>
 			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="DebugGame_Editor|Tegra-Android">
+			<Configuration>DebugGame_Editor</Configuration>
+			<Platform>Tegra-Android</Platform>
 		</ProjectConfiguration>
 		<ProjectConfiguration Include="IOS_DebugGame_Game|Win32">
 			<Configuration>IOS_DebugGame_Game</Configuration>
@@ -26,6 +34,10 @@
 			<Configuration>IOS_DebugGame_Game</Configuration>
 			<Platform>x64</Platform>
 		</ProjectConfiguration>
+		<ProjectConfiguration Include="IOS_DebugGame_Game|Tegra-Android">
+			<Configuration>IOS_DebugGame_Game</Configuration>
+			<Platform>Tegra-Android</Platform>
+		</ProjectConfiguration>
 		<ProjectConfiguration Include="IOS_DebugGame_Editor|Win32">
 			<Configuration>IOS_DebugGame_Editor</Configuration>
 			<Platform>Win32</Platform>
@@ -33,6 +45,10 @@
 		<ProjectConfiguration Include="IOS_DebugGame_Editor|x64">
 			<Configuration>IOS_DebugGame_Editor</Configuration>
 			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="IOS_DebugGame_Editor|Tegra-Android">
+			<Configuration>IOS_DebugGame_Editor</Configuration>
+			<Platform>Tegra-Android</Platform>
 		</ProjectConfiguration>
 		<ProjectConfiguration Include="HTML5_DebugGame_Game|Win32">
 			<Configuration>HTML5_DebugGame_Game</Configuration>
@@ -42,6 +58,10 @@
 			<Configuration>HTML5_DebugGame_Game</Configuration>
 			<Platform>x64</Platform>
 		</ProjectConfiguration>
+		<ProjectConfiguration Include="HTML5_DebugGame_Game|Tegra-Android">
+			<Configuration>HTML5_DebugGame_Game</Configuration>
+			<Platform>Tegra-Android</Platform>
+		</ProjectConfiguration>
 		<ProjectConfiguration Include="HTML5_DebugGame_Editor|Win32">
 			<Configuration>HTML5_DebugGame_Editor</Configuration>
 			<Platform>Win32</Platform>
@@ -49,6 +69,10 @@
 		<ProjectConfiguration Include="HTML5_DebugGame_Editor|x64">
 			<Configuration>HTML5_DebugGame_Editor</Configuration>
 			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="HTML5_DebugGame_Editor|Tegra-Android">
+			<Configuration>HTML5_DebugGame_Editor</Configuration>
+			<Platform>Tegra-Android</Platform>
 		</ProjectConfiguration>
 		<ProjectConfiguration Include="Development_Game|Win32">
 			<Configuration>Development_Game</Configuration>
@@ -58,6 +82,10 @@
 			<Configuration>Development_Game</Configuration>
 			<Platform>x64</Platform>
 		</ProjectConfiguration>
+		<ProjectConfiguration Include="Development_Game|Tegra-Android">
+			<Configuration>Development_Game</Configuration>
+			<Platform>Tegra-Android</Platform>
+		</ProjectConfiguration>
 		<ProjectConfiguration Include="Development_Editor|Win32">
 			<Configuration>Development_Editor</Configuration>
 			<Platform>Win32</Platform>
@@ -65,6 +93,10 @@
 		<ProjectConfiguration Include="Development_Editor|x64">
 			<Configuration>Development_Editor</Configuration>
 			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Development_Editor|Tegra-Android">
+			<Configuration>Development_Editor</Configuration>
+			<Platform>Tegra-Android</Platform>
 		</ProjectConfiguration>
 		<ProjectConfiguration Include="IOS_Development_Game|Win32">
 			<Configuration>IOS_Development_Game</Configuration>
@@ -74,6 +106,10 @@
 			<Configuration>IOS_Development_Game</Configuration>
 			<Platform>x64</Platform>
 		</ProjectConfiguration>
+		<ProjectConfiguration Include="IOS_Development_Game|Tegra-Android">
+			<Configuration>IOS_Development_Game</Configuration>
+			<Platform>Tegra-Android</Platform>
+		</ProjectConfiguration>
 		<ProjectConfiguration Include="IOS_Development_Editor|Win32">
 			<Configuration>IOS_Development_Editor</Configuration>
 			<Platform>Win32</Platform>
@@ -81,6 +117,10 @@
 		<ProjectConfiguration Include="IOS_Development_Editor|x64">
 			<Configuration>IOS_Development_Editor</Configuration>
 			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="IOS_Development_Editor|Tegra-Android">
+			<Configuration>IOS_Development_Editor</Configuration>
+			<Platform>Tegra-Android</Platform>
 		</ProjectConfiguration>
 		<ProjectConfiguration Include="HTML5_Development_Game|Win32">
 			<Configuration>HTML5_Development_Game</Configuration>
@@ -90,6 +130,10 @@
 			<Configuration>HTML5_Development_Game</Configuration>
 			<Platform>x64</Platform>
 		</ProjectConfiguration>
+		<ProjectConfiguration Include="HTML5_Development_Game|Tegra-Android">
+			<Configuration>HTML5_Development_Game</Configuration>
+			<Platform>Tegra-Android</Platform>
+		</ProjectConfiguration>
 		<ProjectConfiguration Include="HTML5_Development_Editor|Win32">
 			<Configuration>HTML5_Development_Editor</Configuration>
 			<Platform>Win32</Platform>
@@ -97,6 +141,10 @@
 		<ProjectConfiguration Include="HTML5_Development_Editor|x64">
 			<Configuration>HTML5_Development_Editor</Configuration>
 			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="HTML5_Development_Editor|Tegra-Android">
+			<Configuration>HTML5_Development_Editor</Configuration>
+			<Platform>Tegra-Android</Platform>
 		</ProjectConfiguration>
 		<ProjectConfiguration Include="Shipping_Game|Win32">
 			<Configuration>Shipping_Game</Configuration>
@@ -106,6 +154,10 @@
 			<Configuration>Shipping_Game</Configuration>
 			<Platform>x64</Platform>
 		</ProjectConfiguration>
+		<ProjectConfiguration Include="Shipping_Game|Tegra-Android">
+			<Configuration>Shipping_Game</Configuration>
+			<Platform>Tegra-Android</Platform>
+		</ProjectConfiguration>
 		<ProjectConfiguration Include="IOS_Shipping_Game|Win32">
 			<Configuration>IOS_Shipping_Game</Configuration>
 			<Platform>Win32</Platform>
@@ -113,6 +165,10 @@
 		<ProjectConfiguration Include="IOS_Shipping_Game|x64">
 			<Configuration>IOS_Shipping_Game</Configuration>
 			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="IOS_Shipping_Game|Tegra-Android">
+			<Configuration>IOS_Shipping_Game</Configuration>
+			<Platform>Tegra-Android</Platform>
 		</ProjectConfiguration>
 		<ProjectConfiguration Include="HTML5_Shipping_Game|Win32">
 			<Configuration>HTML5_Shipping_Game</Configuration>
@@ -122,7 +178,14 @@
 			<Configuration>HTML5_Shipping_Game</Configuration>
 			<Platform>x64</Platform>
 		</ProjectConfiguration>
+		<ProjectConfiguration Include="HTML5_Shipping_Game|Tegra-Android">
+			<Configuration>HTML5_Shipping_Game</Configuration>
+			<Platform>Tegra-Android</Platform>
+		</ProjectConfiguration>
 	</ItemGroup>
+	<PropertyGroup Label="NsightTegraProject">
+		<NsightTegraProjectRevisionNumber>11</NsightTegraProjectRevisionNumber>
+	</PropertyGroup>
 	<PropertyGroup Label="Globals">
 		<ProjectGuid>{EF00FF6B-1963-44F3-92EE-6349247766F0}</ProjectGuid>
 		<Keyword>MakeFileProj</Keyword>
@@ -140,6 +203,11 @@
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Game|Tegra-Android'" Label="Configuration">
+		<ConfigurationType>ExternalBuildSystem</ConfigurationType>
+		<PlatformToolset>v140</PlatformToolset>
+		<AndroidNativeAPI>UseTarget</AndroidNativeAPI>
+	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|Win32'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
@@ -147,6 +215,11 @@
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|x64'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|Tegra-Android'" Label="Configuration">
+		<ConfigurationType>ExternalBuildSystem</ConfigurationType>
+		<PlatformToolset>v140</PlatformToolset>
+		<AndroidNativeAPI>UseTarget</AndroidNativeAPI>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IOS_DebugGame_Game|Win32'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
@@ -156,6 +229,11 @@
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IOS_DebugGame_Game|Tegra-Android'" Label="Configuration">
+		<ConfigurationType>ExternalBuildSystem</ConfigurationType>
+		<PlatformToolset>v140</PlatformToolset>
+		<AndroidNativeAPI>UseTarget</AndroidNativeAPI>
+	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IOS_DebugGame_Editor|Win32'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
@@ -163,6 +241,11 @@
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IOS_DebugGame_Editor|x64'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IOS_DebugGame_Editor|Tegra-Android'" Label="Configuration">
+		<ConfigurationType>ExternalBuildSystem</ConfigurationType>
+		<PlatformToolset>v140</PlatformToolset>
+		<AndroidNativeAPI>UseTarget</AndroidNativeAPI>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_DebugGame_Game|Win32'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
@@ -172,6 +255,11 @@
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_DebugGame_Game|Tegra-Android'" Label="Configuration">
+		<ConfigurationType>ExternalBuildSystem</ConfigurationType>
+		<PlatformToolset>v140</PlatformToolset>
+		<AndroidNativeAPI>UseTarget</AndroidNativeAPI>
+	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_DebugGame_Editor|Win32'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
@@ -179,6 +267,11 @@
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_DebugGame_Editor|x64'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_DebugGame_Editor|Tegra-Android'" Label="Configuration">
+		<ConfigurationType>ExternalBuildSystem</ConfigurationType>
+		<PlatformToolset>v140</PlatformToolset>
+		<AndroidNativeAPI>UseTarget</AndroidNativeAPI>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Game|Win32'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
@@ -188,6 +281,11 @@
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Game|Tegra-Android'" Label="Configuration">
+		<ConfigurationType>ExternalBuildSystem</ConfigurationType>
+		<PlatformToolset>v140</PlatformToolset>
+		<AndroidNativeAPI>UseTarget</AndroidNativeAPI>
+	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|Win32'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
@@ -195,6 +293,11 @@
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|x64'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|Tegra-Android'" Label="Configuration">
+		<ConfigurationType>ExternalBuildSystem</ConfigurationType>
+		<PlatformToolset>v140</PlatformToolset>
+		<AndroidNativeAPI>UseTarget</AndroidNativeAPI>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IOS_Development_Game|Win32'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
@@ -204,6 +307,11 @@
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IOS_Development_Game|Tegra-Android'" Label="Configuration">
+		<ConfigurationType>ExternalBuildSystem</ConfigurationType>
+		<PlatformToolset>v140</PlatformToolset>
+		<AndroidNativeAPI>UseTarget</AndroidNativeAPI>
+	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IOS_Development_Editor|Win32'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
@@ -211,6 +319,11 @@
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IOS_Development_Editor|x64'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IOS_Development_Editor|Tegra-Android'" Label="Configuration">
+		<ConfigurationType>ExternalBuildSystem</ConfigurationType>
+		<PlatformToolset>v140</PlatformToolset>
+		<AndroidNativeAPI>UseTarget</AndroidNativeAPI>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_Development_Game|Win32'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
@@ -220,6 +333,11 @@
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_Development_Game|Tegra-Android'" Label="Configuration">
+		<ConfigurationType>ExternalBuildSystem</ConfigurationType>
+		<PlatformToolset>v140</PlatformToolset>
+		<AndroidNativeAPI>UseTarget</AndroidNativeAPI>
+	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_Development_Editor|Win32'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
@@ -227,6 +345,11 @@
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_Development_Editor|x64'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_Development_Editor|Tegra-Android'" Label="Configuration">
+		<ConfigurationType>ExternalBuildSystem</ConfigurationType>
+		<PlatformToolset>v140</PlatformToolset>
+		<AndroidNativeAPI>UseTarget</AndroidNativeAPI>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Game|Win32'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
@@ -236,6 +359,11 @@
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Game|Tegra-Android'" Label="Configuration">
+		<ConfigurationType>ExternalBuildSystem</ConfigurationType>
+		<PlatformToolset>v140</PlatformToolset>
+		<AndroidNativeAPI>UseTarget</AndroidNativeAPI>
+	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IOS_Shipping_Game|Win32'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
@@ -244,6 +372,11 @@
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IOS_Shipping_Game|Tegra-Android'" Label="Configuration">
+		<ConfigurationType>ExternalBuildSystem</ConfigurationType>
+		<PlatformToolset>v140</PlatformToolset>
+		<AndroidNativeAPI>UseTarget</AndroidNativeAPI>
+	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_Shipping_Game|Win32'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
@@ -251,6 +384,11 @@
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_Shipping_Game|x64'" Label="Configuration">
 		<ConfigurationType>Makefile</ConfigurationType>
 		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_Shipping_Game|Tegra-Android'" Label="Configuration">
+		<ConfigurationType>ExternalBuildSystem</ConfigurationType>
+		<PlatformToolset>v140</PlatformToolset>
+		<AndroidNativeAPI>UseTarget</AndroidNativeAPI>
 	</PropertyGroup>
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
 	<ImportGroup Label="ExtensionSettings" />
@@ -343,6 +481,40 @@
 		<NMakeBuildCommandLine>@echo IOS is not a supported platform for DDMMOEditor. Valid platforms are Win64.</NMakeBuildCommandLine>
 		<NMakeReBuildCommandLine>@echo IOS is not a supported platform for DDMMOEditor. Valid platforms are Win64.</NMakeReBuildCommandLine>
 		<NMakeCleanCommandLine>@echo IOS is not a supported platform for DDMMOEditor. Valid platforms are Win64.</NMakeCleanCommandLine>
+		<NMakeOutput/>
+	</PropertyGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Game|Tegra-Android'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Game|Tegra-Android'">
+		<IncludePath />
+		<ReferencePath />
+		<LibraryPath />
+		<LibraryWPath />
+		<SourcePath />
+		<ExcludePath />
+		<AndroidAttach>False</AndroidAttach>
+		<DebuggerFlavor>AndroidDebugger</DebuggerFlavor>
+		<OverrideAPKPath>D:\Unreal\DigitalDurgenMMO\DDMMO\Binaries\Android\DDMMO-Android-DebugGame-armv7-es2.apk</OverrideAPKPath>
+		<AdditionalLibraryDirectories>D:\Unreal\DigitalDurgenMMO\DDMMO\Binaries\Android/../../Intermediate/Android/APK\obj\local\armeabi-v7a;D:\Unreal\DigitalDurgenMMO\DDMMO\Binaries\Android/../../Intermediate/Android/APK\obj\local\x86;$(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+		<BuildXmlPath>D:\Unreal\DigitalDurgenMMO\DDMMO\Binaries\Android/../../Intermediate/Android/APK</BuildXmlPath>
+		<AndroidManifestPath>D:\Unreal\DigitalDurgenMMO\DDMMO\Binaries\Android/../../Intermediate/Android/APK\AndroidManifest.xml</AndroidManifestPath>
+		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+		<NMakeBuildCommandLine>"D:\Games\Epic Games\UE_4.18\Engine\Build\BatchFiles\Build.bat" DDMMO Android DebugGame "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeBuildCommandLine>
+		<NMakeReBuildCommandLine>"D:\Games\Epic Games\UE_4.18\Engine\Build\BatchFiles\Rebuild.bat" DDMMO Android DebugGame "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeReBuildCommandLine>
+		<NMakeCleanCommandLine>"D:\Games\Epic Games\UE_4.18\Engine\Build\BatchFiles\Clean.bat" DDMMO Android DebugGame "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeCleanCommandLine>
+		<NMakeOutput>..\..\Binaries\Android\DDMMO-Android-DebugGame.so</NMakeOutput>
+	</PropertyGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|Tegra-Android'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|Tegra-Android'">
+		<OutDir>D:\Games\Epic Games\UE_4.18\Engine\Intermediate\Build\Unused\</OutDir>
+		<IntDir>D:\Games\Epic Games\UE_4.18\Engine\Intermediate\Build\Unused\</IntDir>
+		<NMakeBuildCommandLine>@echo Android is not a supported platform for DDMMOEditor. Valid platforms are Win64.</NMakeBuildCommandLine>
+		<NMakeReBuildCommandLine>@echo Android is not a supported platform for DDMMOEditor. Valid platforms are Win64.</NMakeReBuildCommandLine>
+		<NMakeCleanCommandLine>@echo Android is not a supported platform for DDMMOEditor. Valid platforms are Win64.</NMakeCleanCommandLine>
 		<NMakeOutput/>
 	</PropertyGroup>
 	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_DebugGame_Game|Win32'" Label="PropertySheets">
@@ -463,6 +635,40 @@
 		<NMakeCleanCommandLine>@echo IOS is not a supported platform for DDMMOEditor. Valid platforms are Win64.</NMakeCleanCommandLine>
 		<NMakeOutput/>
 	</PropertyGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Game|Tegra-Android'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Game|Tegra-Android'">
+		<IncludePath />
+		<ReferencePath />
+		<LibraryPath />
+		<LibraryWPath />
+		<SourcePath />
+		<ExcludePath />
+		<AndroidAttach>False</AndroidAttach>
+		<DebuggerFlavor>AndroidDebugger</DebuggerFlavor>
+		<OverrideAPKPath>D:\Unreal\DigitalDurgenMMO\DDMMO\Binaries\Android\DDMMO-armv7-es2.apk</OverrideAPKPath>
+		<AdditionalLibraryDirectories>D:\Unreal\DigitalDurgenMMO\DDMMO\Binaries\Android/../../Intermediate/Android/APK\obj\local\armeabi-v7a;D:\Unreal\DigitalDurgenMMO\DDMMO\Binaries\Android/../../Intermediate/Android/APK\obj\local\x86;$(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+		<BuildXmlPath>D:\Unreal\DigitalDurgenMMO\DDMMO\Binaries\Android/../../Intermediate/Android/APK</BuildXmlPath>
+		<AndroidManifestPath>D:\Unreal\DigitalDurgenMMO\DDMMO\Binaries\Android/../../Intermediate/Android/APK\AndroidManifest.xml</AndroidManifestPath>
+		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+		<NMakeBuildCommandLine>"D:\Games\Epic Games\UE_4.18\Engine\Build\BatchFiles\Build.bat" DDMMO Android Development "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeBuildCommandLine>
+		<NMakeReBuildCommandLine>"D:\Games\Epic Games\UE_4.18\Engine\Build\BatchFiles\Rebuild.bat" DDMMO Android Development "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeReBuildCommandLine>
+		<NMakeCleanCommandLine>"D:\Games\Epic Games\UE_4.18\Engine\Build\BatchFiles\Clean.bat" DDMMO Android Development "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeCleanCommandLine>
+		<NMakeOutput>..\..\Binaries\Android\DDMMO.so</NMakeOutput>
+	</PropertyGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|Tegra-Android'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|Tegra-Android'">
+		<OutDir>D:\Games\Epic Games\UE_4.18\Engine\Intermediate\Build\Unused\</OutDir>
+		<IntDir>D:\Games\Epic Games\UE_4.18\Engine\Intermediate\Build\Unused\</IntDir>
+		<NMakeBuildCommandLine>@echo Android is not a supported platform for DDMMOEditor. Valid platforms are Win64.</NMakeBuildCommandLine>
+		<NMakeReBuildCommandLine>@echo Android is not a supported platform for DDMMOEditor. Valid platforms are Win64.</NMakeReBuildCommandLine>
+		<NMakeCleanCommandLine>@echo Android is not a supported platform for DDMMOEditor. Valid platforms are Win64.</NMakeCleanCommandLine>
+		<NMakeOutput/>
+	</PropertyGroup>
 	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_Development_Game|Win32'" Label="PropertySheets">
 		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
 	</ImportGroup>
@@ -541,6 +747,29 @@
 		<NMakeReBuildCommandLine>"D:\Games\Epic Games\UE_4.18\Engine\Build\BatchFiles\Rebuild.bat" DDMMO IOS Shipping "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeReBuildCommandLine>
 		<NMakeCleanCommandLine>"D:\Games\Epic Games\UE_4.18\Engine\Build\BatchFiles\Clean.bat" DDMMO IOS Shipping "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeCleanCommandLine>
 		<NMakeOutput>..\..\Binaries\IOS\DDMMO-IOS-Shipping</NMakeOutput>
+	</PropertyGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Game|Tegra-Android'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping_Game|Tegra-Android'">
+		<IncludePath />
+		<ReferencePath />
+		<LibraryPath />
+		<LibraryWPath />
+		<SourcePath />
+		<ExcludePath />
+		<AndroidAttach>False</AndroidAttach>
+		<DebuggerFlavor>AndroidDebugger</DebuggerFlavor>
+		<OverrideAPKPath>D:\Unreal\DigitalDurgenMMO\DDMMO\Binaries\Android\DDMMO-Android-Shipping-armv7-es2.apk</OverrideAPKPath>
+		<AdditionalLibraryDirectories>D:\Unreal\DigitalDurgenMMO\DDMMO\Binaries\Android/../../Intermediate/Android/APK\obj\local\armeabi-v7a;D:\Unreal\DigitalDurgenMMO\DDMMO\Binaries\Android/../../Intermediate/Android/APK\obj\local\x86;$(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+		<BuildXmlPath>D:\Unreal\DigitalDurgenMMO\DDMMO\Binaries\Android/../../Intermediate/Android/APK</BuildXmlPath>
+		<AndroidManifestPath>D:\Unreal\DigitalDurgenMMO\DDMMO\Binaries\Android/../../Intermediate/Android/APK\AndroidManifest.xml</AndroidManifestPath>
+		<OutDir>$(ProjectDir)..\Build\Unused\</OutDir>
+		<IntDir>$(ProjectDir)..\Build\Unused\</IntDir>
+		<NMakeBuildCommandLine>"D:\Games\Epic Games\UE_4.18\Engine\Build\BatchFiles\Build.bat" DDMMO Android Shipping "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeBuildCommandLine>
+		<NMakeReBuildCommandLine>"D:\Games\Epic Games\UE_4.18\Engine\Build\BatchFiles\Rebuild.bat" DDMMO Android Shipping "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeReBuildCommandLine>
+		<NMakeCleanCommandLine>"D:\Games\Epic Games\UE_4.18\Engine\Build\BatchFiles\Clean.bat" DDMMO Android Shipping "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeCleanCommandLine>
+		<NMakeOutput>..\..\Binaries\Android\DDMMO-Android-Shipping.so</NMakeOutput>
 	</PropertyGroup>
 	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_Shipping_Game|Win32'" Label="PropertySheets">
 		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
