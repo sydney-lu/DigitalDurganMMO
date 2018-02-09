@@ -68,6 +68,11 @@ ADDMMOCharacter::ADDMMOCharacter()
 	SkillLogicDelegates.SetNum(12);
 }
 
+void ADDMMOCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+	GetWorld()->GetTimerManager().SetTimer(TargetingHandle, this, &ADDMMOCharacter::FindTarget, TargetingRate, true);
+}
 
 void ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
@@ -243,6 +248,40 @@ void ADDMMOCharacter::LMBReleased()
 			//MyController->bShowMouseCursor = true;
 			SetPlayerState(PlayerCharacterState::IDLE);
 		}
+	}
+}
+
+void ADDMMOCharacter::FindTarget()
+{
+	FCollisionQueryParams TraceParams;
+	TraceParams.bTraceComplex = true;
+	TraceParams.bTraceAsyncScene = true;
+	TraceParams.bReturnPhysicalMaterial = false;
+
+	FVector start = GetFollowCamera()->GetComponentToWorld().GetLocation();
+	FVector end = start + GetFollowCamera()->GetForwardVector() * TargetingRange;
+
+	FHitResult Hit(ForceInit);
+
+	if(GetWorld()->LineTraceSingleByObjectType(Hit, start, end, ECC_Pawn, TraceParams))
+		GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::White, "TargettingRayHit: " + Hit.GetActor()->GetName());
+
+	SetTarget(Hit.GetActor());
+}
+
+void ADDMMOCharacter::SetTarget(AActor* newTarget)
+{
+	if (newTarget == CurrentTarget || !Cast<ITargetable>(newTarget))
+		return;
+
+	ITargetable::Execute_OnUntargeted(CurrentTarget);
+	if (newTarget) 
+	{
+		CurrentTarget = newTarget;
+		ITargetable::Execute_OnTargeted(newTarget);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, "NewTargetSelected" + newTarget->GetName());
+
+		// UpdateTargtWidget;
 	}
 }
 
