@@ -3,12 +3,10 @@
 #include "AIBaseAgent.h"
 
 
-// Sets default values
 AAIBaseAgent::AAIBaseAgent()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	CURHEALTH = MAXHEALTH;
 }
 
 void AAIBaseAgent::BeginPlay()
@@ -16,10 +14,26 @@ void AAIBaseAgent::BeginPlay()
 
 }
 
-// Called to bind functionality to input
+void AAIBaseAgent::Tick(float DeltaTime)
+{
+
+}
+
 void AAIBaseAgent::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+}
+
+float AAIBaseAgent::TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser)
+{
+	//return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+	UE_LOG(LogTemp, Display, TEXT("Damaged"));
+	CURHEALTH -= DamageAmount;
+	if (CURHEALTH <= 0.0f)
+	{
+		Destroy();
+	}
+	return 0.0f;
 }
 

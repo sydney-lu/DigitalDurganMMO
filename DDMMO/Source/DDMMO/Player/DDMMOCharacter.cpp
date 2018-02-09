@@ -12,6 +12,8 @@
 #include <EngineGlobals.h>
 #include <Runtime/Engine/Classes/Engine/Engine.h>
 #include "Projectiles/BaseProjectile.h"
+#include "UObject/ConstructorHelpers.h"
+#include "Player/PlayerInfoWidget.h"
 
 ADDMMOCharacter::ADDMMOCharacter()
 {
@@ -34,8 +36,6 @@ ADDMMOCharacter::ADDMMOCharacter()
 	BasicAttackSpeed = 1.f;
 	BasicAttackRange = 20.f;
 
-	//MuzzleOffset = FVector(0.f, 0.f, 0.f);
-	
 	//MeleeCollider = CreateDefaultSubobject<USphereComponent>("Melee Sphere Collider");
 	//MeleeCollider->SetupAttachment(RootComponent);
 
@@ -66,18 +66,19 @@ ADDMMOCharacter::ADDMMOCharacter()
 
 	// Skill Delegates
 	SkillLogicDelegates.SetNum(12);
-}
 
+	ConstructorHelpers::FClassFinder<ABaseProjectile>ProjectileAsset(TEXT("Blueprint'/Game/Projectiles/BaseProjectile_BP.BaseProjectile_BP_C'"));
+	if (ProjectileAsset.Class)
+	{
+		ProjectileClass = (UClass*)ProjectileAsset.Class;
+	}
+}
 
 void ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
 	check(PlayerInputComponent);
 
 	//	W.I.P camera controls for MMORPG
-	PlayerInputComponent->BindAction("RMB", IE_Pressed, this, &ADDMMOCharacter::RMBPressed);
-	PlayerInputComponent->BindAction("RMB", IE_Released, this, &ADDMMOCharacter::RMBReleased);
-	PlayerInputComponent->BindAction("LMB", IE_Pressed, this, &ADDMMOCharacter::LMBPressed);
-	PlayerInputComponent->BindAction("LMB", IE_Released, this, &ADDMMOCharacter::LMBReleased);
 	PlayerInputComponent->BindAction("ZoomIn", IE_Pressed, this, &ADDMMOCharacter::ZoomIn);
 	PlayerInputComponent->BindAction("ZoomOut", IE_Pressed, this, &ADDMMOCharacter::ZoomOut);
 
@@ -89,9 +90,9 @@ void ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &ADDMMOCharacter::LookUpAtRate);
 
-	PlayerInputComponent->BindAction("OpenBag", IE_Pressed, this, &ADDMMOCharacter::OpenBag);
-	PlayerInputComponent->BindAction("CharacterInfo", IE_Pressed, this, &ADDMMOCharacter::CharacterInfo);
-	PlayerInputComponent->BindAction("SkillInfo", IE_Pressed, this, &ADDMMOCharacter::SkillInfo);
+	PlayerInputComponent->BindAction("Inventory", IE_Pressed, this, &ADDMMOCharacter::Inventory);
+	PlayerInputComponent->BindAction("CharacterMenu", IE_Pressed, this, &ADDMMOCharacter::CharacterMenu);
+	PlayerInputComponent->BindAction("SkillMenu", IE_Pressed, this, &ADDMMOCharacter::SkillMenu);
 
 	//	Functional action keys
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
@@ -99,6 +100,8 @@ void ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 
 	//	Non-Functional action keys
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ADDMMOCharacter::Interact);
+	PlayerInputComponent->BindAction("SwitchTargetLock", IE_Pressed, this, &ADDMMOCharacter::SwitchTargetLock);
+	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &ADDMMOCharacter::Crouch);
 
 	//	Non-Functional skill binding keys
 	PlayerInputComponent->BindAction("Skill0", IE_Pressed, this, &ADDMMOCharacter::SkillZero);
@@ -111,13 +114,8 @@ void ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAction("Skill7", IE_Pressed, this, &ADDMMOCharacter::SkillSeven);
 	PlayerInputComponent->BindAction("Skill8", IE_Pressed, this, &ADDMMOCharacter::SkillEight);
 	PlayerInputComponent->BindAction("Skill9", IE_Pressed, this, &ADDMMOCharacter::SkillNine);
-	PlayerInputComponent->BindAction("Skill-", IE_Pressed, this, &ADDMMOCharacter::SkillOemminus);
-	PlayerInputComponent->BindAction("Skill=", IE_Pressed, this, &ADDMMOCharacter::SkillOemplus);
-}
-
-void ADDMMOCharacter::SetPlayerState(PlayerCharacterState NewState)
-{
-	CurrentState = NewState;
+	PlayerInputComponent->BindAction("Skill11", IE_Pressed, this, &ADDMMOCharacter::SkillOemminus);
+	PlayerInputComponent->BindAction("Skill12", IE_Pressed, this, &ADDMMOCharacter::SkillOemplus);
 }
 
 void ADDMMOCharacter::TurnAtRate(float Rate)
@@ -205,92 +203,46 @@ void ADDMMOCharacter::SetSkillDelegate(int index, UCharacterSkillData* skillData
 	else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegata: No CharacterClass Selected"));
 }
 
-void ADDMMOCharacter::OpenBag()
+void ADDMMOCharacter::SwitchTargetLock()
 {
 	if (Controller != NULL)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the BAG UI is in progress."));
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("No target lock functionality implemented."));
 	}
 }
 
-void ADDMMOCharacter::LMBPressed()
+void ADDMMOCharacter::SetPlayerState(PlayerCharacterState NewState)
 {
-	if (Controller != NULL)
-	{
-		if (Stamina_CUR > 0)
-		{
-			//APlayerController* MyController = GetWorld()->GetFirstPlayerController();
-			//MyController->bShowMouseCursor = false;
-			if (CurrentState == PlayerCharacterState::IDLE)
-			{
-				UE_LOG(LogTemp, Warning, TEXT("You're using your melee attack"));
-				SetPlayerState(PlayerCharacterState::ATTACKING);
+	CurrentState = NewState;
+}
 
-				Stamina_CUR--;
-			}
-		}
+void ADDMMOCharacter::MoveForward(float Value)
+{
+	if ((Controller != NULL) && (Value != 0.0f))
+	{
+		const FRotator Rotation = Controller->GetControlRotation();
+		const FRotator YawRotation(0, Rotation.Yaw, 0);
+		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+		AddMovementInput(Direction, Value);
 	}
 }
 
-void ADDMMOCharacter::LMBReleased()
+void ADDMMOCharacter::MoveRight(float Value)
 {
-	if (Controller != NULL)
+	if ((Controller != NULL) && (Value != 0.0f))
 	{
-		//UE_LOG(LogTemp, Warning, TEXT("LMB Released"));
-		//APlayerController* MyController = GetWorld()->GetFirstPlayerController();
-		if (CurrentState == PlayerCharacterState::ATTACKING)
-		{
-			//MyController->bShowMouseCursor = true;
-			SetPlayerState(PlayerCharacterState::IDLE);
-		}
+		const FRotator Rotation = Controller->GetControlRotation();
+		const FRotator YawRotation(0, Rotation.Yaw, 0);
+		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
+		AddMovementInput(Direction, Value);
 	}
 }
 
-void ADDMMOCharacter::RMBPressed()
+void ADDMMOCharacter::Crouch()
 {
 	if (Controller != NULL)
 	{
-		//UE_LOG(LogTemp, Warning, TEXT("RMB"));
-		if (Mana_CUR > 0)
-		{
-			if (CurrentState == PlayerCharacterState::IDLE)
-			{
-				UE_LOG(LogTemp, Warning, TEXT("You're using your ranged attack"));
-				SetPlayerState(PlayerCharacterState::CASTING);
-				Mana_CUR--;
-				Fire();
-			}
-		}
-	}
-}
-
-void ADDMMOCharacter::RMBReleased()
-{
-	if (Controller != NULL)
-	{
-		//UE_LOG(LogTemp, Warning, TEXT("RMB"));
-		if (CurrentState == PlayerCharacterState::CASTING)
-		{
-			SetPlayerState(PlayerCharacterState::IDLE);
-		}
-	}
-}
-
-
-void ADDMMOCharacter::CharacterInfo()
-{
-	if (Controller != NULL)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the Character info is in progress."));
-	}
-}
-
-void ADDMMOCharacter::SkillInfo()
-{
-	if (Controller != NULL)
-	{
-		if (skillSelectionWidget) skillSelectionWidget->ToggleVisible();
-		else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the Skill Info is in progress."));
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for crouching is in progress."));
 	}
 }
 
@@ -305,117 +257,8 @@ void ADDMMOCharacter::Interact()
 	}
 }
 
-void ADDMMOCharacter::SkillOne()
-{
-	if (Controller != NULL)
-	{
-		if (!SkillLogicDelegates[0].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '1'."));
-	}
-}
-
-void ADDMMOCharacter::SkillTwo()
-{
-	if (Controller != NULL)
-	{
-		if (!SkillLogicDelegates[1].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '2'."));
-	}
-}
-
-void ADDMMOCharacter::SkillThree()
-{
-	if (Controller != NULL)
-	{
-		if (!SkillLogicDelegates[2].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '3'."));
-	}
-}
-
-void ADDMMOCharacter::SkillFour()
-{
-	if (Controller != NULL)
-	{
-		if (!SkillLogicDelegates[3].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '4'."));
-	}
-}
-
-void ADDMMOCharacter::SkillFive()
-{
-	if (Controller != NULL)
-	{
-		if (!SkillLogicDelegates[4].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '5'."));
-	}
-}
-
-void ADDMMOCharacter::SkillSix()
-{
-	if (Controller != NULL)
-	{
-		if (!SkillLogicDelegates[5].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '6'."));
-	}
-}
-
-void ADDMMOCharacter::SkillSeven()
-{
-	if (Controller != NULL)
-	{
-		if (!SkillLogicDelegates[6].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '7'."));
-	}
-}
-
-void ADDMMOCharacter::SkillEight()
-{
-	if (Controller != NULL)
-	{
-		if (!SkillLogicDelegates[7].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '8'."));
-	}
-}
-
-void ADDMMOCharacter::SkillNine()
-{
-	if (Controller != NULL)
-	{
-		if (!SkillLogicDelegates[8].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '9'."));
-	}
-}
-
-void ADDMMOCharacter::SkillZero()
-{
-	if (Controller != NULL)
-	{
-		if (!SkillLogicDelegates[9].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '0'."));
-	}
-}
-
-void ADDMMOCharacter::SkillOemminus()
-{
-	if (Controller != NULL)
-	{
-		if (!SkillLogicDelegates[10].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '-'."));
-	}
-}
-
-void ADDMMOCharacter::SkillOemplus()
-{
-	if (Controller != NULL)
-	{
-		if (!SkillLogicDelegates[11].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '='."));
-	}
-}
-
 void ADDMMOCharacter::Fire()
 {
-	//UE_LOG(LogTemp, Display, TEXT("Pew, Pew"));
 	if (ProjectileClass)
 	{
 		FVector CameraLocation;
@@ -424,7 +267,7 @@ void ADDMMOCharacter::Fire()
 
 		FVector MuzzleLocation = CameraLocation + FTransform(CameraRotation).TransformVector(MuzzleOffset);
 		FRotator MuzzleRotation = CameraRotation;
-		//MuzzleRotation.Pitch += 10.0f;
+		MuzzleRotation.Pitch += 10.0f;
 
 		UWorld* World = GetWorld();
 		if (World)
@@ -443,24 +286,135 @@ void ADDMMOCharacter::Fire()
 	}
 }
 
-void ADDMMOCharacter::MoveForward(float Value)
+void ADDMMOCharacter::SkillMenu()
 {
-	if ((Controller != NULL) && (Value != 0.0f))
+	if (Controller != NULL)
 	{
-		const FRotator Rotation = Controller->GetControlRotation();
-		const FRotator YawRotation(0, Rotation.Yaw, 0);
-		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
-		AddMovementInput(Direction, Value);
+		if (skillSelectionWidget) skillSelectionWidget->ToggleVisible();
+		else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the Skill Info is in progress."));
 	}
 }
 
-void ADDMMOCharacter::MoveRight(float Value)
+void ADDMMOCharacter::Inventory()
 {
-	if ( (Controller != NULL) && (Value != 0.0f) )
+	if (Controller != NULL)
 	{
-		const FRotator Rotation = Controller->GetControlRotation();
-		const FRotator YawRotation(0, Rotation.Yaw, 0);
-		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
-		AddMovementInput(Direction, Value);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the BAG UI is in progress."));
+	}
+}
+
+void ADDMMOCharacter::CharacterMenu()
+{
+	if (Controller != NULL)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the Character info is in progress."));
+	}
+}
+
+void ADDMMOCharacter::SkillOne()
+{
+	if (Controller != NULL)
+	{
+		if (!SkillLogicDelegates[0].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'LMB'."));
+	}
+}
+
+void ADDMMOCharacter::SkillTwo()
+{
+	if (Controller != NULL)
+	{
+		if (!SkillLogicDelegates[1].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'Q'."));
+	}
+}
+
+void ADDMMOCharacter::SkillThree()
+{
+	if (Controller != NULL)
+	{
+		if (!SkillLogicDelegates[2].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'Z'."));
+	}
+}
+
+void ADDMMOCharacter::SkillFour()
+{
+	if (Controller != NULL)
+	{
+		if (!SkillLogicDelegates[3].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'X'."));
+	}
+}
+
+void ADDMMOCharacter::SkillFive()
+{
+	if (Controller != NULL)
+	{
+		if (!SkillLogicDelegates[4].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'C'."));
+	}
+}
+
+void ADDMMOCharacter::SkillSix()
+{
+	if (Controller != NULL)
+	{
+		if (!SkillLogicDelegates[5].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'V'."));
+	}
+}
+
+void ADDMMOCharacter::SkillSeven()
+{
+	if (Controller != NULL)
+	{
+		if (!SkillLogicDelegates[6].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'E'."));
+	}
+}
+
+void ADDMMOCharacter::SkillEight()
+{
+	if (Controller != NULL)
+	{
+		if (!SkillLogicDelegates[7].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '1'."));
+	}
+}
+
+void ADDMMOCharacter::SkillNine()
+{
+	if (Controller != NULL)
+	{
+		if (!SkillLogicDelegates[8].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '2'."));
+	}
+}
+
+void ADDMMOCharacter::SkillZero()
+{
+	if (Controller != NULL)
+	{
+		if (!SkillLogicDelegates[9].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '3'."));
+	}
+}
+
+void ADDMMOCharacter::SkillOemminus()
+{
+	if (Controller != NULL)
+	{
+		if (!SkillLogicDelegates[10].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '4'."));
+	}
+}
+
+void ADDMMOCharacter::SkillOemplus()
+{
+	if (Controller != NULL)
+	{
+		if (!SkillLogicDelegates[11].ExecuteIfBound())
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '5'."));
 	}
 }

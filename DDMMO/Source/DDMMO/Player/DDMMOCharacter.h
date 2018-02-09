@@ -106,16 +106,13 @@ public:
 protected:	// Traversal functions
 	void MoveForward(float Value);
 	void MoveRight(float Value);
+	void Crouch();
 
 protected:	// Camera Functions
 	void TurnAtRate(float Rate);
 	void LookUpAtRate(float Rate);
 	void ZoomIn();
 	void ZoomOut();
-	void RMBPressed();
-	void RMBReleased();
-	void LMBPressed();
-	void LMBReleased();
 
 protected:	//UI Functions
 
@@ -125,10 +122,12 @@ protected:	//UI Functions
 	void SetSkillDelegate(int index, UCharacterSkillData* skillData);
 
 protected:	// Action Functions
-	void OpenBag();
-	void CharacterInfo();
-	void SkillInfo();
+	void Inventory();
+	void CharacterMenu();
+	void SkillMenu();
+	void MainMenu();
 	void Interact();
+	void SwitchTargetLock();
 
 protected:	// Skill Functions
 	void SkillZero();

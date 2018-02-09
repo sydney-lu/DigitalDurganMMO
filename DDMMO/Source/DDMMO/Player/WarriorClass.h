@@ -6,9 +6,6 @@
 #include "Player/CharacterClass.h"
 #include "WarriorClass.generated.h"
 
-/**
- * 
- */
 UCLASS()
 class DDMMO_API UWarriorClass : public UCharacterClass
 {
