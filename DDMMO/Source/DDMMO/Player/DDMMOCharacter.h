@@ -106,7 +106,6 @@ public:
 protected:	// Traversal functions
 	void MoveForward(float Value);
 	void MoveRight(float Value);
-	void Crouch();
 
 protected:	// Camera Functions
 	void TurnAtRate(float Rate);
@@ -140,10 +139,13 @@ protected:	// Skill Functions
 	void SkillSeven();
 	void SkillEight();
 	void SkillNine();
-	void SkillOemminus();
-	void SkillOemplus();
+	void SkillTen();
+	void SkillEleven();
 
 	void Fire();
+	void BasicAttack();
+	void Defense();
+	void Crouch();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Weapon)
 	FVector MuzzleOffset;

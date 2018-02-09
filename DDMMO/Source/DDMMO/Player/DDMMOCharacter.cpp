@@ -91,18 +91,19 @@ void ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &ADDMMOCharacter::LookUpAtRate);
 
+	//	UI keys
 	PlayerInputComponent->BindAction("Inventory", IE_Pressed, this, &ADDMMOCharacter::Inventory);
 	PlayerInputComponent->BindAction("CharacterMenu", IE_Pressed, this, &ADDMMOCharacter::CharacterMenu);
 	PlayerInputComponent->BindAction("SkillMenu", IE_Pressed, this, &ADDMMOCharacter::SkillMenu);
 
 	//	Functional action keys
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
-
-	//	Non-Functional action keys
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ADDMMOCharacter::Interact);
 	PlayerInputComponent->BindAction("SwitchTargetLock", IE_Pressed, this, &ADDMMOCharacter::SwitchTargetLock);
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
+	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &ADDMMOCharacter::Crouch);
+	PlayerInputComponent->BindAction("BasicAttack", IE_Pressed, this, &ADDMMOCharacter::BasicAttack);
+	PlayerInputComponent->BindAction("Defense", IE_Pressed, this, &ADDMMOCharacter::Defense);
 
 	//	Non-Functional skill binding keys
 	PlayerInputComponent->BindAction("Skill0", IE_Pressed, this, &ADDMMOCharacter::SkillZero);
@@ -115,8 +116,14 @@ void ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAction("Skill7", IE_Pressed, this, &ADDMMOCharacter::SkillSeven);
 	PlayerInputComponent->BindAction("Skill8", IE_Pressed, this, &ADDMMOCharacter::SkillEight);
 	PlayerInputComponent->BindAction("Skill9", IE_Pressed, this, &ADDMMOCharacter::SkillNine);
-	PlayerInputComponent->BindAction("Skill11", IE_Pressed, this, &ADDMMOCharacter::SkillOemminus);
-	PlayerInputComponent->BindAction("Skill12", IE_Pressed, this, &ADDMMOCharacter::SkillOemplus);
+	PlayerInputComponent->BindAction("Skill11", IE_Pressed, this, &ADDMMOCharacter::SkillTen);
+	PlayerInputComponent->BindAction("Skill12", IE_Pressed, this, &ADDMMOCharacter::SkillEleven);
+}
+
+void ADDMMOCharacter::Destroyed()
+{
+	Super::Destroyed();
+	UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()), false);
 }
 
 void ADDMMOCharacter::TurnAtRate(float Rate)
@@ -175,54 +182,6 @@ void ADDMMOCharacter::ZoomOut()
 	}
 }
 
-void ADDMMOCharacter::SetSkillSelection(UPlayerInfoWidget* widget)
-{
-	skillSelectionWidget = widget;
-}
-
-void ADDMMOCharacter::SetSkillDelegate(int index, UCharacterSkillData* skillData)
-{
-	if (!characterClass) // Temp Class Selection Code
-		characterClass = NewObject<UWarriorClass>();
-
-	if (characterClass)
-	{
-		if (characterClass->FindFunction(skillData->Name()))
-		{
-			// Bind UFunction found in characterClass Named the same skillData
-			SkillLogicDelegates[index].BindUFunction(characterClass, skillData->Name(), skillData);
-			// Check if UFunction was Found and properly bound, else Bind to DefaultSkill
-			if (!SkillLogicDelegates[index].IsBound())
-			{
-				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegata: No UFucntion was found"));
-				SkillLogicDelegates[index].BindUFunction(characterClass, FName("DefaultSkill"), skillData);
-			}
-			else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("SetSkillDelegata Success"));
-		}
-		else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegata: No UFucntion was found"));
-	}
-	else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegata: No CharacterClass Selected"));
-}
-
-void ADDMMOCharacter::SwitchTargetLock()
-{
-	if (Controller != NULL)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("No target lock functionality implemented."));
-	}
-}
-
-void ADDMMOCharacter::SetPlayerState(PlayerCharacterState NewState)
-{
-	CurrentState = NewState;
-}
-
-void ADDMMOCharacter::Destroyed()
-{
-	Super::Destroyed();
-	UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()), false);
-}
-
 void ADDMMOCharacter::MoveForward(float Value)
 {
 	if ((Controller != NULL) && (Value != 0.0f))
@@ -245,11 +204,16 @@ void ADDMMOCharacter::MoveRight(float Value)
 	}
 }
 
-void ADDMMOCharacter::Crouch()
+void ADDMMOCharacter::SetPlayerState(PlayerCharacterState NewState)
+{
+	CurrentState = NewState;
+}
+
+void ADDMMOCharacter::SwitchTargetLock()
 {
 	if (Controller != NULL)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for crouching is in progress."));
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("No target lock functionality implemented."));
 	}
 }
 
@@ -261,6 +225,14 @@ void ADDMMOCharacter::Interact()
 		Health_CUR = Health_MAX;
 		Mana_CUR = Mana_MAX;
 		Stamina_CUR = Stamina_MAX;
+	}
+}
+
+void ADDMMOCharacter::Crouch()
+{
+	if (Controller != NULL)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for crouching is in progress."));
 	}
 }
 
@@ -293,36 +265,23 @@ void ADDMMOCharacter::Fire()
 	}
 }
 
-void ADDMMOCharacter::SkillMenu()
+void ADDMMOCharacter::BasicAttack()
 {
 	if (Controller != NULL)
 	{
-		if (skillSelectionWidget) skillSelectionWidget->ToggleVisible();
-		else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the Skill Info is in progress."));
+		if (Mana_CUR > 0)
+		{
+			Mana_CUR--;
+			Fire();
+		}
 	}
 }
 
-void ADDMMOCharacter::MainMenu()
+void ADDMMOCharacter::Defense()
 {
 	if (Controller != NULL)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the Main Menu is in progress."));
-	}
-}
-
-void ADDMMOCharacter::Inventory()
-{
-	if (Controller != NULL)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the BAG UI is in progress."));
-	}
-}
-
-void ADDMMOCharacter::CharacterMenu()
-{
-	if (Controller != NULL)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the Character info is in progress."));
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("No Defense functionality implemented."));
 	}
 }
 
@@ -332,12 +291,7 @@ void ADDMMOCharacter::SkillOne()
 	{
 		if (!SkillLogicDelegates[0].ExecuteIfBound())
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'LMB'."));
-			if (Mana_CUR > 0)
-			{
-				Mana_CUR--;
-				Fire();
-			}
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'RMB'."));
 		}
 	}
 }
@@ -423,7 +377,7 @@ void ADDMMOCharacter::SkillZero()
 	}
 }
 
-void ADDMMOCharacter::SkillOemminus()
+void ADDMMOCharacter::SkillTen()
 {
 	if (Controller != NULL)
 	{
@@ -432,11 +386,73 @@ void ADDMMOCharacter::SkillOemminus()
 	}
 }
 
-void ADDMMOCharacter::SkillOemplus()
+void ADDMMOCharacter::SkillEleven()
 {
 	if (Controller != NULL)
 	{
 		if (!SkillLogicDelegates[11].ExecuteIfBound())
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '5'."));
+	}
+}
+
+void ADDMMOCharacter::SetSkillSelection(UPlayerInfoWidget* widget)
+{
+	skillSelectionWidget = widget;
+}
+
+void ADDMMOCharacter::SetSkillDelegate(int index, UCharacterSkillData* skillData)
+{
+	if (!characterClass) // Temp Class Selection Code
+		characterClass = NewObject<UWarriorClass>();
+
+	if (characterClass)
+	{
+		if (characterClass->FindFunction(skillData->Name()))
+		{
+			// Bind UFunction found in characterClass Named the same skillData
+			SkillLogicDelegates[index].BindUFunction(characterClass, skillData->Name(), skillData);
+			// Check if UFunction was Found and properly bound, else Bind to DefaultSkill
+			if (!SkillLogicDelegates[index].IsBound())
+			{
+				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegata: No UFucntion was found"));
+				SkillLogicDelegates[index].BindUFunction(characterClass, FName("DefaultSkill"), skillData);
+			}
+			else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("SetSkillDelegata Success"));
+		}
+		else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegata: No UFucntion was found"));
+	}
+	else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegata: No CharacterClass Selected"));
+}
+
+void ADDMMOCharacter::SkillMenu()
+{
+	if (Controller != NULL)
+	{
+		if (skillSelectionWidget) skillSelectionWidget->ToggleVisible();
+		else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the Skill Info is in progress."));
+	}
+}
+
+void ADDMMOCharacter::MainMenu()
+{
+	if (Controller != NULL)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the Main Menu is in progress."));
+	}
+}
+
+void ADDMMOCharacter::Inventory()
+{
+	if (Controller != NULL)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the BAG UI is in progress."));
+	}
+}
+
+void ADDMMOCharacter::CharacterMenu()
+{
+	if (Controller != NULL)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the Character info is in progress."));
 	}
 }
