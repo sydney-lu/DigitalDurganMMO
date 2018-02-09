@@ -75,6 +75,12 @@ ADDMMOCharacter::ADDMMOCharacter()
 	}
 }
 
+void ADDMMOCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+	GetWorld()->GetTimerManager().SetTimer(TargetingHandle, this, &ADDMMOCharacter::FindTarget, TargetingRate, true);
+}
+
 void ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
 	check(PlayerInputComponent);
@@ -101,7 +107,7 @@ void ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAction("SwitchTargetLock", IE_Pressed, this, &ADDMMOCharacter::SwitchTargetLock);
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
-	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &ADDMMOCharacter::Crouch);
+	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &ADDMMOCharacter::ToggleCrouch);
 	PlayerInputComponent->BindAction("BasicAttack", IE_Pressed, this, &ADDMMOCharacter::BasicAttack);
 	PlayerInputComponent->BindAction("Defense", IE_Pressed, this, &ADDMMOCharacter::Defense);
 
@@ -228,11 +234,43 @@ void ADDMMOCharacter::Interact()
 	}
 }
 
-void ADDMMOCharacter::Crouch()
+void ADDMMOCharacter::ToggleCrouch()
 {
 	if (Controller != NULL)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for crouching is in progress."));
+	}
+}
+
+void ADDMMOCharacter::FindTarget()
+{
+	FCollisionQueryParams TraceParams;
+	TraceParams.bTraceComplex = true;
+	TraceParams.bTraceAsyncScene = true;
+	TraceParams.bReturnPhysicalMaterial = false;
+
+	FVector start = GetFollowCamera()->GetComponentToWorld().GetLocation();
+	FVector end = start + GetFollowCamera()->GetForwardVector() * TargetingRange;
+
+	FHitResult Hit(ForceInit);
+
+	if (GetWorld()->LineTraceSingleByObjectType(Hit, start, end, ECC_Pawn, TraceParams))
+		GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::White, "TargettingRayHit: " + Hit.GetActor()->GetName());
+
+	SetTarget(Hit.GetActor());
+}
+
+void ADDMMOCharacter::SetTarget(AActor* newTarget)
+{
+	if (newTarget == CurrentTarget || !Cast<ITargetable>(newTarget))
+		return;
+
+	ITargetable::Execute_OnUntargeted(CurrentTarget);
+	if (newTarget)
+	{
+		CurrentTarget = newTarget;
+		ITargetable::Execute_OnTargeted(newTarget);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, "NewTargetSelected" + newTarget->GetName());
 	}
 }
 

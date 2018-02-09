@@ -18,6 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 	DDMMO_API UClass* Z_Construct_UClass_ADDMMOCharacter_NoRegister();
 	DDMMO_API UClass* Z_Construct_UClass_ADDMMOCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+	DDMMO_API UFunction* Z_Construct_UFunction_ADDMMOCharacter_FindTarget();
 	DDMMO_API UFunction* Z_Construct_UFunction_ADDMMOCharacter_SetSkillDelegate();
 	DDMMO_API UClass* Z_Construct_UClass_UCharacterSkillData_NoRegister();
 	DDMMO_API UFunction* Z_Construct_UFunction_ADDMMOCharacter_SetSkillSelection();
@@ -25,6 +26,8 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	DDMMO_API UClass* Z_Construct_UClass_ABaseProjectile_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FTimerHandle();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	DDMMO_API UClass* Z_Construct_UClass_UCharacterClass_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
@@ -101,10 +104,27 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 	{
 		UClass* Class = ADDMMOCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "FindTarget", (Native)&ADDMMOCharacter::execFindTarget },
 			{ "SetSkillDelegate", (Native)&ADDMMOCharacter::execSetSkillDelegate },
 			{ "SetSkillSelection", (Native)&ADDMMOCharacter::execSetSkillSelection },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	UFunction* Z_Construct_UFunction_ADDMMOCharacter_FindTarget()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
+				{ "ToolTip", "Targeting" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_ADDMMOCharacter, "FindTarget", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UFunction* Z_Construct_UFunction_ADDMMOCharacter_SetSkillDelegate()
 	{
@@ -175,6 +195,7 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 				(UObject* (*)())Z_Construct_UPackage__Script_DDMMO,
 			};
 			static const FClassFunctionLinkInfo FuncInfo[] = {
+				{ &Z_Construct_UFunction_ADDMMOCharacter_FindTarget, "FindTarget" }, // 1225887259
 				{ &Z_Construct_UFunction_ADDMMOCharacter_SetSkillDelegate, "SetSkillDelegate" }, // 2206333035
 				{ &Z_Construct_UFunction_ADDMMOCharacter_SetSkillSelection, "SetSkillSelection" }, // 898956610
 			};
@@ -199,6 +220,34 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 			};
 #endif
 			static const UE4CodeGen_Private::FStructPropertyParams NewProp_MuzzleOffset = { UE4CodeGen_Private::EPropertyClass::Struct, "MuzzleOffset", RF_Public|RF_Transient|RF_MarkAsNative, 0x0020080000000005, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, MuzzleOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(NewProp_MuzzleOffset_MetaData, ARRAY_COUNT(NewProp_MuzzleOffset_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TargetingRate_MetaData[] = {
+				{ "Category", "Targeting" },
+				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_TargetingRate = { UE4CodeGen_Private::EPropertyClass::Float, "TargetingRate", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, TargetingRate), METADATA_PARAMS(NewProp_TargetingRate_MetaData, ARRAY_COUNT(NewProp_TargetingRate_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TargetingRange_MetaData[] = {
+				{ "Category", "Targeting" },
+				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_TargetingRange = { UE4CodeGen_Private::EPropertyClass::Float, "TargetingRange", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, TargetingRange), METADATA_PARAMS(NewProp_TargetingRange_MetaData, ARRAY_COUNT(NewProp_TargetingRange_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TargetingHandle_MetaData[] = {
+				{ "Category", "Targeting" },
+				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FStructPropertyParams NewProp_TargetingHandle = { UE4CodeGen_Private::EPropertyClass::Struct, "TargetingHandle", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, TargetingHandle), Z_Construct_UScriptStruct_FTimerHandle, METADATA_PARAMS(NewProp_TargetingHandle_MetaData, ARRAY_COUNT(NewProp_TargetingHandle_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentTarget_MetaData[] = {
+				{ "Category", "Targeting" },
+				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CurrentTarget = { UE4CodeGen_Private::EPropertyClass::Object, "CurrentTarget", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, CurrentTarget), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(NewProp_CurrentTarget_MetaData, ARRAY_COUNT(NewProp_CurrentTarget_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ZoomOut_MAX_MetaData[] = {
 				{ "Category", "DDMMOCharacter" },
@@ -343,6 +392,10 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ProjectileClass,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MuzzleOffset,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_TargetingRate,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_TargetingRange,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_TargetingHandle,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_CurrentTarget,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ZoomOut_MAX,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ZoomIn_MAX,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_Zoom_Power,
@@ -382,7 +435,7 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADDMMOCharacter, 1630518580);
+	IMPLEMENT_CLASS(ADDMMOCharacter, 2539619181);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ADDMMOCharacter(Z_Construct_UClass_ADDMMOCharacter, &ADDMMOCharacter::StaticClass, TEXT("/Script/DDMMO"), TEXT("ADDMMOCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ADDMMOCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

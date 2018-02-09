@@ -84,7 +84,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{EF00FF6B-1963-44F3-92EE-6349247766F0}</ProjectGuid>
+		<ProjectGuid>{8DDDA486-6E9A-4E89-9300-9BBC0A4671DD}</ProjectGuid>
 		<Keyword>MakeFileProj</Keyword>
 		<RootNamespace>DDMMO</RootNamespace>
 		<PlatformToolset>v140</PlatformToolset>
@@ -420,6 +420,8 @@
 		<ClInclude Include="..\..\Source\DDMMO\DDMMO.h" />
 		<ClCompile Include="..\..\Source\DDMMO\DDMMOGameMode.cpp" />
 		<ClInclude Include="..\..\Source\DDMMO\DDMMOGameMode.h" />
+		<ClCompile Include="..\..\Source\DDMMO\Targetable.cpp" />
+		<ClInclude Include="..\..\Source\DDMMO\Targetable.h" />
 		<ClCompile Include="..\..\Source\DDMMO\AI\AIBaseAgent.cpp" />
 		<ClInclude Include="..\..\Source\DDMMO\AI\AIBaseAgent.h" />
 		<ClCompile Include="..\..\Source\DDMMO\AI\Agents\CompanionCharacter.cpp" />

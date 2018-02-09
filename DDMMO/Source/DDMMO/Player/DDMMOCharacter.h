@@ -7,6 +7,8 @@
 #include "CharacterClass.h"
 #include "CharacterClassData.h"
 #include "PlayerInfoWidget.h"
+#include "TimerManager.h"
+#include "DDMMO/Targetable.h"
 #include "DDMMOCharacter.generated.h"
 
 //  Player can only be in one state at a time
@@ -103,6 +105,21 @@ public:
 
 	float CameraZoom_v;
 
+	UPROPERTY(EditAnywhere, Category = Targeting)
+	AActor* CurrentTarget;
+
+	UPROPERTY(EditAnywhere, Category = Targeting)
+	FTimerHandle TargetingHandle;
+
+	UPROPERTY(EditAnywhere,Category = Targeting)
+	float TargetingRange = 5000;
+
+	UPROPERTY(EditAnywhere, Category = Targeting)
+	float TargetingRate = 0.2f;
+
+protected:
+	virtual void BeginPlay() override;
+
 protected:	// Traversal functions
 	void MoveForward(float Value);
 	void MoveRight(float Value);
@@ -113,7 +130,12 @@ protected:	// Camera Functions
 	void ZoomIn();
 	void ZoomOut();
 
-protected:	//UI Functions
+protected:	// Targeting
+	UFUNCTION()
+	void FindTarget();
+	void SetTarget(AActor* newTarget);
+
+protected:	// UI Functions
 
 	UFUNCTION(BlueprintCallable)
 	void SetSkillSelection(UPlayerInfoWidget* widget);
@@ -145,7 +167,7 @@ protected:	// Skill Functions
 	void Fire();
 	void BasicAttack();
 	void Defense();
-	void Crouch();
+	void ToggleCrouch();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Weapon)
 	FVector MuzzleOffset;
