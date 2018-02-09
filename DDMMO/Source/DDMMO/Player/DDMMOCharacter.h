@@ -153,8 +153,8 @@ protected:	// Skill Functions
 
 protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
 	virtual void SetPlayerState(PlayerCharacterState NewState);
+	virtual void Destroyed() override;
 
 public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }

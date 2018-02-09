@@ -14,6 +14,7 @@
 #include "Projectiles/BaseProjectile.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Player/PlayerInfoWidget.h"
+#include "Kismet/GameplayStatics.h"
 
 ADDMMOCharacter::ADDMMOCharacter()
 {
@@ -216,6 +217,12 @@ void ADDMMOCharacter::SetPlayerState(PlayerCharacterState NewState)
 	CurrentState = NewState;
 }
 
+void ADDMMOCharacter::Destroyed()
+{
+	Super::Destroyed();
+	UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()), false);
+}
+
 void ADDMMOCharacter::MoveForward(float Value)
 {
 	if ((Controller != NULL) && (Value != 0.0f))
@@ -295,6 +302,14 @@ void ADDMMOCharacter::SkillMenu()
 	}
 }
 
+void ADDMMOCharacter::MainMenu()
+{
+	if (Controller != NULL)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Functionality for the Main Menu is in progress."));
+	}
+}
+
 void ADDMMOCharacter::Inventory()
 {
 	if (Controller != NULL)
@@ -316,7 +331,14 @@ void ADDMMOCharacter::SkillOne()
 	if (Controller != NULL)
 	{
 		if (!SkillLogicDelegates[0].ExecuteIfBound())
+		{
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'LMB'."));
+			if (Mana_CUR > 0)
+			{
+				Mana_CUR--;
+				Fire();
+			}
+		}
 	}
 }
 
