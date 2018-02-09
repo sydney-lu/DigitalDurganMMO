@@ -41,9 +41,9 @@ ADDMMOCharacter::ADDMMOCharacter()
 	//MeleeCollider->SetupAttachment(RootComponent);
 
 	// Don't rotate when the controller rotates. Let that just affect the camera.
-	bUseControllerRotationPitch = false;
-	bUseControllerRotationYaw = false;
-	bUseControllerRotationRoll = false;
+	bUseControllerRotationPitch = true;
+	bUseControllerRotationYaw = true;
+	bUseControllerRotationRoll = true;
 
 	CurrentState = PlayerCharacterState(PlayerCharacterState::IDLE);
 
