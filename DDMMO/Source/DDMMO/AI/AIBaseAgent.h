@@ -11,55 +11,51 @@ class DDMMO_API AAIBaseAgent : public ACharacter
 {
 	GENERATED_BODY()
 
+private:
+	UPROPERTY(EditDefaultsOnly)
+	class ADDMMOCharacter* target;
+
+protected:
+	UPROPERTY(EditDefaultsOnly, Category = Enemy)
+	float maxHealth;
+	float currentHealth;
+
+	UPROPERTY(EditDefaultsOnly, Category = Enemy)
+	float damage;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Enemy)
+	float attackDistance;
+
+	virtual void BeginPlay() override;
+
+public:
 	AAIBaseAgent();
-    
-	private:
-  
-  virtual void Tick(float DeltaTime) override;
-  
+
+	virtual void Tick(float DeltaTime) override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-    
-		UPROPERTY(EditDefaultsOnly)
-			class UCharacterClass* target;
 
-	protected:
-		UPROPERTY(EditDefaultsOnly)
-			float maxHealth;
-		float currentHealth;
+	UPROPERTY(EditAnywhere, Category = "AI")
+	class UBehaviorTree* BehaviorTree;
 
-		UPROPERTY(EditDefaultsOnly)
-			float damage;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Enemy)
+	bool bIsPatroling;
 
-		UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-			float attackDistance;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Enemy)
+	bool bIsReturning;
 
-		virtual void BeginPlay() override;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Enemy)
+	bool bIsChasing;
 
-	public:
-		UPROPERTY(EditAnywhere, Category = "AI")
-			class UBehaviorTree* BehaviorTree;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Enemy)
+	bool bIsAttacking;
 
-		UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-			bool bIsPatroling;
+	FORCEINLINE bool IsAlive() const { return currentHealth > 0.0f; }
+	FORCEINLINE float GetHeathRatio() const { return (currentHealth / maxHealth); }
+	FORCEINLINE float GetCurrentHealth() const { return currentHealth; }
+	FORCEINLINE float GetDamage() const { return damage; }
+	FORCEINLINE ADDMMOCharacter* GetAgentTarget() const { return target; }
 
-		UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-			bool bIsReturning;
+	// Handling Damage
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 
-		UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-			bool bIsChasing;
-
-		UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-			bool bIsAttacking;
-
-		FORCEINLINE bool IsAlive() const { return currentHealth > 0.0f; }
-		FORCEINLINE float GetHeathRatio() const { return (currentHealth/maxHealth); }
-		FORCEINLINE float GetCurrentHealth() const { return currentHealth; }
-		FORCEINLINE float GetDamage() const { return damage; }
-		FORCEINLINE UCharacterClass* GetAgentTarget() const { return target; }
-    
-		// Handling Damage
-		virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
-
-		const float MAXHEALTH = 10.0f;
-		float CURHEALTH;
 };

@@ -6,7 +6,9 @@
 AAIBaseAgent::AAIBaseAgent()
 {
 	PrimaryActorTick.bCanEverTick = true;
-	CURHEALTH = MAXHEALTH;
+
+	if (maxHealth <= 0) maxHealth = 10.f;
+	currentHealth = maxHealth;
 }
 
 void AAIBaseAgent::BeginPlay()
@@ -29,8 +31,8 @@ float AAIBaseAgent::TakeDamage(float DamageAmount, struct FDamageEvent const& Da
 {
 	//return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 	UE_LOG(LogTemp, Display, TEXT("Damaged"));
-	CURHEALTH -= DamageAmount;
-	if (CURHEALTH <= 0.0f)
+	currentHealth -= DamageAmount;
+	if (currentHealth <= 0.0f)
 	{
 		Destroy();
 	}
