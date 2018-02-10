@@ -175,6 +175,9 @@ protected:	// Skill Functions
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
 	TSubclassOf<class ABaseProjectile> ProjectileClass;
 
+	UPROPERTY()
+	class USkeletalMeshComponent* SkeletalMesh;
+
 protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	virtual void SetPlayerState(PlayerCharacterState NewState);

@@ -5,6 +5,7 @@
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
+#include "Components/SkeletalMeshComponent.h"
 #include "WarriorClass.h" // Only Here For Testing Classes, Will not be needed with a proper Class Selection Screen.
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
@@ -46,6 +47,8 @@ ADDMMOCharacter::ADDMMOCharacter()
 	bUseControllerRotationRoll = true;
 
 	CurrentState = PlayerCharacterState(PlayerCharacterState::IDLE);
+
+	SkeletalMesh = GetMesh();
 
 	// Configure character movement
 	GetCharacterMovement()->bOrientRotationToMovement = true; // Character moves in the direction of input...	
@@ -278,13 +281,10 @@ void ADDMMOCharacter::Fire()
 {
 	if (ProjectileClass)
 	{
-		FVector CameraLocation;
-		FRotator CameraRotation;
-		GetActorEyesViewPoint(CameraLocation, CameraRotation);
+		FVector spawnLocation;
+		FRotator spawnRotation;
 
-		FVector MuzzleLocation = CameraLocation + FTransform(CameraRotation).TransformVector(MuzzleOffset);
-		FRotator MuzzleRotation = CameraRotation;
-		MuzzleRotation.Pitch += 10.0f;
+		SkeletalMesh->GetSocketWorldLocationAndRotation("ProjectileSpawn", spawnLocation, spawnRotation); 
 
 		UWorld* World = GetWorld();
 		if (World)
@@ -293,10 +293,10 @@ void ADDMMOCharacter::Fire()
 			SpawnParams.Owner = this;
 			SpawnParams.Instigator = Instigator;
 
-			ABaseProjectile* Projectile = World->SpawnActor<ABaseProjectile>(ProjectileClass, MuzzleLocation, MuzzleRotation, SpawnParams);
+			ABaseProjectile* Projectile = World->SpawnActor<ABaseProjectile>(ProjectileClass, spawnLocation, spawnRotation, SpawnParams);
 			if (Projectile)
 			{
-				FVector LaunchDirection = MuzzleRotation.Vector();
+				FVector LaunchDirection = spawnRotation.Vector();
 				Projectile->FireInDirection(LaunchDirection);
 			}
 		}
@@ -452,14 +452,14 @@ void ADDMMOCharacter::SetSkillDelegate(int index, UCharacterSkillData* skillData
 			// Check if UFunction was Found and properly bound, else Bind to DefaultSkill
 			if (!SkillLogicDelegates[index].IsBound())
 			{
-				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegata: No UFucntion was found"));
+				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegate: No UFunction was found"));
 				SkillLogicDelegates[index].BindUFunction(characterClass, FName("DefaultSkill"), skillData);
 			}
-			else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("SetSkillDelegata Success"));
+			else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("SetSkillDelegate Success"));
 		}
-		else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegata: No UFucntion was found"));
+		else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegate: No UFunction was found"));
 	}
-	else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegata: No CharacterClass Selected"));
+	else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegate: No CharacterClass Selected"));
 }
 
 void ADDMMOCharacter::SkillMenu()

@@ -11,24 +11,51 @@ class DDMMO_API AAIBaseAgent : public ACharacter
 {
 	GENERATED_BODY()
 
-	private:
+private:
+	UPROPERTY(EditDefaultsOnly)
+	class ADDMMOCharacter* target;
 
-	protected:
-		// Called when the game starts or when spawned
-		virtual void BeginPlay() override;
+protected:
+	UPROPERTY(EditDefaultsOnly, Category = Enemy)
+	float maxHealth;
+	float currentHealth;
 
-	public:
-		UPROPERTY(EditAnywhere, Category = "AI")
-			class UBehaviorTree* BehaviorTree;
+	UPROPERTY(EditDefaultsOnly, Category = Enemy)
+	float damage;
 
-		AAIBaseAgent();
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Enemy)
+	float attackDistance;
 
-		virtual void Tick(float DeltaTime) override;
-		virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	virtual void BeginPlay() override;
 
-		// Handling Damage
-		virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
+public:
+	AAIBaseAgent();
 
-		const float MAXHEALTH = 10.0f;
-		float CURHEALTH;
+	virtual void Tick(float DeltaTime) override;
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	UPROPERTY(EditAnywhere, Category = "AI")
+	class UBehaviorTree* BehaviorTree;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Enemy)
+	bool bIsPatroling;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Enemy)
+	bool bIsReturning;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Enemy)
+	bool bIsChasing;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Enemy)
+	bool bIsAttacking;
+
+	FORCEINLINE bool IsAlive() const { return currentHealth > 0.0f; }
+	FORCEINLINE float GetHeathRatio() const { return (currentHealth / maxHealth); }
+	FORCEINLINE float GetCurrentHealth() const { return currentHealth; }
+	FORCEINLINE float GetDamage() const { return damage; }
+	FORCEINLINE ADDMMOCharacter* GetAgentTarget() const { return target; }
+
+	// Handling Damage
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
+
 };

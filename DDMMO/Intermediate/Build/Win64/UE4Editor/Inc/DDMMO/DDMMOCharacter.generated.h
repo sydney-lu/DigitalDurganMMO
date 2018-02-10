@@ -15,7 +15,7 @@ class UPlayerInfoWidget;
 #endif
 #define DDMMO_DDMMOCharacter_generated_h
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_37_RPC_WRAPPERS \
+#define Prestidigitation_Source_DDMMO_Player_DDMMOCharacter_h_37_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execSetSkillDelegate) \
 	{ \
@@ -45,7 +45,7 @@ class UPlayerInfoWidget;
 	}
 
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_37_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Prestidigitation_Source_DDMMO_Player_DDMMOCharacter_h_37_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execSetSkillDelegate) \
 	{ \
@@ -75,7 +75,7 @@ class UPlayerInfoWidget;
 	}
 
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_37_INCLASS_NO_PURE_DECLS \
+#define Prestidigitation_Source_DDMMO_Player_DDMMOCharacter_h_37_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesADDMMOCharacter(); \
 	friend DDMMO_API class UClass* Z_Construct_UClass_ADDMMOCharacter(); \
@@ -85,7 +85,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_37_INCLASS \
+#define Prestidigitation_Source_DDMMO_Player_DDMMOCharacter_h_37_INCLASS \
 private: \
 	static void StaticRegisterNativesADDMMOCharacter(); \
 	friend DDMMO_API class UClass* Z_Construct_UClass_ADDMMOCharacter(); \
@@ -95,7 +95,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_37_STANDARD_CONSTRUCTORS \
+#define Prestidigitation_Source_DDMMO_Player_DDMMOCharacter_h_37_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ADDMMOCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ADDMMOCharacter) \
@@ -108,7 +108,7 @@ private: \
 public:
 
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_37_ENHANCED_CONSTRUCTORS \
+#define Prestidigitation_Source_DDMMO_Player_DDMMOCharacter_h_37_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ADDMMOCharacter(ADDMMOCharacter&&); \
@@ -119,38 +119,39 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADDMMOCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ADDMMOCharacter)
 
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_37_PRIVATE_PROPERTY_OFFSET \
+#define Prestidigitation_Source_DDMMO_Player_DDMMOCharacter_h_37_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(ADDMMOCharacter, CameraBoom); } \
 	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(ADDMMOCharacter, FollowCamera); } \
 	FORCEINLINE static uint32 __PPO__MuzzleOffset() { return STRUCT_OFFSET(ADDMMOCharacter, MuzzleOffset); } \
-	FORCEINLINE static uint32 __PPO__ProjectileClass() { return STRUCT_OFFSET(ADDMMOCharacter, ProjectileClass); }
+	FORCEINLINE static uint32 __PPO__ProjectileClass() { return STRUCT_OFFSET(ADDMMOCharacter, ProjectileClass); } \
+	FORCEINLINE static uint32 __PPO__SkeletalMesh() { return STRUCT_OFFSET(ADDMMOCharacter, SkeletalMesh); }
 
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_34_PROLOG
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_37_GENERATED_BODY_LEGACY \
+#define Prestidigitation_Source_DDMMO_Player_DDMMOCharacter_h_34_PROLOG
+#define Prestidigitation_Source_DDMMO_Player_DDMMOCharacter_h_37_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_37_PRIVATE_PROPERTY_OFFSET \
-	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_37_RPC_WRAPPERS \
-	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_37_INCLASS \
-	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_37_STANDARD_CONSTRUCTORS \
+	Prestidigitation_Source_DDMMO_Player_DDMMOCharacter_h_37_PRIVATE_PROPERTY_OFFSET \
+	Prestidigitation_Source_DDMMO_Player_DDMMOCharacter_h_37_RPC_WRAPPERS \
+	Prestidigitation_Source_DDMMO_Player_DDMMOCharacter_h_37_INCLASS \
+	Prestidigitation_Source_DDMMO_Player_DDMMOCharacter_h_37_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_37_GENERATED_BODY \
+#define Prestidigitation_Source_DDMMO_Player_DDMMOCharacter_h_37_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_37_PRIVATE_PROPERTY_OFFSET \
-	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_37_RPC_WRAPPERS_NO_PURE_DECLS \
-	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_37_INCLASS_NO_PURE_DECLS \
-	DDMMO_Source_DDMMO_Player_DDMMOCharacter_h_37_ENHANCED_CONSTRUCTORS \
+	Prestidigitation_Source_DDMMO_Player_DDMMOCharacter_h_37_PRIVATE_PROPERTY_OFFSET \
+	Prestidigitation_Source_DDMMO_Player_DDMMOCharacter_h_37_RPC_WRAPPERS_NO_PURE_DECLS \
+	Prestidigitation_Source_DDMMO_Player_DDMMOCharacter_h_37_INCLASS_NO_PURE_DECLS \
+	Prestidigitation_Source_DDMMO_Player_DDMMOCharacter_h_37_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID DDMMO_Source_DDMMO_Player_DDMMOCharacter_h
+#define CURRENT_FILE_ID Prestidigitation_Source_DDMMO_Player_DDMMOCharacter_h
 
 
 #define FOREACH_ENUM_PLAYERCHARACTERSTATE(op) \

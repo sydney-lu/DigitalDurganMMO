@@ -23,6 +23,7 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 	DDMMO_API UClass* Z_Construct_UClass_UCharacterSkillData_NoRegister();
 	DDMMO_API UFunction* Z_Construct_UFunction_ADDMMOCharacter_SetSkillSelection();
 	DDMMO_API UClass* Z_Construct_UClass_UPlayerInfoWidget_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	DDMMO_API UClass* Z_Construct_UClass_ABaseProjectile_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
@@ -207,6 +208,13 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 			};
 #endif
 #if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SkeletalMesh_MetaData[] = {
+				{ "EditInline", "true" },
+				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SkeletalMesh = { UE4CodeGen_Private::EPropertyClass::Object, "SkeletalMesh", RF_Public|RF_Transient|RF_MarkAsNative, 0x0020080000080008, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, SkeletalMesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(NewProp_SkeletalMesh_MetaData, ARRAY_COUNT(NewProp_SkeletalMesh_MetaData)) };
+#if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileClass_MetaData[] = {
 				{ "Category", "Projectile" },
 				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
@@ -390,6 +398,7 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 #endif
 			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CameraBoom = { UE4CodeGen_Private::EPropertyClass::Object, "CameraBoom", RF_Public|RF_Transient|RF_MarkAsNative, 0x00400000000a001d, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, CameraBoom), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(NewProp_CameraBoom_MetaData, ARRAY_COUNT(NewProp_CameraBoom_MetaData)) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_SkeletalMesh,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ProjectileClass,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MuzzleOffset,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_TargetingRate,
@@ -435,7 +444,7 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADDMMOCharacter, 2539619181);
+	IMPLEMENT_CLASS(ADDMMOCharacter, 577453295);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ADDMMOCharacter(Z_Construct_UClass_ADDMMOCharacter, &ADDMMOCharacter::StaticClass, TEXT("/Script/DDMMO"), TEXT("ADDMMOCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ADDMMOCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

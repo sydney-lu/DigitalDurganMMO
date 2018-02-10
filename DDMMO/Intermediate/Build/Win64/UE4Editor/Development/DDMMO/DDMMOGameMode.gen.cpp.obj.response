@@ -23,9 +23,9 @@
 /wd4838
 /w44668
 /I "C:\Program Files\Epic Games\UE_4.18\Engine\Source"
-/I C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Source
-/I C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Inc\DDMMO
-/I C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Source\DDMMO
+/I C:\Users\Lu\Desktop\Prestidigitation\Source
+/I C:\Users\Lu\Desktop\Prestidigitation\Intermediate\Build\Win64\UE4Editor\Inc\DDMMO
+/I C:\Users\Lu\Desktop\Prestidigitation\Source\DDMMO
 /I "C:\Program Files\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public"
 /I "C:\Program Files\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public\Internationalization"
 /I "C:\Program Files\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public\Async"
@@ -358,9 +358,9 @@
 /FI"C:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Yu"C:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Fp"C:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Inc\DDMMO\DDMMOGameMode.gen.cpp"
-/FI"C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\DDMMO\Definitions.DDMMO.h"
-/Fo"C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Intermediate\Build\Win64\UE4Editor\Development\DDMMO\DDMMOGameMode.gen.cpp.obj"
+"C:\Users\Lu\Desktop\Prestidigitation\Intermediate\Build\Win64\UE4Editor\Inc\DDMMO\DDMMOGameMode.gen.cpp"
+/FI"C:\Users\Lu\Desktop\Prestidigitation\Intermediate\Build\Win64\UE4Editor\Development\DDMMO\Definitions.DDMMO.h"
+/Fo"C:\Users\Lu\Desktop\Prestidigitation\Intermediate\Build\Win64\UE4Editor\Development\DDMMO\DDMMOGameMode.gen.cpp.obj"
 /TP
 /GR-
 /W4
