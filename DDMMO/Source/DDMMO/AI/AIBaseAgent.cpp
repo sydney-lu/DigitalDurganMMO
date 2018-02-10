@@ -30,10 +30,10 @@ void AAIBaseAgent::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 float AAIBaseAgent::TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser)
 {
 	//return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
-	UE_LOG(LogTemp, Display, TEXT("Damaged"));
 	currentHealth -= DamageAmount;
 	if (currentHealth <= 0.0f)
 	{
+		UE_LOG(LogTemp, Display, TEXT("You destroyed an enemy."));
 		Destroy();
 	}
 	return 0.0f;

@@ -452,14 +452,14 @@ void ADDMMOCharacter::SetSkillDelegate(int index, UCharacterSkillData* skillData
 			// Check if UFunction was Found and properly bound, else Bind to DefaultSkill
 			if (!SkillLogicDelegates[index].IsBound())
 			{
-				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegata: No UFucntion was found"));
+				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegate: No UFunction was found"));
 				SkillLogicDelegates[index].BindUFunction(characterClass, FName("DefaultSkill"), skillData);
 			}
-			else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("SetSkillDelegata Success"));
+			else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("SetSkillDelegate Success"));
 		}
-		else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegata: No UFucntion was found"));
+		else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegate: No UFunction was found"));
 	}
-	else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegata: No CharacterClass Selected"));
+	else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegate: No CharacterClass Selected"));
 }
 
 void ADDMMOCharacter::SkillMenu()
