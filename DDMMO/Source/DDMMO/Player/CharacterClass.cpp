@@ -6,32 +6,28 @@ UCharacterClass::UCharacterClass()
 {
 }
 
-UCharacterClass::UCharacterClass(ADDMMOCharacter* playerCharacter, UCharacterClassData* classData)
+UCharacterClass::UCharacterClass(UCharacterClassData* classData)
 {
-	InitClass(playerCharacter, classData);
+	InitClass(classData);
 }
 
-void UCharacterClass::InitClass(ADDMMOCharacter* playerCharacter, UCharacterClassData* classData)
+void UCharacterClass::InitClass(UCharacterClassData* classData)
 {
 	m_classData = classData;
-	m_player = playerCharacter;
 
-	SkillLogicDelegates.SetNum(m_classData->SkillsData().Num());
-
-	if (m_classData != nullptr) 
+	if (m_classData)
 	{
 		for (size_t i = 0; i < m_classData->SkillsData().Num(); i++)
-		{
-			// Try to Bind To UFuction named the same as current SkillData name.
-			SkillLogicDelegates[i].BindUFunction(this, m_classData->SkillsData()[i]->Name(), m_classData->SkillsData()[i]);
+			skillUsability.Add(CastInfo(m_classData->SkillsData()[i]));
+	}
+}
 
-			// Check if UFunction was Found and properly bound, else Bind to DefaultSkill
-			if (!SkillLogicDelegates[i].IsBound())
-			{
-				UE_LOG(LogTemp, Warning, TEXT("Logic Function for Skill: %s not implimented"), *m_classData->SkillsData()[i]->Name().ToString())
-					SkillLogicDelegates[i].BindUFunction(this, FName("DefaultSkill"), m_classData->SkillsData()[i]);
-			}
-		}
+void UCharacterClass::Tick(float deltaTime)
+{
+	if (m_classData)
+	{
+		for (size_t i = 0; i < skillUsability.Num(); i++)
+			skillUsability[i].TickCooldown(deltaTime);
 	}
 }
 
