@@ -2,7 +2,7 @@
 
 #include "AIEnemyController.h"
 
-#include "Player/CharacterClass.h"
+#include "Player/DDMMOCharacter.h"
 #include "AI/Agents/EnemyCharacter.h"
 
 #include "BehaviorTree/BehaviorTree.h"
@@ -49,7 +49,7 @@ void AAIEnemyController::SetBlackboardOwner(AActor * NewOwner)
 	}
 }
 
-void AAIEnemyController::SetTarget(UCharacterClass* NewTarget)
+void AAIEnemyController::SetTarget(ADDMMOCharacter* NewTarget)
 {
 	if (BlackboardComponent)
 	{
