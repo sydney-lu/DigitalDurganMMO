@@ -175,7 +175,7 @@ protected:	// Skill Functions
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
 	TSubclassOf<class ABaseProjectile> ProjectileClass;
 
-	UPROPERTY()
+	UPROPERTY(EditAnywhere)
 	class USkeletalMeshComponent* SkeletalMesh;
 
 protected:
