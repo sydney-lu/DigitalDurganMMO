@@ -27,14 +27,12 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (DisplayName = "Description", MultiLine = true), Category = UIInfo)
 		FText m_description;
 
-	UPROPERTY(EditAnywhere, meta = (DisplayName = "Cost", ClampMin = "0.0", UIMin = "0.0"), Category = CastInfo)
-		float m_cost;
 	UPROPERTY(EditAnywhere, meta = (DisplayName = "Cooldown", ClampMin = "0.0", UIMin = "0.0"), Category = CastInfo)
 		float m_cooldown;
 	UPROPERTY(EditAnywhere, meta = (DisplayName = "Cast Time", ClampMin = "0.0", UIMin = "0.0"), Category = CastInfo)
 		float m_castTime;
 	UPROPERTY(EditAnywhere, meta = (DisplayName = "Max Charges", ClampMin = "0.0", UIMin = "0.0"), Category = CastInfo)
-		float m_charges;
+		float m_charges = 1;
 
 	UPROPERTY(EditAnywhere, meta = (DisplayName = "Duration", ClampMin = "0.0", UIMin = "0.0"), Category = SkillStats)
 		float m_duration;
@@ -65,8 +63,15 @@ public:
 	UFUNCTION(BlueprintCallable)
 		UTexture2D* GetImage();
 
-	FVector4 CastInfo();		// (Cost, CastTime, Cooldown, Charges)
-	FVector4 SkillStats();		// (CastRange, AbilityRange, TriggerTimer, Duration)
+	float CastTime();
+	float Cooldown();
+	float Charges();
+	float CastRange();
+
+	float AbilityRange();
+	float TriggerTimer();
+	float Duration();
+
 	float SkillDamage();
 
 	TArray<ECastLocation> CastableLocations();

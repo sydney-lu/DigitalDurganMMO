@@ -22,14 +22,39 @@ UTexture2D * UCharacterSkillData::GetImage()
 	return m_image;
 }
 
-FVector4 UCharacterSkillData::CastInfo()
+float UCharacterSkillData::CastTime()
 {
-	return FVector4(m_cost, m_castTime, m_cooldown, m_charges);
+	return m_castTime;
 }
 
-FVector4 UCharacterSkillData::SkillStats()
+float UCharacterSkillData::Cooldown()
 {
-	return FVector4(m_castRange, m_abilityRange, m_triggerTimer, m_duration);
+	return m_cooldown;
+}
+
+float UCharacterSkillData::Charges()
+{
+	return m_charges;
+}
+
+float UCharacterSkillData::CastRange()
+{
+	return m_castRange;
+}
+
+float UCharacterSkillData::AbilityRange()
+{
+	return m_abilityRange;
+}
+
+float UCharacterSkillData::TriggerTimer()
+{
+	return m_triggerTimer;
+}
+
+float UCharacterSkillData::Duration()
+{
+	return m_duration;
 }
 
 float UCharacterSkillData::SkillDamage()

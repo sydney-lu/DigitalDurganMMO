@@ -11,7 +11,14 @@ class DDMMO_API AAIBaseAgent : public ACharacter
 {
 	GENERATED_BODY()
 
+	AAIBaseAgent();
+    
 	private:
+  
+  virtual void Tick(float DeltaTime) override;
+  
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+    
 		UPROPERTY(EditDefaultsOnly)
 			class UCharacterClass* target;
 
@@ -44,17 +51,15 @@ class DDMMO_API AAIBaseAgent : public ACharacter
 		UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 			bool bIsAttacking;
 
-
-		AAIBaseAgent();
-
-		//virtual void Tick(float DeltaTime) override;
-
-		virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
 		FORCEINLINE bool IsAlive() const { return currentHealth > 0.0f; }
 		FORCEINLINE float GetHeathRatio() const { return (currentHealth/maxHealth); }
 		FORCEINLINE float GetCurrentHealth() const { return currentHealth; }
 		FORCEINLINE float GetDamage() const { return damage; }
 		FORCEINLINE UCharacterClass* GetAgentTarget() const { return target; }
+    
+		// Handling Damage
+		virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 
+		const float MAXHEALTH = 10.0f;
+		float CURHEALTH;
 };

@@ -7,6 +7,8 @@
 #include "CharacterClass.h"
 #include "CharacterClassData.h"
 #include "PlayerInfoWidget.h"
+#include "TimerManager.h"
+#include "DDMMO/Targetable.h"
 #include "DDMMOCharacter.generated.h"
 
 //  Player can only be in one state at a time
@@ -103,6 +105,21 @@ public:
 
 	float CameraZoom_v;
 
+	UPROPERTY(EditAnywhere, Category = Targeting)
+	AActor* CurrentTarget;
+
+	UPROPERTY(EditAnywhere, Category = Targeting)
+	FTimerHandle TargetingHandle;
+
+	UPROPERTY(EditAnywhere,Category = Targeting)
+	float TargetingRange = 5000;
+
+	UPROPERTY(EditAnywhere, Category = Targeting)
+	float TargetingRate = 0.2f;
+
+protected:
+	virtual void BeginPlay() override;
+
 protected:	// Traversal functions
 	void MoveForward(float Value);
 	void MoveRight(float Value);
@@ -112,12 +129,13 @@ protected:	// Camera Functions
 	void LookUpAtRate(float Rate);
 	void ZoomIn();
 	void ZoomOut();
-	void RMBPressed();
-	void RMBReleased();
-	void LMBPressed();
-	void LMBReleased();
 
-protected:	//UI Functions
+protected:	// Targeting
+	UFUNCTION()
+	void FindTarget();
+	void SetTarget(AActor* newTarget);
+
+protected:	// UI Functions
 
 	UFUNCTION(BlueprintCallable)
 	void SetSkillSelection(UPlayerInfoWidget* widget);
@@ -125,10 +143,12 @@ protected:	//UI Functions
 	void SetSkillDelegate(int index, UCharacterSkillData* skillData);
 
 protected:	// Action Functions
-	void OpenBag();
-	void CharacterInfo();
-	void SkillInfo();
+	void Inventory();
+	void CharacterMenu();
+	void SkillMenu();
+	void MainMenu();
 	void Interact();
+	void SwitchTargetLock();
 
 protected:	// Skill Functions
 	void SkillZero();
@@ -141,10 +161,13 @@ protected:	// Skill Functions
 	void SkillSeven();
 	void SkillEight();
 	void SkillNine();
-	void SkillOemminus();
-	void SkillOemplus();
+	void SkillTen();
+	void SkillEleven();
 
 	void Fire();
+	void BasicAttack();
+	void Defense();
+	void ToggleCrouch();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Weapon)
 	FVector MuzzleOffset;
@@ -154,8 +177,8 @@ protected:	// Skill Functions
 
 protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
 	virtual void SetPlayerState(PlayerCharacterState NewState);
+	virtual void Destroyed() override;
 
 public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }

@@ -6,64 +6,59 @@
 void UWarriorClass::BasicAttack()
 {
 	Super::BasicAttack();
-
 }
 
 void UWarriorClass::BasicRanged()
 {
 	Super::BasicRanged();
-
 }
 
 void UWarriorClass::BasicBlock()
 {
 	Super::BasicBlock();
-
 }
 
 void UWarriorClass::WarriorPride(UCharacterSkillData* skillData)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Activted WarriorPride."));
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Activated WarriorPride."));
 }
 
 void UWarriorClass::Leap(UCharacterSkillData* skillData)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Activted Leap."));
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Activated Leap."));
 }
 
 void UWarriorClass::Block(UCharacterSkillData* skillData)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Activted Block."));
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Activated Block."));
 }
 
 void UWarriorClass::LeapingStrike(UCharacterSkillData* skillData)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Activted LeapingStrike."));
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Activated LeapingStrike."));
 }
 
 void UWarriorClass::Retaliation(UCharacterSkillData* skillData)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Activted Retaliation."));
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Activated Retaliation."));
 }
 
 void UWarriorClass::Bash(UCharacterSkillData * skillData)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Activted Bash."));
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Activated Bash."));
 }
 
 void UWarriorClass::Downfall(UCharacterSkillData* skillData)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Activted Downfall."));
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Activated Downfall."));
 }
 
 void UWarriorClass::SkyStrike(UCharacterSkillData * skillData)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Activted SkyStrike."));
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Activated SkyStrike."));
 }
 
 void UWarriorClass::Grab(UCharacterSkillData * skillData)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Activted Grab."));
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("You Activated Grab."));
 }
-
-
