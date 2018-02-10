@@ -307,11 +307,11 @@ void ADDMMOCharacter::BasicAttack()
 {
 	if (Controller != NULL)
 	{
-		if (Mana_CUR > 0)
-		{
-			Mana_CUR--;
+		//if (Mana_CUR > 0)
+		//{
+			//Mana_CUR--;
 			Fire();
-		}
+		//}
 	}
 }
 
