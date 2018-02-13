@@ -71,6 +71,14 @@ ADDMMOCharacter::ADDMMOCharacter()
 	// Skill Delegates
 	SkillLogicDelegates.SetNum(12);
 
+	// UI
+	MainHud = CreateWidget<UHUD_Main>(GetWorld());
+	if (MainHud)
+	{
+		MainHud->AddToViewport();
+		MainHud->SetVisibility(ESlateVisibility::Visible);
+	}
+
 	ConstructorHelpers::FClassFinder<ABaseProjectile>ProjectileAsset(TEXT("Blueprint'/Game/Projectiles/BaseProjectile_BP.BaseProjectile_BP_C'"));
 	if (ProjectileAsset.Class)
 	{
@@ -257,9 +265,7 @@ void ADDMMOCharacter::FindTarget()
 
 	FHitResult Hit(ForceInit);
 
-	if (GetWorld()->LineTraceSingleByObjectType(Hit, start, end, ECC_Pawn, TraceParams))
-		GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::White, "TargettingRayHit: " + Hit.GetActor()->GetName());
-
+	GetWorld()->LineTraceSingleByObjectType(Hit, start, end, ECC_Pawn, TraceParams);
 	SetTarget(Hit.GetActor());
 }
 
@@ -436,6 +442,7 @@ void ADDMMOCharacter::SkillEleven()
 void ADDMMOCharacter::SetSkillSelection(UPlayerInfoWidget* widget)
 {
 	skillSelectionWidget = widget;
+	if (MainHud) skillSelectionWidget->MainHud = MainHud;
 }
 
 void ADDMMOCharacter::SetSkillDelegate(int index, UCharacterSkillData* skillData)

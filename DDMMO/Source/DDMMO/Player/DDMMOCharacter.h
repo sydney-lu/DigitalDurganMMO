@@ -9,6 +9,7 @@
 #include "PlayerInfoWidget.h"
 #include "TimerManager.h"
 #include "DDMMO/Targetable.h"
+#include "HUD_Main.h"
 #include "DDMMOCharacter.generated.h"
 
 //  Player can only be in one state at a time
@@ -45,6 +46,9 @@ class ADDMMOCharacter : public ACharacter
 	TArray<SkillLogic> SkillLogicDelegates;
 
 public:	// Class UI References
+
+	UPROPERTY()
+		UHUD_Main* MainHud;
 
 	UPROPERTY()
 		UPlayerInfoWidget* skillSelectionWidget;
