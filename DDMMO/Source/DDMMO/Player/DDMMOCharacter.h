@@ -175,7 +175,9 @@ protected:	// Skill Functions
 	void BasicAttack();
 	void Defense();
 	void ToggleCrouch();
-
+	
+	float CurrentSpeed;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Weapon)
 	FVector MuzzleOffset;
 

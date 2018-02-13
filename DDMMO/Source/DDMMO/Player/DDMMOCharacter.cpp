@@ -40,6 +40,7 @@ ADDMMOCharacter::ADDMMOCharacter()
 	BasicAttackSpeed = 1.f;
 	BasicAttackRange = 20.f;
 
+	CurrentSpeed = 0.0f;
 	bIsAttacking = false;
 
 	// Don't rotate when the controller rotates. Let that just affect the camera.
@@ -119,7 +120,7 @@ void ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAction("CharacterMenu", IE_Pressed, this, &ADDMMOCharacter::CharacterMenu);
 	PlayerInputComponent->BindAction("SkillMenu", IE_Pressed, this, &ADDMMOCharacter::SkillMenu);
 
-	//	Functional action keys
+	// Action keys
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ADDMMOCharacter::Interact);
 	PlayerInputComponent->BindAction("SwitchTargetLock", IE_Pressed, this, &ADDMMOCharacter::SwitchTargetLock);
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
@@ -127,6 +128,7 @@ void ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &ADDMMOCharacter::ToggleCrouch);
 	PlayerInputComponent->BindAction("BasicAttack", IE_Pressed, this, &ADDMMOCharacter::BasicAttack);
 	PlayerInputComponent->BindAction("Defense", IE_Pressed, this, &ADDMMOCharacter::Defense);
+	PlayerInputComponent->BindAction("DebugFire", IE_Pressed, this, &ADDMMOCharacter::Fire);
 
 	//	Non-Functional skill binding keys
 	PlayerInputComponent->BindAction("Skill0", IE_Pressed, this, &ADDMMOCharacter::SkillZero);
@@ -307,26 +309,36 @@ void ADDMMOCharacter::SetTarget(AActor* newTarget)
 
 void ADDMMOCharacter::Fire()
 {
-	if (ProjectileClass)
+	CurrentSpeed = FVector::DotProduct(GetVelocity(), GetActorRotation().Vector());
+
+	if (CurrentSpeed == 0)
 	{
-		FVector spawnLocation;
-		FRotator spawnRotation;
-
-		SkeletalMesh->GetSocketWorldLocationAndRotation("ProjectileSpawn", spawnLocation, spawnRotation); 
-
-		UWorld* World = GetWorld();
-		if (World)
+		if (!bIsAttacking)
 		{
-			FActorSpawnParameters SpawnParams;
-			SpawnParams.Owner = this;
-			SpawnParams.Instigator = Instigator;
-
-			ABaseProjectile* Projectile = World->SpawnActor<ABaseProjectile>(ProjectileClass, spawnLocation, spawnRotation, SpawnParams);
-			if (Projectile)
+			bIsAttacking = true;
+			if (ProjectileClass)
 			{
-				FVector LaunchDirection = spawnRotation.Vector();
-				Projectile->FireInDirection(LaunchDirection);
+				FVector spawnLocation;
+				FRotator spawnRotation;
+
+				SkeletalMesh->GetSocketWorldLocationAndRotation("ProjectileSpawn", spawnLocation, spawnRotation);
+
+				UWorld* World = GetWorld();
+				if (World)
+				{
+					FActorSpawnParameters SpawnParams;
+					SpawnParams.Owner = this;
+					SpawnParams.Instigator = Instigator;
+
+					ABaseProjectile* Projectile = World->SpawnActor<ABaseProjectile>(ProjectileClass, spawnLocation, spawnRotation, SpawnParams);
+					if (Projectile)
+					{
+						FVector LaunchDirection = spawnRotation.Vector();
+						Projectile->FireInDirection(LaunchDirection);
+					}
+				}
 			}
+			bIsAttacking = false;
 		}
 	}
 }
