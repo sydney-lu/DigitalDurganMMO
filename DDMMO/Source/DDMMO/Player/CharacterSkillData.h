@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
+#include "Components/Image.h"
 #include "SkillDefinitions.h"
 #include "CharacterSkillData.generated.h"
 
@@ -14,22 +15,24 @@ class DDMMO_API UCharacterSkillData : public UDataAsset
 	GENERATED_BODY()
 
 public:
-
+	
 protected:
 
-	UPROPERTY(EditAnywhere, meta = (DisplayName = "Name"))
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (DisplayName = "Name"), Category = UIInfo)
 		FName m_skillName;
-	UPROPERTY(EditAnywhere, meta = (DisplayName = "Tag"))
+	UPROPERTY(EditAnywhere, meta = (DisplayName = "Tag"), Category = UIInfo)
 		ESkillTag m_tag;
+	UPROPERTY(EditAnywhere, meta = (DisplayName = "Image"), Category = UIInfo)
+		UTexture2D* m_image;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (DisplayName = "Description", MultiLine = true), Category = UIInfo)
+		FText m_description;
 
-	UPROPERTY(EditAnywhere, meta = (DisplayName = "Cost", ClampMin = "0.0", UIMin = "0.0"), Category = CastInfo)
-		float m_cost;
 	UPROPERTY(EditAnywhere, meta = (DisplayName = "Cooldown", ClampMin = "0.0", UIMin = "0.0"), Category = CastInfo)
 		float m_cooldown;
 	UPROPERTY(EditAnywhere, meta = (DisplayName = "Cast Time", ClampMin = "0.0", UIMin = "0.0"), Category = CastInfo)
 		float m_castTime;
 	UPROPERTY(EditAnywhere, meta = (DisplayName = "Max Charges", ClampMin = "0.0", UIMin = "0.0"), Category = CastInfo)
-		float m_charges;
+		float m_charges = 1;
 
 	UPROPERTY(EditAnywhere, meta = (DisplayName = "Duration", ClampMin = "0.0", UIMin = "0.0"), Category = SkillStats)
 		float m_duration;
@@ -55,9 +58,20 @@ protected:
 public:
 	FName Name();
 	ESkillTag Tag();
+	FText Description();
 
-	FVector4 CastInfo();		// (Cost, CastTime, Cooldown, Charges)
-	FVector4 SkillStats();		// (CastRange, AbilityRange, TriggerTimer, Duration)
+	UFUNCTION(BlueprintCallable)
+		UTexture2D* GetImage();
+
+	float CastTime();
+	float Cooldown();
+	float Charges();
+	float CastRange();
+
+	float AbilityRange();
+	float TriggerTimer();
+	float Duration();
+
 	float SkillDamage();
 
 	TArray<ECastLocation> CastableLocations();
