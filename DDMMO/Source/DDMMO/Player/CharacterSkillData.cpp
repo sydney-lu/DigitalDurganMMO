@@ -12,14 +12,49 @@ ESkillTag UCharacterSkillData::Tag()
 	return m_tag;
 }
 
-FVector4 UCharacterSkillData::CastInfo()
+FText UCharacterSkillData::Description()
 {
-	return FVector4(m_cost, m_castTime, m_cooldown, m_charges);
+	return m_description;
 }
 
-FVector4 UCharacterSkillData::SkillStats()
+UTexture2D * UCharacterSkillData::GetImage()
 {
-	return FVector4(m_castRange, m_abilityRange, m_triggerTimer, m_duration);
+	return m_image;
+}
+
+float UCharacterSkillData::CastTime()
+{
+	return m_castTime;
+}
+
+float UCharacterSkillData::Cooldown()
+{
+	return m_cooldown;
+}
+
+float UCharacterSkillData::Charges()
+{
+	return m_charges;
+}
+
+float UCharacterSkillData::CastRange()
+{
+	return m_castRange;
+}
+
+float UCharacterSkillData::AbilityRange()
+{
+	return m_abilityRange;
+}
+
+float UCharacterSkillData::TriggerTimer()
+{
+	return m_triggerTimer;
+}
+
+float UCharacterSkillData::Duration()
+{
+	return m_duration;
 }
 
 float UCharacterSkillData::SkillDamage()

@@ -6,9 +6,6 @@
 #include "Player/CharacterClass.h"
 #include "WarriorClass.generated.h"
 
-/**
- * 
- */
 UCLASS()
 class DDMMO_API UWarriorClass : public UCharacterClass
 {
@@ -41,8 +38,14 @@ private:
 		void Retaliation(UCharacterSkillData* skillData);
 
 	UFUNCTION()
-		void ShieldBash(UCharacterSkillData* skillData);
+		void Bash(UCharacterSkillData* skillData);
 
 	UFUNCTION()
 		void Downfall(UCharacterSkillData* skillData);
+
+	UFUNCTION()
+		void SkyStrike(UCharacterSkillData* skillData);
+
+	UFUNCTION()
+		void Grab(UCharacterSkillData* skillData);
 };
