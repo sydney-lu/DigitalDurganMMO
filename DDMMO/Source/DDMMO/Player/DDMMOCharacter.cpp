@@ -262,7 +262,7 @@ void ADDMMOCharacter::Interact()
 {
 	if (Controller != NULL)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Restored Health, Mana, and Stamina."));
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Restored Health, Mana, and Stamina."));
 		Health_CUR = Health_MAX;
 		Mana_CUR = Mana_MAX;
 		Stamina_CUR = Stamina_MAX;
@@ -359,7 +359,7 @@ void ADDMMOCharacter::Defense()
 {
 	if (Controller != NULL)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("No Defense functionality implemented."));
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("No Defense functionality implemented."));
 	}
 }
 
@@ -369,7 +369,7 @@ void ADDMMOCharacter::SkillOne()
 	{
 		if (!SkillLogicDelegates[0].ExecuteIfBound())
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'RMB'."));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'RMB', open the skill menu by pressing 'K'"));
 		}
 	}
 }
@@ -379,7 +379,7 @@ void ADDMMOCharacter::SkillTwo()
 	if (Controller != NULL)
 	{
 		if (!SkillLogicDelegates[1].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'Q'."));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'Q', open the skill menu by pressing 'K'."));
 	}
 }
 
@@ -388,7 +388,7 @@ void ADDMMOCharacter::SkillThree()
 	if (Controller != NULL)
 	{
 		if (!SkillLogicDelegates[2].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'Z'."));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'Z', open the skill menu by pressing 'K'."));
 	}
 }
 
@@ -397,7 +397,7 @@ void ADDMMOCharacter::SkillFour()
 	if (Controller != NULL)
 	{
 		if (!SkillLogicDelegates[3].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'X'."));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'X', open the skill menu by pressing 'K'."));
 	}
 }
 
@@ -406,7 +406,7 @@ void ADDMMOCharacter::SkillFive()
 	if (Controller != NULL)
 	{
 		if (!SkillLogicDelegates[4].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'C'."));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'C', open the skill menu by pressing 'K'."));
 	}
 }
 
@@ -415,7 +415,7 @@ void ADDMMOCharacter::SkillSix()
 	if (Controller != NULL)
 	{
 		if (!SkillLogicDelegates[5].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'V'."));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'V', open the skill menu by pressing 'K'."));
 	}
 }
 
@@ -424,7 +424,7 @@ void ADDMMOCharacter::SkillSeven()
 	if (Controller != NULL)
 	{
 		if (!SkillLogicDelegates[6].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'E'."));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to 'E', open the skill menu by pressing 'K'."));
 	}
 }
 
@@ -433,7 +433,7 @@ void ADDMMOCharacter::SkillEight()
 	if (Controller != NULL)
 	{
 		if (!SkillLogicDelegates[7].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '1'."));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '1', open the skill menu by pressing 'K'."));
 	}
 }
 
@@ -442,7 +442,7 @@ void ADDMMOCharacter::SkillNine()
 	if (Controller != NULL)
 	{
 		if (!SkillLogicDelegates[8].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '2'."));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '2', open the skill menu by pressing 'K'."));
 	}
 }
 
@@ -451,7 +451,7 @@ void ADDMMOCharacter::SkillZero()
 	if (Controller != NULL)
 	{
 		if (!SkillLogicDelegates[9].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '3'."));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '3', open the skill menu by pressing 'K'."));
 	}
 }
 
@@ -460,7 +460,7 @@ void ADDMMOCharacter::SkillTen()
 	if (Controller != NULL)
 	{
 		if (!SkillLogicDelegates[10].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '4'."));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '4', open the skill menu by pressing 'K'."));
 	}
 }
 
@@ -469,7 +469,7 @@ void ADDMMOCharacter::SkillEleven()
 	if (Controller != NULL)
 	{
 		if (!SkillLogicDelegates[11].ExecuteIfBound())
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '5'."));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("You don't have a skill bound to '5', open the skill menu by pressing 'K'."));
 	}
 }
 
