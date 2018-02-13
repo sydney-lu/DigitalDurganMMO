@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
+#include "HUD_Main.h"
 #include "PlayerInfoWidget.generated.h"
 
 
@@ -12,11 +13,19 @@ class DDMMO_API UPlayerInfoWidget : public UUserWidget
 {
 	GENERATED_BODY()
 
+protected:
+
+	FVector2D DragOffset;
+	bool IsVisible;
+
 public:
+	UHUD_Main *MainHud;
 
-	UFUNCTION(BlueprintNativeEvent)
-		void OnInitialize();
+protected:
+	virtual FReply NativeOnMouseButtonDown(const FGeometry& InGeometry, const FPointerEvent& InMouseEvent) override;
+	virtual void NativeOnDragDetected(const FGeometry& InGeometry, const FPointerEvent& InMouseEvent, UDragDropOperation *& OutOperation) override;
 
-	UFUNCTION(BlueprintNativeEvent)
+public:
+	UFUNCTION(BlueprintCallable)
 		void ToggleVisible();
 };
