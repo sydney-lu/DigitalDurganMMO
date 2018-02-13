@@ -18,7 +18,8 @@ void AAIBaseAgent::BeginPlay()
 
 void AAIBaseAgent::Tick(float DeltaTime)
 {
-
+	if (target && (bIsReturning || bIsPatroling) )
+		target = nullptr;
 }
 
 void AAIBaseAgent::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)

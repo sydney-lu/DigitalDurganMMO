@@ -2,7 +2,7 @@
 
 #include "EnemyCharacter.h"
 
-#include "Player/CharacterClass.h"
+#include "Player/DDMMOCharacter.h"
 #include "AI/Controllers/AIEnemyController.h"
 
 #include "Perception/PawnSensingComponent.h"
@@ -49,29 +49,41 @@ void AEnemyCharacter::BeginPlay()
 void AEnemyCharacter::OnSeePlayer(APawn * Pawn)
 {
 	if (!IsAlive())
-	{
 		return;
-	}
+
+	if (bIsReturning)
+		return;
 
 	AAIEnemyController* controller = Cast<AAIEnemyController>(GetController());
-	UCharacterClass* SensedPawn = Cast<UCharacterClass>(Pawn);
+	ADDMMOCharacter* SensedPawn = Cast<ADDMMOCharacter>(Pawn);
 	if (controller && SensedPawn)
 	{
-		controller->SetTarget(SensedPawn);
+		if (target == nullptr)
+		{
+			bIsAttacking = true;
+			target = SensedPawn;
+			controller->SetTarget(SensedPawn);
+		}
 	}
 }
 
 void AEnemyCharacter::OnHearNoise(APawn * PawnInstigator, const FVector & Location, float Volume)
 {
 	if (!IsAlive())
-	{
 		return;
-	}
+
+	if (bIsReturning)
+		return;
 
 	AAIEnemyController* controller = Cast<AAIEnemyController>(GetController());
-	UCharacterClass* SensedPawn = Cast<UCharacterClass>(PawnInstigator);
+	ADDMMOCharacter* SensedPawn = Cast<ADDMMOCharacter>(PawnInstigator);
 	if (controller && SensedPawn)
 	{
-		controller->SetTarget(SensedPawn);
+		if (target == nullptr)
+		{
+			bIsAttacking = true;
+			target = SensedPawn;
+			controller->SetTarget(SensedPawn);
+		}
 	}
 }

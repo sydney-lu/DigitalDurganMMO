@@ -11,11 +11,10 @@ class DDMMO_API AAIBaseAgent : public ACharacter
 {
 	GENERATED_BODY()
 
-private:
-	UPROPERTY(EditDefaultsOnly)
-	class ADDMMOCharacter* target;
-
 protected:
+	UPROPERTY(EditDefaultsOnly)
+		class ADDMMOCharacter* target;
+
 	UPROPERTY(EditDefaultsOnly, Category = Enemy)
 	float maxHealth;
 	float currentHealth;

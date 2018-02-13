@@ -45,7 +45,7 @@ class DDMMO_API AAIEnemyController : public AAIController
 
 		void SetBlackboardOwner(AActor* NewOwner);
 
-		void SetTarget(class UCharacterClass* NewTarget);
+		void SetTarget(class ADDMMOCharacter* NewTarget);
 
 		void SetWaypoint(FVector NewWaypoint);
 

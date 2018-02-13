@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\DDMMO.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{05670C4E-AFE8-47DE-AF89-DA1240ED006B}</UniqueIdentifier>
+			<UniqueIdentifier>{5CF59DFC-6B65-4115-B739-5220555A830B}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\DDMMO.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{05CA8766-0ECE-48B8-B12D-CD7F7F3F019F}</UniqueIdentifier>
+			<UniqueIdentifier>{41D57F98-DBAF-447F-A2EE-74C9885D3F50}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\DDMMO">
-			<UniqueIdentifier>{5D1F78F0-3353-4846-9760-7F8B26CD702F}</UniqueIdentifier>
+			<UniqueIdentifier>{113770FF-A6A4-4A53-B904-50F8D01F2CF5}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\DDMMO\DDMMO.Build.cs">
 			<Filter>Source\DDMMO</Filter>
@@ -55,7 +55,7 @@
 			<Filter>Source\DDMMO</Filter>
 		</ClInclude >
 		<Filter Include="Source\DDMMO\AI">
-			<UniqueIdentifier>{7E5C95F0-0AAA-4890-80E9-3051CD4D5F6D}</UniqueIdentifier>
+			<UniqueIdentifier>{3F4402C4-FAE0-455C-8F71-442481BA8D84}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\DDMMO\AI\AIBaseAgent.cpp">
 			<Filter>Source\DDMMO\AI</Filter>
@@ -64,7 +64,7 @@
 			<Filter>Source\DDMMO\AI</Filter>
 		</ClInclude >
 		<Filter Include="Source\DDMMO\AI\Agents">
-			<UniqueIdentifier>{E6A017F6-6A4E-4888-874A-C47F68980581}</UniqueIdentifier>
+			<UniqueIdentifier>{BB1B5B22-488F-4D3E-9D79-4ACEDC8E05C1}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\DDMMO\AI\Agents\CompanionCharacter.cpp">
 			<Filter>Source\DDMMO\AI\Agents</Filter>
@@ -79,7 +79,7 @@
 			<Filter>Source\DDMMO\AI\Agents</Filter>
 		</ClInclude >
 		<Filter Include="Source\DDMMO\AI\Controllers">
-			<UniqueIdentifier>{E1863BC5-E16D-4B8D-BFA7-5894467F5552}</UniqueIdentifier>
+			<UniqueIdentifier>{9A559699-7530-41AF-8024-34518A75B9D8}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\DDMMO\AI\Controllers\AICompanionController.cpp">
 			<Filter>Source\DDMMO\AI\Controllers</Filter>
@@ -94,7 +94,7 @@
 			<Filter>Source\DDMMO\AI\Controllers</Filter>
 		</ClInclude >
 		<Filter Include="Source\DDMMO\Player">
-			<UniqueIdentifier>{73654935-02C4-48AD-86FB-C5E459AEE920}</UniqueIdentifier>
+			<UniqueIdentifier>{6AAC20A8-B22F-4436-8FCA-F301AE6446E7}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\DDMMO\Player\CharacterClass.cpp">
 			<Filter>Source\DDMMO\Player</Filter>
@@ -142,7 +142,7 @@
 			<Filter>Source\DDMMO\Player</Filter>
 		</ClInclude >
 		<Filter Include="Source\DDMMO\Projectiles">
-			<UniqueIdentifier>{5CABF182-0CE2-4ED0-BBD9-39CF270AD2BE}</UniqueIdentifier>
+			<UniqueIdentifier>{27CD69E6-DE29-447A-832A-B089D111BB3C}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\DDMMO\Projectiles\BaseProjectile.cpp">
 			<Filter>Source\DDMMO\Projectiles</Filter>
