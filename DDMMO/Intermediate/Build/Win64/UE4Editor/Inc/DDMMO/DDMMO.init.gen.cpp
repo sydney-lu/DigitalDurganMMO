@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeDDMMO_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/DDMMO",
 				PKG_CompiledIn | 0x00000000,
-				0x445D224E,
-				0x82711ADB,
+				0xC26729A1,
+				0x19FF320A,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};

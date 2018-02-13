@@ -19,17 +19,22 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 	DDMMO_API UClass* Z_Construct_UClass_ADDMMOCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	DDMMO_API UFunction* Z_Construct_UFunction_ADDMMOCharacter_FindTarget();
+	DDMMO_API UFunction* Z_Construct_UFunction_ADDMMOCharacter_OnMeleeHit();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	DDMMO_API UFunction* Z_Construct_UFunction_ADDMMOCharacter_SetSkillDelegate();
 	DDMMO_API UClass* Z_Construct_UClass_UCharacterSkillData_NoRegister();
 	DDMMO_API UFunction* Z_Construct_UFunction_ADDMMOCharacter_SetSkillSelection();
 	DDMMO_API UClass* Z_Construct_UClass_UPlayerInfoWidget_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	DDMMO_API UClass* Z_Construct_UClass_ABaseProjectile_NoRegister();
-	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FTimerHandle();
-	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	DDMMO_API UClass* Z_Construct_UClass_UCharacterClass_NoRegister();
+	DDMMO_API UClass* Z_Construct_UClass_UHUD_Main_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 // End Cross Module References
@@ -106,6 +111,7 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 		UClass* Class = ADDMMOCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "FindTarget", (Native)&ADDMMOCharacter::execFindTarget },
+			{ "OnMeleeHit", (Native)&ADDMMOCharacter::execOnMeleeHit },
 			{ "SetSkillDelegate", (Native)&ADDMMOCharacter::execSetSkillDelegate },
 			{ "SetSkillSelection", (Native)&ADDMMOCharacter::execSetSkillSelection },
 		};
@@ -123,6 +129,57 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 			};
 #endif
 			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_ADDMMOCharacter, "FindTarget", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00080401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ADDMMOCharacter_OnMeleeHit()
+	{
+		struct DDMMOCharacter_eventOnMeleeHit_Parms
+		{
+			UPrimitiveComponent* HitComp;
+			AActor* OtherActor;
+			UPrimitiveComponent* OtherComp;
+			FVector NormalImpulse;
+			FHitResult Hit;
+		};
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Hit_MetaData[] = {
+				{ "NativeConst", "" },
+			};
+#endif
+			static const UE4CodeGen_Private::FStructPropertyParams NewProp_Hit = { UE4CodeGen_Private::EPropertyClass::Struct, "Hit", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010008008000182, 1, nullptr, STRUCT_OFFSET(DDMMOCharacter_eventOnMeleeHit_Parms, Hit), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(NewProp_Hit_MetaData, ARRAY_COUNT(NewProp_Hit_MetaData)) };
+			static const UE4CodeGen_Private::FStructPropertyParams NewProp_NormalImpulse = { UE4CodeGen_Private::EPropertyClass::Struct, "NormalImpulse", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(DDMMOCharacter_eventOnMeleeHit_Parms, NormalImpulse), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OtherComp_MetaData[] = {
+				{ "EditInline", "true" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherComp = { UE4CodeGen_Private::EPropertyClass::Object, "OtherComp", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080080, 1, nullptr, STRUCT_OFFSET(DDMMOCharacter_eventOnMeleeHit_Parms, OtherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(NewProp_OtherComp_MetaData, ARRAY_COUNT(NewProp_OtherComp_MetaData)) };
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherActor = { UE4CodeGen_Private::EPropertyClass::Object, "OtherActor", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(DDMMOCharacter_eventOnMeleeHit_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HitComp_MetaData[] = {
+				{ "EditInline", "true" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HitComp = { UE4CodeGen_Private::EPropertyClass::Object, "HitComp", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080080, 1, nullptr, STRUCT_OFFSET(DDMMOCharacter_eventOnMeleeHit_Parms, HitComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(NewProp_HitComp_MetaData, ARRAY_COUNT(NewProp_HitComp_MetaData)) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_Hit,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_NormalImpulse,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_OtherComp,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_OtherActor,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_HitComp,
+			};
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
+				{ "ToolTip", "void OverlapBegins(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult);" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_ADDMMOCharacter, "OnMeleeHit", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04C80401, sizeof(DDMMOCharacter_eventOnMeleeHit_Parms), PropPointers, ARRAY_COUNT(PropPointers), 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
 		}
 		return ReturnFunction;
@@ -197,6 +254,7 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 			};
 			static const FClassFunctionLinkInfo FuncInfo[] = {
 				{ &Z_Construct_UFunction_ADDMMOCharacter_FindTarget, "FindTarget" }, // 1225887259
+				{ &Z_Construct_UFunction_ADDMMOCharacter_OnMeleeHit, "OnMeleeHit" }, // 4274917603
 				{ &Z_Construct_UFunction_ADDMMOCharacter_SetSkillDelegate, "SetSkillDelegate" }, // 2206333035
 				{ &Z_Construct_UFunction_ADDMMOCharacter_SetSkillSelection, "SetSkillSelection" }, // 898956610
 			};
@@ -208,13 +266,21 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 			};
 #endif
 #if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SkeletalMesh_MetaData[] = {
-				{ "Category", "DDMMOCharacter" },
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MeleeCollider_MetaData[] = {
+				{ "Category", "Weapon" },
 				{ "EditInline", "true" },
 				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
 			};
 #endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SkeletalMesh = { UE4CodeGen_Private::EPropertyClass::Object, "SkeletalMesh", RF_Public|RF_Transient|RF_MarkAsNative, 0x0020080000080009, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, SkeletalMesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(NewProp_SkeletalMesh_MetaData, ARRAY_COUNT(NewProp_SkeletalMesh_MetaData)) };
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MeleeCollider = { UE4CodeGen_Private::EPropertyClass::Object, "MeleeCollider", RF_Public|RF_Transient|RF_MarkAsNative, 0x00200800000a000d, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, MeleeCollider), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(NewProp_MeleeCollider_MetaData, ARRAY_COUNT(NewProp_MeleeCollider_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SkeletalMesh_MetaData[] = {
+				{ "Category", "Character" },
+				{ "EditInline", "true" },
+				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SkeletalMesh = { UE4CodeGen_Private::EPropertyClass::Object, "SkeletalMesh", RF_Public|RF_Transient|RF_MarkAsNative, 0x002008000008000d, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, SkeletalMesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(NewProp_SkeletalMesh_MetaData, ARRAY_COUNT(NewProp_SkeletalMesh_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileClass_MetaData[] = {
 				{ "Category", "Projectile" },
@@ -229,6 +295,14 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 			};
 #endif
 			static const UE4CodeGen_Private::FStructPropertyParams NewProp_MuzzleOffset = { UE4CodeGen_Private::EPropertyClass::Struct, "MuzzleOffset", RF_Public|RF_Transient|RF_MarkAsNative, 0x0020080000000005, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, MuzzleOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(NewProp_MuzzleOffset_MetaData, ARRAY_COUNT(NewProp_MuzzleOffset_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bIsAttacking_MetaData[] = {
+				{ "Category", "DDMMOCharacter" },
+				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
+			};
+#endif
+			auto NewProp_bIsAttacking_SetBit = [](void* Obj){ ((ADDMMOCharacter*)Obj)->bIsAttacking = 1; };
+			static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bIsAttacking = { UE4CodeGen_Private::EPropertyClass::Bool, "bIsAttacking", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000005, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(ADDMMOCharacter), &UE4CodeGen_Private::TBoolSetBitWrapper<decltype(NewProp_bIsAttacking_SetBit)>::SetBit, METADATA_PARAMS(NewProp_bIsAttacking_MetaData, ARRAY_COUNT(NewProp_bIsAttacking_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TargetingRate_MetaData[] = {
 				{ "Category", "Targeting" },
@@ -376,10 +450,17 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_skillSelectionWidget_MetaData[] = {
 				{ "EditInline", "true" },
 				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
-				{ "ToolTip", "Class UI References" },
 			};
 #endif
 			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_skillSelectionWidget = { UE4CodeGen_Private::EPropertyClass::Object, "skillSelectionWidget", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080008, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, skillSelectionWidget), Z_Construct_UClass_UPlayerInfoWidget_NoRegister, METADATA_PARAMS(NewProp_skillSelectionWidget_MetaData, ARRAY_COUNT(NewProp_skillSelectionWidget_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MainHud_MetaData[] = {
+				{ "EditInline", "true" },
+				{ "ModuleRelativePath", "Player/DDMMOCharacter.h" },
+				{ "ToolTip", "Class UI References" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MainHud = { UE4CodeGen_Private::EPropertyClass::Object, "MainHud", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080008, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, MainHud), Z_Construct_UClass_UHUD_Main_NoRegister, METADATA_PARAMS(NewProp_MainHud_MetaData, ARRAY_COUNT(NewProp_MainHud_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FollowCamera_MetaData[] = {
 				{ "AllowPrivateAccess", "true" },
@@ -399,9 +480,11 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 #endif
 			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CameraBoom = { UE4CodeGen_Private::EPropertyClass::Object, "CameraBoom", RF_Public|RF_Transient|RF_MarkAsNative, 0x00400000000a001d, 1, nullptr, STRUCT_OFFSET(ADDMMOCharacter, CameraBoom), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(NewProp_CameraBoom_MetaData, ARRAY_COUNT(NewProp_CameraBoom_MetaData)) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MeleeCollider,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_SkeletalMesh,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ProjectileClass,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MuzzleOffset,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_bIsAttacking,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_TargetingRate,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_TargetingRange,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_TargetingHandle,
@@ -424,6 +507,7 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_characterClass,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_SelectedWidged,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_skillSelectionWidget,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MainHud,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_FollowCamera,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_CameraBoom,
 			};
@@ -445,7 +529,7 @@ void EmptyLinkFunctionForGeneratedCodeDDMMOCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADDMMOCharacter, 2808289040);
+	IMPLEMENT_CLASS(ADDMMOCharacter, 3276853059);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ADDMMOCharacter(Z_Construct_UClass_ADDMMOCharacter, &ADDMMOCharacter::StaticClass, TEXT("/Script/DDMMO"), TEXT("ADDMMOCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ADDMMOCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,16 +1,18 @@
 // Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
 
 #include "DDMMOCharacter.h"
+#include <EngineGlobals.h>
+#include "Engine.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
+#include "Components/SphereComponent.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "WarriorClass.h" // Only Here For Testing Classes, Will not be needed with a proper Class Selection Screen.
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
-#include <EngineGlobals.h>
 #include <Runtime/Engine/Classes/Engine/Engine.h>
 #include "Projectiles/BaseProjectile.h"
 #include "UObject/ConstructorHelpers.h"
@@ -38,8 +40,7 @@ ADDMMOCharacter::ADDMMOCharacter()
 	BasicAttackSpeed = 1.f;
 	BasicAttackRange = 20.f;
 
-	//MeleeCollider = CreateDefaultSubobject<USphereComponent>("Melee Sphere Collider");
-	//MeleeCollider->SetupAttachment(RootComponent);
+	bIsAttacking = false;
 
 	// Don't rotate when the controller rotates. Let that just affect the camera.
 	bUseControllerRotationPitch = true;
@@ -49,6 +50,9 @@ ADDMMOCharacter::ADDMMOCharacter()
 	CurrentState = PlayerCharacterState(PlayerCharacterState::IDLE);
 
 	SkeletalMesh = GetMesh();
+
+	MeleeCollider = CreateDefaultSubobject<USphereComponent>("Melee Sphere Collider");
+	MeleeCollider->OnComponentHit.AddDynamic(this, &ADDMMOCharacter::OnMeleeHit);
 
 	// Configure character movement
 	GetCharacterMovement()->bOrientRotationToMovement = true; // Character moves in the direction of input...	
@@ -90,6 +94,8 @@ void ADDMMOCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	GetWorld()->GetTimerManager().SetTimer(TargetingHandle, this, &ADDMMOCharacter::FindTarget, TargetingRate, true);
+	MeleeCollider->SetNotifyRigidBodyCollision(true);
+	MeleeCollider->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, FName("WeaponSocket"));
 }
 
 void ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
@@ -141,6 +147,16 @@ void ADDMMOCharacter::Destroyed()
 {
 	Super::Destroyed();
 	UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()), false);
+}
+
+void ADDMMOCharacter::OnMeleeHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
+{
+	UE_LOG(LogTemp, Warning, TEXT("You punched stuff"));
+
+	if ((OtherActor != nullptr) && (OtherActor != this))
+	{
+		UE_LOG(LogTemp, Warning, TEXT("You punched %s, %s"), *OtherActor->GetName(), *OtherComp->GetName());
+	}
 }
 
 void ADDMMOCharacter::TurnAtRate(float Rate)
@@ -203,10 +219,13 @@ void ADDMMOCharacter::MoveForward(float Value)
 {
 	if ((Controller != NULL) && (Value != 0.0f))
 	{
+		if (!bIsAttacking)
+		{
 		const FRotator Rotation = Controller->GetControlRotation();
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 		AddMovementInput(Direction, Value);
+		}
 	}
 }
 
@@ -214,10 +233,13 @@ void ADDMMOCharacter::MoveRight(float Value)
 {
 	if ((Controller != NULL) && (Value != 0.0f))
 	{
-		const FRotator Rotation = Controller->GetControlRotation();
-		const FRotator YawRotation(0, Rotation.Yaw, 0);
-		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
-		AddMovementInput(Direction, Value);
+		if (!bIsAttacking)
+		{
+			const FRotator Rotation = Controller->GetControlRotation();
+			const FRotator YawRotation(0, Rotation.Yaw, 0);
+			const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
+			AddMovementInput(Direction, Value);
+		}
 	}
 }
 
@@ -316,7 +338,7 @@ void ADDMMOCharacter::BasicAttack()
 		//if (Mana_CUR > 0)
 		//{
 			//Mana_CUR--;
-			Fire();
+			//Fire();
 		//}
 	}
 }

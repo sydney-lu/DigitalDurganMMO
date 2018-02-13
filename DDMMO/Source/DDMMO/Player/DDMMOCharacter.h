@@ -121,6 +121,9 @@ public:
 	UPROPERTY(EditAnywhere, Category = Targeting)
 	float TargetingRate = 0.2f;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool bIsAttacking;
+
 protected:
 	virtual void BeginPlay() override;
 
@@ -140,9 +143,9 @@ protected:	// Targeting
 	void SetTarget(AActor* newTarget);
 
 protected:	// UI Functions
-
 	UFUNCTION(BlueprintCallable)
 	void SetSkillSelection(UPlayerInfoWidget* widget);
+
 	UFUNCTION(BlueprintCallable)
 	void SetSkillDelegate(int index, UCharacterSkillData* skillData);
 
@@ -179,8 +182,11 @@ protected:	// Skill Functions
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
 	TSubclassOf<class ABaseProjectile> ProjectileClass;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Character)
 	class USkeletalMeshComponent* SkeletalMesh;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Weapon)
+	class USphereComponent* MeleeCollider;
 
 protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
@@ -190,5 +196,10 @@ protected:
 public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
-};
 
+protected:
+	UFUNCTION(BlueprintCallable)
+	//void OverlapBegins(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult);
+
+	void OnMeleeHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
+};

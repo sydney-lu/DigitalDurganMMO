@@ -422,6 +422,8 @@
 		<ClInclude Include="..\..\Source\DDMMO\DDMMOGameMode.h" />
 		<ClCompile Include="..\..\Source\DDMMO\Targetable.cpp" />
 		<ClInclude Include="..\..\Source\DDMMO\Targetable.h" />
+		<ClCompile Include="..\..\Source\DDMMO\WidgetDrag.cpp" />
+		<ClInclude Include="..\..\Source\DDMMO\WidgetDrag.h" />
 		<ClCompile Include="..\..\Source\DDMMO\AI\AIBaseAgent.cpp" />
 		<ClInclude Include="..\..\Source\DDMMO\AI\AIBaseAgent.h" />
 		<ClCompile Include="..\..\Source\DDMMO\AI\Agents\CompanionCharacter.cpp" />
@@ -442,6 +444,8 @@
 		<ClInclude Include="..\..\Source\DDMMO\Player\CharacterSkillData.h" />
 		<ClCompile Include="..\..\Source\DDMMO\Player\DDMMOCharacter.cpp" />
 		<ClInclude Include="..\..\Source\DDMMO\Player\DDMMOCharacter.h" />
+		<ClCompile Include="..\..\Source\DDMMO\Player\HUD_Main.cpp" />
+		<ClInclude Include="..\..\Source\DDMMO\Player\HUD_Main.h" />
 		<ClCompile Include="..\..\Source\DDMMO\Player\PlayerInfoWidget.cpp" />
 		<ClInclude Include="..\..\Source\DDMMO\Player\PlayerInfoWidget.h" />
 		<ClInclude Include="..\..\Source\DDMMO\Player\SkillDefinitions.h" />
