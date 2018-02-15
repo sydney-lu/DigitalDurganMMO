@@ -44,7 +44,7 @@ class DDMMO_API UCharacterClass : public UObject
 	};
 
 public:
-
+	UPROPERTY(BlueprintReadOnly)
 	UCharacterClassData* m_classData;
 	TArray<CastInfo> skillUsability;
 

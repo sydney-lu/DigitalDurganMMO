@@ -15,6 +15,9 @@ class DDMMO_API UHUD_Main : public UUserWidget
 
 	TArray<class UUserWidget*> InfoWidgets;
 
+protected:
+	FVector2D RestrictToBox(FVector2D position, FVector2D min, FVector2D max);
+
 public: 
 	void UpdateFocus();
 
