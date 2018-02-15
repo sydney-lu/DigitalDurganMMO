@@ -98,7 +98,7 @@ void ADDMMOCharacter::BeginPlay()
 	MainHud = CreateWidget<UHUD_Main>(GetWorld(), UHUD_Main::StaticClass());
 	if (MainHud)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Created Widget: MainHud."));
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Created Widget: MainHud."));
 		MainHud->SetVisibility(ESlateVisibility::Visible);
 		MainHud->AddToViewport(-10);
 
@@ -106,7 +106,7 @@ void ADDMMOCharacter::BeginPlay()
 		skillSelectionWidget = CreateWidget<UPlayerInfoWidget>(GetWorld(), SkillSelectionTemplate.Get());
 		if (skillSelectionWidget)
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Created Widget: SkillSelectionWidget."));
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Created Widget: SkillSelectionWidget."));
 			skillSelectionWidget->MainHud = MainHud;
 			skillSelectionWidget->InitilizeInfo(this);
 			skillSelectionWidget->AddToViewport();
@@ -119,7 +119,7 @@ void ADDMMOCharacter::BeginPlay()
 	PlayerAttributesWidget = CreateWidget<UUserWidget>(GetWorld(), AttributesTemplate.Get());
 	if (PlayerAttributesWidget)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Created Widget: PlayerAttributes."));
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Created Widget: PlayerAttributes."));
 		PlayerAttributesWidget->AddToViewport();
 	}
 }
@@ -200,7 +200,7 @@ void ADDMMOCharacter::ZoomIn()
 {
 	if (Controller != NULL)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Camera Zoom = %f - %f"), CameraZoom_v, Zoom_Power);
+		//UE_LOG(LogTemp, Warning, TEXT("Camera Zoom = %f - %f"), CameraZoom_v, Zoom_Power);
 		CameraZoom_v = CameraZoom_v - Zoom_Power;
 
 		if (CameraZoom_v <= ZoomIn_MAX)
@@ -212,7 +212,7 @@ void ADDMMOCharacter::ZoomIn()
 
 		else
 		{
-			UE_LOG(LogTemp, Display, TEXT("CameraBoom Arm Length: %f"), CameraBoom->TargetArmLength);
+			//UE_LOG(LogTemp, Display, TEXT("CameraBoom Arm Length: %f"), CameraBoom->TargetArmLength);
 			UE_LOG(LogTemp, Warning, TEXT("Zooming In"));
 			CameraBoom->TargetArmLength = CameraZoom_v;
 		}
@@ -223,7 +223,7 @@ void ADDMMOCharacter::ZoomOut()
 {
 	if (Controller != NULL)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Camera Zoom = %f - %f"), CameraZoom_v, Zoom_Power);
+		//UE_LOG(LogTemp, Warning, TEXT("Camera Zoom = %f - %f"), CameraZoom_v, Zoom_Power);
 		CameraZoom_v = CameraZoom_v + Zoom_Power;
 
 		if (CameraZoom_v >= ZoomOut_MAX)
@@ -235,7 +235,7 @@ void ADDMMOCharacter::ZoomOut()
 
 		else
 		{
-			UE_LOG(LogTemp, Display, TEXT("CameraBoom Arm Length: %f"), CameraBoom->TargetArmLength);
+			//UE_LOG(LogTemp, Display, TEXT("CameraBoom Arm Length: %f"), CameraBoom->TargetArmLength);
 			UE_LOG(LogTemp, Warning, TEXT("Zooming Out"));
 			CameraBoom->TargetArmLength = CameraZoom_v;
 		}

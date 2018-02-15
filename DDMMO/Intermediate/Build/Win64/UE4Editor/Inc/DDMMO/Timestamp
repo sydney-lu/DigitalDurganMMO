@@ -8,11 +8,12 @@ C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Source\DDMMO\Player\Characte
 C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Source\DDMMO\Player\CharacterSkill.h
 C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Source\DDMMO\Player\CharacterSkillData.h
 C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Source\DDMMO\Player\DDMMOCharacter.h
-C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Source\DDMMO\Player\HUD_Main.h
-C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Source\DDMMO\Player\PlayerInfoWidget.h
 C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Source\DDMMO\Player\SkillDefinitions.h
 C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Source\DDMMO\Player\WarriorClass.h
 C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Source\DDMMO\Projectiles\BaseProjectile.h
+C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Source\DDMMO\Widgets\DraggableWidget.h
+C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Source\DDMMO\Widgets\HUD_Main.h
+C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Source\DDMMO\Widgets\PlayerInfoWidget.h
 C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Source\DDMMO\DDMMOGameMode.h
 C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Source\DDMMO\Targetable.h
 C:\Users\Lu\Documents\GitHub\DigitalDurganMMO\DDMMO\Source\DDMMO\WidgetDrag.h
