@@ -6,10 +6,10 @@
 #include "GameFramework/Character.h"
 #include "CharacterClass.h"
 #include "CharacterClassData.h"
-#include "PlayerInfoWidget.h"
 #include "TimerManager.h"
 #include "DDMMO/Targetable.h"
-#include "HUD_Main.h"
+#include "DDMMO/Widgets/PlayerInfoWidget.h"
+#include "DDMMO/Widgets/HUD_Main.h"
 #include "DDMMOCharacter.generated.h"
 
 //  Player can only be in one state at a time
@@ -50,14 +50,26 @@ public:	// Class UI References
 	UPROPERTY()
 		UHUD_Main* MainHud;
 
-	UPROPERTY()
+	UPROPERTY(EditAnywhere, Category = UI)
+		TSubclassOf<UUserWidget> AttributesTemplate;
+
+	UPROPERTY(EditAnywhere, Category = UI)
+		TSubclassOf<UPlayerInfoWidget> SkillSelectionTemplate;
+
+	UPROPERTY(BlueprintReadOnly)
+		UUserWidget* PlayerAttributesWidget;
+
+	UPROPERTY(BlueprintReadOnly)
 		UPlayerInfoWidget* skillSelectionWidget;
 
 	UPROPERTY(BlueprintReadWrite)
 		UPlayerInfoWidget* SelectedWidged;
 
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(VisibleAnywhere,BlueprintReadOnly)
 		UCharacterClass* characterClass;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Temporary)	// Temp Variable for testing
+		UCharacterClassData* Temp_ClassData;
 
 public:
 	ADDMMOCharacter();

@@ -16,7 +16,6 @@
 #include <Runtime/Engine/Classes/Engine/Engine.h>
 #include "Projectiles/BaseProjectile.h"
 #include "UObject/ConstructorHelpers.h"
-#include "Player/PlayerInfoWidget.h"
 #include "Kismet/GameplayStatics.h"
 
 ADDMMOCharacter::ADDMMOCharacter()
@@ -76,14 +75,6 @@ ADDMMOCharacter::ADDMMOCharacter()
 	// Skill Delegates
 	SkillLogicDelegates.SetNum(12);
 
-	// UI
-	MainHud = CreateWidget<UHUD_Main>(GetWorld());
-	if (MainHud)
-	{
-		MainHud->AddToViewport();
-		MainHud->SetVisibility(ESlateVisibility::Visible);
-	}
-
 	ConstructorHelpers::FClassFinder<ABaseProjectile>ProjectileAsset(TEXT("Blueprint'/Game/Projectiles/BaseProjectile_BP.BaseProjectile_BP_C'"));
 	if (ProjectileAsset.Class)
 	{
@@ -94,9 +85,43 @@ ADDMMOCharacter::ADDMMOCharacter()
 void ADDMMOCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
 	GetWorld()->GetTimerManager().SetTimer(TargetingHandle, this, &ADDMMOCharacter::FindTarget, TargetingRate, true);
 	MeleeCollider->SetNotifyRigidBodyCollision(true);
 	MeleeCollider->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, FName("WeaponSocket"));
+	
+	// Temp Hard Coded Class Initialization;
+	characterClass = NewObject<UWarriorClass>(); 
+	characterClass->InitClass(Temp_ClassData);
+
+	// UI
+	MainHud = CreateWidget<UHUD_Main>(GetWorld(), UHUD_Main::StaticClass());
+	if (MainHud)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Created Widget: MainHud."));
+		MainHud->SetVisibility(ESlateVisibility::Visible);
+		MainHud->AddToViewport(-10);
+
+		// This will have to be moved if player does not start with a Character Class (currently hardcoded);
+		skillSelectionWidget = CreateWidget<UPlayerInfoWidget>(GetWorld(), SkillSelectionTemplate.Get());
+		if (skillSelectionWidget)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Created Widget: SkillSelectionWidget."));
+			skillSelectionWidget->MainHud = MainHud;
+			skillSelectionWidget->InitilizeInfo(this);
+			skillSelectionWidget->AddToViewport();
+		}
+		// Repeat the Above Process for all PlayerInfoWidgets,
+		// All PlayerInfoWidgets are Dragable and will be Constrained to the Viewport.
+		// Note: the Construct Event is called on CreateWidget.
+	}
+
+	PlayerAttributesWidget = CreateWidget<UUserWidget>(GetWorld(), AttributesTemplate.Get());
+	if (PlayerAttributesWidget)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Created Widget: PlayerAttributes."));
+		PlayerAttributesWidget->AddToViewport();
+	}
 }
 
 void ADDMMOCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
@@ -475,32 +500,33 @@ void ADDMMOCharacter::SkillEleven()
 
 void ADDMMOCharacter::SetSkillSelection(UPlayerInfoWidget* widget)
 {
-	skillSelectionWidget = widget;
-	if (MainHud) skillSelectionWidget->MainHud = MainHud;
+	//skillSelectionWidget = widget;
+	//if (MainHud) skillSelectionWidget->MainHud = MainHud;
 }
 
 void ADDMMOCharacter::SetSkillDelegate(int index, UCharacterSkillData* skillData)
 {
-	if (!characterClass) // Temp Class Selection Code
-		characterClass = NewObject<UWarriorClass>();
-
 	if (characterClass)
 	{
-		if (characterClass->FindFunction(skillData->Name()))
+		if (skillData != nullptr)
 		{
-			// Bind UFunction found in characterClass Named the same skillData
-			SkillLogicDelegates[index].BindUFunction(characterClass, skillData->Name(), skillData);
-			// Check if UFunction was Found and properly bound, else Bind to DefaultSkill
-			if (!SkillLogicDelegates[index].IsBound())
+			if (characterClass->FindFunction(skillData->Name()))
 			{
-				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegate: No UFunction was found"));
-				SkillLogicDelegates[index].BindUFunction(characterClass, FName("DefaultSkill"), skillData);
+				// Bind UFunction found in characterClass Named the same skillData
+				SkillLogicDelegates[index].BindUFunction(characterClass, skillData->Name(), skillData);
+				// Check if UFunction was Found and properly bound, else Bind to DefaultSkill
+				if (!SkillLogicDelegates[index].IsBound())
+				{
+					GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegate: No UFunction was found"));
+					SkillLogicDelegates[index].BindUFunction(characterClass, FName("DefaultSkill"), skillData);
+				}
+				return;
 			}
-			else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("SetSkillDelegate Success"));
+			else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegate: No UFunction was found"));
 		}
-		else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegate: No UFunction was found"));
 	}
 	else GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("Failed to SetSkillDelegate: No CharacterClass Selected"));
+	SkillLogicDelegates[index].Unbind(); // Somthing went wrong so clear the Delagate
 }
 
 void ADDMMOCharacter::SkillMenu()
